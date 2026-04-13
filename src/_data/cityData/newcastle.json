@@ -1,0 +1,124 @@
+{
+  "name": "Newcastle",
+  "slug": "newcastle",
+  "state": "NSW",
+  "country": "AU",
+  "icon": "⚓",
+  "updatedAt": "February 2026",
+  "filters": {
+    "areas": [
+      { "value": "CBD", "label": "CBD/Hunter St" },
+      { "value": "West", "label": "Newcastle West" },
+      { "value": "Coastal", "label": "Coastal (Merewether)" },
+      { "value": "Inner", "label": "Inner (Lambton/Mayfield)" }
+    ],
+    "vibes": [
+      { "value": "bakery", "label": "Bakery" },
+      { "value": "asian", "label": "Asian Fusion" },
+      { "value": "matcha", "label": "Matcha Lovers" },
+      { "value": "toasties", "label": "Toastie Heaven" }
+    ]
+  },
+  "venues": [
+    {
+      "name": "La Bae",
+      "location": "Hunter Street Mall, CBD",
+      "area": "CBD",
+      "vibe": "asian",
+      "viral": true,
+      "description": "Newcastle's newest TikTok sensation that opened in April 2025. Asian-inspired cafe kicking off everyone's croffle cravings with a mixture of savoury and sweets. The strawberry matcha is so good you'll need a second cup for takeaway.",
+      "mustTry": "Croffles (croissant-waffles), viral strawberry matcha, Asian fusion breakfast dishes, hot & cold drink selection",
+      "tags": ["TikTok Famous", "Croffle Craze", "2025 Opening"]
+    },
+    {
+      "name": "Bootleg Bakery",
+      "location": "Merewether, 10 James St",
+      "area": "Coastal",
+      "vibe": "bakery",
+      "viral": true,
+      "description": "The cult-favourite red food truck that only opens Friday & Saturday from 8am-12pm. The lines speak for themselves — get there early before the Bootstrap bread and ever-changing pastries sell out.",
+      "mustTry": "Iconic Bootstrap savoury bread, focaccia, danishes, tarts, specialty coffee (EFTPOS only, Fri/Sat 8am-12pm)",
+      "tags": ["Cult Favorite", "Weekend Only", "Sells Out Fast"]
+    },
+    {
+      "name": "Outdo Espresso",
+      "location": "Newcastle West, 464 King St",
+      "area": "West",
+      "vibe": "toasties",
+      "viral": true,
+      "description": "With 28K Instagram followers, this is home to Flamingo Coffee and those mouth-watering toasties everyone can't stop talking about. The matcha topped with cold foam flavours is top-tier. Sleek, modern vibe with sandalwood scent.",
+      "mustTry": "Mac & cheese toastie (when available), chicken pesto toastie, iced matcha with cold foam, Flamingo Coffee blend",
+      "tags": ["Instagram Famous", "Toastie Legend", "Matcha Excellence"]
+    },
+    {
+      "name": "CRUMB",
+      "location": "Lambton, 113 Elder St",
+      "area": "Inner",
+      "vibe": "bakery",
+      "viral": true,
+      "description": "Newcastle's new cult favourite with lines forming before opening. Creative croissants, gooey cookies, and matcha offerings that have TikTok obsessed. The most requested spot in comments for good reason.",
+      "mustTry": "Creative croissants, gooey cookies, hot or iced matcha, freshly baked pastries (arrive early!)",
+      "tags": ["New Cult Fave", "Pastry Heaven", "Lines Daily"]
+    },
+    {
+      "name": "Liebe European Pastries",
+      "location": "Newcastle West, 11 Union St",
+      "area": "West",
+      "vibe": "bakery",
+      "viral": true,
+      "description": "European-style pastries made fresh daily with a new line-up every week. Started at Newcastle Farmers Market, now has a permanent home and often sells out before closing time.",
+      "mustTry": "Fresh croissants, European pastries, focaccia, weekly specials (Wed-Sun only, sells out early)",
+      "tags": ["European Style", "Farmers Market Grad", "Sells Out Daily"]
+    },
+    {
+      "name": "Two Bobs Bakery & Pantry",
+      "location": "CBD, 277 Hunter St",
+      "area": "CBD",
+      "vibe": "bakery",
+      "viral": false,
+      "description": "Following the success of their Nelson Bay store, Two Bobs brought their signature sourdough and decadent pastries to Newcastle. Known for sourdough-based creations that have locals lining up.",
+      "mustTry": "Sour cherry & pistachio scroll (must-try!), signature sourdough, sourdough-based pastries (Wed-Sun)",
+      "tags": ["Sourdough Kings", "Nelson Bay Success", "Pastry Masters"]
+    },
+    {
+      "name": "Praise Joe",
+      "location": "Tighes Hill, 8/20 Elizabeth St",
+      "area": "Inner",
+      "vibe": "toasties",
+      "viral": false,
+      "description": "A buzzing corner cafe known for specialty coffee, rotating pastry specials, and some of the best toasted sandwiches in town. The local favorite that keeps Tighes Hill caffeinated and happy.",
+      "mustTry": "Best toasted sandwiches in Newcastle, rotating pastry specials, specialty coffee (open 7 days)",
+      "tags": ["Corner Gem", "Toastie Excellence", "Daily Specials"]
+    },
+    {
+      "name": "Momo Wholefood Co",
+      "location": "Newcastle CBD",
+      "area": "CBD",
+      "vibe": "asian",
+      "viral": false,
+      "description": "Making waves on TikTok's Newcastle foodie recommendations. Wholefood focus with fresh, nourishing options that don't compromise on flavor.",
+      "mustTry": "Wholefood breakfast bowls, nourishing lunch options, fresh juices, plant-based menu items",
+      "tags": ["Wholefood Focus", "TikTok Recommended", "Fresh & Healthy"]
+    },
+    {
+      "name": "Monte",
+      "location": "Newcastle CBD",
+      "area": "CBD",
+      "vibe": "toasties",
+      "viral": false,
+      "description": "Brand new cafe that opened late 2024 and already getting TikTok reviews. The newest breakfast spot creating buzz in Newcastle's CBD with quality coffee and fresh takes on cafe classics.",
+      "mustTry": "Breakfast menu, specialty coffee, cafe classics with creative twists",
+      "tags": ["Brand New", "Late 2024 Opening", "CBD Buzz"]
+    },
+    {
+      "name": "Sonny & Betty",
+      "location": "Mayfield, 122 Maitland Rd",
+      "area": "Inner",
+      "vibe": "bakery",
+      "viral": false,
+      "description": "Created by the team behind Cakeboi, this cosy spot offers a daily-changing selection of warm, freshly baked pastries that are seriously addictive. Each visit brings new delights to try.",
+      "mustTry": "Daily-changing pastries, warm freshly baked goods, specialty coffee (Tue-Sun)",
+      "tags": ["Cakeboi Team", "Daily Specials", "Pastry Paradise"]
+    }
+  ]
+}

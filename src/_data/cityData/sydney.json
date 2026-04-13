@@ -1,0 +1,125 @@
+{
+  "name": "Sydney",
+  "slug": "sydney",
+  "state": "NSW",
+  "country": "AU",
+  "icon": "🌊",
+  "updatedAt": "January 2026",
+  "filters": {
+    "areas": [
+      { "value": "CBD", "label": "CBD & Surry Hills" },
+      { "value": "Bondi", "label": "Bondi & Eastern Beaches" },
+      { "value": "Inner West", "label": "Inner West" },
+      { "value": "North", "label": "North Shore & Beaches" },
+      { "value": "West", "label": "Western Sydney" }
+    ],
+    "vibes": [
+      { "value": "aesthetic", "label": "Aesthetic" },
+      { "value": "korean", "label": "Korean" },
+      { "value": "bakery", "label": "Bakery" },
+      { "value": "waterfront", "label": "Waterfront" }
+    ]
+  },
+  "venues": [
+    {
+      "name": "Up South",
+      "location": "Bondi Beach",
+      "area": "Bondi",
+      "vibe": "aesthetic",
+      "viral": true,
+      "description": "TikTok's favorite Sydney cafe of 2024! The matcha croissants and pistachio treats here have broken the internet. Lines wrap around the block, but everyone agrees it's worth the wait.",
+      "mustTry": "Iced Strawberry Matcha, Iced Pistachio Matcha, matcha croissant, pistachio croissant (the crookie!)",
+      "tags": ["TikTok Legend", "Matcha Heaven", "Queue-Worthy"]
+    },
+    {
+      "name": "Baking 101",
+      "location": "Stanmore",
+      "area": "Inner West",
+      "vibe": "bakery",
+      "viral": true,
+      "description": "Home to 2025's It Baked Good: the cinnamon scroll that sold out in three hours. Classic, unhurried vibes with red curtains, chandeliers, and piano jazz.",
+      "mustTry": "Signature cinnamon scroll with vanilla cream, Scent of Stanmore carrot cake",
+      "tags": ["Cinnamon Scroll Icon", "Old-Timey Vibes", "Black Star Pastry Alumni"]
+    },
+    {
+      "name": "Cafe Margaret",
+      "location": "Double Bay",
+      "area": "CBD",
+      "vibe": "aesthetic",
+      "viral": true,
+      "description": "Neil Perry's latest transformation in Double Bay. From 7am daily, serving elevated cafe fare plus the famous burger that ranked in the World's Best list.",
+      "mustTry": "Four-cheese toastie, the famed Next Door burger, bacon and egg roll",
+      "tags": ["Celebrity Chef", "World's Best Burger", "Double Bay Chic"]
+    },
+    {
+      "name": "Chubby Cubby",
+      "location": "Haymarket, George St",
+      "area": "CBD",
+      "vibe": "aesthetic",
+      "viral": true,
+      "description": "The best matcha in Sydney according to viral TikToks. About to drop a whole new matcha and shokupan menu that's already generating massive hype.",
+      "mustTry": "Signature matcha drinks, Japanese shokupan (milk bread), matcha latte",
+      "tags": ["Matcha King", "Japanese Vibes", "Viral Videos"]
+    },
+    {
+      "name": "Speedos Cafe",
+      "location": "North Bondi",
+      "area": "Bondi",
+      "vibe": "waterfront",
+      "viral": true,
+      "description": "Sydney's most famous cafe at Bondi Beach. The tiramisu latte is the best in Sydney, and the viral egg sandwich keeps people coming back.",
+      "mustTry": "Tiramisu latte ($12), acai bowl ($21), viral egg sandwich ($20)",
+      "tags": ["Beach Views", "Iconic Location", "Instagram Famous"]
+    },
+    {
+      "name": "Cafe Cressida",
+      "location": "Queens Court, Paddington",
+      "area": "CBD",
+      "vibe": "aesthetic",
+      "viral": false,
+      "description": "From the Ursula's team: daytime eating with a cheffy edge. Beautiful courtyard space serving elevated classics from breakfast through dinner.",
+      "mustTry": "Gruyere toastie on Iggy's bread, silky scrambles with bacon, French toast, prawn cocktail toasts",
+      "tags": ["High-Low Vibe", "Courtyard Dining", "Chef-Driven"]
+    },
+    {
+      "name": "Manteiga",
+      "location": "Darlinghurst",
+      "area": "CBD",
+      "vibe": "aesthetic",
+      "viral": false,
+      "description": "Portuguese-inspired spot from former Bentley and Dinner by Heston chef. Family recipes meet elevated cafe culture.",
+      "mustTry": "Manteiga Muffin (Bolos Lêvedos from grandfather's recipe), soft eggs with double-smoked bacon",
+      "tags": ["Portuguese Flavors", "Family Recipes", "Michelin Pedigree"]
+    },
+    {
+      "name": "Circa Espresso",
+      "location": "Parramatta",
+      "area": "West",
+      "vibe": "aesthetic",
+      "viral": true,
+      "description": "Winner of Time Out's People's Choice Award for Best Cafe 2025. The Ottoman eggs have achieved cult status and put Parramatta on the breakfast map.",
+      "mustTry": "Ottoman eggs (creamy garlic labne, fried eggplant, chilli oil, crisp leeks, poached eggs), in-house roasted coffee",
+      "tags": ["Award Winner", "Middle Eastern", "Cult Following"]
+    },
+    {
+      "name": "Bote",
+      "location": "Manly Boatshed",
+      "area": "North",
+      "vibe": "waterfront",
+      "viral": false,
+      "description": "Breezy Northern Beaches vibes on the water. Coffee from Mecca, pastries from Staple, cookies from Butter Boy. Dogs and families welcome.",
+      "mustTry": "Coffee and pastries on the deck, feet dangling over the water",
+      "tags": ["On The Water", "Dog-Friendly", "Northern Beaches"]
+    },
+    {
+      "name": "Happyfield",
+      "location": "Haberfield",
+      "area": "Inner West",
+      "vibe": "bakery",
+      "viral": false,
+      "description": "Bright yellow corner cafe bringing Canadian-style pancakes to Sydney's Italian heartland. From ex-Grounds team, serving proper North American diner vibes.",
+      "mustTry": "Canadian pancake stacks with 100% maple syrup, breakfast platter for two, coddled eggs, soft-serve acai sundae",
+      "tags": ["Canadian Style", "Pancake Stacks", "Diner Vibes"]
+    }
+  ]
+}

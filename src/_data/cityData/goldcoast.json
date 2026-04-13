@@ -1,0 +1,124 @@
+{
+  "name": "Gold Coast",
+  "slug": "goldcoast",
+  "state": "QLD",
+  "country": "AU",
+  "icon": "🌊",
+  "updatedAt": "February 2026",
+  "filters": {
+    "areas": [
+      { "value": "Northern", "label": "Northern GC" },
+      { "value": "Central", "label": "Central (Nobby/Mermaid)" },
+      { "value": "Burleigh", "label": "Burleigh" },
+      { "value": "Southern", "label": "Southern (Currumbin/Palm Beach)" }
+    ],
+    "vibes": [
+      { "value": "matcha", "label": "Matcha Heaven" },
+      { "value": "asian", "label": "Asian Fusion" },
+      { "value": "bakery", "label": "Bakery" },
+      { "value": "aesthetic", "label": "Aesthetic" }
+    ]
+  },
+  "venues": [
+    {
+      "name": "The Holliday Coffee",
+      "location": "Nobby Beach, Wave St",
+      "area": "Central",
+      "vibe": "matcha",
+      "viral": true,
+      "description": "TikTok's obsession right now and for good reason. The best iced matcha on the Gold Coast, served in peachy cups from 5:30am daily. This sunny corner coffee spot has everyone talking.",
+      "mustTry": "Strawberry iced matcha (10/10), matcha float, three-cheese jaffles, honeycomb macadamia butter crumpets, avo croissants",
+      "tags": ["TikTok Famous", "Best Matcha", "Opens 5:30am"]
+    },
+    {
+      "name": "Bobby Bang's",
+      "location": "The Oxley, Nobby Beach",
+      "area": "Central",
+      "vibe": "matcha",
+      "viral": true,
+      "description": "Just opened December 2024 and already blowing up on social media. The Gold Coast's number one matcha spot with hand-whisked ceremonial matcha and Asian-inspired breakfast magic.",
+      "mustTry": "Miso caramel matcha, strawberry matcha, pork katsu sando, breakfast ramen with crispy bacon, Bobby's Benny with Korean fried chicken",
+      "tags": ["Asian Fusion", "Matcha Gods", "Just Opened"]
+    },
+    {
+      "name": "Piada Co",
+      "location": "Burleigh Heads",
+      "area": "Burleigh",
+      "vibe": "aesthetic",
+      "viral": true,
+      "description": "TikTok went crazy for their pistachio frappe and it's still the talk of the town. Italian-style piadinas (flatbreads) that hit different, perfect post-beach fuel.",
+      "mustTry": "TikTok-famous pistachio frappe, Italian piadinas with fresh ingredients, iced coffee creations",
+      "tags": ["Italian Vibes", "FYP Legend", "Beach Life"]
+    },
+    {
+      "name": "Dayo",
+      "location": "Riverfront (Late 2025 Opening)",
+      "area": "Central",
+      "vibe": "asian",
+      "viral": true,
+      "description": "The new Filipino fusion cafe that literally blew minds with its Ube latte. Despite just opening, it's already garnered a cult following for unique takes on breakfast classics.",
+      "mustTry": "Viral Ube latte, longganisa breakfast muffins (like a fancy Maccas version), fried chicken & waffles, matcha French toast with strawberry",
+      "tags": ["Filipino Fusion", "Ube Everything", "2025 Opening"]
+    },
+    {
+      "name": "Paddock Bakery",
+      "location": "Miami",
+      "area": "Southern",
+      "vibe": "bakery",
+      "viral": true,
+      "description": "Quite possibly the most Instagrammable cafe on the Gold Coast. This lovingly-restored weatherboard cottage with picket fence courtyard has been going viral for its rustic aesthetic and drool-worthy baked goods.",
+      "mustTry": "Croissants, rustic sourdough, seasonal pastries, specialty coffee in the courtyard",
+      "tags": ["Instagram Gold", "Cottage Vibes", "Pastry Heaven"]
+    },
+    {
+      "name": "The Bread Social",
+      "location": "Currumbin & Isle of Capri",
+      "area": "Southern",
+      "vibe": "bakery",
+      "viral": true,
+      "description": "The Sundevil Special went viral for a perfectly good reason — this place will ruin supermarket bread for you forever. One of the most impressive pastry cabinets on the entire Gold Coast.",
+      "mustTry": "Sundevil Special, sweet & savoury seasonal danishes (rosemary lime pineapple), croissants that'll make you cry",
+      "tags": ["Viral Pastries", "Two Locations", "Baker's Dream"]
+    },
+    {
+      "name": "Bam Bam Bakehouse",
+      "location": "Mermaid Beach",
+      "area": "Central",
+      "vibe": "bakery",
+      "viral": false,
+      "description": "One of the best breakfast spots on the Gold Coast in 2025. Sleek interior that's among the Coast's most beautiful cafes, with flavoursome dishes and home-baked treats that are pure magic.",
+      "mustTry": "Jalapeño & queso fresco sweetcorn fritters, nasi goreng breakfast, Nutella choux bombs (non-negotiable), pastries & dessert pots",
+      "tags": ["Sleek Design", "Choux Bombs", "Breakfast Goals"]
+    },
+    {
+      "name": "Cheek Café",
+      "location": "Southport",
+      "area": "Northern",
+      "vibe": "aesthetic",
+      "viral": false,
+      "description": "Arrived in 2025 with big flavours, bold personality and peachy-good vibes. This sunny corner spot blends playful design with seriously good coffee and wholesome ingredients inspired by Greek, Italian and Aussie roots.",
+      "mustTry": "Greek-inspired breakfast dishes, Italian-Australian fusion plates, specialty coffee, wholesome brunch bowls",
+      "tags": ["Peachy Vibes", "2025 Opening", "Mediterranean"]
+    },
+    {
+      "name": "Refinery Coffee",
+      "location": "Currumbin",
+      "area": "Southern",
+      "vibe": "matcha",
+      "viral": false,
+      "description": "Making waves with their viral iced matcha float that's been all over everyone's feed. A Currumbin favourite that knows how to do specialty drinks right.",
+      "mustTry": "Viral iced matcha float (10/10), specialty coffee, refreshing cold brews",
+      "tags": ["Matcha Float", "Specialty Coffee", "Currumbin Fave"]
+    },
+    {
+      "name": "Mohr Cafe and Deli",
+      "location": "Burleigh Heads, Hibiscus Haven",
+      "area": "Burleigh",
+      "vibe": "aesthetic",
+      "viral": false,
+      "description": "Burleigh's newest crush serving Mohr than you'd expect. This late 2025 opening delivers all-day Mediterranean-inspired plates and a deli stacked with grab-and-go goodness — food worth telling the group chat about.",
+      "mustTry": "Mediterranean lunches, all-day breakfast plates, deli selections, pairs perfectly with Black Hops next door",
+      "tags": ["Mediterranean", "Fresh Opening", "Deli Goodness"]
+    }
+  ]
+}

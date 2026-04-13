@@ -1,0 +1,33 @@
+---
+layout: base.njk
+title: "TRNDIE | Discover What's Hot in Your City"
+---
+<div class="home-wrapper">
+  <div class="home-container">
+    <div class="logo">TRNDIE</div>
+    <div class="tagline">Discover what's hot, trending, and worth the hype in your city 🔥</div>
+
+    <div class="category-section">
+      <div class="category-title">☕ Hottest Venues</div>
+      <div class="city-grid">
+        {%- for city in cities %}
+        <a href="/{{ city.slug }}/" class="city-link">
+          <div class="city-card">
+            <div class="city-icon">{{ city.icon }}</div>
+            <div class="city-name">{{ city.name }}</div>
+            <div class="city-category">Cafes &amp; Venues</div>
+            <div class="live-badge">🔥 LIVE NOW</div>
+          </div>
+        </a>
+        {%- endfor %}
+      </div>
+    </div>
+
+    <div class="update-badge">Updated weekly • {{ site.updatedAt }}</div>
+
+    <div class="footer-info">
+      <p>💡 More cities and categories coming soon</p>
+      <p>Got a trending spot? <a href="mailto:{{ site.email }}">Submit it here</a></p>
+    </div>
+  </div>
+</div>

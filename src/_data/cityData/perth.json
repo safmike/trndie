@@ -1,0 +1,124 @@
+{
+  "name": "Perth",
+  "slug": "perth",
+  "state": "WA",
+  "country": "AU",
+  "icon": "🌴",
+  "updatedAt": "January 2026",
+  "filters": {
+    "areas": [
+      { "value": "CBD", "label": "CBD & Northbridge" },
+      { "value": "Fremantle", "label": "Fremantle" },
+      { "value": "Coastal", "label": "Coastal Suburbs" },
+      { "value": "Inner Suburbs", "label": "Inner Suburbs" }
+    ],
+    "vibes": [
+      { "value": "bakery", "label": "Bakery" },
+      { "value": "vietnamese", "label": "Vietnamese" },
+      { "value": "deli", "label": "Deli & Sandwiches" },
+      { "value": "organic", "label": "Organic" }
+    ]
+  },
+  "venues": [
+    {
+      "name": "North 54",
+      "location": "Leederville",
+      "area": "Inner Suburbs",
+      "vibe": "vietnamese",
+      "viral": true,
+      "description": "Modern twist on classic banh mi from rising star Bac Pham (ex-Rockpool, Petition). 10-inch house-recipe rolls with playful fillings taking Perth by storm.",
+      "mustTry": "Grilled lamb meatballs with cumin labneh, son-in-law eggs with tamarind mayo, roast pork with fermented red bean",
+      "tags": ["Vietnamese Fusion", "10-Inch Rolls", "Hospo Legend"]
+    },
+    {
+      "name": "Smidge Bakery",
+      "location": "Leederville",
+      "area": "Inner Suburbs",
+      "vibe": "bakery",
+      "viral": true,
+      "description": "Self-proclaimed \"Perth's best cinny scrolls\" — and they might be right. Selling an average of 20 trays daily since moving to new Leederville location.",
+      "mustTry": "Cinnamon scrolls (sold 15 trays first week!), choc caramel brownies, salted Caramilk cookies, sangas",
+      "tags": ["Scroll Mania", "Viral Success", "New Digs"]
+    },
+    {
+      "name": "Lovers Deli & Canteen",
+      "location": "White Gum Valley",
+      "area": "Coastal",
+      "vibe": "deli",
+      "viral": true,
+      "description": "Nostalgia-driven cafe serving a contender for Perth's best chicken schnitty. Old-school charm with timber veneer, chrome counters, and plush banquette seats.",
+      "mustTry": "Chicken schnitzel (brown butter, capers, lemon-herb sauce), \"green eggs and scram\" with parsley sauce, blood pudding egg muffin",
+      "tags": ["Retro Diner", "Best Schnitty", "Good Things Team"]
+    },
+    {
+      "name": "Be Free",
+      "location": "Perth City Farm, East Perth",
+      "area": "CBD",
+      "vibe": "organic",
+      "viral": true,
+      "description": "Cult Subiaco favorite relocated to greener pastures. Surrounded by community gardens, the produce-driven ethos feels more relevant than ever.",
+      "mustTry": "Umami-forward miso mushrooms, wild-caught smoked salmon crumpets, Saturday farmer's market-sourced dishes",
+      "tags": ["Organic", "City Farm", "Eco-Conscious"]
+    },
+    {
+      "name": "Side Piece Deli",
+      "location": "Swanbourne",
+      "area": "Coastal",
+      "vibe": "deli",
+      "viral": true,
+      "description": "From the Daisies and Other Side legends. Perth's sandwich elite just got a new member with globally-inspired creations that are gagging the city.",
+      "mustTry": "Tomago or fish katsu sando on shokupan, mortadella and labneh focaccia, onion bhaji focaccia, Keralaan fried chicken with kasundi aioli",
+      "tags": ["Sandwich Royalty", "Global Flavours", "Pantry Group"]
+    },
+    {
+      "name": "Banh Mi & Chè",
+      "location": "Carlisle",
+      "area": "Inner Suburbs",
+      "vibe": "vietnamese",
+      "viral": false,
+      "description": "Kelly Vo's dessert store from Nha Trang comes to Perth. Selling basically two things: banh mi and chè (Vietnamese dessert soup) — and doing both perfectly.",
+      "mustTry": "Chè (dessert soup with taro, flan, jelly, coconut milk), xoi man (sticky Vietnamese rice), banh trang tron rice paper salad",
+      "tags": ["Vietnamese Authentic", "Dessert Soup", "Auntie Network"]
+    },
+    {
+      "name": "The Cool Room",
+      "location": "East Fremantle",
+      "area": "Fremantle",
+      "vibe": "bakery",
+      "viral": false,
+      "description": "Beloved Freo spot now in the hands of chef Drew Dawson and baker Charlotte Beeton. Short, curated menu that delights without overwhelming.",
+      "mustTry": "Scandi breakfast plates, house-baked treats, chef-driven seasonal menu",
+      "tags": ["Neighbourhood Soul", "Fremantle", "Chef-Driven"]
+    },
+    {
+      "name": "Angelwood Pies",
+      "location": "Leederville",
+      "area": "Inner Suburbs",
+      "vibe": "bakery",
+      "viral": false,
+      "description": "Grab-and-go pie shop with a chef who has Michelin approval. Selling out by midday with \"fine-dining pies\" that redefine the category.",
+      "mustTry": "Fine-dining pies (varieties change), get there before midday!",
+      "tags": ["Michelin Trained", "Sells Out Daily", "Grab & Go"]
+    },
+    {
+      "name": "Bert's",
+      "location": "City Beach",
+      "area": "Coastal",
+      "vibe": "organic",
+      "viral": false,
+      "description": "Day-to-night diner in the old Odyssea space. Laid-back coastal look with contemporary edge, creating the perfect \"local\" vibe for beachgoers.",
+      "mustTry": "Breakfast classics (acai, breakfast burger, pancakes, eggs Benedict), oysters, prawn and lobster plates",
+      "tags": ["Beach Dining", "All-Day", "Coastal Vibes"]
+    },
+    {
+      "name": "Earl's",
+      "location": "Mount Hawthorn",
+      "area": "Inner Suburbs",
+      "vibe": "deli",
+      "viral": false,
+      "description": "Filling Mount Hawthorn's lunchtime gap with serious sangas. Hoagies, French dips, and classic American-style sandwiches done right.",
+      "mustTry": "Hoagies, French dip sandwiches, classic deli fare",
+      "tags": ["Sandwich Joint", "Lunchtime Hero", "American Style"]
+    }
+  ]
+}

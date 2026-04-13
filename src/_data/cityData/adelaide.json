@@ -1,0 +1,124 @@
+{
+  "name": "Adelaide",
+  "slug": "adelaide",
+  "state": "SA",
+  "country": "AU",
+  "icon": "🍷",
+  "updatedAt": "January 2026",
+  "filters": {
+    "areas": [
+      { "value": "CBD", "label": "CBD" },
+      { "value": "North Adelaide", "label": "North Adelaide" },
+      { "value": "Inner Suburbs", "label": "Inner Suburbs" },
+      { "value": "Beachside", "label": "Beachside" }
+    ],
+    "vibes": [
+      { "value": "matcha", "label": "Matcha & Japanese" },
+      { "value": "greek", "label": "Greek" },
+      { "value": "bakery", "label": "Bakery" },
+      { "value": "italian", "label": "Italian Deli" }
+    ]
+  },
+  "venues": [
+    {
+      "name": "Cha-no-wa",
+      "location": "King William Street, CBD",
+      "area": "CBD",
+      "vibe": "matcha",
+      "viral": true,
+      "description": "Japanese brand's first Australian outpost. Premium matcha sourced from Kyoto during the global matcha shortage — Adelaide's love affair with matcha reached fever pitch here.",
+      "mustTry": "Kyoto-sourced matcha and hojicha, matcha frappes and sundaes, Japanese cakes and ice-cream",
+      "tags": ["Kyoto Matcha", "Japanese Chain", "Ex-Muni Chef"]
+    },
+    {
+      "name": "Homeboy 2.0",
+      "location": "North Terrace, CBD",
+      "area": "CBD",
+      "vibe": "bakery",
+      "viral": true,
+      "description": "Teen entrepreneur Tom Oswald's viral Hahndorf cafe reborn in the CBD. Mum's famous cinnamon scrolls had a moment in 2025 — and they're topnotch.",
+      "mustTry": "Mum's famous cinnamon scrolls, focaccia toasties, Homeboy coffee blend",
+      "tags": ["Viral Teen", "Scroll Moment", "Renew Adelaide"]
+    },
+    {
+      "name": "Pompom",
+      "location": "Forestville",
+      "area": "Inner Suburbs",
+      "vibe": "greek",
+      "viral": true,
+      "description": "All-day diner from Whistle & Flute crew built on fluffy flatbread fired in a Gozney oven. Riding Forestville's redevelopment wave.",
+      "mustTry": "The Pompom (chicken, roast capsicum, feta, tabouli), Cypriot sausage pita, whipped ricotta with spicy salami",
+      "tags": ["Gozney Oven", "Greek-Italian", "Rising Suburb"]
+    },
+    {
+      "name": "Meli",
+      "location": "Various Locations",
+      "area": "Inner Suburbs",
+      "vibe": "greek",
+      "viral": true,
+      "description": "Greek beach bar energy comes to Adelaide. Golden loukoumades in four flavors, Greek-inspired sandos, and desserts that make your sweet tooth dance.",
+      "mustTry": "Loukoumades (traditional, pistachio, biscoff, Nutella), Melizana, Saganaki Sando, Galaktoboureko Cups, Pistachio Baklava Freddo",
+      "tags": ["Greek Vibes", "Island Energy", "Cousins Project"]
+    },
+    {
+      "name": "Yuku dō",
+      "location": "CBD",
+      "area": "CBD",
+      "vibe": "matcha",
+      "viral": true,
+      "description": "If you have a Japanese-inspired brunch craving, this is Adelaide's answer. Modern Japanese breakfast meets Australian cafe culture.",
+      "mustTry": "Japanese breakfast sets, matcha drinks, contemporary Japanese-Australian fusion plates",
+      "tags": ["Japanese Brunch", "Matcha Specialist", "Fusion Done Right"]
+    },
+    {
+      "name": "Bora",
+      "location": "Jetty Street, Grange",
+      "area": "Beachside",
+      "vibe": "bakery",
+      "viral": false,
+      "description": "Breakfast classics and lunch staples with a Brazilian twist. Beachside location that hosted Adelaide's inaugural Brazilian festival, Alma Brazil.",
+      "mustTry": "The BELT (BLT with eggs, Dijon, pecorino), acai bowls, breakfast tacos",
+      "tags": ["Brazilian Vibes", "Beachside", "Alma Brazil"]
+    },
+    {
+      "name": "Jenny's Bakery",
+      "location": "Keswick",
+      "area": "Inner Suburbs",
+      "vibe": "bakery",
+      "viral": true,
+      "description": "Not exactly new, but its influence built to fever pitch in 2025. Keswick location in old Sylvia's Deli site opened November to much acclaim.",
+      "mustTry": "Asian bakery specialties, cult-status pastries",
+      "tags": ["2025 Fever Pitch", "Asian Bakery", "Cult Following"]
+    },
+    {
+      "name": "Arlos",
+      "location": "King William St & Grenfell St",
+      "area": "CBD",
+      "vibe": "bakery",
+      "viral": false,
+      "description": "Fresh face in CBD's heart, taking over Cibo corner spot. Next-level coffee, fresh bites, and cinnamon scrolls that are dreamy AF.",
+      "mustTry": "Cinnamon scrolls (original, blueberry, frangelico), specialty coffee, fresh sandos",
+      "tags": ["CBD Workers", "Corner Cafe", "Scroll Varieties"]
+    },
+    {
+      "name": "Gathers & Grounds",
+      "location": "Glenelg",
+      "area": "Beachside",
+      "vibe": "matcha",
+      "viral": false,
+      "description": "Asian fusion twist on this sunny corner cafe. Specializing in Hojicha, matcha, Vietnamese coffee — made its mark in just weeks.",
+      "mustTry": "Chicken Katsu sando, Ube hotcakes, Vietnamese coffee, matcha drinks",
+      "tags": ["Asian Fusion", "Beachside", "New Kid"]
+    },
+    {
+      "name": "Pinco Deli",
+      "location": "Exchange Place, CBD",
+      "area": "CBD",
+      "vibe": "italian",
+      "viral": false,
+      "description": "Third Pinco location proves the sando outlasted the burger trend. Italian staples meet sandwich excellence from Jumbo Smash founders.",
+      "mustTry": "Sando lineup, baked alla vodka pasta with stracciatella, pappardelle with ragu bianco",
+      "tags": ["Sandwich Era", "Third Location", "Italian Staples"]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+---
+pagination:
+  data: cities
+  size: 1
+  alias: city
+permalink: "/{{ city.slug }}/"
+layout: base.njk
+---
+<div class="hero">
+  <a href="/" class="back-link">← TRNDIE</a>
+  <h1>☕ {{ city.name }}'s Hottest Venues</h1>
+  <p>The spots everyone's talking about on TikTok &amp; Instagram right now. Updated weekly with the freshest {{ city.name }} buzz.</p>
+  <div class="badge">🔥 Last updated: {{ city.updatedAt }}</div>
+</div>
+
+<div class="container">
+  <div class="filter-bar">
+    <label for="areaFilter">Filter by area:</label>
+    <select id="areaFilter" onchange="filterVenues()">
+      <option value="all">All Areas</option>
+      {%- for area in city.filters.areas %}
+      <option value="{{ area.value }}">{{ area.label }}</option>
+      {%- endfor %}
+    </select>
+
+    <label for="vibeFilter">Vibe:</label>
+    <select id="vibeFilter" onchange="filterVenues()">
+      <option value="all">All Vibes</option>
+      {%- for vibe in city.filters.vibes %}
+      <option value="{{ vibe.value }}">{{ vibe.label }}</option>
+      {%- endfor %}
+    </select>
+  </div>
+
+  <div class="venue-grid" id="venueGrid">
+    {%- for venue in city.venues %}
+    <div class="venue-card" data-area="{{ venue.area }}" data-vibe="{{ venue.vibe }}">
+      <div class="venue-header">
+        {%- if venue.viral %}
+        <div class="viral-badge">🔥 VIRAL</div>
+        {%- endif %}
+        <h2>{{ venue.name }}</h2>
+        <div class="venue-location">📍 {{ venue.location }}</div>
+      </div>
+      <div class="venue-body">
+        <p class="venue-description">{{ venue.description }}</p>
+        <div class="highlight">
+          <strong>Must-Try:</strong> {{ venue.mustTry }}
+        </div>
+        <div class="tags">
+          {%- for tag in venue.tags %}
+          <span class="tag">{{ tag }}</span>
+          {%- endfor %}
+        </div>
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
+</div>
+
+<section class="cta-section">
+  <h2>Never Miss a Trending Venue 🔥</h2>
+  <p>Get weekly updates on {{ city.name }}'s hottest new spots delivered to your inbox</p>
+  <form action="{{ site.newsletterUrl }}" method="post" target="_blank">
+    <input type="email" name="email" placeholder="Your email address" required>
+    <button type="submit">Get Updates</button>
+  </form>
+  <p class="cta-sub">Want your venue featured? <a href="mailto:{{ site.email }}">Submit here</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2026 TRNDIE | Curated weekly with love ☕</p>
+  <p><a href="{{ site.instagram }}">Instagram</a> | <a href="{{ site.tiktok }}">TikTok</a></p>
+</footer>
+
+<script src="/js/filter.js"></script>
