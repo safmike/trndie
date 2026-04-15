@@ -1,0 +1,94 @@
+---
+pagination:
+  data: cities
+  size: 1
+  alias: city
+permalink: "/{{ city.slug }}/"
+layout: base.njk
+---
+{%- from "venue-links.njk" import venueLinks %}
+<div class="hero">
+  <a href="/" class="back-link">← TRNDIE</a>
+  <h1>☕ {{ city.name }}'s Hottest Venues</h1>
+  <p>The spots everyone's talking about on TikTok &amp; Instagram right now. Updated weekly with the freshest {{ city.name }} buzz.</p>
+  <div class="badge">🔥 Last updated: {{ city.updatedAt }}</div>
+</div>
+
+<div class="container">
+  <div class="filter-bar">
+    <label for="areaFilter">Area:</label>
+    <select id="areaFilter" class="filter-select">
+      <option value="all">All Areas</option>
+      {%- for area in city.filters.areas %}
+      <option value="{{ area.value }}">{{ area.label }}</option>
+      {%- endfor %}
+    </select>
+
+    <label for="vibeFilter">Vibe:</label>
+    <select id="vibeFilter" class="filter-select">
+      <option value="all">All Vibes</option>
+      {%- for vibe in city.filters.vibes %}
+      <option value="{{ vibe.value }}">{{ vibe.label }}</option>
+      {%- endfor %}
+    </select>
+
+    <label for="categoryFilter">Category:</label>
+    <select id="categoryFilter" class="filter-select">
+      <option value="all">All Categories</option>
+      {%- for cat in city.venues | uniqueBy("category") %}
+      <option value="{{ cat }}">{{ cat | capitalize }}</option>
+      {%- endfor %}
+    </select>
+
+    <span class="filter-count" id="venueCount"></span>
+  </div>
+
+  <div id="noResults" class="no-results" style="display:none">No venues match your filters.</div>
+
+  <div class="venue-grid" id="venueGrid">
+    {%- for venue in city.venues | sort(true, false, "ranking_score") %}
+    <div class="venue-card" data-area="{{ venue.area }}" data-vibe="{{ venue.vibe }}" data-category="{{ venue.category }}" data-city="{{ venue.city }}">
+      <div class="venue-header">
+        {%- if venue.viral %}
+        <div class="viral-badge">🔥 VIRAL</div>
+        {%- endif %}
+        <h2>{{ venue.name }}</h2>
+        <div class="venue-location">📍 {{ venue.location }}</div>
+        <div class="venue-meta">
+          <span class="venue-category">{{ venue.category }}</span>
+          <span class="venue-score">⭐ {{ venue.ranking_score }}</span>
+        </div>
+      </div>
+      <div class="venue-body">
+        <p class="venue-description">{{ venue.description }}</p>
+        <div class="highlight">
+          <strong>Must-Try:</strong> {{ venue.mustTry }}
+        </div>
+        <div class="tags">
+          {%- for tag in venue.tags %}
+          <span class="tag">{{ tag }}</span>
+          {%- endfor %}
+        </div>
+        {{ venueLinks(venue) }}
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
+</div>
+
+<section class="cta-section">
+  <h2>Never Miss a Trending Venue 🔥</h2>
+  <p>Get weekly updates on {{ city.name }}'s hottest new spots delivered to your inbox</p>
+  <form action="{{ site.newsletterUrl }}" method="post" target="_blank">
+    <input type="email" name="email" placeholder="Your email address" required>
+    <button type="submit">Get Updates</button>
+  </form>
+  <p class="cta-sub">Want your venue featured? <a href="mailto:{{ site.email }}">Submit here</a></p>
+</section>
+
+<footer>
+  <p>&copy; 2026 TRNDIE | Curated weekly with love ☕</p>
+  <p><a href="{{ site.instagram }}">Instagram</a> | <a href="{{ site.tiktok }}">TikTok</a></p>
+</footer>
+
+<script src="/js/filter.js"></script>

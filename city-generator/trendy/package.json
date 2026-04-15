@@ -1,0 +1,15 @@
+{
+  "name": "trndie",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve --watch",
+    "update-trends": "node scripts/update-trends.js",
+    "update-trends:city": "node scripts/update-trends.js --city",
+    "update-trends:live": "TRENDS_MOCK=false node scripts/update-trends.js"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

@@ -1,0 +1,85 @@
+name: Weekly Trend Update
+
+on:
+  # Every Monday at 9am AEST (11pm Sunday UTC)
+  schedule:
+    - cron: "0 23 * * 0"
+
+  # Allow manual runs from the Actions tab
+  workflow_dispatch:
+    inputs:
+      city:
+        description: "Limit to a single city slug (e.g. sydney). Leave blank for all."
+        required: false
+        default: ""
+      category:
+        description: "Limit to a category (e.g. cafe). Leave blank for all."
+        required: false
+        default: ""
+      live_apis:
+        description: "Use live APIs instead of mock data"
+        type: boolean
+        required: false
+        default: false
+
+jobs:
+  update:
+    name: Refresh venue rankings
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write   # needed to push the updated JSON files
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          # Full history so the commit author info is available
+          fetch-depth: 1
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: city-generator/trendy/package-lock.json
+
+      - name: Install dependencies
+        working-directory: city-generator/trendy
+        run: npm ci
+
+      # ── Build CLI args ────────────────────────────────────────────────────────
+      # Scheduled runs: no flags → all cities, all categories, mock data
+      # Manual runs: honour workflow_dispatch inputs
+      - name: Run trend update
+        working-directory: city-generator/trendy
+        env:
+          # Use live APIs only when APIFY_TOKEN is set AND live_apis input is true
+          TRENDS_MOCK: ${{ (github.event.inputs.live_apis == 'true' && secrets.APIFY_TOKEN != '') && 'false' || 'true' }}
+          APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
+        run: |
+          ARGS=""
+          if [ -n "${{ github.event.inputs.city }}" ]; then
+            ARGS="$ARGS --city ${{ github.event.inputs.city }}"
+          fi
+          if [ -n "${{ github.event.inputs.category }}" ]; then
+            ARGS="$ARGS --category ${{ github.event.inputs.category }}"
+          fi
+          node scripts/update-trends.js $ARGS
+
+      # ── Commit only if something changed ─────────────────────────────────────
+      - name: Commit updated JSON files
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add city-generator/trendy/src/_data/cityData/
+
+          # Only commit if there are staged changes
+          if git diff --cached --quiet; then
+            echo "No ranking changes this week — nothing to commit."
+          else
+            WEEK=$(date -u +"%Y-W%V")
+            git commit -m "chore: weekly trend update ${WEEK} [skip ci]"
+            git push
+          fi

@@ -1,0 +1,587 @@
+/* ============================================================
+   TRNDIE — shared stylesheet
+   All pages share this file. Never paste styles into templates.
+   ============================================================ */
+
+/* ── Reset ── */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ── Base ── */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #2d3436;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ============================================================
+   HOME PAGE
+   ============================================================ */
+
+body.page-home {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  color: white;
+}
+
+.home-wrapper {
+  width: 100%;
+}
+
+.home-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  font-size: 4em;
+  font-weight: 900;
+  margin-bottom: 10px;
+  letter-spacing: -2px;
+  background: linear-gradient(90deg, #fff 0%, #ffeaa7 40%, #fd79a8 70%, #fff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shimmer 3s linear infinite;
+}
+
+@keyframes shimmer {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+
+.tagline {
+  font-size: 1.4em;
+  margin-bottom: 50px;
+  opacity: 0.95;
+  font-weight: 300;
+}
+
+.category-section {
+  margin-bottom: 60px;
+}
+
+.category-title {
+  font-size: 1.8em;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+/* City grid on home page */
+.city-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.city-link {
+  display: block;
+}
+
+.city-card {
+  background: white;
+  color: #2d3436;
+  padding: 40px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+}
+
+.city-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+
+.city-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+}
+
+.city-card:hover::before {
+  transform: scaleX(1);
+}
+
+.city-icon {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.city-name {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.city-category {
+  font-size: 1.1em;
+  color: #636e72;
+  margin-bottom: 15px;
+}
+
+.live-badge {
+  display: inline-block;
+  background: #00b894;
+  color: white;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.update-badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  margin-top: 20px;
+  display: inline-block;
+  backdrop-filter: blur(10px);
+}
+
+.footer-info {
+  margin-top: 40px;
+  opacity: 0.9;
+  font-size: 1.1em;
+}
+
+.footer-info a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.footer-info p + p {
+  margin-top: 15px;
+}
+
+/* ============================================================
+   CITY PAGES
+   ============================================================ */
+
+body.page-city {
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 80px 20px 60px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '☕';
+  position: absolute;
+  font-size: 200px;
+  opacity: 0.1;
+  top: -50px;
+  right: 10%;
+  animation: float 6s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-20px); }
+}
+
+.back-link {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: 800;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.2s;
+}
+
+.back-link:hover {
+  opacity: 0.8;
+}
+
+.hero h1 {
+  font-size: 3em;
+  font-weight: 800;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hero p {
+  font-size: 1.2em;
+  opacity: 0.95;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin-top: 20px;
+  font-size: 0.9em;
+  backdrop-filter: blur(10px);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  padding: 40px 20px 0;
+}
+
+/* Filter bar */
+.filter-bar {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  margin-bottom: 40px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filter-bar label {
+  font-weight: 600;
+  color: #2d3436;
+}
+
+.filter-bar select {
+  padding: 10px 16px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1em;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.filter-bar select:hover,
+.filter-bar select:focus {
+  border-color: #667eea;
+  outline: none;
+}
+
+/* Filter count + empty state */
+.filter-count {
+  margin-left: auto;
+  font-size: 0.9em;
+  color: #636e72;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  color: #636e72;
+  font-size: 1.1em;
+}
+
+/* Venue grid */
+.venue-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+/* Venue card */
+.venue-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.venue-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+.venue-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  color: white;
+  position: relative;
+}
+
+.viral-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #ff6b6b;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  box-shadow: 0 2px 10px rgba(255, 107, 107, 0.4);
+}
+
+.venue-header h2 {
+  font-size: 1.6em;
+  margin-bottom: 8px;
+}
+
+.venue-location {
+  opacity: 0.9;
+  font-size: 0.95em;
+}
+
+.venue-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+  font-size: 0.85em;
+  opacity: 0.85;
+}
+
+.venue-category {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 10px;
+  border-radius: 12px;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.venue-score {
+  font-weight: 600;
+}
+
+.venue-body {
+  padding: 25px;
+}
+
+.venue-description {
+  color: #636e72;
+  margin-bottom: 20px;
+  line-height: 1.7;
+}
+
+.highlight {
+  background: linear-gradient(135deg, #ffeaa7 0%, #fdcb6e 100%);
+  padding: 15px;
+  border-radius: 8px;
+  margin: 20px 0;
+  border-left: 4px solid #f39c12;
+}
+
+.highlight strong {
+  color: #d63031;
+}
+
+.tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.tag {
+  background: #f0f0f0;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.85em;
+  color: #636e72;
+}
+
+.venue-links {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.venue-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f0f0f0;
+  color: #636e72;
+  transition: background 0.2s, color 0.2s, transform 0.15s;
+  flex-shrink: 0;
+}
+
+.venue-link:hover {
+  transform: scale(1.15);
+}
+
+.venue-link--instagram:hover {
+  background: #e1306c;
+  color: white;
+}
+
+.venue-link--tiktok:hover {
+  background: #010101;
+  color: white;
+}
+
+.venue-link--website:hover {
+  background: #667eea;
+  color: white;
+}
+
+/* visually hidden but readable by screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* CTA section */
+.cta-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cta-section h2 {
+  font-size: 2.2em;
+  margin-bottom: 20px;
+}
+
+.cta-section p {
+  font-size: 1.1em;
+  opacity: 0.95;
+}
+
+.cta-section form {
+  max-width: 500px;
+  margin: 30px auto;
+  display: flex;
+  gap: 10px;
+}
+
+.cta-section input[type="email"] {
+  flex: 1;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+}
+
+.cta-section button {
+  padding: 15px 30px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+  white-space: nowrap;
+}
+
+.cta-section button:hover {
+  background: #ee5a6f;
+  transform: scale(1.05);
+}
+
+.cta-sub {
+  margin-top: 20px;
+  opacity: 0.8;
+  font-size: 0.9em;
+}
+
+.cta-sub a {
+  color: white;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background: #2d3436;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer p + p {
+  margin-top: 10px;
+  opacity: 0.7;
+  font-size: 0.9em;
+}
+
+footer a {
+  color: #74b9ff;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 3em;
+  }
+
+  .tagline {
+    font-size: 1.2em;
+  }
+
+  .city-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .venue-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-section form {
+    flex-direction: column;
+  }
+
+  .cta-section h2 {
+    font-size: 1.8em;
+  }
+}

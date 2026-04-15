@@ -1,0 +1,298 @@
+{
+  "name": "Brisbane",
+  "slug": "brisbane",
+  "state": "QLD",
+  "country": "AU",
+  "icon": "☀️",
+  "updatedAt": "April 2026",
+  "filters": {
+    "areas": [
+      {
+        "value": "CBD",
+        "label": "CBD & Fortitude Valley"
+      },
+      {
+        "value": "Inner North",
+        "label": "Inner North"
+      },
+      {
+        "value": "Inner West",
+        "label": "Inner West"
+      },
+      {
+        "value": "Bayside",
+        "label": "Bayside"
+      }
+    ],
+    "vibes": [
+      {
+        "value": "asian",
+        "label": "Asian Fusion"
+      },
+      {
+        "value": "bakery",
+        "label": "Bakery"
+      },
+      {
+        "value": "aesthetic",
+        "label": "Aesthetic"
+      },
+      {
+        "value": "thai",
+        "label": "Thai"
+      }
+    ]
+  },
+  "venues": [
+    {
+      "name": "Baking 101",
+      "city": "brisbane",
+      "category": "bakery",
+      "ranking_score": 8.7,
+      "location": "Stanmore",
+      "area": "Inner West",
+      "vibe": "bakery",
+      "viral": true,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Home of 2025's It Baked Good: the cinnamon scroll that sold out in three hours. Classic vibes with red curtains, chandeliers, and piano jazz.",
+      "mustTry": "Signature cinnamon scroll with vanilla cream (THE ONE), Scent of Stanmore carrot cake",
+      "tags": [
+        "Scroll Royalty",
+        "Old-Timey Charm",
+        "Black Star Alumni"
+      ],
+      "trend_signals": {
+        "google_trends": 80,
+        "tiktok_mentions": 1158,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "Cafe Disco",
+      "city": "brisbane",
+      "category": "cafe",
+      "ranking_score": 8.6,
+      "location": "West End",
+      "area": "Inner West",
+      "vibe": "asian",
+      "viral": true,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Bright yellow facade, impossible to miss. Bangladeshi-Australian fusion that Gerald Ong called his favorite bite of the year.",
+      "mustTry": "Bangladeshi-inspired breakfast dishes, lunch specials blending two cultures, evening cocktails",
+      "tags": [
+        "Cultural Fusion",
+        "All-Day Diner",
+        "Gerald Ong Approved"
+      ],
+      "trend_signals": {
+        "google_trends": 79,
+        "tiktok_mentions": 1165,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "Idle",
+      "city": "brisbane",
+      "category": "bakery",
+      "ranking_score": 8.2,
+      "location": "New Farm",
+      "area": "Inner North",
+      "vibe": "bakery",
+      "viral": true,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "The evolution of beloved Agnes Bakery. Sleek Tamsin Johnson design meets next-level baked goods and a coal-fired rotisserie.",
+      "mustTry": "Baghdad eggs with smoked almond crumb and labneh, cross-laminated pain au chocolat, tonka bean kouign-amann, coal-fired rotisserie chicken",
+      "tags": [
+        "Anyday Group",
+        "Bakery Excellence",
+        "Market Section"
+      ],
+      "trend_signals": {
+        "google_trends": 68,
+        "tiktok_mentions": 858,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "Landing Bakery",
+      "city": "brisbane",
+      "category": "bakery",
+      "ranking_score": 8.2,
+      "location": "Scarborough",
+      "area": "Bayside",
+      "vibe": "bakery",
+      "viral": true,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Coastal gem from Anytime Coffee and Riser Bread alumni. Architectural finesse meets creative pastries that are both classic and clever.",
+      "mustTry": "Gochujang scrolls, citrus morning buns, perfectly seasoned sausage rolls",
+      "tags": [
+        "Coastal Vibes",
+        "Award-Winning Design",
+        "Moreton Bay"
+      ],
+      "trend_signals": {
+        "google_trends": 69,
+        "tiktok_mentions": 887,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "Alby's",
+      "city": "brisbane",
+      "category": "cafe",
+      "ranking_score": 8.2,
+      "location": "Wavell Heights",
+      "area": "Inner North",
+      "vibe": "aesthetic",
+      "viral": true,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "From hospo veteran Daniel Bowles. Single O coffee meets trending treats in a charming suburban setting.",
+      "mustTry": "Beef rendang toastie (the icon), iced tiramisu drink with cold vanilla foam",
+      "tags": [
+        "Trending Toasties",
+        "Single O",
+        "Suburban Gem"
+      ],
+      "trend_signals": {
+        "google_trends": 72,
+        "tiktok_mentions": 965,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "So What Stereo",
+      "city": "brisbane",
+      "category": "cafe",
+      "ranking_score": 7.9,
+      "location": "Little Street, Fortitude Valley",
+      "area": "CBD",
+      "vibe": "thai",
+      "viral": true,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Brisbane's first Thai vinyl cafe and one of 2025's biggest success stories. Hidden in The Valley, this mid-century gem blends retro whimsy with Thai street food brilliance.",
+      "mustTry": "Khao soi, congee, kao lao sets, kai kon (Thai-style scrambled eggs), Single O coffee",
+      "tags": [
+        "Thai Street Food",
+        "Vinyl Vibes",
+        "Cult Status"
+      ],
+      "trend_signals": {
+        "google_trends": 60,
+        "tiktok_mentions": 725,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "Smidge Bakery",
+      "city": "brisbane",
+      "category": "bakery",
+      "ranking_score": 7.8,
+      "location": "Leederville",
+      "area": "Inner North",
+      "vibe": "bakery",
+      "viral": true,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Self-proclaimed home of \"Perth's best cinny scrolls\" and they might be right. Selling 20 trays a day in their new bigger space.",
+      "mustTry": "Cinnamon scrolls (the legend), choc caramel brownies, salted Caramilk cookies, sangas",
+      "tags": [
+        "Scroll Mania",
+        "Viral Success",
+        "New Location"
+      ],
+      "trend_signals": {
+        "google_trends": 63,
+        "tiktok_mentions": 838,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "Coffee Anthology",
+      "city": "brisbane",
+      "category": "cafe",
+      "ranking_score": 5.3,
+      "location": "CBD",
+      "area": "CBD",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Named 8th best coffee shop in the world in 2025. Multi-roaster approach with Mecca coffee, pastries from Fika, cookies from Butter Boy.",
+      "mustTry": "Rotating coffee roasts matched to brewing methods, caramelised banana rice pudding, pandan waffles, croissant eggs benedict",
+      "tags": [
+        "World's 8th Best",
+        "Multi-Roaster",
+        "Industrial Chic"
+      ],
+      "trend_signals": {
+        "google_trends": 49,
+        "tiktok_mentions": 333,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "Semi Semi",
+      "city": "brisbane",
+      "category": "cafe",
+      "ranking_score": 5,
+      "location": "Newstead",
+      "area": "Inner North",
+      "vibe": "asian",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Brisbane's bingsu breakthrough. Korean shaved ice desserts finally get the spotlight they deserve beyond Sunnybank.",
+      "mustTry": "Taro and black sesame bingsu, Earl Grey and Thai tea varieties, plant-based coconut mango chocolate",
+      "tags": [
+        "Korean Desserts",
+        "Bingsu Specialists",
+        "Customizable Toppings"
+      ],
+      "trend_signals": {
+        "google_trends": 47,
+        "tiktok_mentions": 308,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "Speed Dial",
+      "city": "brisbane",
+      "category": "cafe",
+      "ranking_score": 3.8,
+      "location": "Newstead (Bunnings Carpark)",
+      "area": "Inner North",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "One of Brisbane's tiniest and best new cafes, operating from a 30sqm shipping container. Yes, it's in the Bunnings carpark.",
+      "mustTry": "Coffee Supreme's South blend, toasties with marinara dipping sauce, daily batch brew, matcha drinks",
+      "tags": [
+        "Shipping Container",
+        "Tiny But Mighty",
+        "Walk-In Only"
+      ],
+      "trend_signals": {
+        "google_trends": 24,
+        "tiktok_mentions": 112,
+        "last_scored": "2026-04-15"
+      }
+    }
+  ]
+}

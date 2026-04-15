@@ -1,0 +1,79 @@
+---
+layout: base.njk
+title: "All Venues | TRNDIE"
+bodyClass: page-city
+---
+{%- from "venue-links.njk" import venueLinks %}
+<div class="hero">
+  <a href="/" class="back-link">← TRNDIE</a>
+  <h1>🔥 All Trending Venues</h1>
+  <p>Every trending spot across Australia. Filter by city or category — results update instantly.</p>
+  {%- set totalVenues = 0 %}
+  {%- for city in cities %}
+    {%- set totalVenues = totalVenues + city.venues | length %}
+  {%- endfor %}
+  <div class="badge">☕ {{ cities | length }} cities · {{ totalVenues }} venues</div>
+</div>
+
+<div class="container">
+  <div class="filter-bar">
+    <label for="cityFilter">City:</label>
+    <select id="cityFilter" class="filter-select">
+      <option value="all">All Cities</option>
+      {%- for city in cities %}
+      <option value="{{ city.slug }}">{{ city.icon }} {{ city.name }}</option>
+      {%- endfor %}
+    </select>
+
+    <label for="categoryFilter">Category:</label>
+    <select id="categoryFilter" class="filter-select">
+      <option value="all">All Categories</option>
+      {%- for cat in cities | flatVenues | uniqueBy("category") %}
+      <option value="{{ cat }}">{{ cat | capitalize }}</option>
+      {%- endfor %}
+    </select>
+
+    <span class="filter-count" id="venueCount"></span>
+  </div>
+
+  <div id="noResults" class="no-results" style="display:none">No venues match your filters.</div>
+
+  <div class="venue-grid" id="venueGrid">
+    {%- for city in cities %}
+    {%- for venue in city.venues | sort(true, false, "ranking_score") %}
+    <div class="venue-card" data-city="{{ venue.city }}" data-area="{{ venue.area }}" data-vibe="{{ venue.vibe }}" data-category="{{ venue.category }}">
+      <div class="venue-header">
+        {%- if venue.viral %}
+        <div class="viral-badge">🔥 VIRAL</div>
+        {%- endif %}
+        <h2>{{ venue.name }}</h2>
+        <div class="venue-location">📍 {{ venue.location }}, {{ city.name }}</div>
+        <div class="venue-meta">
+          <span class="venue-category">{{ venue.category }}</span>
+          <span class="venue-score">⭐ {{ venue.ranking_score }}</span>
+        </div>
+      </div>
+      <div class="venue-body">
+        <p class="venue-description">{{ venue.description }}</p>
+        <div class="highlight">
+          <strong>Must-Try:</strong> {{ venue.mustTry }}
+        </div>
+        <div class="tags">
+          {%- for tag in venue.tags %}
+          <span class="tag">{{ tag }}</span>
+          {%- endfor %}
+        </div>
+        {{ venueLinks(venue) }}
+      </div>
+    </div>
+    {%- endfor %}
+    {%- endfor %}
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2026 TRNDIE | Curated weekly with love ☕</p>
+  <p><a href="{{ site.instagram }}">Instagram</a> | <a href="{{ site.tiktok }}">TikTok</a></p>
+</footer>
+
+<script src="/js/filter.js"></script>
