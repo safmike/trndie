@@ -28,9 +28,39 @@
 
 "use strict";
 
-const { listCities, readCity, writeCity }        = require("./lib/cityData");
-const { fetchGoogleTrends, fetchTikTokMentions, MOCK_MODE } = require("./lib/fetchers");
-const { scoreVenue, rankVenues }                 = require("./lib/scorer");
+const { listCities, readCity, writeCity }                    = require("./lib/cityData");
+const { fetchGoogleTrends, fetchTikTokMentions, MOCK_MODE }  = require("./lib/fetchers");
+const { scoreVenue, rankVenues }                             = require("./lib/scorer");
+
+// ── Concurrency helper ────────────────────────────────────────────────────────
+
+/**
+ * Like Promise.all(arr.map(fn)) but limits how many calls run at once.
+ * When limit === Infinity it behaves identically to Promise.all.
+ *
+ * @param {any[]}    arr
+ * @param {number}   limit  max concurrent executions
+ * @param {Function} fn     async (item, index) => result
+ * @returns {Promise<any[]>} results in input order
+ */
+async function mapWithConcurrency(arr, limit, fn) {
+  const results = new Array(arr.length);
+  let next = 0;
+
+  async function worker() {
+    while (next < arr.length) {
+      const i = next++;
+      results[i] = await fn(arr[i], i);
+    }
+  }
+
+  const workers = Array.from(
+    { length: Math.min(limit, arr.length) },
+    worker
+  );
+  await Promise.all(workers);
+  return results;
+}
 
 // ── CLI argument parsing ──────────────────────────────────────────────────────
 
@@ -94,18 +124,17 @@ async function processCity(citySlug, opts) {
     return;
   }
 
-  // ── Score all target venues in parallel ───────────────────────────
-  // Each venue gets two API calls (GT + TikTok) running concurrently,
-  // and all venues are processed concurrently across the city.
-  const scored = await Promise.all(
-    toScore.map(async (venue) => {
-      const signals = await fetchSignals(venue, citySlug);
-      const updates = scoreVenue(venue, signals);
-
-      // Spread updates into a copy — never mutate the original object
-      return { ...venue, ...updates };
-    })
-  );
+  // ── Score all target venues ───────────────────────────────────────
+  // In mock mode: all parallel (fast, no rate-limit risk).
+  // In live mode: max 3 concurrent — Google Trends and Apify both have
+  // rate limits that fire when too many requests land from the same IP
+  // in quick succession.  3 concurrent keeps us well within limits.
+  const CONCURRENCY = MOCK_MODE ? Infinity : 3;
+  const scored = await mapWithConcurrency(toScore, CONCURRENCY, async (venue) => {
+    const signals = await fetchSignals(venue, citySlug);
+    const updates = scoreVenue(venue, signals);
+    return { ...venue, ...updates };
+  });
 
   // ── Rank and trim to top 10 ───────────────────────────────────────
   const top10 = rankVenues(scored, 10);

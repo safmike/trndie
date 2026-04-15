@@ -9,6 +9,10 @@
     "update-trends:city": "node scripts/update-trends.js --city",
     "update-trends:live": "TRENDS_MOCK=false node scripts/update-trends.js"
   },
+  "dependencies": {
+    "apify-client": "^2.9.4",
+    "google-trends-api": "^4.9.2"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0"
   }

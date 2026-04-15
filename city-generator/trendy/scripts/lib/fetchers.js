@@ -3,40 +3,59 @@
  * ─────────────────────────────────────────────────────────────────
  * Retrieves trend signals from external sources.
  *
+ * SOURCES
+ * ───────
+ * 1. Google Trends  — unofficial google-trends-api npm package.
+ *    Free, no auth required.  Returns 0–100 interest score per region.
+ *
+ * 2. TikTok via Apify — clockworks/free-tiktok-scraper actor.
+ *    Requires APIFY_TOKEN env var (free tier: $5/month credit).
+ *    Returns video objects; we use total play count as the signal.
+ *
+ * FALLBACK
+ * ────────
+ * Each signal fails independently.  If a real fetch throws, that
+ * venue's signal falls back to mock for that run only — the other
+ * signal and other venues are unaffected.
+ *
  * MODE
  * ────
- * MOCK (default) — returns deterministic fake data seeded on the
- *   venue name + ISO week, so results are consistent within a week
- *   but change each week.  No API keys or network calls needed.
+ * TRENDS_MOCK=false  → real APIs (requires APIFY_TOKEN for TikTok)
+ * TRENDS_MOCK=true   → mock data (default, no credentials needed)
  *
- * LIVE — routes to the real implementation stubs below.
- *   Set the environment variable  TRENDS_MOCK=false  to enable.
- *
- * PLUGGING IN A REAL API
- * ───────────────────────
- * 1. Install the relevant package (see comments inside each function).
- * 2. Add your credentials to a .env file (never commit this).
- * 3. Uncomment the implementation block.
- * 4. Set TRENDS_MOCK=false when running the script.
+ * The mode is set automatically by the GitHub Actions workflow based
+ * on whether APIFY_TOKEN secret is present.
  */
 
 "use strict";
 
 // ── Mode toggle ───────────────────────────────────────────────────────────────
 
-// Default to mock unless caller explicitly opts out
 const MOCK_MODE = process.env.TRENDS_MOCK !== "false";
 
-// ── Shared helpers ────────────────────────────────────────────────────────────
+// ── Google Trends geo map ─────────────────────────────────────────────────────
+// State-level geo codes give more relevant signals than national "AU".
 
-/**
- * Returns the ISO week number of a given date.
- * Used to make mock scores change weekly while staying stable
- * within the same week (idempotent reruns produce the same scores).
- *
- * @param {Date} date
- * @returns {number} 1–53
- */
+const GEO = {
+  sydney:    "AU-NSW",
+  newcastle: "AU-NSW",
+  melbourne: "AU-VIC",
+  brisbane:  "AU-QLD",
+  goldcoast: "AU-QLD",
+  perth:     "AU-WA",
+  adelaide:  "AU-SA",
+  canberra:  "AU-ACT",
+};
+
+// ── Apify actor config ────────────────────────────────────────────────────────
+
+const TIKTOK_ACTOR   = "clockworks/free-tiktok-scraper";
+const TIKTOK_MAX     = 30;   // videos per search — free-tier friendly
+// Scale: 30 results = fully viral = 1000 "mentions" (scorer's soft cap)
+const TIKTOK_SCALE   = 1000 / TIKTOK_MAX;
+
+// ── Shared mock helpers ───────────────────────────────────────────────────────
+
 function isoWeek(date) {
   const d = new Date(Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()));
   d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
@@ -44,141 +63,136 @@ function isoWeek(date) {
   return Math.ceil(((d - yearStart) / 86400000 + 1) / 7);
 }
 
-/**
- * Deterministic pseudo-random number (0–1) for a given string seed.
- * Based on djb2 hash — not cryptographic, but gives good distribution.
- *
- * @param {string} seed
- * @returns {number} float in [0, 1)
- */
 function seededRandom(seed) {
   let hash = 5381;
   for (let i = 0; i < seed.length; i++) {
     hash = ((hash << 5) + hash) ^ seed.charCodeAt(i);
-    hash = hash >>> 0; // keep it 32-bit unsigned
+    hash = hash >>> 0;
   }
   return (hash % 10000) / 10000;
 }
 
-/**
- * Builds a stable weekly seed string for a venue.
- * Incorporating the year+week means scores shift each Monday.
- */
 function weekSeed(venueName, citySlug) {
   const now  = new Date();
   const week = `${now.getFullYear()}-W${isoWeek(now)}`;
   return `${venueName}::${citySlug}::${week}`;
 }
 
-// ── Mock implementations ──────────────────────────────────────────────────────
-
-/**
- * Mock Google Trends score (0–100).
- *
- * Viral venues start from a higher base so the mock roughly mirrors
- * the real world distribution.  Weekly jitter ensures re-runs on the
- * same Monday return identical numbers (idempotent).
- */
 function mockGoogleTrends(venueName, citySlug, isViral) {
   const base   = isViral ? 58 : 22;
   const spread = isViral ? 30 : 28;
-  const rand   = seededRandom(weekSeed(venueName, citySlug) + "::gt");
-  return Math.min(100, Math.round(base + rand * spread));
+  return Math.min(100, Math.round(base + seededRandom(weekSeed(venueName, citySlug) + "::gt") * spread));
 }
 
-/**
- * Mock TikTok mention count.
- *
- * Uses a separate seed suffix ("::tt") so the TikTok and Google Trends
- * values for the same venue are independent from each other.
- */
 function mockTikTokMentions(venueName, citySlug, isViral) {
   const base   = isViral ? 700 : 100;
   const spread = isViral ? 600 : 250;
-  const rand   = seededRandom(weekSeed(venueName, citySlug) + "::tt");
-  return Math.round(base + rand * spread);
+  return Math.round(base + seededRandom(weekSeed(venueName, citySlug) + "::tt") * spread);
 }
 
-// ── Real API stubs ────────────────────────────────────────────────────────────
-// Each function below mirrors the signature of its mock counterpart.
-// Uncomment and fill in once you have credentials.
+// ── Real: Google Trends ───────────────────────────────────────────────────────
 
 /**
- * Fetch interest score from Google Trends (0–100).
+ * Fetches a Google Trends interest score (0–100) for the venue name
+ * within the appropriate Australian state over the past 7 days.
  *
- * Package:  npm install google-trends-api
- * Docs:     https://www.npmjs.com/package/google-trends-api
- *
- * Note: google-trends-api is unofficial. For reliable production use,
- * consider SerpAPI (https://serpapi.com) which has a paid tier.
+ * Uses the unofficial google-trends-api package.  Falls back to mock
+ * automatically via withFallback() if Google blocks the request.
  */
 async function realGoogleTrends(venueName, citySlug) {
-  // const googleTrends = require("google-trends-api");
-  //
-  // const sevenDaysAgo = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
-  // const result = await googleTrends.interestOverTime({
-  //   keyword:   `${venueName} ${citySlug}`,
-  //   startTime: sevenDaysAgo,
-  //   geo:       "AU",
-  // });
-  //
-  // const timeline = JSON.parse(result).default.timelineData;
-  // const latest   = timeline[timeline.length - 1]?.value[0] ?? 0;
-  // return latest; // already 0–100
-  throw new Error(
-    'Google Trends API not configured. Set TRENDS_MOCK=false only after uncommenting the implementation.'
-  );
+  const googleTrends = require("google-trends-api");
+  const geo = GEO[citySlug] || "AU";
+  const startTime = new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+
+  const raw = await googleTrends.interestOverTime({
+    keyword:   venueName,
+    startTime,
+    geo,
+  });
+
+  const timeline = JSON.parse(raw).default?.timelineData;
+  if (!timeline || timeline.length === 0) return 0;
+
+  // Average last 3 points — smooths out single-day spikes
+  const recent = timeline.slice(-3);
+  const avg = recent.reduce((sum, p) => sum + (p.value?.[0] ?? 0), 0) / recent.length;
+  return Math.round(avg); // 0–100
 }
 
+// ── Real: TikTok via Apify ────────────────────────────────────────────────────
+
 /**
- * Fetch TikTok mention count via Apify's free TikTok scraper.
+ * Searches TikTok for the venue name + city via Apify's free TikTok
+ * scraper and returns a scaled mention count.
  *
- * Package:  npm install apify-client
- * Env var:  APIFY_TOKEN  (from https://console.apify.com)
- * Docs:     https://apify.com/clockworks/free-tiktok-scraper
+ * Metric: number of videos returned (capped at TIKTOK_MAX) × TIKTOK_SCALE.
+ * More videos in search results = more content creation = higher trending signal.
+ * 30 results (max) → 1000 "mentions" (scorer's soft cap = peak score).
+ *
+ * Requires APIFY_TOKEN env var.
  */
-async function realTikTokMentions(venueName) {
-  // const { ApifyClient } = require("apify-client");
-  //
-  // const client = new ApifyClient({ token: process.env.APIFY_TOKEN });
-  // const run    = await client.actor("clockworks/free-tiktok-scraper").call({
-  //   keywords:       [venueName],
-  //   resultsPerPage: 30,
-  // });
-  //
-  // const { items } = await client.dataset(run.defaultDatasetId).listItems();
-  // return items.length;
-  throw new Error(
-    'TikTok (Apify) not configured. Add APIFY_TOKEN to your .env and uncomment the implementation.'
+async function realTikTokMentions(venueName, citySlug) {
+  const { ApifyClient } = require("apify-client");
+  const client = new ApifyClient({ token: process.env.APIFY_TOKEN });
+
+  const run = await client.actor(TIKTOK_ACTOR).call(
+    {
+      searchQueries:   [`${venueName} ${citySlug}`],
+      maxItems:        TIKTOK_MAX,
+      proxyCountryCode: "AU",
+    },
+    { waitSecs: 180 } // wait up to 3 minutes for the actor run
   );
+
+  const { items } = await client.dataset(run.defaultDatasetId).listItems();
+  return Math.round(Math.min(items.length, TIKTOK_MAX) * TIKTOK_SCALE);
+}
+
+// ── Fallback wrapper ──────────────────────────────────────────────────────────
+
+/**
+ * Runs realFn; if it throws, logs a warning and returns mockFn() instead.
+ * This makes each signal fail independently — one bad API call does not
+ * abort the venue or the city.
+ */
+async function withFallback(realFn, mockFn, label) {
+  try {
+    return await realFn();
+  } catch (err) {
+    const msg = String(err.message || err).slice(0, 100);
+    console.warn(`     ⚠️  ${label} — real API failed (${msg}), using mock`);
+    return mockFn();
+  }
 }
 
 // ── Public API ────────────────────────────────────────────────────────────────
 
 /**
  * Returns a Google Trends interest score (0–100) for a venue this week.
- *
- * @param {string}  venueName
- * @param {string}  citySlug
- * @param {boolean} isViral   — hint used by mock to set realistic base
- * @returns {Promise<number>}
+ * Uses real Google Trends in live mode, mock otherwise.
+ * Falls back to mock automatically if the real call fails.
  */
 async function fetchGoogleTrends(venueName, citySlug, isViral) {
   if (MOCK_MODE) return mockGoogleTrends(venueName, citySlug, isViral);
-  return realGoogleTrends(venueName, citySlug);
+  return withFallback(
+    ()  => realGoogleTrends(venueName, citySlug),
+    ()  => mockGoogleTrends(venueName, citySlug, isViral),
+    `Google Trends [${venueName}]`
+  );
 }
 
 /**
- * Returns a TikTok mention count for a venue this week.
- *
- * @param {string}  venueName
- * @param {string}  citySlug
- * @param {boolean} isViral
- * @returns {Promise<number>}
+ * Returns a scaled TikTok mention count (0–1000) for a venue this week.
+ * Uses Apify in live mode, mock otherwise.
+ * Falls back to mock automatically if the real call fails.
  */
 async function fetchTikTokMentions(venueName, citySlug, isViral) {
   if (MOCK_MODE) return mockTikTokMentions(venueName, citySlug, isViral);
-  return realTikTokMentions(venueName);
+  return withFallback(
+    ()  => realTikTokMentions(venueName, citySlug),
+    ()  => mockTikTokMentions(venueName, citySlug, isViral),
+    `TikTok/Apify [${venueName}]`
+  );
 }
 
 module.exports = { fetchGoogleTrends, fetchTikTokMentions, MOCK_MODE };

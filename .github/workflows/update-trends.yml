@@ -16,11 +16,6 @@ on:
         description: "Limit to a category (e.g. cafe). Leave blank for all."
         required: false
         default: ""
-      live_apis:
-        description: "Use live APIs instead of mock data"
-        type: boolean
-        required: false
-        default: false
 
 jobs:
   update:
@@ -54,8 +49,9 @@ jobs:
       - name: Run trend update
         working-directory: city-generator/trendy
         env:
-          # Use live APIs only when APIFY_TOKEN is set AND live_apis input is true
-          TRENDS_MOCK: ${{ (github.event.inputs.live_apis == 'true' && secrets.APIFY_TOKEN != '') && 'false' || 'true' }}
+          # Use real APIs whenever APIFY_TOKEN secret is set.
+          # Falls back to mock automatically if the secret is absent.
+          TRENDS_MOCK: ${{ secrets.APIFY_TOKEN != '' && 'false' || 'true' }}
           APIFY_TOKEN: ${{ secrets.APIFY_TOKEN }}
         run: |
           ARGS=""
