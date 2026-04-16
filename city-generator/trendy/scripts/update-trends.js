@@ -65,6 +65,18 @@ function parseArgs() {
   return opts;
 }
 
+// ── Retention policy ─────────────────────────────────────────────────────────
+//
+// Venues not rediscovered this week are only kept if they clear both gates:
+//   1. Score floor  — must have ranking_score >= RETENTION_MIN_SCORE
+//      (with INERTIA=0.50 a retained venue scores score×0.5 next week,
+//       so anything below ~4 will fall out after one grace week anyway)
+//   2. Count cap    — only the top MAX_RETAINED by score are kept
+//      (guarantees at least half the top-10 comes from live discovery)
+//
+const RETENTION_MIN_SCORE = 4.0;
+const MAX_RETAINED        = 5;
+
 // ── Venue pool builder ────────────────────────────────────────────────────────
 
 /**
@@ -122,12 +134,20 @@ function buildVenuePool(candidates, existingVenues, citySlug, items) {
     }
   }
 
-  // Retain existing venues not rediscovered this week.
-  // They score with tiktokMentions = 0 but carry 50 % INERTIA.
-  for (const venue of existingVenues) {
-    if (!usedExisting.has(venue.name)) {
-      pool.push({ ...venue, _tiktokMentions: 0 });
-    }
+  // Retain existing venues not rediscovered this week — subject to both gates.
+  const notRediscovered = existingVenues.filter((v) => !usedExisting.has(v.name));
+  const aboveFloor      = notRediscovered.filter((v) => v.ranking_score >= RETENTION_MIN_SCORE);
+  const retained        = aboveFloor
+    .sort((a, b) => b.ranking_score - a.ranking_score)
+    .slice(0, MAX_RETAINED);
+
+  for (const venue of retained) {
+    pool.push({ ...venue, _tiktokMentions: 0 });
+  }
+
+  const droppedFromRetention = notRediscovered.length - retained.length;
+  if (droppedFromRetention > 0) {
+    console.log(`     ↩  ${retained.length} retained  · ${droppedFromRetention} dropped (weak/excess signals)`);
   }
 
   return pool;
