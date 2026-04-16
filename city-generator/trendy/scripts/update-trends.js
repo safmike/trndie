@@ -20,17 +20,20 @@
  * HOW IT WORKS
  * ────────────
  *   1. Read every city JSON file (or just the requested one)
- *   2. For each venue, fetch Google Trends + TikTok signals in parallel
- *   3. Blend signals into a new ranking_score via scorer.js
- *   4. Sort by new score, keep top 10 per city
- *   5. Write the updated city JSON back to disk
+ *   2. Run ONE Apify actor call per city with discovery queries
+ *      (e.g. "best cafes melbourne", "#melbournecafe", …)
+ *   3. Map returned videos → per-venue mention counts
+ *   4. Fetch Google Trends per-venue (state-level geo, 7-day window)
+ *   5. Blend signals into a new ranking_score via scorer.js
+ *   6. Sort by new score, keep top 10 per city
+ *   7. Write the updated city JSON back to disk
  */
 
 "use strict";
 
-const { listCities, readCity, writeCity }                    = require("./lib/cityData");
-const { fetchGoogleTrends, fetchTikTokMentions, MOCK_MODE }  = require("./lib/fetchers");
-const { scoreVenue, rankVenues }                             = require("./lib/scorer");
+const { listCities, readCity, writeCity }                                      = require("./lib/cityData");
+const { fetchCityTikTokSignals, fetchGoogleTrends, getTikTokFromMap, MOCK_MODE } = require("./lib/fetchers");
+const { scoreVenue, rankVenues }                                                 = require("./lib/scorer");
 
 // ── Concurrency helper ────────────────────────────────────────────────────────
 
@@ -83,17 +86,19 @@ function parseArgs() {
 // ── Trend signal fetching ─────────────────────────────────────────────────────
 
 /**
- * Fetches both trend signals for a single venue concurrently.
- * Using Promise.all means we don't wait for Google before starting TikTok.
+ * Fetches signals for a single venue.
+ * TikTok is supplied pre-fetched (from the city-level map) rather than
+ * triggering a separate Apify run per venue.
  *
- * @param {object} venue
- * @param {string} citySlug
+ * @param {object}           venue
+ * @param {string}           citySlug
+ * @param {Map|null}         tiktokMap  pre-fetched city TikTok data, or null for mock
  * @returns {Promise<{ googleTrends: number, tiktokMentions: number }>}
  */
-async function fetchSignals(venue, citySlug) {
+async function fetchSignals(venue, citySlug, tiktokMap) {
   const [googleTrends, tiktokMentions] = await Promise.all([
-    fetchGoogleTrends(venue.name,    citySlug, venue.viral),
-    fetchTikTokMentions(venue.name,  citySlug, venue.viral),
+    fetchGoogleTrends(venue.name, citySlug, venue.viral),
+    Promise.resolve(getTikTokFromMap(tiktokMap, venue.name, citySlug, venue.viral)),
   ]);
   return { googleTrends, tiktokMentions };
 }
@@ -124,14 +129,19 @@ async function processCity(citySlug, opts) {
     return;
   }
 
+  // ── Pre-fetch TikTok signals for the whole city (1 Apify run) ─────
+  // In live mode this runs one actor call covering all discovery queries
+  // for this city, returning a Map<venueName, scaledCount>.
+  // In mock mode (or on failure) returns null → per-venue mock fallback.
+  const tiktokMap = await fetchCityTikTokSignals(citySlug, toScore);
+
   // ── Score all target venues ───────────────────────────────────────
-  // In mock mode: all parallel (fast, no rate-limit risk).
-  // In live mode: max 3 concurrent — Google Trends and Apify both have
-  // rate limits that fire when too many requests land from the same IP
-  // in quick succession.  3 concurrent keeps us well within limits.
+  // TikTok is now pre-fetched — only Google Trends runs per-venue.
+  // In live mode: cap at 3 concurrent to respect Google Trends rate limits.
+  // In mock mode: all parallel (no rate-limit risk).
   const CONCURRENCY = MOCK_MODE ? Infinity : 3;
   const scored = await mapWithConcurrency(toScore, CONCURRENCY, async (venue) => {
-    const signals = await fetchSignals(venue, citySlug);
+    const signals = await fetchSignals(venue, citySlug, tiktokMap);
     const updates = scoreVenue(venue, signals);
     return { ...venue, ...updates };
   });
