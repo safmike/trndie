@@ -2,21 +2,39 @@
 layout: base.njk
 title: "TRNDIE | Discover What's Trending in Your City"
 ---
+<script>window.TRNDIE_TRENDING = {{ cities | trendingData | safe }};</script>
+
 <div class="home-wrapper">
   <div class="logo">trndie ✦</div>
-  <div class="tagline">Discover what's trending in your city.</div>
+  <p class="tagline">Discover what's trending in your city.</p>
+  <p class="tagline-sub">Updated weekly with real social signals.</p>
 
-  <div class="category-section">
-    <div class="city-grid">
-      {%- for city in cities %}
-      <a href="/{{ city.slug }}/" class="city-link">
-        <div class="city-card">
-          <div class="city-name">{{ city.name }}</div>
-          <div class="city-category">Cafes &amp; Venues</div>
-        </div>
-      </a>
-      {%- endfor %}
+  <div class="home-layout">
+    <div class="home-main">
+      <div class="city-grid">
+        {%- for city in cities %}
+        <a href="/{{ city.slug }}/" class="city-link">
+          <div class="city-card">
+            <div class="city-name">{{ city.name }}</div>
+            <div class="city-category">Cafes &amp; Venues</div>
+          </div>
+        </a>
+        {%- endfor %}
+      </div>
     </div>
+
+    <aside class="home-sidebar">
+      <div class="trending-panel">
+        <div class="trending-label">Trending Now</div>
+        <div class="trending-city"></div>
+        <div class="trending-venues"></div>
+        <div class="trending-dots">
+          {%- for city in cities %}
+          <span class="trending-dot"></span>
+          {%- endfor %}
+        </div>
+      </div>
+    </aside>
   </div>
 
   <div class="home-meta">
@@ -27,3 +45,5 @@ title: "TRNDIE | Discover What's Trending in Your City"
     </div>
   </div>
 </div>
+
+<script src="/js/home.js"></script>
