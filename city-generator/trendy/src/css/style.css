@@ -779,35 +779,8 @@ footer a:hover {
     order: -1;           /* show trending panel above city grid on mobile */
   }
 
-  .trending-panel {
-    /* horizontal strip on mobile — venues in a row */
-    padding: 18px 16px 14px;
-  }
-
   .trending-venues {
-    flex-direction: row;
-    gap: 0;
     min-height: auto;
-  }
-
-  .trending-venue {
-    flex: 1;
-    flex-direction: column;
-    gap: 4px;
-    padding: 0 10px;
-    border-right: 1px solid var(--dark-3);
-  }
-
-  .trending-venue:last-child {
-    border-right: none;
-  }
-
-  .trending-venue:first-child {
-    padding-left: 0;
-  }
-
-  .trending-rank {
-    display: none;
   }
 
   .city-grid {
