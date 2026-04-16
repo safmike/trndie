@@ -45,56 +45,6 @@
   },
   "venues": [
     {
-      "name": "CRUMB",
-      "city": "newcastle",
-      "category": "bakery",
-      "ranking_score": 8.7,
-      "location": "Lambton, 113 Elder St",
-      "area": "Inner",
-      "vibe": "bakery",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Newcastle's new cult favourite with lines forming before opening. Creative croissants, gooey cookies, and matcha offerings that have TikTok obsessed. The most requested spot in comments for good reason.",
-      "mustTry": "Creative croissants, gooey cookies, hot or iced matcha, freshly baked pastries (arrive early!)",
-      "tags": [
-        "New Cult Fave",
-        "Pastry Heaven",
-        "Lines Daily"
-      ],
-      "trend_signals": {
-        "google_trends": 79,
-        "tiktok_mentions": 1158,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "La Bae",
-      "city": "newcastle",
-      "category": "cafe",
-      "ranking_score": 8.5,
-      "location": "Hunter Street Mall, CBD",
-      "area": "CBD",
-      "vibe": "asian",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Newcastle's newest TikTok sensation that opened in April 2025. Asian-inspired cafe kicking off everyone's croffle cravings with a mixture of savoury and sweets. The strawberry matcha is so good you'll need a second cup for takeaway.",
-      "mustTry": "Croffles (croissant-waffles), viral strawberry matcha, Asian fusion breakfast dishes, hot & cold drink selection",
-      "tags": [
-        "TikTok Famous",
-        "Croffle Craze",
-        "2025 Opening"
-      ],
-      "trend_signals": {
-        "google_trends": 69,
-        "tiktok_mentions": 952,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
       "name": "Liebe European Pastries",
       "city": "newcastle",
       "category": "bakery",
@@ -116,14 +66,14 @@
       "trend_signals": {
         "google_trends": 74,
         "tiktok_mentions": 1039,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Bootleg Bakery",
       "city": "newcastle",
       "category": "bakery",
-      "ranking_score": 8.3,
+      "ranking_score": 7.9,
       "location": "Merewether, 10 James St",
       "area": "Coastal",
       "vibe": "bakery",
@@ -141,18 +91,18 @@
       "trend_signals": {
         "google_trends": 68,
         "tiktok_mentions": 858,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Outdo Espresso",
       "city": "newcastle",
       "category": "cafe",
-      "ranking_score": 7.8,
+      "ranking_score": 7.2,
       "location": "Newcastle West, 464 King St",
       "area": "West",
       "vibe": "toasties",
-      "viral": true,
+      "viral": false,
       "instagram_url": "https://www.instagram.com/outdo.espresso/",
       "tiktok_url": null,
       "website_url": null,
@@ -166,39 +116,64 @@
       "trend_signals": {
         "google_trends": 62,
         "tiktok_mentions": 737,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
-      "name": "Two Bobs Bakery & Pantry",
+      "name": "CRUMB",
       "city": "newcastle",
       "category": "bakery",
-      "ranking_score": 5,
-      "location": "CBD, 277 Hunter St",
-      "area": "CBD",
+      "ranking_score": 6.8,
+      "location": "Lambton, 113 Elder St",
+      "area": "Inner",
       "vibe": "bakery",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "Following the success of their Nelson Bay store, Two Bobs brought their signature sourdough and decadent pastries to Newcastle. Known for sourdough-based creations that have locals lining up.",
-      "mustTry": "Sour cherry & pistachio scroll (must-try!), signature sourdough, sourdough-based pastries (Wed-Sun)",
+      "description": "Newcastle's new cult favourite with lines forming before opening. Creative croissants, gooey cookies, and matcha offerings that have TikTok obsessed. The most requested spot in comments for good reason.",
+      "mustTry": "Creative croissants, gooey cookies, hot or iced matcha, freshly baked pastries (arrive early!)",
       "tags": [
-        "Sourdough Kings",
-        "Nelson Bay Success",
-        "Pastry Masters"
+        "New Cult Fave",
+        "Pastry Heaven",
+        "Lines Daily"
       ],
       "trend_signals": {
-        "google_trends": 43,
-        "tiktok_mentions": 271,
-        "last_scored": "2026-04-15"
+        "google_trends": 79,
+        "tiktok_mentions": 33,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "La Bae",
+      "city": "newcastle",
+      "category": "cafe",
+      "ranking_score": 6.4,
+      "location": "Hunter Street Mall, CBD",
+      "area": "CBD",
+      "vibe": "asian",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Newcastle's newest TikTok sensation that opened in April 2025. Asian-inspired cafe kicking off everyone's croffle cravings with a mixture of savoury and sweets. The strawberry matcha is so good you'll need a second cup for takeaway.",
+      "mustTry": "Croffles (croissant-waffles), viral strawberry matcha, Asian fusion breakfast dishes, hot & cold drink selection",
+      "tags": [
+        "TikTok Famous",
+        "Croffle Craze",
+        "2025 Opening"
+      ],
+      "trend_signals": {
+        "google_trends": 69,
+        "tiktok_mentions": 33,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Praise Joe",
       "city": "newcastle",
       "category": "cafe",
-      "ranking_score": 5,
+      "ranking_score": 4.5,
       "location": "Tighes Hill, 8/20 Elizabeth St",
       "area": "Inner",
       "vibe": "toasties",
@@ -216,14 +191,39 @@
       "trend_signals": {
         "google_trends": 47,
         "tiktok_mentions": 317,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Two Bobs Bakery & Pantry",
+      "city": "newcastle",
+      "category": "bakery",
+      "ranking_score": 4.3,
+      "location": "CBD, 277 Hunter St",
+      "area": "CBD",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Following the success of their Nelson Bay store, Two Bobs brought their signature sourdough and decadent pastries to Newcastle. Known for sourdough-based creations that have locals lining up.",
+      "mustTry": "Sour cherry & pistachio scroll (must-try!), signature sourdough, sourdough-based pastries (Wed-Sun)",
+      "tags": [
+        "Sourdough Kings",
+        "Nelson Bay Success",
+        "Pastry Masters"
+      ],
+      "trend_signals": {
+        "google_trends": 43,
+        "tiktok_mentions": 271,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Momo Wholefood Co",
       "city": "newcastle",
       "category": "cafe",
-      "ranking_score": 4.7,
+      "ranking_score": 4.3,
       "location": "Newcastle CBD",
       "area": "CBD",
       "vibe": "asian",
@@ -241,39 +241,14 @@
       "trend_signals": {
         "google_trends": 45,
         "tiktok_mentions": 291,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "Sonny & Betty",
-      "city": "newcastle",
-      "category": "bakery",
-      "ranking_score": 4.1,
-      "location": "Mayfield, 122 Maitland Rd",
-      "area": "Inner",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Created by the team behind Cakeboi, this cosy spot offers a daily-changing selection of warm, freshly baked pastries that are seriously addictive. Each visit brings new delights to try.",
-      "mustTry": "Daily-changing pastries, warm freshly baked goods, specialty coffee (Tue-Sun)",
-      "tags": [
-        "Cakeboi Team",
-        "Daily Specials",
-        "Pastry Paradise"
-      ],
-      "trend_signals": {
-        "google_trends": 29,
-        "tiktok_mentions": 156,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Monte",
       "city": "newcastle",
       "category": "cafe",
-      "ranking_score": 4,
+      "ranking_score": 3.3,
       "location": "Newcastle CBD",
       "area": "CBD",
       "vibe": "toasties",
@@ -291,7 +266,32 @@
       "trend_signals": {
         "google_trends": 31,
         "tiktok_mentions": 175,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Sonny & Betty",
+      "city": "newcastle",
+      "category": "bakery",
+      "ranking_score": 3.2,
+      "location": "Mayfield, 122 Maitland Rd",
+      "area": "Inner",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Created by the team behind Cakeboi, this cosy spot offers a daily-changing selection of warm, freshly baked pastries that are seriously addictive. Each visit brings new delights to try.",
+      "mustTry": "Daily-changing pastries, warm freshly baked goods, specialty coffee (Tue-Sun)",
+      "tags": [
+        "Cakeboi Team",
+        "Daily Specials",
+        "Pastry Paradise"
+      ],
+      "trend_signals": {
+        "google_trends": 29,
+        "tiktok_mentions": 156,
+        "last_scored": "2026-04-16"
       }
     }
   ]

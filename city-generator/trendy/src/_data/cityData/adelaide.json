@@ -45,114 +45,14 @@
   },
   "venues": [
     {
-      "name": "Cha-no-wa",
-      "city": "adelaide",
-      "category": "cafe",
-      "ranking_score": 8.9,
-      "location": "King William Street, CBD",
-      "area": "CBD",
-      "vibe": "matcha",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Japanese brand's first Australian outpost. Premium matcha sourced from Kyoto during the global matcha shortage — Adelaide's love affair with matcha reached fever pitch here.",
-      "mustTry": "Kyoto-sourced matcha and hojicha, matcha frappes and sundaes, Japanese cakes and ice-cream",
-      "tags": [
-        "Kyoto Matcha",
-        "Japanese Chain",
-        "Ex-Muni Chef"
-      ],
-      "trend_signals": {
-        "google_trends": 77,
-        "tiktok_mentions": 1105,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "Homeboy 2.0",
-      "city": "adelaide",
-      "category": "cafe",
-      "ranking_score": 8.7,
-      "location": "North Terrace, CBD",
-      "area": "CBD",
-      "vibe": "bakery",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Teen entrepreneur Tom Oswald's viral Hahndorf cafe reborn in the CBD. Mum's famous cinnamon scrolls had a moment in 2025 — and they're topnotch.",
-      "mustTry": "Mum's famous cinnamon scrolls, focaccia toasties, Homeboy coffee blend",
-      "tags": [
-        "Viral Teen",
-        "Scroll Moment",
-        "Renew Adelaide"
-      ],
-      "trend_signals": {
-        "google_trends": 77,
-        "tiktok_mentions": 1097,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "Pompom",
-      "city": "adelaide",
-      "category": "cafe",
-      "ranking_score": 8.6,
-      "location": "Forestville",
-      "area": "Inner Suburbs",
-      "vibe": "greek",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "All-day diner from Whistle & Flute crew built on fluffy flatbread fired in a Gozney oven. Riding Forestville's redevelopment wave.",
-      "mustTry": "The Pompom (chicken, roast capsicum, feta, tabouli), Cypriot sausage pita, whipped ricotta with spicy salami",
-      "tags": [
-        "Gozney Oven",
-        "Greek-Italian",
-        "Rising Suburb"
-      ],
-      "trend_signals": {
-        "google_trends": 79,
-        "tiktok_mentions": 1096,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "Meli",
-      "city": "adelaide",
-      "category": "cafe",
-      "ranking_score": 8.4,
-      "location": "Various Locations",
-      "area": "Inner Suburbs",
-      "vibe": "greek",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Greek beach bar energy comes to Adelaide. Golden loukoumades in four flavors, Greek-inspired sandos, and desserts that make your sweet tooth dance.",
-      "mustTry": "Loukoumades (traditional, pistachio, biscoff, Nutella), Melizana, Saganaki Sando, Galaktoboureko Cups, Pistachio Baklava Freddo",
-      "tags": [
-        "Greek Vibes",
-        "Island Energy",
-        "Cousins Project"
-      ],
-      "trend_signals": {
-        "google_trends": 71,
-        "tiktok_mentions": 931,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
       "name": "Jenny's Bakery",
       "city": "adelaide",
       "category": "bakery",
-      "ranking_score": 8.4,
+      "ranking_score": 6.8,
       "location": "Keswick",
       "area": "Inner Suburbs",
       "vibe": "bakery",
-      "viral": true,
+      "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
@@ -164,8 +64,58 @@
         "Cult Following"
       ],
       "trend_signals": {
-        "google_trends": 78,
+        "google_trends": 19,
         "tiktok_mentions": 1082,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "Pompom",
+      "city": "adelaide",
+      "category": "cafe",
+      "ranking_score": 6.3,
+      "location": "Forestville",
+      "area": "Inner Suburbs",
+      "vibe": "greek",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "All-day diner from Whistle & Flute crew built on fluffy flatbread fired in a Gozney oven. Riding Forestville's redevelopment wave.",
+      "mustTry": "The Pompom (chicken, roast capsicum, feta, tabouli), Cypriot sausage pita, whipped ricotta with spicy salami",
+      "tags": [
+        "Gozney Oven",
+        "Greek-Italian",
+        "Rising Suburb"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 1096,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "Meli",
+      "city": "adelaide",
+      "category": "cafe",
+      "ranking_score": 6.1,
+      "location": "Various Locations",
+      "area": "Inner Suburbs",
+      "vibe": "greek",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Greek beach bar energy comes to Adelaide. Golden loukoumades in four flavors, Greek-inspired sandos, and desserts that make your sweet tooth dance.",
+      "mustTry": "Loukoumades (traditional, pistachio, biscoff, Nutella), Melizana, Saganaki Sando, Galaktoboureko Cups, Pistachio Baklava Freddo",
+      "tags": [
+        "Greek Vibes",
+        "Island Energy",
+        "Cousins Project"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 931,
         "last_scored": "2026-04-15"
       }
     },
@@ -173,11 +123,11 @@
       "name": "Yuku dō",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 7.8,
+      "ranking_score": 5.5,
       "location": "CBD",
       "area": "CBD",
       "vibe": "matcha",
-      "viral": true,
+      "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
@@ -189,33 +139,8 @@
         "Fusion Done Right"
       ],
       "trend_signals": {
-        "google_trends": 63,
+        "google_trends": 0,
         "tiktok_mentions": 810,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "Gathers & Grounds",
-      "city": "adelaide",
-      "category": "cafe",
-      "ranking_score": 5.1,
-      "location": "Glenelg",
-      "area": "Beachside",
-      "vibe": "matcha",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Asian fusion twist on this sunny corner cafe. Specializing in Hojicha, matcha, Vietnamese coffee — made its mark in just weeks.",
-      "mustTry": "Chicken Katsu sando, Ube hotcakes, Vietnamese coffee, matcha drinks",
-      "tags": [
-        "Asian Fusion",
-        "Beachside",
-        "New Kid"
-      ],
-      "trend_signals": {
-        "google_trends": 49,
-        "tiktok_mentions": 326,
         "last_scored": "2026-04-15"
       }
     },
@@ -239,33 +164,58 @@
         "Italian Staples"
       ],
       "trend_signals": {
-        "google_trends": 47,
+        "google_trends": 62,
         "tiktok_mentions": 342,
         "last_scored": "2026-04-15"
       }
     },
     {
-      "name": "Arlos",
+      "name": "Cha-no-wa",
       "city": "adelaide",
       "category": "cafe",
       "ranking_score": 4.5,
-      "location": "King William St & Grenfell St",
+      "location": "King William Street, CBD",
+      "area": "CBD",
+      "vibe": "matcha",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Japanese brand's first Australian outpost. Premium matcha sourced from Kyoto during the global matcha shortage — Adelaide's love affair with matcha reached fever pitch here.",
+      "mustTry": "Kyoto-sourced matcha and hojicha, matcha frappes and sundaes, Japanese cakes and ice-cream",
+      "tags": [
+        "Kyoto Matcha",
+        "Japanese Chain",
+        "Ex-Muni Chef"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 33,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "Homeboy 2.0",
+      "city": "adelaide",
+      "category": "cafe",
+      "ranking_score": 4.4,
+      "location": "North Terrace, CBD",
       "area": "CBD",
       "vibe": "bakery",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "Fresh face in CBD's heart, taking over Cibo corner spot. Next-level coffee, fresh bites, and cinnamon scrolls that are dreamy AF.",
-      "mustTry": "Cinnamon scrolls (original, blueberry, frangelico), specialty coffee, fresh sandos",
+      "description": "Teen entrepreneur Tom Oswald's viral Hahndorf cafe reborn in the CBD. Mum's famous cinnamon scrolls had a moment in 2025 — and they're topnotch.",
+      "mustTry": "Mum's famous cinnamon scrolls, focaccia toasties, Homeboy coffee blend",
       "tags": [
-        "CBD Workers",
-        "Corner Cafe",
-        "Scroll Varieties"
+        "Viral Teen",
+        "Scroll Moment",
+        "Renew Adelaide"
       ],
       "trend_signals": {
-        "google_trends": 32,
-        "tiktok_mentions": 175,
+        "google_trends": 0,
+        "tiktok_mentions": 33,
         "last_scored": "2026-04-15"
       }
     },
@@ -273,7 +223,7 @@
       "name": "Bora",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 3.9,
+      "ranking_score": 4,
       "location": "Jetty Street, Grange",
       "area": "Beachside",
       "vibe": "bakery",
@@ -289,8 +239,58 @@
         "Alma Brazil"
       ],
       "trend_signals": {
-        "google_trends": 26,
+        "google_trends": 59,
         "tiktok_mentions": 145,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "Gathers & Grounds",
+      "city": "adelaide",
+      "category": "cafe",
+      "ranking_score": 3.2,
+      "location": "Glenelg",
+      "area": "Beachside",
+      "vibe": "matcha",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Asian fusion twist on this sunny corner cafe. Specializing in Hojicha, matcha, Vietnamese coffee — made its mark in just weeks.",
+      "mustTry": "Chicken Katsu sando, Ube hotcakes, Vietnamese coffee, matcha drinks",
+      "tags": [
+        "Asian Fusion",
+        "Beachside",
+        "New Kid"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 326,
+        "last_scored": "2026-04-15"
+      }
+    },
+    {
+      "name": "Arlos",
+      "city": "adelaide",
+      "category": "cafe",
+      "ranking_score": 2.6,
+      "location": "King William St & Grenfell St",
+      "area": "CBD",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Fresh face in CBD's heart, taking over Cibo corner spot. Next-level coffee, fresh bites, and cinnamon scrolls that are dreamy AF.",
+      "mustTry": "Cinnamon scrolls (original, blueberry, frangelico), specialty coffee, fresh sandos",
+      "tags": [
+        "CBD Workers",
+        "Corner Cafe",
+        "Scroll Varieties"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 175,
         "last_scored": "2026-04-15"
       }
     }

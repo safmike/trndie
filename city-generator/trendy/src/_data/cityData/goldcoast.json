@@ -45,31 +45,6 @@
   },
   "venues": [
     {
-      "name": "Bobby Bang's",
-      "city": "goldcoast",
-      "category": "cafe",
-      "ranking_score": 9,
-      "location": "The Oxley, Nobby Beach",
-      "area": "Central",
-      "vibe": "matcha",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Just opened December 2024 and already blowing up on social media. The Gold Coast's number one matcha spot with hand-whisked ceremonial matcha and Asian-inspired breakfast magic.",
-      "mustTry": "Miso caramel matcha, strawberry matcha, pork katsu sando, breakfast ramen with crispy bacon, Bobby's Benny with Korean fried chicken",
-      "tags": [
-        "Asian Fusion",
-        "Matcha Gods",
-        "Just Opened"
-      ],
-      "trend_signals": {
-        "google_trends": 81,
-        "tiktok_mentions": 1124,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
       "name": "The Bread Social",
       "city": "goldcoast",
       "category": "bakery",
@@ -91,39 +66,14 @@
       "trend_signals": {
         "google_trends": 83,
         "tiktok_mentions": 1225,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "Piada Co",
-      "city": "goldcoast",
-      "category": "cafe",
-      "ranking_score": 8.8,
-      "location": "Burleigh Heads",
-      "area": "Burleigh",
-      "vibe": "aesthetic",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "TikTok went crazy for their pistachio frappe and it's still the talk of the town. Italian-style piadinas (flatbreads) that hit different, perfect post-beach fuel.",
-      "mustTry": "TikTok-famous pistachio frappe, Italian piadinas with fresh ingredients, iced coffee creations",
-      "tags": [
-        "Italian Vibes",
-        "FYP Legend",
-        "Beach Life"
-      ],
-      "trend_signals": {
-        "google_trends": 80,
-        "tiktok_mentions": 1172,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "The Holliday Coffee",
       "city": "goldcoast",
       "category": "cafe",
-      "ranking_score": 8.4,
+      "ranking_score": 7.9,
       "location": "Nobby Beach, Wave St",
       "area": "Central",
       "vibe": "matcha",
@@ -141,14 +91,14 @@
       "trend_signals": {
         "google_trends": 67,
         "tiktok_mentions": 857,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Paddock Bakery",
       "city": "goldcoast",
       "category": "bakery",
-      "ranking_score": 8.2,
+      "ranking_score": 7.7,
       "location": "Miami",
       "area": "Southern",
       "vibe": "bakery",
@@ -166,18 +116,18 @@
       "trend_signals": {
         "google_trends": 64,
         "tiktok_mentions": 848,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Dayo",
       "city": "goldcoast",
       "category": "cafe",
-      "ranking_score": 7.9,
+      "ranking_score": 7.4,
       "location": "Riverfront (Late 2025 Opening)",
       "area": "Central",
       "vibe": "asian",
-      "viral": true,
+      "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
@@ -191,39 +141,64 @@
       "trend_signals": {
         "google_trends": 61,
         "tiktok_mentions": 801,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
-      "name": "Bam Bam Bakehouse",
+      "name": "Bobby Bang's",
       "city": "goldcoast",
-      "category": "bakery",
-      "ranking_score": 4.8,
-      "location": "Mermaid Beach",
+      "category": "cafe",
+      "ranking_score": 7,
+      "location": "The Oxley, Nobby Beach",
       "area": "Central",
-      "vibe": "bakery",
+      "vibe": "matcha",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "One of the best breakfast spots on the Gold Coast in 2025. Sleek interior that's among the Coast's most beautiful cafes, with flavoursome dishes and home-baked treats that are pure magic.",
-      "mustTry": "Jalapeño & queso fresco sweetcorn fritters, nasi goreng breakfast, Nutella choux bombs (non-negotiable), pastries & dessert pots",
+      "description": "Just opened December 2024 and already blowing up on social media. The Gold Coast's number one matcha spot with hand-whisked ceremonial matcha and Asian-inspired breakfast magic.",
+      "mustTry": "Miso caramel matcha, strawberry matcha, pork katsu sando, breakfast ramen with crispy bacon, Bobby's Benny with Korean fried chicken",
       "tags": [
-        "Sleek Design",
-        "Choux Bombs",
-        "Breakfast Goals"
+        "Asian Fusion",
+        "Matcha Gods",
+        "Just Opened"
       ],
       "trend_signals": {
-        "google_trends": 38,
-        "tiktok_mentions": 228,
-        "last_scored": "2026-04-15"
+        "google_trends": 81,
+        "tiktok_mentions": 33,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Piada Co",
+      "city": "goldcoast",
+      "category": "cafe",
+      "ranking_score": 6.9,
+      "location": "Burleigh Heads",
+      "area": "Burleigh",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "TikTok went crazy for their pistachio frappe and it's still the talk of the town. Italian-style piadinas (flatbreads) that hit different, perfect post-beach fuel.",
+      "mustTry": "TikTok-famous pistachio frappe, Italian piadinas with fresh ingredients, iced coffee creations",
+      "tags": [
+        "Italian Vibes",
+        "FYP Legend",
+        "Beach Life"
+      ],
+      "trend_signals": {
+        "google_trends": 80,
+        "tiktok_mentions": 33,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Refinery Coffee",
       "city": "goldcoast",
       "category": "cafe",
-      "ranking_score": 4.7,
+      "ranking_score": 4.1,
       "location": "Currumbin",
       "area": "Southern",
       "vibe": "matcha",
@@ -241,39 +216,39 @@
       "trend_signals": {
         "google_trends": 41,
         "tiktok_mentions": 280,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
-      "name": "Cheek Café",
+      "name": "Bam Bam Bakehouse",
       "city": "goldcoast",
-      "category": "cafe",
-      "ranking_score": 4.5,
-      "location": "Southport",
-      "area": "Northern",
-      "vibe": "aesthetic",
+      "category": "bakery",
+      "ranking_score": 4,
+      "location": "Mermaid Beach",
+      "area": "Central",
+      "vibe": "bakery",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "Arrived in 2025 with big flavours, bold personality and peachy-good vibes. This sunny corner spot blends playful design with seriously good coffee and wholesome ingredients inspired by Greek, Italian and Aussie roots.",
-      "mustTry": "Greek-inspired breakfast dishes, Italian-Australian fusion plates, specialty coffee, wholesome brunch bowls",
+      "description": "One of the best breakfast spots on the Gold Coast in 2025. Sleek interior that's among the Coast's most beautiful cafes, with flavoursome dishes and home-baked treats that are pure magic.",
+      "mustTry": "Jalapeño & queso fresco sweetcorn fritters, nasi goreng breakfast, Nutella choux bombs (non-negotiable), pastries & dessert pots",
       "tags": [
-        "Peachy Vibes",
-        "2025 Opening",
-        "Mediterranean"
+        "Sleek Design",
+        "Choux Bombs",
+        "Breakfast Goals"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 185,
-        "last_scored": "2026-04-15"
+        "google_trends": 38,
+        "tiktok_mentions": 228,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Mohr Cafe and Deli",
       "city": "goldcoast",
       "category": "deli",
-      "ranking_score": 4.5,
+      "ranking_score": 4,
       "location": "Burleigh Heads, Hibiscus Haven",
       "area": "Burleigh",
       "vibe": "aesthetic",
@@ -291,7 +266,32 @@
       "trend_signals": {
         "google_trends": 40,
         "tiktok_mentions": 279,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Cheek Café",
+      "city": "goldcoast",
+      "category": "cafe",
+      "ranking_score": 3.6,
+      "location": "Southport",
+      "area": "Northern",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Arrived in 2025 with big flavours, bold personality and peachy-good vibes. This sunny corner spot blends playful design with seriously good coffee and wholesome ingredients inspired by Greek, Italian and Aussie roots.",
+      "mustTry": "Greek-inspired breakfast dishes, Italian-Australian fusion plates, specialty coffee, wholesome brunch bowls",
+      "tags": [
+        "Peachy Vibes",
+        "2025 Opening",
+        "Mediterranean"
+      ],
+      "trend_signals": {
+        "google_trends": 33,
+        "tiktok_mentions": 185,
+        "last_scored": "2026-04-16"
       }
     }
   ]

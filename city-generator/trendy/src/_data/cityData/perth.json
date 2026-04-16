@@ -45,60 +45,10 @@
   },
   "venues": [
     {
-      "name": "North 54",
-      "city": "perth",
-      "category": "cafe",
-      "ranking_score": 9.1,
-      "location": "Leederville",
-      "area": "Inner Suburbs",
-      "vibe": "vietnamese",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Modern twist on classic banh mi from rising star Bac Pham (ex-Rockpool, Petition). 10-inch house-recipe rolls with playful fillings taking Perth by storm.",
-      "mustTry": "Grilled lamb meatballs with cumin labneh, son-in-law eggs with tamarind mayo, roast pork with fermented red bean",
-      "tags": [
-        "Vietnamese Fusion",
-        "10-Inch Rolls",
-        "Hospo Legend"
-      ],
-      "trend_signals": {
-        "google_trends": 85,
-        "tiktok_mentions": 1266,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "Be Free",
-      "city": "perth",
-      "category": "cafe",
-      "ranking_score": 8.5,
-      "location": "Perth City Farm, East Perth",
-      "area": "CBD",
-      "vibe": "organic",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Cult Subiaco favorite relocated to greener pastures. Surrounded by community gardens, the produce-driven ethos feels more relevant than ever.",
-      "mustTry": "Umami-forward miso mushrooms, wild-caught smoked salmon crumpets, Saturday farmer's market-sourced dishes",
-      "tags": [
-        "Organic",
-        "City Farm",
-        "Eco-Conscious"
-      ],
-      "trend_signals": {
-        "google_trends": 79,
-        "tiktok_mentions": 1085,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
       "name": "Smidge Bakery",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 8.3,
+      "ranking_score": 8,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -116,14 +66,14 @@
       "trend_signals": {
         "google_trends": 70,
         "tiktok_mentions": 899,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Side Piece Deli",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 8.2,
+      "ranking_score": 7.9,
       "location": "Swanbourne",
       "area": "Coastal",
       "vibe": "deli",
@@ -141,18 +91,43 @@
       "trend_signals": {
         "google_trends": 67,
         "tiktok_mentions": 900,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "North 54",
+      "city": "perth",
+      "category": "cafe",
+      "ranking_score": 7.2,
+      "location": "Leederville",
+      "area": "Inner Suburbs",
+      "vibe": "vietnamese",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Modern twist on classic banh mi from rising star Bac Pham (ex-Rockpool, Petition). 10-inch house-recipe rolls with playful fillings taking Perth by storm.",
+      "mustTry": "Grilled lamb meatballs with cumin labneh, son-in-law eggs with tamarind mayo, roast pork with fermented red bean",
+      "tags": [
+        "Vietnamese Fusion",
+        "10-Inch Rolls",
+        "Hospo Legend"
+      ],
+      "trend_signals": {
+        "google_trends": 85,
+        "tiktok_mentions": 33,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Lovers Deli & Canteen",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 7.5,
+      "ranking_score": 6.9,
       "location": "White Gum Valley",
       "area": "Coastal",
       "vibe": "deli",
-      "viral": true,
+      "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
@@ -166,39 +141,64 @@
       "trend_signals": {
         "google_trends": 58,
         "tiktok_mentions": 720,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
-      "name": "The Cool Room",
+      "name": "Be Free",
       "city": "perth",
-      "category": "bakery",
-      "ranking_score": 5.1,
-      "location": "East Fremantle",
-      "area": "Fremantle",
-      "vibe": "bakery",
+      "category": "cafe",
+      "ranking_score": 6.7,
+      "location": "Perth City Farm, East Perth",
+      "area": "CBD",
+      "vibe": "organic",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "Beloved Freo spot now in the hands of chef Drew Dawson and baker Charlotte Beeton. Short, curated menu that delights without overwhelming.",
-      "mustTry": "Scandi breakfast plates, house-baked treats, chef-driven seasonal menu",
+      "description": "Cult Subiaco favorite relocated to greener pastures. Surrounded by community gardens, the produce-driven ethos feels more relevant than ever.",
+      "mustTry": "Umami-forward miso mushrooms, wild-caught smoked salmon crumpets, Saturday farmer's market-sourced dishes",
       "tags": [
-        "Neighbourhood Soul",
-        "Fremantle",
-        "Chef-Driven"
+        "Organic",
+        "City Farm",
+        "Eco-Conscious"
       ],
       "trend_signals": {
-        "google_trends": 47,
-        "tiktok_mentions": 333,
-        "last_scored": "2026-04-15"
+        "google_trends": 79,
+        "tiktok_mentions": 33,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Bert's",
+      "city": "perth",
+      "category": "cafe",
+      "ranking_score": 5.2,
+      "location": "City Beach",
+      "area": "Coastal",
+      "vibe": "organic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Day-to-night diner in the old Odyssea space. Laid-back coastal look with contemporary edge, creating the perfect \"local\" vibe for beachgoers.",
+      "mustTry": "Breakfast classics (acai, breakfast burger, pancakes, eggs Benedict), oysters, prawn and lobster plates",
+      "tags": [
+        "Beach Dining",
+        "All-Day",
+        "Coastal Vibes"
+      ],
+      "trend_signals": {
+        "google_trends": 72,
+        "tiktok_mentions": 317,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Angelwood Pies",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 5.1,
+      "ranking_score": 4.7,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -216,39 +216,39 @@
       "trend_signals": {
         "google_trends": 50,
         "tiktok_mentions": 337,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
-      "name": "Bert's",
+      "name": "The Cool Room",
       "city": "perth",
-      "category": "cafe",
-      "ranking_score": 4.8,
-      "location": "City Beach",
-      "area": "Coastal",
-      "vibe": "organic",
+      "category": "bakery",
+      "ranking_score": 4.6,
+      "location": "East Fremantle",
+      "area": "Fremantle",
+      "vibe": "bakery",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "Day-to-night diner in the old Odyssea space. Laid-back coastal look with contemporary edge, creating the perfect \"local\" vibe for beachgoers.",
-      "mustTry": "Breakfast classics (acai, breakfast burger, pancakes, eggs Benedict), oysters, prawn and lobster plates",
+      "description": "Beloved Freo spot now in the hands of chef Drew Dawson and baker Charlotte Beeton. Short, curated menu that delights without overwhelming.",
+      "mustTry": "Scandi breakfast plates, house-baked treats, chef-driven seasonal menu",
       "tags": [
-        "Beach Dining",
-        "All-Day",
-        "Coastal Vibes"
+        "Neighbourhood Soul",
+        "Fremantle",
+        "Chef-Driven"
       ],
       "trend_signals": {
-        "google_trends": 48,
-        "tiktok_mentions": 317,
-        "last_scored": "2026-04-15"
+        "google_trends": 47,
+        "tiktok_mentions": 333,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Earl's",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 4.1,
+      "ranking_score": 3.5,
       "location": "Mount Hawthorn",
       "area": "Inner Suburbs",
       "vibe": "deli",
@@ -266,14 +266,14 @@
       "trend_signals": {
         "google_trends": 33,
         "tiktok_mentions": 215,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Banh Mi & Chè",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 3.9,
+      "ranking_score": 3,
       "location": "Carlisle",
       "area": "Inner Suburbs",
       "vibe": "vietnamese",
@@ -291,7 +291,7 @@
       "trend_signals": {
         "google_trends": 25,
         "tiktok_mentions": 141,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     }
   ]

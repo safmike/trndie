@@ -45,31 +45,6 @@
   },
   "venues": [
     {
-      "name": "In Btwn",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 8.8,
-      "location": "CBD (Near Queen Vic Market)",
-      "area": "CBD",
-      "vibe": "specialty",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Somewhere between a cafe and a bar, this TRNDIE spot serves creative drinks with unique twists. Warm orange lighting draws you in from the laneway.",
-      "mustTry": "In Btwn Dirty ($6.50) with orange zest, Einspanner ($9.50), Matcha Einspanner",
-      "tags": [
-        "Cafe-Bar Hybrid",
-        "Creative Drinks",
-        "Buzzing Vibe"
-      ],
-      "trend_signals": {
-        "google_trends": 85,
-        "tiktok_mentions": 1226,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
       "name": "The Butter Room",
       "city": "melbourne",
       "category": "bakery",
@@ -91,39 +66,14 @@
       "trend_signals": {
         "google_trends": 78,
         "tiktok_mentions": 1068,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "Juniper",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 8.6,
-      "location": "South Melbourne, 269 Coventry St",
-      "area": "South",
-      "vibe": "specialty",
-      "viral": true,
-      "instagram_url": "https://www.instagram.com/junipercafe.au/",
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Home of Melbourne's most talked-about coffee frappe. Inspired by Greek frappes, this TikTok sensation is rich, creamy, and perfectly sweet.",
-      "mustTry": "Famous coffee frappe, chicken roll with crispy skin",
-      "tags": [
-        "TikTok Famous",
-        "Greek Frappe",
-        "Coffee Goals"
-      ],
-      "trend_signals": {
-        "google_trends": 71,
-        "tiktok_mentions": 972,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Groove",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 8.4,
+      "ranking_score": 8.2,
       "location": "Abbotsford, 17 Lithgow St",
       "area": "Inner East",
       "vibe": "vietnamese",
@@ -141,64 +91,14 @@
       "trend_signals": {
         "google_trends": 71,
         "tiktok_mentions": 923,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "The Glass Den",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 8,
-      "location": "Coburg",
-      "area": "Inner North",
-      "vibe": "aesthetic",
-      "viral": true,
-      "instagram_url": "https://www.instagram.com/theglassden_/",
-      "tiktok_url": "https://www.tiktok.com/@theglassden_",
-      "website_url": null,
-      "description": "The most aesthetic cafe in Melbourne right now. Their brunch dishes are as beautiful as they are delicious, and the space is absolutely Instagram-worthy.",
-      "mustTry": "Viral Italian hot chocolate, new brunch dishes, strawberry matcha latte",
-      "tags": [
-        "TikTok Famous",
-        "Aesthetic AF",
-        "Brunch Goals"
-      ],
-      "trend_signals": {
-        "google_trends": 60,
-        "tiktok_mentions": 787,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "Bottari",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 7.8,
-      "location": "CBD, Elizabeth Street",
-      "area": "CBD",
-      "vibe": "korean",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Seoul's TRNDIE cafe culture comes to Melbourne. Famous for viral doughnut drinks that are as chic as they are delicious, crowned with caramel cream \"doughnuts\".",
-      "mustTry": "Doughnut lattes (chai cinnamon, chocolate, matcha), Kkwabaegi (twisted Korean donuts), Jasmine Cloud",
-      "tags": [
-        "Korean Vibes",
-        "Doughnut Drinks",
-        "Instagram Gold"
-      ],
-      "trend_signals": {
-        "google_trends": 60,
-        "tiktok_mentions": 762,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Nimbo",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 7.7,
+      "ranking_score": 7.6,
       "location": "CBD (Hidden Alleyway)",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -216,14 +116,114 @@
       "trend_signals": {
         "google_trends": 68,
         "tiktok_mentions": 866,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "The Glass Den",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 7.4,
+      "location": "Coburg",
+      "area": "Inner North",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": "https://www.instagram.com/theglassden_/",
+      "tiktok_url": "https://www.tiktok.com/@theglassden_",
+      "website_url": null,
+      "description": "The most aesthetic cafe in Melbourne right now. Their brunch dishes are as beautiful as they are delicious, and the space is absolutely Instagram-worthy.",
+      "mustTry": "Viral Italian hot chocolate, new brunch dishes, strawberry matcha latte",
+      "tags": [
+        "TikTok Famous",
+        "Aesthetic AF",
+        "Brunch Goals"
+      ],
+      "trend_signals": {
+        "google_trends": 60,
+        "tiktok_mentions": 787,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Bottari",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 7.2,
+      "location": "CBD, Elizabeth Street",
+      "area": "CBD",
+      "vibe": "korean",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Seoul's TRNDIE cafe culture comes to Melbourne. Famous for viral doughnut drinks that are as chic as they are delicious, crowned with caramel cream \"doughnuts\".",
+      "mustTry": "Doughnut lattes (chai cinnamon, chocolate, matcha), Kkwabaegi (twisted Korean donuts), Jasmine Cloud",
+      "tags": [
+        "Korean Vibes",
+        "Doughnut Drinks",
+        "Instagram Gold"
+      ],
+      "trend_signals": {
+        "google_trends": 60,
+        "tiktok_mentions": 762,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "In Btwn",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 7,
+      "location": "CBD (Near Queen Vic Market)",
+      "area": "CBD",
+      "vibe": "specialty",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Somewhere between a cafe and a bar, this TRNDIE spot serves creative drinks with unique twists. Warm orange lighting draws you in from the laneway.",
+      "mustTry": "In Btwn Dirty ($6.50) with orange zest, Einspanner ($9.50), Matcha Einspanner",
+      "tags": [
+        "Cafe-Bar Hybrid",
+        "Creative Drinks",
+        "Buzzing Vibe"
+      ],
+      "trend_signals": {
+        "google_trends": 85,
+        "tiktok_mentions": 33,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Juniper",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 6.5,
+      "location": "South Melbourne, 269 Coventry St",
+      "area": "South",
+      "vibe": "specialty",
+      "viral": false,
+      "instagram_url": "https://www.instagram.com/junipercafe.au/",
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Home of Melbourne's most talked-about coffee frappe. Inspired by Greek frappes, this TikTok sensation is rich, creamy, and perfectly sweet.",
+      "mustTry": "Famous coffee frappe, chicken roll with crispy skin",
+      "tags": [
+        "TikTok Famous",
+        "Greek Frappe",
+        "Coffee Goals"
+      ],
+      "trend_signals": {
+        "google_trends": 71,
+        "tiktok_mentions": 33,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Assembly",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 5,
+      "ranking_score": 4.4,
       "location": "North Melbourne",
       "area": "Inner North",
       "vibe": "specialty",
@@ -241,14 +241,14 @@
       "trend_signals": {
         "google_trends": 43,
         "tiktok_mentions": 300,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Standing Room",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 4.4,
+      "ranking_score": 3.7,
       "location": "Carlton / Fitzroy North",
       "area": "Inner North",
       "vibe": "specialty",
@@ -266,14 +266,14 @@
       "trend_signals": {
         "google_trends": 34,
         "tiktok_mentions": 225,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Trbl",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 4.1,
+      "ranking_score": 3.4,
       "location": "Presgrave Place (Laneway)",
       "area": "CBD",
       "vibe": "korean",
@@ -291,7 +291,7 @@
       "trend_signals": {
         "google_trends": 32,
         "tiktok_mentions": 177,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     }
   ]
