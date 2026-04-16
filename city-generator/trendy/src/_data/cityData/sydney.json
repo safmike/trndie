@@ -49,6 +49,56 @@
   },
   "venues": [
     {
+      "name": "Up South",
+      "city": "sydney",
+      "category": "cafe",
+      "ranking_score": 8.9,
+      "location": "Bondi Beach",
+      "area": "Bondi",
+      "vibe": "aesthetic",
+      "viral": true,
+      "instagram_url": "https://www.instagram.com/upsouthcafe/",
+      "tiktok_url": "https://www.tiktok.com/@upsouthcafe",
+      "website_url": null,
+      "description": "TikTok's favorite Sydney cafe of 2024! The matcha croissants and pistachio treats here have broken the internet. Lines wrap around the block, but everyone agrees it's worth the wait.",
+      "mustTry": "Iced Strawberry Matcha, Iced Pistachio Matcha, matcha croissant, pistachio croissant (the crookie!)",
+      "tags": [
+        "TikTok Legend",
+        "Matcha Heaven",
+        "Queue-Worthy"
+      ],
+      "trend_signals": {
+        "google_trends": 79,
+        "tiktok_mentions": 1111,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Speedos Cafe",
+      "city": "sydney",
+      "category": "cafe",
+      "ranking_score": 8.7,
+      "location": "North Bondi",
+      "area": "Bondi",
+      "vibe": "waterfront",
+      "viral": true,
+      "instagram_url": "https://www.instagram.com/speedoscafe/",
+      "tiktok_url": null,
+      "website_url": "https://speedoscafe.com.au/",
+      "description": "Sydney's most famous cafe at Bondi Beach. The tiramisu latte is the best in Sydney, and the viral egg sandwich keeps people coming back.",
+      "mustTry": "Tiramisu latte ($12), acai bowl ($21), viral egg sandwich ($20)",
+      "tags": [
+        "Beach Views",
+        "Iconic Location",
+        "Instagram Famous"
+      ],
+      "trend_signals": {
+        "google_trends": 76,
+        "tiktok_mentions": 1043,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
       "name": "Cafe Margaret",
       "city": "sydney",
       "category": "cafe",
@@ -70,6 +120,31 @@
       "trend_signals": {
         "google_trends": 74,
         "tiktok_mentions": 984,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Chubby Cubby",
+      "city": "sydney",
+      "category": "cafe",
+      "ranking_score": 8.2,
+      "location": "Haymarket, George St",
+      "area": "CBD",
+      "vibe": "aesthetic",
+      "viral": true,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "The best matcha in Sydney according to viral TikToks. About to drop a whole new matcha and shokupan menu that's already generating massive hype.",
+      "mustTry": "Signature matcha drinks, Japanese shokupan (milk bread), matcha latte",
+      "tags": [
+        "Matcha King",
+        "Japanese Vibes",
+        "Viral Videos"
+      ],
+      "trend_signals": {
+        "google_trends": 70,
+        "tiktok_mentions": 962,
         "last_scored": "2026-04-16"
       }
     },
@@ -99,89 +174,14 @@
       }
     },
     {
-      "name": "Chubby Cubby",
-      "city": "sydney",
-      "category": "cafe",
-      "ranking_score": 7.6,
-      "location": "Haymarket, George St",
-      "area": "CBD",
-      "vibe": "aesthetic",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "The best matcha in Sydney according to viral TikToks. About to drop a whole new matcha and shokupan menu that's already generating massive hype.",
-      "mustTry": "Signature matcha drinks, Japanese shokupan (milk bread), matcha latte",
-      "tags": [
-        "Matcha King",
-        "Japanese Vibes",
-        "Viral Videos"
-      ],
-      "trend_signals": {
-        "google_trends": 52,
-        "tiktok_mentions": 962,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Up South",
-      "city": "sydney",
-      "category": "cafe",
-      "ranking_score": 7.4,
-      "location": "Bondi Beach",
-      "area": "Bondi",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": "https://www.instagram.com/upsouthcafe/",
-      "tiktok_url": "https://www.tiktok.com/@upsouthcafe",
-      "website_url": null,
-      "description": "TikTok's favorite Sydney cafe of 2024! The matcha croissants and pistachio treats here have broken the internet. Lines wrap around the block, but everyone agrees it's worth the wait.",
-      "mustTry": "Iced Strawberry Matcha, Iced Pistachio Matcha, matcha croissant, pistachio croissant (the crookie!)",
-      "tags": [
-        "TikTok Legend",
-        "Matcha Heaven",
-        "Queue-Worthy"
-      ],
-      "trend_signals": {
-        "google_trends": 92,
-        "tiktok_mentions": 33,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Speedos Cafe",
-      "city": "sydney",
-      "category": "cafe",
-      "ranking_score": 6.4,
-      "location": "North Bondi",
-      "area": "Bondi",
-      "vibe": "waterfront",
-      "viral": false,
-      "instagram_url": "https://www.instagram.com/speedoscafe/",
-      "tiktok_url": null,
-      "website_url": "https://speedoscafe.com.au/",
-      "description": "Sydney's most famous cafe at Bondi Beach. The tiramisu latte is the best in Sydney, and the viral egg sandwich keeps people coming back.",
-      "mustTry": "Tiramisu latte ($12), acai bowl ($21), viral egg sandwich ($20)",
-      "tags": [
-        "Beach Views",
-        "Iconic Location",
-        "Instagram Famous"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 1043,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
       "name": "Baking 101",
       "city": "sydney",
       "category": "bakery",
-      "ranking_score": 6.1,
+      "ranking_score": 7.7,
       "location": "Stanmore",
       "area": "Inner West",
       "vibe": "bakery",
-      "viral": false,
+      "viral": true,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
@@ -194,7 +194,7 @@
       ],
       "trend_signals": {
         "google_trends": 68,
-        "tiktok_mentions": 33,
+        "tiktok_mentions": 871,
         "last_scored": "2026-04-16"
       }
     },
@@ -202,7 +202,7 @@
       "name": "Bote",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 5,
+      "ranking_score": 4.2,
       "location": "Manly Boatshed",
       "area": "North",
       "vibe": "waterfront",
@@ -218,7 +218,7 @@
         "Northern Beaches"
       ],
       "trend_signals": {
-        "google_trends": 69,
+        "google_trends": 43,
         "tiktok_mentions": 274,
         "last_scored": "2026-04-16"
       }
@@ -277,7 +277,7 @@
       "name": "Cafe Cressida",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 2.4,
+      "ranking_score": 3.2,
       "location": "Queens Court, Paddington",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -293,7 +293,7 @@
         "Chef-Driven"
       ],
       "trend_signals": {
-        "google_trends": 0,
+        "google_trends": 27,
         "tiktok_mentions": 129,
         "last_scored": "2026-04-16"
       }

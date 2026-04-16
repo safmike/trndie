@@ -8,10 +8,12 @@ layout: base.njk
 ---
 {%- from "venue-links.njk" import venueLinks %}
 <div class="hero">
-  <a href="/" class="back-link">← TRNDIE</a>
-  <h1>☕ {{ city.name }}'s Hottest Venues</h1>
-  <p>The spots everyone's talking about on TikTok &amp; Instagram right now. Updated weekly with the freshest {{ city.name }} buzz.</p>
-  <div class="badge">🔥 Last updated: {{ city.updatedAt }}</div>
+  <div class="hero-inner">
+    <a href="/" class="back-link">← trndie</a>
+    <h1>Trending in {{ city.name }}</h1>
+    <p class="hero-sub">The spots everyone's talking about on TikTok and Instagram right now. Updated weekly.</p>
+    <div class="badge">Last updated: {{ city.updatedAt }}</div>
+  </div>
 </div>
 
 <div class="container">
@@ -49,14 +51,18 @@ layout: base.njk
     {%- for venue in city.venues | sort(true, false, "ranking_score") %}
     <div class="venue-card" data-area="{{ venue.area }}" data-vibe="{{ venue.vibe }}" data-category="{{ venue.category }}" data-city="{{ venue.city }}">
       <div class="venue-header">
-        {%- if venue.viral %}
-        <div class="viral-badge">🔥 VIRAL</div>
-        {%- endif %}
+        <div class="venue-header-top">
+          {%- if venue.viral %}
+          <span class="viral-badge">Viral</span>
+          {%- else %}
+          <span></span>
+          {%- endif %}
+          <span class="venue-score">{{ venue.ranking_score }}</span>
+        </div>
         <h2>{{ venue.name }}</h2>
-        <div class="venue-location">📍 {{ venue.location }}</div>
+        <div class="venue-location">{{ venue.location }}</div>
         <div class="venue-meta">
           <span class="venue-category">{{ venue.category }}</span>
-          <span class="venue-score">⭐ {{ venue.ranking_score }}</span>
         </div>
       </div>
       <div class="venue-body">
@@ -77,7 +83,7 @@ layout: base.njk
 </div>
 
 <section class="cta-section">
-  <h2>Never Miss a Trending Venue 🔥</h2>
+  <h2>Never miss a trending venue</h2>
   <p>Get weekly updates on {{ city.name }}'s hottest new spots delivered to your inbox</p>
   <form action="{{ site.newsletterUrl }}" method="post" target="_blank">
     <input type="email" name="email" placeholder="Your email address" required>
@@ -87,8 +93,8 @@ layout: base.njk
 </section>
 
 <footer>
-  <p>&copy; 2026 TRNDIE | Curated weekly with love ☕</p>
-  <p><a href="{{ site.instagram }}">Instagram</a> | <a href="{{ site.tiktok }}">TikTok</a></p>
+  <p>&copy; 2026 trndie</p>
+  <p><a href="{{ site.instagram }}">Instagram</a> · <a href="{{ site.tiktok }}">TikTok</a></p>
 </footer>
 
 <script src="/js/filter.js"></script>
