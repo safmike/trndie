@@ -66,10 +66,14 @@ layout: base.njk
         </div>
       </div>
       <div class="venue-body">
+        {%- if venue.description %}
         <p class="venue-description">{{ venue.description }}</p>
+        {%- endif %}
+        {%- if venue.mustTry %}
         <div class="highlight">
           <strong>Must-Try:</strong> {{ venue.mustTry }}
         </div>
+        {%- endif %}
         <div class="tags">
           {%- for tag in venue.tags %}
           <span class="tag">{{ tag }}</span>

@@ -201,51 +201,49 @@ async function withFallback(realFn, mockFn, label) {
 // ── Real: TikTok city prefetch ────────────────────────────────────────────────
 
 /**
- * Runs one Apify actor call for the entire city, fetching videos from
- * multiple discovery queries.  Returns a Map of venue name → scaled
- * TikTok mention count (0–1000, compatible with scorer.js).
+ * Runs one Apify actor call for the entire city and returns the raw video
+ * items alongside a mention map for any known venues passed in.
  *
- * Call once per city before scoring the venue loop — vastly more
- * efficient than one actor run per venue.
+ * Returning raw items allows the discovery engine (extractor.js) to find
+ * new venues that aren't yet in the city JSON.  The mentionMap covers the
+ * retained/existing venue path so the scorer still works for both cases.
  *
  * @param {string}   citySlug  e.g. "melbourne"
- * @param {object[]} venues    venue objects for this city
- * @returns {Promise<Map<string, number>>}  venueName → scaledCount
+ * @param {string[]} categories  unique category strings for query generation
+ * @param {object[]} knownVenues existing venue objects (may be empty)
+ * @returns {Promise<{ items: object[], mentionMap: Map<string,number> }>}
  */
-async function prefetchCityTikTok(citySlug, venues) {
+async function prefetchCityTikTok(citySlug, categories, knownVenues) {
   const { ApifyClient } = require("apify-client");
   const client = new ApifyClient({ token: process.env.APIFY_TOKEN });
 
-  const categories = [...new Set(venues.map((v) => v.category))];
-  const queries    = generateCityQueries(citySlug, categories);
-
+  const queries = generateCityQueries(citySlug, categories);
   console.log(`     🔍 TikTok: ${queries.length} queries → 1 actor run`);
 
   const run = await client.actor(TIKTOK_ACTOR).call(
     {
       searchQueries:    queries,
-      maxItems:         TIKTOK_MAX_EACH,  // per query
+      maxItems:         TIKTOK_MAX_EACH,
       proxyCountryCode: "AU",
     },
-    { waitSecs: 300 }  // up to 5 minutes for multi-query runs
+    { waitSecs: 300 }
   );
 
   const { items } = await client.dataset(run.defaultDatasetId).listItems();
   console.log(`     📦 ${items.length} videos fetched`);
 
-  // Map each venue to its mention count across all fetched videos
+  // Build mention map for known venues (used by the retained-venue scoring path)
   const mentionMap = new Map();
-  for (const venue of venues) {
+  for (const venue of (knownVenues || [])) {
     const raw    = countMentions(items, venue.name);
     const scaled = Math.round(Math.min(1000, raw * MENTION_SCALE));
     mentionMap.set(venue.name, scaled);
-
     if (raw > 0) {
       console.log(`        ↳ ${venue.name}: ${raw} mention${raw !== 1 ? "s" : ""} → ${scaled}`);
     }
   }
 
-  return mentionMap;
+  return { items, mentionMap };
 }
 
 // ── Real: Google Trends ───────────────────────────────────────────────────────
@@ -272,17 +270,21 @@ async function realGoogleTrends(venueName, citySlug) {
 // ── Public API ────────────────────────────────────────────────────────────────
 
 /**
- * Pre-fetches TikTok signals for an entire city in one Apify actor run.
- * Returns Map<venueName, scaledMentionCount> or null in mock mode.
+ * Fetches TikTok videos for a city and returns { items, mentionMap }.
  *
- * Call this once at the top of processCity() before the venue loop.
- * If it fails, returns null — the caller should fall back to per-venue mock.
+ * In mock mode returns null — callers fall back to per-venue mock signals.
+ * On live failure returns null — same fallback.
+ *
+ * @param {string}   citySlug
+ * @param {string[]} categories   unique category strings for query building
+ * @param {object[]} knownVenues  existing venue objects for mention mapping
+ * @returns {Promise<{ items: object[], mentionMap: Map<string,number> } | null>}
  */
-async function fetchCityTikTokSignals(citySlug, venues) {
+async function fetchCityTikTokSignals(citySlug, categories, knownVenues) {
   if (MOCK_MODE) return null;
   return withFallback(
-    ()  => prefetchCityTikTok(citySlug, venues),
-    ()  => null,   // null → caller uses mock per venue
+    ()  => prefetchCityTikTok(citySlug, categories, knownVenues),
+    ()  => null,
     `TikTok prefetch [${citySlug}]`
   );
 }
@@ -313,6 +315,8 @@ module.exports = {
   fetchCityTikTokSignals,
   fetchGoogleTrends,
   getTikTokFromMap,
+  countMentions,        // used by update-trends for retained-venue path
   generateCityQueries,  // exported for testing
+  MENTION_SCALE,        // exported so callers can scale raw mention counts
   MOCK_MODE,
 };
