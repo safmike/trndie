@@ -45,10 +45,35 @@
   },
   "venues": [
     {
+      "name": "Semi Semi",
+      "city": "brisbane",
+      "category": "cafe",
+      "ranking_score": 6.4,
+      "location": "Newstead",
+      "area": "Inner North",
+      "vibe": "asian",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Brisbane's bingsu breakthrough. Korean shaved ice desserts finally get the spotlight they deserve beyond Sunnybank.",
+      "mustTry": "Taro and black sesame bingsu, Earl Grey and Thai tea varieties, plant-based coconut mango chocolate",
+      "tags": [
+        "Korean Desserts",
+        "Bingsu Specialists",
+        "Customizable Toppings"
+      ],
+      "trend_signals": {
+        "google_trends": 96,
+        "tiktok_mentions": 308,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
       "name": "Idle",
       "city": "brisbane",
       "category": "bakery",
-      "ranking_score": 6.7,
+      "ranking_score": 6.2,
       "location": "New Farm",
       "area": "Inner North",
       "vibe": "bakery",
@@ -64,16 +89,41 @@
         "Market Section"
       ],
       "trend_signals": {
-        "google_trends": 86,
-        "tiktok_mentions": 33,
-        "last_scored": "2026-04-15"
+        "google_trends": 85,
+        "tiktok_mentions": 166,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Coffee Anthology",
+      "city": "brisbane",
+      "category": "cafe",
+      "ranking_score": 4,
+      "location": "CBD",
+      "area": "CBD",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Named 8th best coffee shop in the world in 2025. Multi-roaster approach with Mecca coffee, pastries from Fika, cookies from Butter Boy.",
+      "mustTry": "Rotating coffee roasts matched to brewing methods, caramelised banana rice pudding, pandan waffles, croissant eggs benedict",
+      "tags": [
+        "World's 8th Best",
+        "Multi-Roaster",
+        "Industrial Chic"
+      ],
+      "trend_signals": {
+        "google_trends": 28,
+        "tiktok_mentions": 333,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Cafe Disco",
       "city": "brisbane",
       "category": "cafe",
-      "ranking_score": 6.3,
+      "ranking_score": 3.7,
       "location": "West End",
       "area": "Inner West",
       "vibe": "asian",
@@ -90,15 +140,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 1165,
-        "last_scored": "2026-04-15"
+        "tiktok_mentions": 294,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Alby's",
       "city": "brisbane",
       "category": "cafe",
-      "ranking_score": 6,
+      "ranking_score": 3.4,
       "location": "Wavell Heights",
       "area": "Inner North",
       "vibe": "aesthetic",
@@ -115,15 +165,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 965,
-        "last_scored": "2026-04-15"
+        "tiktok_mentions": 210,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Landing Bakery",
       "city": "brisbane",
       "category": "bakery",
-      "ranking_score": 5.9,
+      "ranking_score": 3.3,
       "location": "Scarborough",
       "area": "Bayside",
       "vibe": "bakery",
@@ -140,40 +190,40 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 887,
-        "last_scored": "2026-04-15"
+        "tiktok_mentions": 178,
+        "last_scored": "2026-04-16"
       }
     },
     {
-      "name": "Semi Semi",
+      "name": "Speed Dial",
       "city": "brisbane",
       "category": "cafe",
-      "ranking_score": 5.8,
-      "location": "Newstead",
+      "ranking_score": 3.2,
+      "location": "Newstead (Bunnings Carpark)",
       "area": "Inner North",
-      "vibe": "asian",
+      "vibe": "aesthetic",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "Brisbane's bingsu breakthrough. Korean shaved ice desserts finally get the spotlight they deserve beyond Sunnybank.",
-      "mustTry": "Taro and black sesame bingsu, Earl Grey and Thai tea varieties, plant-based coconut mango chocolate",
+      "description": "One of Brisbane's tiniest and best new cafes, operating from a 30sqm shipping container. Yes, it's in the Bunnings carpark.",
+      "mustTry": "Coffee Supreme's South blend, toasties with marinara dipping sauce, daily batch brew, matcha drinks",
       "tags": [
-        "Korean Desserts",
-        "Bingsu Specialists",
-        "Customizable Toppings"
+        "Shipping Container",
+        "Tiny But Mighty",
+        "Walk-In Only"
       ],
       "trend_signals": {
-        "google_trends": 89,
-        "tiktok_mentions": 308,
-        "last_scored": "2026-04-15"
+        "google_trends": 36,
+        "tiktok_mentions": 112,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Smidge Bakery",
       "city": "brisbane",
       "category": "bakery",
-      "ranking_score": 5.6,
+      "ranking_score": 3.1,
       "location": "Leederville",
       "area": "Inner North",
       "vibe": "bakery",
@@ -190,15 +240,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 838,
-        "last_scored": "2026-04-15"
+        "tiktok_mentions": 157,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "So What Stereo",
       "city": "brisbane",
       "category": "cafe",
-      "ranking_score": 5.4,
+      "ranking_score": 2.9,
       "location": "Little Street, Fortitude Valley",
       "area": "CBD",
       "vibe": "thai",
@@ -215,40 +265,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 725,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "Coffee Anthology",
-      "city": "brisbane",
-      "category": "cafe",
-      "ranking_score": 5,
-      "location": "CBD",
-      "area": "CBD",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Named 8th best coffee shop in the world in 2025. Multi-roaster approach with Mecca coffee, pastries from Fika, cookies from Butter Boy.",
-      "mustTry": "Rotating coffee roasts matched to brewing methods, caramelised banana rice pudding, pandan waffles, croissant eggs benedict",
-      "tags": [
-        "World's 8th Best",
-        "Multi-Roaster",
-        "Industrial Chic"
-      ],
-      "trend_signals": {
-        "google_trends": 57,
-        "tiktok_mentions": 333,
-        "last_scored": "2026-04-15"
+        "tiktok_mentions": 110,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Baking 101",
       "city": "brisbane",
       "category": "bakery",
-      "ranking_score": 4.4,
+      "ranking_score": 2.8,
       "location": "Stanmore",
       "area": "Inner West",
       "vibe": "bakery",
@@ -265,33 +290,8 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 33,
+        "tiktok_mentions": 291,
         "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Speed Dial",
-      "city": "brisbane",
-      "category": "cafe",
-      "ranking_score": 3.7,
-      "location": "Newstead (Bunnings Carpark)",
-      "area": "Inner North",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "One of Brisbane's tiniest and best new cafes, operating from a 30sqm shipping container. Yes, it's in the Bunnings carpark.",
-      "mustTry": "Coffee Supreme's South blend, toasties with marinara dipping sauce, daily batch brew, matcha drinks",
-      "tags": [
-        "Shipping Container",
-        "Tiny But Mighty",
-        "Walk-In Only"
-      ],
-      "trend_signals": {
-        "google_trends": 54,
-        "tiktok_mentions": 112,
-        "last_scored": "2026-04-15"
       }
     }
   ]

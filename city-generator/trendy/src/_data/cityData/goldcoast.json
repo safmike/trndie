@@ -45,60 +45,10 @@
   },
   "venues": [
     {
-      "name": "The Bread Social",
-      "city": "goldcoast",
-      "category": "bakery",
-      "ranking_score": 8.9,
-      "location": "Currumbin & Isle of Capri",
-      "area": "Southern",
-      "vibe": "bakery",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "The Sundevil Special went viral for a perfectly good reason — this place will ruin supermarket bread for you forever. One of the most impressive pastry cabinets on the entire Gold Coast.",
-      "mustTry": "Sundevil Special, sweet & savoury seasonal danishes (rosemary lime pineapple), croissants that'll make you cry",
-      "tags": [
-        "Viral Pastries",
-        "Two Locations",
-        "Baker's Dream"
-      ],
-      "trend_signals": {
-        "google_trends": 83,
-        "tiktok_mentions": 1225,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "The Holliday Coffee",
-      "city": "goldcoast",
-      "category": "cafe",
-      "ranking_score": 7.9,
-      "location": "Nobby Beach, Wave St",
-      "area": "Central",
-      "vibe": "matcha",
-      "viral": true,
-      "instagram_url": "https://www.instagram.com/thehollidaycoffee/",
-      "tiktok_url": "https://www.tiktok.com/@thehollidaycoffee",
-      "website_url": null,
-      "description": "TikTok's obsession right now and for good reason. The best iced matcha on the Gold Coast, served in peachy cups from 5:30am daily. This sunny corner coffee spot has everyone talking.",
-      "mustTry": "Strawberry iced matcha (10/10), matcha float, three-cheese jaffles, honeycomb macadamia butter crumpets, avo croissants",
-      "tags": [
-        "TikTok Famous",
-        "Best Matcha",
-        "Opens 5:30am"
-      ],
-      "trend_signals": {
-        "google_trends": 67,
-        "tiktok_mentions": 857,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
       "name": "Paddock Bakery",
       "city": "goldcoast",
       "category": "bakery",
-      "ranking_score": 7.7,
+      "ranking_score": 7.5,
       "location": "Miami",
       "area": "Southern",
       "vibe": "bakery",
@@ -120,27 +70,52 @@
       }
     },
     {
-      "name": "Dayo",
+      "name": "The Holliday Coffee",
       "city": "goldcoast",
       "category": "cafe",
-      "ranking_score": 7.4,
-      "location": "Riverfront (Late 2025 Opening)",
+      "ranking_score": 6.7,
+      "location": "Nobby Beach, Wave St",
       "area": "Central",
-      "vibe": "asian",
+      "vibe": "matcha",
+      "viral": false,
+      "instagram_url": "https://www.instagram.com/thehollidaycoffee/",
+      "tiktok_url": "https://www.tiktok.com/@thehollidaycoffee",
+      "website_url": null,
+      "description": "TikTok's obsession right now and for good reason. The best iced matcha on the Gold Coast, served in peachy cups from 5:30am daily. This sunny corner coffee spot has everyone talking.",
+      "mustTry": "Strawberry iced matcha (10/10), matcha float, three-cheese jaffles, honeycomb macadamia butter crumpets, avo croissants",
+      "tags": [
+        "TikTok Famous",
+        "Best Matcha",
+        "Opens 5:30am"
+      ],
+      "trend_signals": {
+        "google_trends": 33,
+        "tiktok_mentions": 857,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "The Bread Social",
+      "city": "goldcoast",
+      "category": "bakery",
+      "ranking_score": 6.5,
+      "location": "Currumbin & Isle of Capri",
+      "area": "Southern",
+      "vibe": "bakery",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "The new Filipino fusion cafe that literally blew minds with its Ube latte. Despite just opening, it's already garnered a cult following for unique takes on breakfast classics.",
-      "mustTry": "Viral Ube latte, longganisa breakfast muffins (like a fancy Maccas version), fried chicken & waffles, matcha French toast with strawberry",
+      "description": "The Sundevil Special went viral for a perfectly good reason — this place will ruin supermarket bread for you forever. One of the most impressive pastry cabinets on the entire Gold Coast.",
+      "mustTry": "Sundevil Special, sweet & savoury seasonal danishes (rosemary lime pineapple), croissants that'll make you cry",
       "tags": [
-        "Filipino Fusion",
-        "Ube Everything",
-        "2025 Opening"
+        "Viral Pastries",
+        "Two Locations",
+        "Baker's Dream"
       ],
       "trend_signals": {
-        "google_trends": 61,
-        "tiktok_mentions": 801,
+        "google_trends": 0,
+        "tiktok_mentions": 1225,
         "last_scored": "2026-04-16"
       }
     },
@@ -148,7 +123,7 @@
       "name": "Bobby Bang's",
       "city": "goldcoast",
       "category": "cafe",
-      "ranking_score": 7,
+      "ranking_score": 4.1,
       "location": "The Oxley, Nobby Beach",
       "area": "Central",
       "vibe": "matcha",
@@ -164,8 +139,33 @@
         "Just Opened"
       ],
       "trend_signals": {
-        "google_trends": 81,
-        "tiktok_mentions": 33,
+        "google_trends": 0,
+        "tiktok_mentions": 277,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Dayo",
+      "city": "goldcoast",
+      "category": "cafe",
+      "ranking_score": 4,
+      "location": "Riverfront (Late 2025 Opening)",
+      "area": "Central",
+      "vibe": "asian",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "The new Filipino fusion cafe that literally blew minds with its Ube latte. Despite just opening, it's already garnered a cult following for unique takes on breakfast classics.",
+      "mustTry": "Viral Ube latte, longganisa breakfast muffins (like a fancy Maccas version), fried chicken & waffles, matcha French toast with strawberry",
+      "tags": [
+        "Filipino Fusion",
+        "Ube Everything",
+        "2025 Opening"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 142,
         "last_scored": "2026-04-16"
       }
     },
@@ -173,7 +173,7 @@
       "name": "Piada Co",
       "city": "goldcoast",
       "category": "cafe",
-      "ranking_score": 6.9,
+      "ranking_score": 4,
       "location": "Burleigh Heads",
       "area": "Burleigh",
       "vibe": "aesthetic",
@@ -189,33 +189,8 @@
         "Beach Life"
       ],
       "trend_signals": {
-        "google_trends": 80,
-        "tiktok_mentions": 33,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Refinery Coffee",
-      "city": "goldcoast",
-      "category": "cafe",
-      "ranking_score": 4.1,
-      "location": "Currumbin",
-      "area": "Southern",
-      "vibe": "matcha",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Making waves with their viral iced matcha float that's been all over everyone's feed. A Currumbin favourite that knows how to do specialty drinks right.",
-      "mustTry": "Viral iced matcha float (10/10), specialty coffee, refreshing cold brews",
-      "tags": [
-        "Matcha Float",
-        "Specialty Coffee",
-        "Currumbin Fave"
-      ],
-      "trend_signals": {
-        "google_trends": 41,
-        "tiktok_mentions": 280,
+        "google_trends": 0,
+        "tiktok_mentions": 297,
         "last_scored": "2026-04-16"
       }
     },
@@ -223,7 +198,7 @@
       "name": "Bam Bam Bakehouse",
       "city": "goldcoast",
       "category": "bakery",
-      "ranking_score": 4,
+      "ranking_score": 3,
       "location": "Mermaid Beach",
       "area": "Central",
       "vibe": "bakery",
@@ -239,8 +214,33 @@
         "Breakfast Goals"
       ],
       "trend_signals": {
-        "google_trends": 38,
+        "google_trends": 17,
         "tiktok_mentions": 228,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Refinery Coffee",
+      "city": "goldcoast",
+      "category": "cafe",
+      "ranking_score": 2.6,
+      "location": "Currumbin",
+      "area": "Southern",
+      "vibe": "matcha",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Making waves with their viral iced matcha float that's been all over everyone's feed. A Currumbin favourite that knows how to do specialty drinks right.",
+      "mustTry": "Viral iced matcha float (10/10), specialty coffee, refreshing cold brews",
+      "tags": [
+        "Matcha Float",
+        "Specialty Coffee",
+        "Currumbin Fave"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 280,
         "last_scored": "2026-04-16"
       }
     },
@@ -248,7 +248,7 @@
       "name": "Mohr Cafe and Deli",
       "city": "goldcoast",
       "category": "deli",
-      "ranking_score": 4,
+      "ranking_score": 2.6,
       "location": "Burleigh Heads, Hibiscus Haven",
       "area": "Burleigh",
       "vibe": "aesthetic",
@@ -264,7 +264,7 @@
         "Deli Goodness"
       ],
       "trend_signals": {
-        "google_trends": 40,
+        "google_trends": 0,
         "tiktok_mentions": 279,
         "last_scored": "2026-04-16"
       }
@@ -273,7 +273,7 @@
       "name": "Cheek Café",
       "city": "goldcoast",
       "category": "cafe",
-      "ranking_score": 3.6,
+      "ranking_score": 2.2,
       "location": "Southport",
       "area": "Northern",
       "vibe": "aesthetic",
@@ -289,7 +289,7 @@
         "Mediterranean"
       ],
       "trend_signals": {
-        "google_trends": 33,
+        "google_trends": 0,
         "tiktok_mentions": 185,
         "last_scored": "2026-04-16"
       }

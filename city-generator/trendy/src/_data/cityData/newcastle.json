@@ -45,85 +45,10 @@
   },
   "venues": [
     {
-      "name": "Liebe European Pastries",
-      "city": "newcastle",
-      "category": "bakery",
-      "ranking_score": 8.5,
-      "location": "Newcastle West, 11 Union St",
-      "area": "West",
-      "vibe": "bakery",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "European-style pastries made fresh daily with a new line-up every week. Started at Newcastle Farmers Market, now has a permanent home and often sells out before closing time.",
-      "mustTry": "Fresh croissants, European pastries, focaccia, weekly specials (Wed-Sun only, sells out early)",
-      "tags": [
-        "European Style",
-        "Farmers Market Grad",
-        "Sells Out Daily"
-      ],
-      "trend_signals": {
-        "google_trends": 74,
-        "tiktok_mentions": 1039,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Bootleg Bakery",
-      "city": "newcastle",
-      "category": "bakery",
-      "ranking_score": 7.9,
-      "location": "Merewether, 10 James St",
-      "area": "Coastal",
-      "vibe": "bakery",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "The cult-favourite red food truck that only opens Friday & Saturday from 8am-12pm. The lines speak for themselves — get there early before the Bootstrap bread and ever-changing pastries sell out.",
-      "mustTry": "Iconic Bootstrap savoury bread, focaccia, danishes, tarts, specialty coffee (EFTPOS only, Fri/Sat 8am-12pm)",
-      "tags": [
-        "Cult Favorite",
-        "Weekend Only",
-        "Sells Out Fast"
-      ],
-      "trend_signals": {
-        "google_trends": 68,
-        "tiktok_mentions": 858,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Outdo Espresso",
-      "city": "newcastle",
-      "category": "cafe",
-      "ranking_score": 7.2,
-      "location": "Newcastle West, 464 King St",
-      "area": "West",
-      "vibe": "toasties",
-      "viral": false,
-      "instagram_url": "https://www.instagram.com/outdo.espresso/",
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "With 28K Instagram followers, this is home to Flamingo Coffee and those mouth-watering toasties everyone can't stop talking about. The matcha topped with cold foam flavours is top-tier. Sleek, modern vibe with sandalwood scent.",
-      "mustTry": "Mac & cheese toastie (when available), chicken pesto toastie, iced matcha with cold foam, Flamingo Coffee blend",
-      "tags": [
-        "Instagram Famous",
-        "Toastie Legend",
-        "Matcha Excellence"
-      ],
-      "trend_signals": {
-        "google_trends": 62,
-        "tiktok_mentions": 737,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
       "name": "CRUMB",
       "city": "newcastle",
       "category": "bakery",
-      "ranking_score": 6.8,
+      "ranking_score": 6.1,
       "location": "Lambton, 113 Elder St",
       "area": "Inner",
       "vibe": "bakery",
@@ -139,8 +64,83 @@
         "Lines Daily"
       ],
       "trend_signals": {
-        "google_trends": 79,
-        "tiktok_mentions": 33,
+        "google_trends": 89,
+        "tiktok_mentions": 0,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Liebe European Pastries",
+      "city": "newcastle",
+      "category": "bakery",
+      "ranking_score": 4.3,
+      "location": "Newcastle West, 11 Union St",
+      "area": "West",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "European-style pastries made fresh daily with a new line-up every week. Started at Newcastle Farmers Market, now has a permanent home and often sells out before closing time.",
+      "mustTry": "Fresh croissants, European pastries, focaccia, weekly specials (Wed-Sun only, sells out early)",
+      "tags": [
+        "European Style",
+        "Farmers Market Grad",
+        "Sells Out Daily"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 0,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Bootleg Bakery",
+      "city": "newcastle",
+      "category": "bakery",
+      "ranking_score": 4,
+      "location": "Merewether, 10 James St",
+      "area": "Coastal",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "The cult-favourite red food truck that only opens Friday & Saturday from 8am-12pm. The lines speak for themselves — get there early before the Bootstrap bread and ever-changing pastries sell out.",
+      "mustTry": "Iconic Bootstrap savoury bread, focaccia, danishes, tarts, specialty coffee (EFTPOS only, Fri/Sat 8am-12pm)",
+      "tags": [
+        "Cult Favorite",
+        "Weekend Only",
+        "Sells Out Fast"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 0,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Outdo Espresso",
+      "city": "newcastle",
+      "category": "cafe",
+      "ranking_score": 3.6,
+      "location": "Newcastle West, 464 King St",
+      "area": "West",
+      "vibe": "toasties",
+      "viral": false,
+      "instagram_url": "https://www.instagram.com/outdo.espresso/",
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "With 28K Instagram followers, this is home to Flamingo Coffee and those mouth-watering toasties everyone can't stop talking about. The matcha topped with cold foam flavours is top-tier. Sleek, modern vibe with sandalwood scent.",
+      "mustTry": "Mac & cheese toastie (when available), chicken pesto toastie, iced matcha with cold foam, Flamingo Coffee blend",
+      "tags": [
+        "Instagram Famous",
+        "Toastie Legend",
+        "Matcha Excellence"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 0,
         "last_scored": "2026-04-16"
       }
     },
@@ -148,7 +148,7 @@
       "name": "La Bae",
       "city": "newcastle",
       "category": "cafe",
-      "ranking_score": 6.4,
+      "ranking_score": 3.2,
       "location": "Hunter Street Mall, CBD",
       "area": "CBD",
       "vibe": "asian",
@@ -164,8 +164,29 @@
         "2025 Opening"
       ],
       "trend_signals": {
-        "google_trends": 69,
-        "tiktok_mentions": 33,
+        "google_trends": 0,
+        "tiktok_mentions": 0,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "H U N T E Rhunter",
+      "city": "newcastle",
+      "category": "bakery",
+      "ranking_score": 2.9,
+      "location": "",
+      "area": "",
+      "vibe": "",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "",
+      "mustTry": "",
+      "tags": [],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 200,
         "last_scored": "2026-04-16"
       }
     },
@@ -173,7 +194,7 @@
       "name": "Praise Joe",
       "city": "newcastle",
       "category": "cafe",
-      "ranking_score": 4.5,
+      "ranking_score": 2.3,
       "location": "Tighes Hill, 8/20 Elizabeth St",
       "area": "Inner",
       "vibe": "toasties",
@@ -189,8 +210,8 @@
         "Daily Specials"
       ],
       "trend_signals": {
-        "google_trends": 47,
-        "tiktok_mentions": 317,
+        "google_trends": 0,
+        "tiktok_mentions": 0,
         "last_scored": "2026-04-16"
       }
     },
@@ -198,7 +219,7 @@
       "name": "Two Bobs Bakery & Pantry",
       "city": "newcastle",
       "category": "bakery",
-      "ranking_score": 4.3,
+      "ranking_score": 2.2,
       "location": "CBD, 277 Hunter St",
       "area": "CBD",
       "vibe": "bakery",
@@ -214,8 +235,8 @@
         "Pastry Masters"
       ],
       "trend_signals": {
-        "google_trends": 43,
-        "tiktok_mentions": 271,
+        "google_trends": 0,
+        "tiktok_mentions": 0,
         "last_scored": "2026-04-16"
       }
     },
@@ -223,7 +244,7 @@
       "name": "Momo Wholefood Co",
       "city": "newcastle",
       "category": "cafe",
-      "ranking_score": 4.3,
+      "ranking_score": 2.2,
       "location": "Newcastle CBD",
       "area": "CBD",
       "vibe": "asian",
@@ -239,8 +260,8 @@
         "Fresh & Healthy"
       ],
       "trend_signals": {
-        "google_trends": 45,
-        "tiktok_mentions": 291,
+        "google_trends": 0,
+        "tiktok_mentions": 0,
         "last_scored": "2026-04-16"
       }
     },
@@ -248,7 +269,7 @@
       "name": "Monte",
       "city": "newcastle",
       "category": "cafe",
-      "ranking_score": 3.3,
+      "ranking_score": 2.1,
       "location": "Newcastle CBD",
       "area": "CBD",
       "vibe": "toasties",
@@ -264,33 +285,8 @@
         "CBD Buzz"
       ],
       "trend_signals": {
-        "google_trends": 31,
-        "tiktok_mentions": 175,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Sonny & Betty",
-      "city": "newcastle",
-      "category": "bakery",
-      "ranking_score": 3.2,
-      "location": "Mayfield, 122 Maitland Rd",
-      "area": "Inner",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Created by the team behind Cakeboi, this cosy spot offers a daily-changing selection of warm, freshly baked pastries that are seriously addictive. Each visit brings new delights to try.",
-      "mustTry": "Daily-changing pastries, warm freshly baked goods, specialty coffee (Tue-Sun)",
-      "tags": [
-        "Cakeboi Team",
-        "Daily Specials",
-        "Pastry Paradise"
-      ],
-      "trend_signals": {
-        "google_trends": 29,
-        "tiktok_mentions": 156,
+        "google_trends": 14,
+        "tiktok_mentions": 0,
         "last_scored": "2026-04-16"
       }
     }

@@ -45,60 +45,10 @@
   },
   "venues": [
     {
-      "name": "Smidge Bakery",
-      "city": "perth",
-      "category": "bakery",
-      "ranking_score": 8,
-      "location": "Leederville",
-      "area": "Inner Suburbs",
-      "vibe": "bakery",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Self-proclaimed \"Perth's best cinny scrolls\" — and they might be right. Selling an average of 20 trays daily since moving to new Leederville location.",
-      "mustTry": "Cinnamon scrolls (sold 15 trays first week!), choc caramel brownies, salted Caramilk cookies, sangas",
-      "tags": [
-        "Scroll Mania",
-        "Viral Success",
-        "New Digs"
-      ],
-      "trend_signals": {
-        "google_trends": 70,
-        "tiktok_mentions": 899,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Side Piece Deli",
-      "city": "perth",
-      "category": "deli",
-      "ranking_score": 7.9,
-      "location": "Swanbourne",
-      "area": "Coastal",
-      "vibe": "deli",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "From the Daisies and Other Side legends. Perth's sandwich elite just got a new member with globally-inspired creations that are gagging the city.",
-      "mustTry": "Tomago or fish katsu sando on shokupan, mortadella and labneh focaccia, onion bhaji focaccia, Keralaan fried chicken with kasundi aioli",
-      "tags": [
-        "Sandwich Royalty",
-        "Global Flavours",
-        "Pantry Group"
-      ],
-      "trend_signals": {
-        "google_trends": 67,
-        "tiktok_mentions": 900,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
       "name": "North 54",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 7.2,
+      "ranking_score": 6,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "vietnamese",
@@ -114,33 +64,8 @@
         "Hospo Legend"
       ],
       "trend_signals": {
-        "google_trends": 85,
-        "tiktok_mentions": 33,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Lovers Deli & Canteen",
-      "city": "perth",
-      "category": "deli",
-      "ranking_score": 6.9,
-      "location": "White Gum Valley",
-      "area": "Coastal",
-      "vibe": "deli",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Nostalgia-driven cafe serving a contender for Perth's best chicken schnitty. Old-school charm with timber veneer, chrome counters, and plush banquette seats.",
-      "mustTry": "Chicken schnitzel (brown butter, capers, lemon-herb sauce), \"green eggs and scram\" with parsley sauce, blood pudding egg muffin",
-      "tags": [
-        "Retro Diner",
-        "Best Schnitty",
-        "Good Things Team"
-      ],
-      "trend_signals": {
-        "google_trends": 58,
-        "tiktok_mentions": 720,
+        "google_trends": 81,
+        "tiktok_mentions": 0,
         "last_scored": "2026-04-16"
       }
     },
@@ -148,7 +73,7 @@
       "name": "Be Free",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 6.7,
+      "ranking_score": 5.6,
       "location": "Perth City Farm, East Perth",
       "area": "CBD",
       "vibe": "organic",
@@ -164,8 +89,83 @@
         "Eco-Conscious"
       ],
       "trend_signals": {
-        "google_trends": 79,
-        "tiktok_mentions": 33,
+        "google_trends": 76,
+        "tiktok_mentions": 0,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Smidge Bakery",
+      "city": "perth",
+      "category": "bakery",
+      "ranking_score": 5,
+      "location": "Leederville",
+      "area": "Inner Suburbs",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Self-proclaimed \"Perth's best cinny scrolls\" — and they might be right. Selling an average of 20 trays daily since moving to new Leederville location.",
+      "mustTry": "Cinnamon scrolls (sold 15 trays first week!), choc caramel brownies, salted Caramilk cookies, sangas",
+      "tags": [
+        "Scroll Mania",
+        "Viral Success",
+        "New Digs"
+      ],
+      "trend_signals": {
+        "google_trends": 33,
+        "tiktok_mentions": 0,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Side Piece Deli",
+      "city": "perth",
+      "category": "deli",
+      "ranking_score": 4,
+      "location": "Swanbourne",
+      "area": "Coastal",
+      "vibe": "deli",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "From the Daisies and Other Side legends. Perth's sandwich elite just got a new member with globally-inspired creations that are gagging the city.",
+      "mustTry": "Tomago or fish katsu sando on shokupan, mortadella and labneh focaccia, onion bhaji focaccia, Keralaan fried chicken with kasundi aioli",
+      "tags": [
+        "Sandwich Royalty",
+        "Global Flavours",
+        "Pantry Group"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 0,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Lovers Deli & Canteen",
+      "city": "perth",
+      "category": "deli",
+      "ranking_score": 3.5,
+      "location": "White Gum Valley",
+      "area": "Coastal",
+      "vibe": "deli",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Nostalgia-driven cafe serving a contender for Perth's best chicken schnitty. Old-school charm with timber veneer, chrome counters, and plush banquette seats.",
+      "mustTry": "Chicken schnitzel (brown butter, capers, lemon-herb sauce), \"green eggs and scram\" with parsley sauce, blood pudding egg muffin",
+      "tags": [
+        "Retro Diner",
+        "Best Schnitty",
+        "Good Things Team"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 0,
         "last_scored": "2026-04-16"
       }
     },
@@ -173,7 +173,7 @@
       "name": "Bert's",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 5.2,
+      "ranking_score": 3.1,
       "location": "City Beach",
       "area": "Coastal",
       "vibe": "organic",
@@ -189,33 +189,8 @@
         "Coastal Vibes"
       ],
       "trend_signals": {
-        "google_trends": 72,
-        "tiktok_mentions": 317,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Angelwood Pies",
-      "city": "perth",
-      "category": "bakery",
-      "ranking_score": 4.7,
-      "location": "Leederville",
-      "area": "Inner Suburbs",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Grab-and-go pie shop with a chef who has Michelin approval. Selling out by midday with \"fine-dining pies\" that redefine the category.",
-      "mustTry": "Fine-dining pies (varieties change), get there before midday!",
-      "tags": [
-        "Michelin Trained",
-        "Sells Out Daily",
-        "Grab & Go"
-      ],
-      "trend_signals": {
-        "google_trends": 50,
-        "tiktok_mentions": 337,
+        "google_trends": 18,
+        "tiktok_mentions": 0,
         "last_scored": "2026-04-16"
       }
     },
@@ -223,7 +198,7 @@
       "name": "The Cool Room",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 4.6,
+      "ranking_score": 3.1,
       "location": "East Fremantle",
       "area": "Fremantle",
       "vibe": "bakery",
@@ -239,8 +214,33 @@
         "Chef-Driven"
       ],
       "trend_signals": {
-        "google_trends": 47,
-        "tiktok_mentions": 333,
+        "google_trends": 27,
+        "tiktok_mentions": 0,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Angelwood Pies",
+      "city": "perth",
+      "category": "bakery",
+      "ranking_score": 2.4,
+      "location": "Leederville",
+      "area": "Inner Suburbs",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Grab-and-go pie shop with a chef who has Michelin approval. Selling out by midday with \"fine-dining pies\" that redefine the category.",
+      "mustTry": "Fine-dining pies (varieties change), get there before midday!",
+      "tags": [
+        "Michelin Trained",
+        "Sells Out Daily",
+        "Grab & Go"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 0,
         "last_scored": "2026-04-16"
       }
     },
@@ -248,7 +248,7 @@
       "name": "Earl's",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 3.5,
+      "ranking_score": 1.8,
       "location": "Mount Hawthorn",
       "area": "Inner Suburbs",
       "vibe": "deli",
@@ -264,8 +264,8 @@
         "American Style"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 215,
+        "google_trends": 0,
+        "tiktok_mentions": 0,
         "last_scored": "2026-04-16"
       }
     },
@@ -273,7 +273,7 @@
       "name": "Banh Mi & Chè",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 3,
+      "ranking_score": 1.5,
       "location": "Carlisle",
       "area": "Inner Suburbs",
       "vibe": "vietnamese",
@@ -289,8 +289,8 @@
         "Auntie Network"
       ],
       "trend_signals": {
-        "google_trends": 25,
-        "tiktok_mentions": 141,
+        "google_trends": 0,
+        "tiktok_mentions": 0,
         "last_scored": "2026-04-16"
       }
     }

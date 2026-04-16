@@ -48,7 +48,7 @@
       "name": "Jenny's Bakery",
       "city": "adelaide",
       "category": "bakery",
-      "ranking_score": 6.8,
+      "ranking_score": 4.9,
       "location": "Keswick",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -64,16 +64,16 @@
         "Cult Following"
       ],
       "trend_signals": {
-        "google_trends": 19,
-        "tiktok_mentions": 1082,
-        "last_scored": "2026-04-15"
+        "google_trends": 33,
+        "tiktok_mentions": 259,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Pompom",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 6.3,
+      "ranking_score": 4.6,
       "location": "Forestville",
       "area": "Inner Suburbs",
       "vibe": "greek",
@@ -89,16 +89,66 @@
         "Rising Suburb"
       ],
       "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 1096,
-        "last_scored": "2026-04-15"
+        "google_trends": 30,
+        "tiktok_mentions": 265,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Bora",
+      "city": "adelaide",
+      "category": "cafe",
+      "ranking_score": 4.6,
+      "location": "Jetty Street, Grange",
+      "area": "Beachside",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Breakfast classics and lunch staples with a Brazilian twist. Beachside location that hosted Adelaide's inaugural Brazilian festival, Alma Brazil.",
+      "mustTry": "The BELT (BLT with eggs, Dijon, pecorino), acai bowls, breakfast tacos",
+      "tags": [
+        "Brazilian Vibes",
+        "Beachside",
+        "Alma Brazil"
+      ],
+      "trend_signals": {
+        "google_trends": 78,
+        "tiktok_mentions": 145,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Pinco Deli",
+      "city": "adelaide",
+      "category": "deli",
+      "ranking_score": 4,
+      "location": "Exchange Place, CBD",
+      "area": "CBD",
+      "vibe": "italian",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Third Pinco location proves the sando outlasted the burger trend. Italian staples meet sandwich excellence from Jumbo Smash founders.",
+      "mustTry": "Sando lineup, baked alla vodka pasta with stracciatella, pappardelle with ragu bianco",
+      "tags": [
+        "Sandwich Era",
+        "Third Location",
+        "Italian Staples"
+      ],
+      "trend_signals": {
+        "google_trends": 24,
+        "tiktok_mentions": 342,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Meli",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 6.1,
+      "ranking_score": 3.4,
       "location": "Various Locations",
       "area": "Inner Suburbs",
       "vibe": "greek",
@@ -115,15 +165,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 931,
-        "last_scored": "2026-04-15"
+        "tiktok_mentions": 196,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Yuku dō",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 5.5,
+      "ranking_score": 3,
       "location": "CBD",
       "area": "CBD",
       "vibe": "matcha",
@@ -140,40 +190,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 810,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "Pinco Deli",
-      "city": "adelaide",
-      "category": "deli",
-      "ranking_score": 5.1,
-      "location": "Exchange Place, CBD",
-      "area": "CBD",
-      "vibe": "italian",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Third Pinco location proves the sando outlasted the burger trend. Italian staples meet sandwich excellence from Jumbo Smash founders.",
-      "mustTry": "Sando lineup, baked alla vodka pasta with stracciatella, pappardelle with ragu bianco",
-      "tags": [
-        "Sandwich Era",
-        "Third Location",
-        "Italian Staples"
-      ],
-      "trend_signals": {
-        "google_trends": 62,
-        "tiktok_mentions": 342,
-        "last_scored": "2026-04-15"
+        "tiktok_mentions": 146,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Cha-no-wa",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 4.5,
+      "ranking_score": 2.8,
       "location": "King William Street, CBD",
       "area": "CBD",
       "vibe": "matcha",
@@ -190,15 +215,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 33,
-        "last_scored": "2026-04-15"
+        "tiktok_mentions": 269,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Homeboy 2.0",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 4.4,
+      "ranking_score": 2.7,
       "location": "North Terrace, CBD",
       "area": "CBD",
       "vibe": "bakery",
@@ -215,40 +240,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 33,
-        "last_scored": "2026-04-15"
-      }
-    },
-    {
-      "name": "Bora",
-      "city": "adelaide",
-      "category": "cafe",
-      "ranking_score": 4,
-      "location": "Jetty Street, Grange",
-      "area": "Beachside",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Breakfast classics and lunch staples with a Brazilian twist. Beachside location that hosted Adelaide's inaugural Brazilian festival, Alma Brazil.",
-      "mustTry": "The BELT (BLT with eggs, Dijon, pecorino), acai bowls, breakfast tacos",
-      "tags": [
-        "Brazilian Vibes",
-        "Beachside",
-        "Alma Brazil"
-      ],
-      "trend_signals": {
-        "google_trends": 59,
-        "tiktok_mentions": 145,
-        "last_scored": "2026-04-15"
+        "tiktok_mentions": 266,
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Gathers & Grounds",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 3.2,
+      "ranking_score": 2.3,
       "location": "Glenelg",
       "area": "Beachside",
       "vibe": "matcha",
@@ -266,14 +266,14 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 326,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     },
     {
       "name": "Arlos",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 2.6,
+      "ranking_score": 1.7,
       "location": "King William St & Grenfell St",
       "area": "CBD",
       "vibe": "bakery",
@@ -291,7 +291,7 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 175,
-        "last_scored": "2026-04-15"
+        "last_scored": "2026-04-16"
       }
     }
   ]

@@ -45,35 +45,10 @@
   },
   "venues": [
     {
-      "name": "The Butter Room",
-      "city": "melbourne",
-      "category": "bakery",
-      "ranking_score": 8.7,
-      "location": "CBD, 16 Katherine Place",
-      "area": "CBD",
-      "vibe": "korean",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Cozy Korean pastry paradise. The moment you step in, you're surrounded by unique pastries and desserts that look like art pieces.",
-      "mustTry": "Injeolmi Pandoro (the icon), tiramisu croissant, tissue bread, Korean dumplings pie",
-      "tags": [
-        "Korean Pastries",
-        "Pandoro Heaven",
-        "8am-6pm"
-      ],
-      "trend_signals": {
-        "google_trends": 78,
-        "tiktok_mentions": 1068,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
       "name": "Groove",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 8.2,
+      "ranking_score": 8,
       "location": "Abbotsford, 17 Lithgow St",
       "area": "Inner East",
       "vibe": "vietnamese",
@@ -89,8 +64,33 @@
         "FYP Legend"
       ],
       "trend_signals": {
-        "google_trends": 71,
+        "google_trends": 67,
         "tiktok_mentions": 923,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "The Butter Room",
+      "city": "melbourne",
+      "category": "bakery",
+      "ranking_score": 7.9,
+      "location": "CBD, 16 Katherine Place",
+      "area": "CBD",
+      "vibe": "korean",
+      "viral": true,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Cozy Korean pastry paradise. The moment you step in, you're surrounded by unique pastries and desserts that look like art pieces.",
+      "mustTry": "Injeolmi Pandoro (the icon), tiramisu croissant, tissue bread, Korean dumplings pie",
+      "tags": [
+        "Korean Pastries",
+        "Pandoro Heaven",
+        "8am-6pm"
+      ],
+      "trend_signals": {
+        "google_trends": 52,
+        "tiktok_mentions": 1068,
         "last_scored": "2026-04-16"
       }
     },
@@ -98,11 +98,11 @@
       "name": "Nimbo",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 7.6,
+      "ranking_score": 6.9,
       "location": "CBD (Hidden Alleyway)",
       "area": "CBD",
       "vibe": "aesthetic",
-      "viral": true,
+      "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
@@ -114,8 +114,33 @@
         "Dessert Cafe"
       ],
       "trend_signals": {
-        "google_trends": 68,
+        "google_trends": 45,
         "tiktok_mentions": 866,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "Juniper",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 6.4,
+      "location": "South Melbourne, 269 Coventry St",
+      "area": "South",
+      "vibe": "specialty",
+      "viral": false,
+      "instagram_url": "https://www.instagram.com/junipercafe.au/",
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Home of Melbourne's most talked-about coffee frappe. Inspired by Greek frappes, this TikTok sensation is rich, creamy, and perfectly sweet.",
+      "mustTry": "Famous coffee frappe, chicken roll with crispy skin",
+      "tags": [
+        "TikTok Famous",
+        "Greek Frappe",
+        "Coffee Goals"
+      ],
+      "trend_signals": {
+        "google_trends": 90,
+        "tiktok_mentions": 213,
         "last_scored": "2026-04-16"
       }
     },
@@ -123,7 +148,7 @@
       "name": "The Glass Den",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 7.4,
+      "ranking_score": 6.3,
       "location": "Coburg",
       "area": "Inner North",
       "vibe": "aesthetic",
@@ -139,8 +164,8 @@
         "Brunch Goals"
       ],
       "trend_signals": {
-        "google_trends": 60,
-        "tiktok_mentions": 787,
+        "google_trends": 79,
+        "tiktok_mentions": 136,
         "last_scored": "2026-04-16"
       }
     },
@@ -148,7 +173,7 @@
       "name": "Bottari",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 7.2,
+      "ranking_score": 5.7,
       "location": "CBD, Elizabeth Street",
       "area": "CBD",
       "vibe": "korean",
@@ -165,57 +190,7 @@
       ],
       "trend_signals": {
         "google_trends": 60,
-        "tiktok_mentions": 762,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "In Btwn",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 7,
-      "location": "CBD (Near Queen Vic Market)",
-      "area": "CBD",
-      "vibe": "specialty",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Somewhere between a cafe and a bar, this TRNDIE spot serves creative drinks with unique twists. Warm orange lighting draws you in from the laneway.",
-      "mustTry": "In Btwn Dirty ($6.50) with orange zest, Einspanner ($9.50), Matcha Einspanner",
-      "tags": [
-        "Cafe-Bar Hybrid",
-        "Creative Drinks",
-        "Buzzing Vibe"
-      ],
-      "trend_signals": {
-        "google_trends": 85,
-        "tiktok_mentions": 33,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Juniper",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 6.5,
-      "location": "South Melbourne, 269 Coventry St",
-      "area": "South",
-      "vibe": "specialty",
-      "viral": false,
-      "instagram_url": "https://www.instagram.com/junipercafe.au/",
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Home of Melbourne's most talked-about coffee frappe. Inspired by Greek frappes, this TikTok sensation is rich, creamy, and perfectly sweet.",
-      "mustTry": "Famous coffee frappe, chicken roll with crispy skin",
-      "tags": [
-        "TikTok Famous",
-        "Greek Frappe",
-        "Coffee Goals"
-      ],
-      "trend_signals": {
-        "google_trends": 71,
-        "tiktok_mentions": 33,
+        "tiktok_mentions": 126,
         "last_scored": "2026-04-16"
       }
     },
@@ -223,7 +198,7 @@
       "name": "Assembly",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 4.4,
+      "ranking_score": 5.5,
       "location": "North Melbourne",
       "area": "Inner North",
       "vibe": "specialty",
@@ -239,7 +214,7 @@
         "Innovative"
       ],
       "trend_signals": {
-        "google_trends": 43,
+        "google_trends": 89,
         "tiktok_mentions": 300,
         "last_scored": "2026-04-16"
       }
@@ -248,7 +223,7 @@
       "name": "Standing Room",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 3.7,
+      "ranking_score": 4.9,
       "location": "Carlton / Fitzroy North",
       "area": "Inner North",
       "vibe": "specialty",
@@ -264,8 +239,33 @@
         "Cult Following"
       ],
       "trend_signals": {
-        "google_trends": 34,
+        "google_trends": 88,
         "tiktok_mentions": 225,
+        "last_scored": "2026-04-16"
+      }
+    },
+    {
+      "name": "In Btwn",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 4.1,
+      "location": "CBD (Near Queen Vic Market)",
+      "area": "CBD",
+      "vibe": "specialty",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Somewhere between a cafe and a bar, this TRNDIE spot serves creative drinks with unique twists. Warm orange lighting draws you in from the laneway.",
+      "mustTry": "In Btwn Dirty ($6.50) with orange zest, Einspanner ($9.50), Matcha Einspanner",
+      "tags": [
+        "Cafe-Bar Hybrid",
+        "Creative Drinks",
+        "Buzzing Vibe"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 319,
         "last_scored": "2026-04-16"
       }
     },
@@ -273,7 +273,7 @@
       "name": "Trbl",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 3.4,
+      "ranking_score": 2.1,
       "location": "Presgrave Place (Laneway)",
       "area": "CBD",
       "vibe": "korean",
@@ -289,7 +289,7 @@
         "Street Art"
       ],
       "trend_signals": {
-        "google_trends": 32,
+        "google_trends": 0,
         "tiktok_mentions": 177,
         "last_scored": "2026-04-16"
       }
