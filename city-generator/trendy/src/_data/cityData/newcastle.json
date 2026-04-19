@@ -48,7 +48,7 @@
       "name": "CRUMB",
       "city": "newcastle",
       "category": "bakery",
-      "ranking_score": 6.1,
+      "ranking_score": 5.8,
       "location": "Lambton, 113 Elder St",
       "area": "Inner",
       "vibe": "bakery",
@@ -64,16 +64,41 @@
         "Lines Daily"
       ],
       "trend_signals": {
-        "google_trends": 89,
+        "google_trends": 90,
         "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
+      "name": "Bootleg Bakery",
+      "city": "newcastle",
+      "category": "bakery",
+      "ranking_score": 3,
+      "location": "Merewether, 10 James St",
+      "area": "Coastal",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "The cult-favourite red food truck that only opens Friday & Saturday from 8am-12pm. The lines speak for themselves — get there early before the Bootstrap bread and ever-changing pastries sell out.",
+      "mustTry": "Iconic Bootstrap savoury bread, focaccia, danishes, tarts, specialty coffee (EFTPOS only, Fri/Sat 8am-12pm)",
+      "tags": [
+        "Cult Favorite",
+        "Weekend Only",
+        "Sells Out Fast"
+      ],
+      "trend_signals": {
+        "google_trends": 33,
+        "tiktok_mentions": 0,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Liebe European Pastries",
       "city": "newcastle",
       "category": "bakery",
-      "ranking_score": 4.3,
+      "ranking_score": 2.2,
       "location": "Newcastle West, 11 Union St",
       "area": "West",
       "vibe": "bakery",
@@ -91,89 +116,14 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Bootleg Bakery",
-      "city": "newcastle",
-      "category": "bakery",
-      "ranking_score": 4,
-      "location": "Merewether, 10 James St",
-      "area": "Coastal",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "The cult-favourite red food truck that only opens Friday & Saturday from 8am-12pm. The lines speak for themselves — get there early before the Bootstrap bread and ever-changing pastries sell out.",
-      "mustTry": "Iconic Bootstrap savoury bread, focaccia, danishes, tarts, specialty coffee (EFTPOS only, Fri/Sat 8am-12pm)",
-      "tags": [
-        "Cult Favorite",
-        "Weekend Only",
-        "Sells Out Fast"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Outdo Espresso",
-      "city": "newcastle",
-      "category": "cafe",
-      "ranking_score": 3.6,
-      "location": "Newcastle West, 464 King St",
-      "area": "West",
-      "vibe": "toasties",
-      "viral": false,
-      "instagram_url": "https://www.instagram.com/outdo.espresso/",
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "With 28K Instagram followers, this is home to Flamingo Coffee and those mouth-watering toasties everyone can't stop talking about. The matcha topped with cold foam flavours is top-tier. Sleek, modern vibe with sandalwood scent.",
-      "mustTry": "Mac & cheese toastie (when available), chicken pesto toastie, iced matcha with cold foam, Flamingo Coffee blend",
-      "tags": [
-        "Instagram Famous",
-        "Toastie Legend",
-        "Matcha Excellence"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "La Bae",
-      "city": "newcastle",
-      "category": "cafe",
-      "ranking_score": 3.2,
-      "location": "Hunter Street Mall, CBD",
-      "area": "CBD",
-      "vibe": "asian",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Newcastle's newest TikTok sensation that opened in April 2025. Asian-inspired cafe kicking off everyone's croffle cravings with a mixture of savoury and sweets. The strawberry matcha is so good you'll need a second cup for takeaway.",
-      "mustTry": "Croffles (croissant-waffles), viral strawberry matcha, Asian fusion breakfast dishes, hot & cold drink selection",
-      "tags": [
-        "TikTok Famous",
-        "Croffle Craze",
-        "2025 Opening"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "H U N T E Rhunter",
       "city": "newcastle",
       "category": "bakery",
-      "ranking_score": 2.9,
+      "ranking_score": 1.8,
       "location": "",
       "area": "",
       "vibe": "",
@@ -186,108 +136,8 @@
       "tags": [],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 200,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Praise Joe",
-      "city": "newcastle",
-      "category": "cafe",
-      "ranking_score": 2.3,
-      "location": "Tighes Hill, 8/20 Elizabeth St",
-      "area": "Inner",
-      "vibe": "toasties",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "A buzzing corner cafe known for specialty coffee, rotating pastry specials, and some of the best toasted sandwiches in town. The local favorite that keeps Tighes Hill caffeinated and happy.",
-      "mustTry": "Best toasted sandwiches in Newcastle, rotating pastry specials, specialty coffee (open 7 days)",
-      "tags": [
-        "Corner Gem",
-        "Toastie Excellence",
-        "Daily Specials"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Two Bobs Bakery & Pantry",
-      "city": "newcastle",
-      "category": "bakery",
-      "ranking_score": 2.2,
-      "location": "CBD, 277 Hunter St",
-      "area": "CBD",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Following the success of their Nelson Bay store, Two Bobs brought their signature sourdough and decadent pastries to Newcastle. Known for sourdough-based creations that have locals lining up.",
-      "mustTry": "Sour cherry & pistachio scroll (must-try!), signature sourdough, sourdough-based pastries (Wed-Sun)",
-      "tags": [
-        "Sourdough Kings",
-        "Nelson Bay Success",
-        "Pastry Masters"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Momo Wholefood Co",
-      "city": "newcastle",
-      "category": "cafe",
-      "ranking_score": 2.2,
-      "location": "Newcastle CBD",
-      "area": "CBD",
-      "vibe": "asian",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Making waves on TikTok's Newcastle foodie recommendations. Wholefood focus with fresh, nourishing options that don't compromise on flavor.",
-      "mustTry": "Wholefood breakfast bowls, nourishing lunch options, fresh juices, plant-based menu items",
-      "tags": [
-        "Wholefood Focus",
-        "TikTok Recommended",
-        "Fresh & Healthy"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Monte",
-      "city": "newcastle",
-      "category": "cafe",
-      "ranking_score": 2.1,
-      "location": "Newcastle CBD",
-      "area": "CBD",
-      "vibe": "toasties",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Brand new cafe that opened late 2024 and already getting TikTok reviews. The newest breakfast spot creating buzz in Newcastle's CBD with quality coffee and fresh takes on cafe classics.",
-      "mustTry": "Breakfast menu, specialty coffee, cafe classics with creative twists",
-      "tags": [
-        "Brand New",
-        "Late 2024 Opening",
-        "CBD Buzz"
-      ],
-      "trend_signals": {
-        "google_trends": 14,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
+        "tiktok_mentions": 150,
+        "last_scored": "2026-04-19"
       }
     }
   ]

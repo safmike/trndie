@@ -45,10 +45,60 @@
   },
   "venues": [
     {
+      "name": "Good Neighbour Cafe",
+      "city": "canberra",
+      "category": "cafe",
+      "ranking_score": 3.7,
+      "location": "Kingston, 1/55 Wentworth Ave",
+      "area": "Kingston",
+      "vibe": "matcha",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "TikTok can't stop talking about this Kingston spot. The viral strawberry matcha has everyone making the trip, and the chilli crab folding eggs are a game-changer. From the team behind Gus' Place.",
+      "mustTry": "Viral strawberry matcha, chilli crab folding eggs, specialty breakfast dishes, ONA coffee",
+      "tags": [
+        "TikTok Famous",
+        "Strawberry Matcha",
+        "Breakfast Goals"
+      ],
+      "trend_signals": {
+        "google_trends": 50,
+        "tiktok_mentions": 221,
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
+      "name": "On Lonsdale",
+      "city": "canberra",
+      "category": "cafe",
+      "ranking_score": 2.9,
+      "location": "Braddon, 23 Lonsdale St",
+      "area": "Braddon",
+      "vibe": "asian",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Opened in 2025 and already a Braddon staple. Japanese/Korean-inspired sandos on soft shokupan milk bread served with award-winning ONA coffee. The Nanban Chicken and matcha game is unreal.",
+      "mustTry": "Nanban Chicken sando with sweet soy and yuzu aioli, Sando-O-Fish, matcha drinks, rice bowls, poke bowls",
+      "tags": [
+        "2025 Opening",
+        "Japanese Sandos",
+        "ONA Coffee"
+      ],
+      "trend_signals": {
+        "google_trends": 33,
+        "tiktok_mentions": 163,
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
       "name": "Brew & Crust",
       "city": "canberra",
       "category": "bakery",
-      "ranking_score": 3.7,
+      "ranking_score": 2.4,
       "location": "Manuka, Shop 33/18 Flinders Way",
       "area": "City",
       "vibe": "matcha",
@@ -66,64 +116,39 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 268,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
-      "name": "Good Neighbour Cafe",
+      "name": "Sunday in Canberra",
       "city": "canberra",
       "category": "cafe",
-      "ranking_score": 3.5,
-      "location": "Kingston, 1/55 Wentworth Ave",
-      "area": "Kingston",
-      "vibe": "matcha",
+      "ranking_score": 2.4,
+      "location": "Gungahlin, 54 Ernest Cavanagh St",
+      "area": "Gungahlin",
+      "vibe": "aesthetic",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "TikTok can't stop talking about this Kingston spot. The viral strawberry matcha has everyone making the trip, and the chilli crab folding eggs are a game-changer. From the team behind Gus' Place.",
-      "mustTry": "Viral strawberry matcha, chilli crab folding eggs, specialty breakfast dishes, ONA coffee",
+      "description": "Instagram's darling with their iconic Rainbow Bagel and French Toast topped with fairy floss. Every dish is photogenic and delicious. Expect loaded options with Biscoff, fresh fruits, and ice cream.",
+      "mustTry": "Rainbow Bagel, French Toast with whipped cream cheese, fresh fruits, Biscoff crumbs, ice cream and fairy floss",
       "tags": [
-        "TikTok Famous",
-        "Strawberry Matcha",
-        "Breakfast Goals"
+        "Rainbow Bagel",
+        "Fairy Floss",
+        "Instagram Gold"
       ],
       "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 221,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "On Lonsdale",
-      "city": "canberra",
-      "category": "cafe",
-      "ranking_score": 3.2,
-      "location": "Braddon, 23 Lonsdale St",
-      "area": "Braddon",
-      "vibe": "asian",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Opened in 2025 and already a Braddon staple. Japanese/Korean-inspired sandos on soft shokupan milk bread served with award-winning ONA coffee. The Nanban Chicken and matcha game is unreal.",
-      "mustTry": "Nanban Chicken sando with sweet soy and yuzu aioli, Sando-O-Fish, matcha drinks, rice bowls, poke bowls",
-      "tags": [
-        "2025 Opening",
-        "Japanese Sandos",
-        "ONA Coffee"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 163,
-        "last_scored": "2026-04-16"
+        "google_trends": 49,
+        "tiktok_mentions": 116,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "The Cupping Room",
       "city": "canberra",
       "category": "cafe",
-      "ranking_score": 3.2,
+      "ranking_score": 2.2,
       "location": "City, 1 University Ave (near ANU)",
       "area": "City",
       "vibe": "aesthetic",
@@ -141,14 +166,14 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 282,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Bunny Beans Night Cafe",
       "city": "canberra",
       "category": "cafe",
-      "ranking_score": 3,
+      "ranking_score": 1.8,
       "location": "Kippax & Greenway",
       "area": "Gungahlin",
       "vibe": "aesthetic",
@@ -166,14 +191,14 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 126,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Bite & Savor",
       "city": "canberra",
       "category": "bakery",
-      "ranking_score": 2,
+      "ranking_score": 1.5,
       "location": "City, Sydney Building",
       "area": "City",
       "vibe": "bakery",
@@ -191,39 +216,14 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 269,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Caffè al Lago",
-      "city": "canberra",
-      "category": "deli",
-      "ranking_score": 1.7,
-      "location": "Gungahlin, 60A Phyllis Ashton Circuit",
-      "area": "Gungahlin",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Italian delicatessen with stunning lakeside views at Yerrabi Pond. Everything is made fresh in front of you. Their Pistachio Mortadella schiacciata is a must-try — walk-ins only so be prepared to wait.",
-      "mustTry": "Pistachio Mortadella schiacciata with stracciatella, basil pesto, arugula and pistachios, freshly baked Italian sandwiches",
-      "tags": [
-        "Italian Deli",
-        "Lake Views",
-        "Fresh Daily"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 177,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "BUNA",
       "city": "canberra",
       "category": "cafe",
-      "ranking_score": 1.7,
+      "ranking_score": 1.3,
       "location": "City, Rudd St",
       "area": "City",
       "vibe": "aesthetic",
@@ -241,39 +241,39 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 203,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
-      "name": "Sunday in Canberra",
+      "name": "Caffè al Lago",
       "city": "canberra",
-      "category": "cafe",
-      "ranking_score": 1.4,
-      "location": "Gungahlin, 54 Ernest Cavanagh St",
+      "category": "deli",
+      "ranking_score": 1.2,
+      "location": "Gungahlin, 60A Phyllis Ashton Circuit",
       "area": "Gungahlin",
-      "vibe": "aesthetic",
+      "vibe": "bakery",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "Instagram's darling with their iconic Rainbow Bagel and French Toast topped with fairy floss. Every dish is photogenic and delicious. Expect loaded options with Biscoff, fresh fruits, and ice cream.",
-      "mustTry": "Rainbow Bagel, French Toast with whipped cream cheese, fresh fruits, Biscoff crumbs, ice cream and fairy floss",
+      "description": "Italian delicatessen with stunning lakeside views at Yerrabi Pond. Everything is made fresh in front of you. Their Pistachio Mortadella schiacciata is a must-try — walk-ins only so be prepared to wait.",
+      "mustTry": "Pistachio Mortadella schiacciata with stracciatella, basil pesto, arugula and pistachios, freshly baked Italian sandwiches",
       "tags": [
-        "Rainbow Bagel",
-        "Fairy Floss",
-        "Instagram Gold"
+        "Italian Deli",
+        "Lake Views",
+        "Fresh Daily"
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 116,
-        "last_scored": "2026-04-16"
+        "tiktok_mentions": 177,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Greenhouse Coffee Co",
       "city": "canberra",
       "category": "cafe",
-      "ranking_score": 1.4,
+      "ranking_score": 1,
       "location": "Canberra Centre, Upper Level CF38",
       "area": "City",
       "vibe": "aesthetic",
@@ -291,7 +291,7 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 131,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     }
   ]

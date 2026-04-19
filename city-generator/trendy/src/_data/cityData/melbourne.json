@@ -64,20 +64,20 @@
         "FYP Legend"
       ],
       "trend_signals": {
-        "google_trends": 67,
+        "google_trends": 72,
         "tiktok_mentions": 923,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "The Butter Room",
       "city": "melbourne",
       "category": "bakery",
-      "ranking_score": 7.9,
+      "ranking_score": 6.6,
       "location": "CBD, 16 Katherine Place",
       "area": "CBD",
       "vibe": "korean",
-      "viral": true,
+      "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
@@ -89,34 +89,9 @@
         "8am-6pm"
       ],
       "trend_signals": {
-        "google_trends": 52,
+        "google_trends": 20,
         "tiktok_mentions": 1068,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Nimbo",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 6.9,
-      "location": "CBD (Hidden Alleyway)",
-      "area": "CBD",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Viral matcha and latte dessert cafe hidden in a Melbourne alleyway. Cozy winter menu with creative flavor combinations that actually work.",
-      "mustTry": "Ube matcha, banana croissant pudding, hojicha hot chocolate, hot Earl Grey matcha",
-      "tags": [
-        "Hidden Gem",
-        "Matcha Magic",
-        "Dessert Cafe"
-      ],
-      "trend_signals": {
-        "google_trends": 45,
-        "tiktok_mentions": 866,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
@@ -139,66 +114,16 @@
         "Coffee Goals"
       ],
       "trend_signals": {
-        "google_trends": 90,
+        "google_trends": 92,
         "tiktok_mentions": 213,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "The Glass Den",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 6.3,
-      "location": "Coburg",
-      "area": "Inner North",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": "https://www.instagram.com/theglassden_/",
-      "tiktok_url": "https://www.tiktok.com/@theglassden_",
-      "website_url": null,
-      "description": "The most aesthetic cafe in Melbourne right now. Their brunch dishes are as beautiful as they are delicious, and the space is absolutely Instagram-worthy.",
-      "mustTry": "Viral Italian hot chocolate, new brunch dishes, strawberry matcha latte",
-      "tags": [
-        "TikTok Famous",
-        "Aesthetic AF",
-        "Brunch Goals"
-      ],
-      "trend_signals": {
-        "google_trends": 79,
-        "tiktok_mentions": 136,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Bottari",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 5.7,
-      "location": "CBD, Elizabeth Street",
-      "area": "CBD",
-      "vibe": "korean",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Seoul's TRNDIE cafe culture comes to Melbourne. Famous for viral doughnut drinks that are as chic as they are delicious, crowned with caramel cream \"doughnuts\".",
-      "mustTry": "Doughnut lattes (chai cinnamon, chocolate, matcha), Kkwabaegi (twisted Korean donuts), Jasmine Cloud",
-      "tags": [
-        "Korean Vibes",
-        "Doughnut Drinks",
-        "Instagram Gold"
-      ],
-      "trend_signals": {
-        "google_trends": 60,
-        "tiktok_mentions": 126,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Assembly",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 5.5,
+      "ranking_score": 6.3,
       "location": "North Melbourne",
       "area": "Inner North",
       "vibe": "specialty",
@@ -214,16 +139,91 @@
         "Innovative"
       ],
       "trend_signals": {
-        "google_trends": 89,
+        "google_trends": 97,
         "tiktok_mentions": 300,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
+      "name": "Nimbo",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 5.9,
+      "location": "CBD (Hidden Alleyway)",
+      "area": "CBD",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Viral matcha and latte dessert cafe hidden in a Melbourne alleyway. Cozy winter menu with creative flavor combinations that actually work.",
+      "mustTry": "Ube matcha, banana croissant pudding, hojicha hot chocolate, hot Earl Grey matcha",
+      "tags": [
+        "Hidden Gem",
+        "Matcha Magic",
+        "Dessert Cafe"
+      ],
+      "trend_signals": {
+        "google_trends": 70,
+        "tiktok_mentions": 169,
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
+      "name": "The Glass Den",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 5.7,
+      "location": "Coburg",
+      "area": "Inner North",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": "https://www.instagram.com/theglassden_/",
+      "tiktok_url": "https://www.tiktok.com/@theglassden_",
+      "website_url": null,
+      "description": "The most aesthetic cafe in Melbourne right now. Their brunch dishes are as beautiful as they are delicious, and the space is absolutely Instagram-worthy.",
+      "mustTry": "Viral Italian hot chocolate, new brunch dishes, strawberry matcha latte",
+      "tags": [
+        "TikTok Famous",
+        "Aesthetic AF",
+        "Brunch Goals"
+      ],
+      "trend_signals": {
+        "google_trends": 75,
+        "tiktok_mentions": 136,
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
+      "name": "Bottari",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 5.4,
+      "location": "CBD, Elizabeth Street",
+      "area": "CBD",
+      "vibe": "korean",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Seoul's TRNDIE cafe culture comes to Melbourne. Famous for viral doughnut drinks that are as chic as they are delicious, crowned with caramel cream \"doughnuts\".",
+      "mustTry": "Doughnut lattes (chai cinnamon, chocolate, matcha), Kkwabaegi (twisted Korean donuts), Jasmine Cloud",
+      "tags": [
+        "Korean Vibes",
+        "Doughnut Drinks",
+        "Instagram Gold"
+      ],
+      "trend_signals": {
+        "google_trends": 76,
+        "tiktok_mentions": 126,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Standing Room",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 4.9,
+      "ranking_score": 5.3,
       "location": "Carlton / Fitzroy North",
       "area": "Inner North",
       "vibe": "specialty",
@@ -239,16 +239,16 @@
         "Cult Following"
       ],
       "trend_signals": {
-        "google_trends": 88,
+        "google_trends": 79,
         "tiktok_mentions": 225,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "In Btwn",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 4.1,
+      "ranking_score": 4.4,
       "location": "CBD (Near Queen Vic Market)",
       "area": "CBD",
       "vibe": "specialty",
@@ -264,16 +264,16 @@
         "Buzzing Vibe"
       ],
       "trend_signals": {
-        "google_trends": 0,
+        "google_trends": 57,
         "tiktok_mentions": 319,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Trbl",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 2.1,
+      "ranking_score": 2.4,
       "location": "Presgrave Place (Laneway)",
       "area": "CBD",
       "vibe": "korean",
@@ -289,9 +289,9 @@
         "Street Art"
       ],
       "trend_signals": {
-        "google_trends": 0,
+        "google_trends": 33,
         "tiktok_mentions": 177,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     }
   ]

@@ -45,6 +45,31 @@
   },
   "venues": [
     {
+      "name": "Be Free",
+      "city": "perth",
+      "category": "cafe",
+      "ranking_score": 6.2,
+      "location": "Perth City Farm, East Perth",
+      "area": "CBD",
+      "vibe": "organic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Cult Subiaco favorite relocated to greener pastures. Surrounded by community gardens, the produce-driven ethos feels more relevant than ever.",
+      "mustTry": "Umami-forward miso mushrooms, wild-caught smoked salmon crumpets, Saturday farmer's market-sourced dishes",
+      "tags": [
+        "Organic",
+        "City Farm",
+        "Eco-Conscious"
+      ],
+      "trend_signals": {
+        "google_trends": 97,
+        "tiktok_mentions": 261,
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
       "name": "North 54",
       "city": "perth",
       "category": "cafe",
@@ -64,41 +89,16 @@
         "Hospo Legend"
       ],
       "trend_signals": {
-        "google_trends": 81,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Be Free",
-      "city": "perth",
-      "category": "cafe",
-      "ranking_score": 5.6,
-      "location": "Perth City Farm, East Perth",
-      "area": "CBD",
-      "vibe": "organic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Cult Subiaco favorite relocated to greener pastures. Surrounded by community gardens, the produce-driven ethos feels more relevant than ever.",
-      "mustTry": "Umami-forward miso mushrooms, wild-caught smoked salmon crumpets, Saturday farmer's market-sourced dishes",
-      "tags": [
-        "Organic",
-        "City Farm",
-        "Eco-Conscious"
-      ],
-      "trend_signals": {
         "google_trends": 76,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
+        "tiktok_mentions": 336,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Smidge Bakery",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 5,
+      "ranking_score": 5.4,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -114,16 +114,41 @@
         "New Digs"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
+        "google_trends": 85,
+        "tiktok_mentions": 183,
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
+      "name": "Bert's",
+      "city": "perth",
+      "category": "cafe",
+      "ranking_score": 2.7,
+      "location": "City Beach",
+      "area": "Coastal",
+      "vibe": "organic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Day-to-night diner in the old Odyssea space. Laid-back coastal look with contemporary edge, creating the perfect \"local\" vibe for beachgoers.",
+      "mustTry": "Breakfast classics (acai, breakfast burger, pancakes, eggs Benedict), oysters, prawn and lobster plates",
+      "tags": [
+        "Beach Dining",
+        "All-Day",
+        "Coastal Vibes"
+      ],
+      "trend_signals": {
+        "google_trends": 17,
+        "tiktok_mentions": 317,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Side Piece Deli",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 4,
+      "ranking_score": 2.4,
       "location": "Swanbourne",
       "area": "Coastal",
       "vibe": "deli",
@@ -140,15 +165,40 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
+        "tiktok_mentions": 183,
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
+      "name": "The Cool Room",
+      "city": "perth",
+      "category": "bakery",
+      "ranking_score": 2.2,
+      "location": "East Fremantle",
+      "area": "Fremantle",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Beloved Freo spot now in the hands of chef Drew Dawson and baker Charlotte Beeton. Short, curated menu that delights without overwhelming.",
+      "mustTry": "Scandi breakfast plates, house-baked treats, chef-driven seasonal menu",
+      "tags": [
+        "Neighbourhood Soul",
+        "Fremantle",
+        "Chef-Driven"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 333,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Lovers Deli & Canteen",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 3.5,
+      "ranking_score": 2,
       "location": "White Gum Valley",
       "area": "Coastal",
       "vibe": "deli",
@@ -165,65 +215,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Bert's",
-      "city": "perth",
-      "category": "cafe",
-      "ranking_score": 3.1,
-      "location": "City Beach",
-      "area": "Coastal",
-      "vibe": "organic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Day-to-night diner in the old Odyssea space. Laid-back coastal look with contemporary edge, creating the perfect \"local\" vibe for beachgoers.",
-      "mustTry": "Breakfast classics (acai, breakfast burger, pancakes, eggs Benedict), oysters, prawn and lobster plates",
-      "tags": [
-        "Beach Dining",
-        "All-Day",
-        "Coastal Vibes"
-      ],
-      "trend_signals": {
-        "google_trends": 18,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "The Cool Room",
-      "city": "perth",
-      "category": "bakery",
-      "ranking_score": 3.1,
-      "location": "East Fremantle",
-      "area": "Fremantle",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Beloved Freo spot now in the hands of chef Drew Dawson and baker Charlotte Beeton. Short, curated menu that delights without overwhelming.",
-      "mustTry": "Scandi breakfast plates, house-baked treats, chef-driven seasonal menu",
-      "tags": [
-        "Neighbourhood Soul",
-        "Fremantle",
-        "Chef-Driven"
-      ],
-      "trend_signals": {
-        "google_trends": 27,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
+        "tiktok_mentions": 108,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Angelwood Pies",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 2.4,
+      "ranking_score": 1.9,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -240,15 +240,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
+        "tiktok_mentions": 337,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Earl's",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 1.8,
+      "ranking_score": 1.3,
       "location": "Mount Hawthorn",
       "area": "Inner Suburbs",
       "vibe": "deli",
@@ -265,15 +265,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
+        "tiktok_mentions": 215,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Banh Mi & Chè",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 1.5,
+      "ranking_score": 1,
       "location": "Carlisle",
       "area": "Inner Suburbs",
       "vibe": "vietnamese",
@@ -290,8 +290,8 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-04-16"
+        "tiktok_mentions": 141,
+        "last_scored": "2026-04-19"
       }
     }
   ]

@@ -52,7 +52,7 @@
       "name": "Up South",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 8.8,
+      "ranking_score": 8.7,
       "location": "Bondi Beach",
       "area": "Bondi",
       "vibe": "aesthetic",
@@ -70,14 +70,14 @@
       "trend_signals": {
         "google_trends": 77,
         "tiktok_mentions": 1111,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Cafe Margaret",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 7.5,
+      "ranking_score": 8.1,
       "location": "Double Bay",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -93,41 +93,16 @@
         "Double Bay Chic"
       ],
       "trend_signals": {
-        "google_trends": 44,
+        "google_trends": 81,
         "tiktok_mentions": 984,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Speedos Cafe",
-      "city": "sydney",
-      "category": "cafe",
-      "ranking_score": 7.3,
-      "location": "North Bondi",
-      "area": "Bondi",
-      "vibe": "waterfront",
-      "viral": false,
-      "instagram_url": "https://www.instagram.com/speedoscafe/",
-      "tiktok_url": null,
-      "website_url": "https://speedoscafe.com.au/",
-      "description": "Sydney's most famous cafe at Bondi Beach. The tiramisu latte is the best in Sydney, and the viral egg sandwich keeps people coming back.",
-      "mustTry": "Tiramisu latte ($12), acai bowl ($21), viral egg sandwich ($20)",
-      "tags": [
-        "Beach Views",
-        "Iconic Location",
-        "Instagram Famous"
-      ],
-      "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 1043,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Chubby Cubby",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 7.1,
+      "ranking_score": 6.3,
       "location": "Haymarket, George St",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -143,16 +118,41 @@
         "Viral Videos"
       ],
       "trend_signals": {
-        "google_trends": 36,
-        "tiktok_mentions": 962,
-        "last_scored": "2026-04-16"
+        "google_trends": 78,
+        "tiktok_mentions": 209,
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
+      "name": "Speedos Cafe",
+      "city": "sydney",
+      "category": "cafe",
+      "ranking_score": 6.1,
+      "location": "North Bondi",
+      "area": "Bondi",
+      "vibe": "waterfront",
+      "viral": false,
+      "instagram_url": "https://www.instagram.com/speedoscafe/",
+      "tiktok_url": null,
+      "website_url": "https://speedoscafe.com.au/",
+      "description": "Sydney's most famous cafe at Bondi Beach. The tiramisu latte is the best in Sydney, and the viral egg sandwich keeps people coming back.",
+      "mustTry": "Tiramisu latte ($12), acai bowl ($21), viral egg sandwich ($20)",
+      "tags": [
+        "Beach Views",
+        "Iconic Location",
+        "Instagram Famous"
+      ],
+      "trend_signals": {
+        "google_trends": 66,
+        "tiktok_mentions": 243,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Circa Espresso",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 6.5,
+      "ranking_score": 5.7,
       "location": "Parramatta",
       "area": "West",
       "vibe": "aesthetic",
@@ -168,66 +168,16 @@
         "Cult Following"
       ],
       "trend_signals": {
-        "google_trends": 24,
-        "tiktok_mentions": 926,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Baking 101",
-      "city": "sydney",
-      "category": "bakery",
-      "ranking_score": 5.6,
-      "location": "Stanmore",
-      "area": "Inner West",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Home to 2025's It Baked Good: the cinnamon scroll that sold out in three hours. Classic, unhurried vibes with red curtains, chandeliers, and piano jazz.",
-      "mustTry": "Signature cinnamon scroll with vanilla cream, Scent of Stanmore carrot cake",
-      "tags": [
-        "Cinnamon Scroll Icon",
-        "Old-Timey Vibes",
-        "Black Star Pastry Alumni"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 871,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Bote",
-      "city": "sydney",
-      "category": "cafe",
-      "ranking_score": 5.1,
-      "location": "Manly Boatshed",
-      "area": "North",
-      "vibe": "waterfront",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Breezy Northern Beaches vibes on the water. Coffee from Mecca, pastries from Staple, cookies from Butter Boy. Dogs and families welcome.",
-      "mustTry": "Coffee and pastries on the deck, feet dangling over the water",
-      "tags": [
-        "On The Water",
-        "Dog-Friendly",
-        "Northern Beaches"
-      ],
-      "trend_signals": {
-        "google_trends": 83,
-        "tiktok_mentions": 274,
-        "last_scored": "2026-04-16"
+        "google_trends": 70,
+        "tiktok_mentions": 194,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Happyfield",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 4.7,
+      "ranking_score": 5.6,
       "location": "Haberfield",
       "area": "Inner West",
       "vibe": "bakery",
@@ -243,16 +193,66 @@
         "Diner Vibes"
       ],
       "trend_signals": {
-        "google_trends": 76,
+        "google_trends": 91,
         "tiktok_mentions": 241,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
+      "name": "Bote",
+      "city": "sydney",
+      "category": "cafe",
+      "ranking_score": 5.5,
+      "location": "Manly Boatshed",
+      "area": "North",
+      "vibe": "waterfront",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Breezy Northern Beaches vibes on the water. Coffee from Mecca, pastries from Staple, cookies from Butter Boy. Dogs and families welcome.",
+      "mustTry": "Coffee and pastries on the deck, feet dangling over the water",
+      "tags": [
+        "On The Water",
+        "Dog-Friendly",
+        "Northern Beaches"
+      ],
+      "trend_signals": {
+        "google_trends": 80,
+        "tiktok_mentions": 274,
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
+      "name": "Baking 101",
+      "city": "sydney",
+      "category": "bakery",
+      "ranking_score": 4.1,
+      "location": "Stanmore",
+      "area": "Inner West",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Home to 2025's It Baked Good: the cinnamon scroll that sold out in three hours. Classic, unhurried vibes with red curtains, chandeliers, and piano jazz.",
+      "mustTry": "Signature cinnamon scroll with vanilla cream, Scent of Stanmore carrot cake",
+      "tags": [
+        "Cinnamon Scroll Icon",
+        "Old-Timey Vibes",
+        "Black Star Pastry Alumni"
+      ],
+      "trend_signals": {
+        "google_trends": 33,
+        "tiktok_mentions": 171,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Manteiga",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 2.9,
+      "ranking_score": 1.7,
       "location": "Darlinghurst",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -268,16 +268,16 @@
         "Michelin Pedigree"
       ],
       "trend_signals": {
-        "google_trends": 33,
+        "google_trends": 0,
         "tiktok_mentions": 132,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Cafe Cressida",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 1.9,
+      "ranking_score": 1.2,
       "location": "Queens Court, Paddington",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -295,7 +295,7 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 129,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     }
   ]

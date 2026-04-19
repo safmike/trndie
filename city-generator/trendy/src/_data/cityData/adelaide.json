@@ -45,60 +45,10 @@
   },
   "venues": [
     {
-      "name": "Jenny's Bakery",
-      "city": "adelaide",
-      "category": "bakery",
-      "ranking_score": 4.9,
-      "location": "Keswick",
-      "area": "Inner Suburbs",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Not exactly new, but its influence built to fever pitch in 2025. Keswick location in old Sylvia's Deli site opened November to much acclaim.",
-      "mustTry": "Asian bakery specialties, cult-status pastries",
-      "tags": [
-        "2025 Fever Pitch",
-        "Asian Bakery",
-        "Cult Following"
-      ],
-      "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 259,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Pompom",
-      "city": "adelaide",
-      "category": "cafe",
-      "ranking_score": 4.6,
-      "location": "Forestville",
-      "area": "Inner Suburbs",
-      "vibe": "greek",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "All-day diner from Whistle & Flute crew built on fluffy flatbread fired in a Gozney oven. Riding Forestville's redevelopment wave.",
-      "mustTry": "The Pompom (chicken, roast capsicum, feta, tabouli), Cypriot sausage pita, whipped ricotta with spicy salami",
-      "tags": [
-        "Gozney Oven",
-        "Greek-Italian",
-        "Rising Suburb"
-      ],
-      "trend_signals": {
-        "google_trends": 30,
-        "tiktok_mentions": 265,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
       "name": "Bora",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 4.6,
+      "ranking_score": 4.5,
       "location": "Jetty Street, Grange",
       "area": "Beachside",
       "vibe": "bakery",
@@ -114,16 +64,16 @@
         "Alma Brazil"
       ],
       "trend_signals": {
-        "google_trends": 78,
+        "google_trends": 62,
         "tiktok_mentions": 145,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Pinco Deli",
       "city": "adelaide",
       "category": "deli",
-      "ranking_score": 4,
+      "ranking_score": 4.2,
       "location": "Exchange Place, CBD",
       "area": "CBD",
       "vibe": "italian",
@@ -139,16 +89,66 @@
         "Italian Staples"
       ],
       "trend_signals": {
-        "google_trends": 24,
+        "google_trends": 52,
         "tiktok_mentions": 342,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
+      "name": "Jenny's Bakery",
+      "city": "adelaide",
+      "category": "bakery",
+      "ranking_score": 3.8,
+      "location": "Keswick",
+      "area": "Inner Suburbs",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Not exactly new, but its influence built to fever pitch in 2025. Keswick location in old Sylvia's Deli site opened November to much acclaim.",
+      "mustTry": "Asian bakery specialties, cult-status pastries",
+      "tags": [
+        "2025 Fever Pitch",
+        "Asian Bakery",
+        "Cult Following"
+      ],
+      "trend_signals": {
+        "google_trends": 29,
+        "tiktok_mentions": 259,
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
+      "name": "Pompom",
+      "city": "adelaide",
+      "category": "cafe",
+      "ranking_score": 3.8,
+      "location": "Forestville",
+      "area": "Inner Suburbs",
+      "vibe": "greek",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "All-day diner from Whistle & Flute crew built on fluffy flatbread fired in a Gozney oven. Riding Forestville's redevelopment wave.",
+      "mustTry": "The Pompom (chicken, roast capsicum, feta, tabouli), Cypriot sausage pita, whipped ricotta with spicy salami",
+      "tags": [
+        "Gozney Oven",
+        "Greek-Italian",
+        "Rising Suburb"
+      ],
+      "trend_signals": {
+        "google_trends": 33,
+        "tiktok_mentions": 265,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Meli",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 3.4,
+      "ranking_score": 2.1,
       "location": "Various Locations",
       "area": "Inner Suburbs",
       "vibe": "greek",
@@ -166,39 +166,14 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 196,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Yuku dō",
-      "city": "adelaide",
-      "category": "cafe",
-      "ranking_score": 3,
-      "location": "CBD",
-      "area": "CBD",
-      "vibe": "matcha",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "If you have a Japanese-inspired brunch craving, this is Adelaide's answer. Modern Japanese breakfast meets Australian cafe culture.",
-      "mustTry": "Japanese breakfast sets, matcha drinks, contemporary Japanese-Australian fusion plates",
-      "tags": [
-        "Japanese Brunch",
-        "Matcha Specialist",
-        "Fusion Done Right"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 146,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Cha-no-wa",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 2.8,
+      "ranking_score": 1.9,
       "location": "King William Street, CBD",
       "area": "CBD",
       "vibe": "matcha",
@@ -216,14 +191,14 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 269,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Homeboy 2.0",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 2.7,
+      "ranking_score": 1.9,
       "location": "North Terrace, CBD",
       "area": "CBD",
       "vibe": "bakery",
@@ -241,14 +216,39 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 266,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
+      }
+    },
+    {
+      "name": "Yuku dō",
+      "city": "adelaide",
+      "category": "cafe",
+      "ranking_score": 1.8,
+      "location": "CBD",
+      "area": "CBD",
+      "vibe": "matcha",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "If you have a Japanese-inspired brunch craving, this is Adelaide's answer. Modern Japanese breakfast meets Australian cafe culture.",
+      "mustTry": "Japanese breakfast sets, matcha drinks, contemporary Japanese-Australian fusion plates",
+      "tags": [
+        "Japanese Brunch",
+        "Matcha Specialist",
+        "Fusion Done Right"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 146,
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Gathers & Grounds",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 2.3,
+      "ranking_score": 1.8,
       "location": "Glenelg",
       "area": "Beachside",
       "vibe": "matcha",
@@ -266,14 +266,14 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 326,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     },
     {
       "name": "Arlos",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 1.7,
+      "ranking_score": 1.2,
       "location": "King William St & Grenfell St",
       "area": "CBD",
       "vibe": "bakery",
@@ -291,7 +291,7 @@
       "trend_signals": {
         "google_trends": 0,
         "tiktok_mentions": 175,
-        "last_scored": "2026-04-16"
+        "last_scored": "2026-04-19"
       }
     }
   ]
