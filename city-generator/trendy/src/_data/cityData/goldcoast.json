@@ -48,7 +48,7 @@
       "name": "Paddock Bakery",
       "city": "goldcoast",
       "category": "bakery",
-      "ranking_score": 7.4,
+      "ranking_score": 6.4,
       "location": "Miami",
       "area": "Southern",
       "vibe": "bakery",
@@ -64,16 +64,16 @@
         "Pastry Heaven"
       ],
       "trend_signals": {
-        "google_trends": 66,
-        "tiktok_mentions": 848,
-        "last_scored": "2026-04-19"
+        "google_trends": 74,
+        "tiktok_mentions": 256,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Bam Bam Bakehouse",
       "city": "goldcoast",
       "category": "bakery",
-      "ranking_score": 4.6,
+      "ranking_score": 5,
       "location": "Mermaid Beach",
       "area": "Central",
       "vibe": "bakery",
@@ -89,16 +89,16 @@
         "Breakfast Goals"
       ],
       "trend_signals": {
-        "google_trends": 89,
-        "tiktok_mentions": 228,
-        "last_scored": "2026-04-19"
+        "google_trends": 82,
+        "tiktok_mentions": 132,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "The Bread Social",
       "city": "goldcoast",
       "category": "bakery",
-      "ranking_score": 3.9,
+      "ranking_score": 3.3,
       "location": "Currumbin & Isle of Capri",
       "area": "Southern",
       "vibe": "bakery",
@@ -114,41 +114,16 @@
         "Baker's Dream"
       ],
       "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 319,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "The Holliday Coffee",
-      "city": "goldcoast",
-      "category": "cafe",
-      "ranking_score": 3.7,
-      "location": "Nobby Beach, Wave St",
-      "area": "Central",
-      "vibe": "matcha",
-      "viral": false,
-      "instagram_url": "https://www.instagram.com/thehollidaycoffee/",
-      "tiktok_url": "https://www.tiktok.com/@thehollidaycoffee",
-      "website_url": null,
-      "description": "TikTok's obsession right now and for good reason. The best iced matcha on the Gold Coast, served in peachy cups from 5:30am daily. This sunny corner coffee spot has everyone talking.",
-      "mustTry": "Strawberry iced matcha (10/10), matcha float, three-cheese jaffles, honeycomb macadamia butter crumpets, avo croissants",
-      "tags": [
-        "TikTok Famous",
-        "Best Matcha",
-        "Opens 5:30am"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
+        "google_trends": 33,
         "tiktok_mentions": 165,
-        "last_scored": "2026-04-19"
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Piada Co",
       "city": "goldcoast",
       "category": "cafe",
-      "ranking_score": 3.6,
+      "ranking_score": 3.2,
       "location": "Burleigh Heads",
       "area": "Burleigh",
       "vibe": "aesthetic",
@@ -165,15 +140,65 @@
       ],
       "trend_signals": {
         "google_trends": 33,
-        "tiktok_mentions": 297,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 201,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Dayo",
+      "city": "goldcoast",
+      "category": "cafe",
+      "ranking_score": 2.8,
+      "location": "Riverfront (Late 2025 Opening)",
+      "area": "Central",
+      "vibe": "asian",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "The new Filipino fusion cafe that literally blew minds with its Ube latte. Despite just opening, it's already garnered a cult following for unique takes on breakfast classics.",
+      "mustTry": "Viral Ube latte, longganisa breakfast muffins (like a fancy Maccas version), fried chicken & waffles, matcha French toast with strawberry",
+      "tags": [
+        "Filipino Fusion",
+        "Ube Everything",
+        "2025 Opening"
+      ],
+      "trend_signals": {
+        "google_trends": 33,
+        "tiktok_mentions": 337,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "The Holliday Coffee",
+      "city": "goldcoast",
+      "category": "cafe",
+      "ranking_score": 2.5,
+      "location": "Nobby Beach, Wave St",
+      "area": "Central",
+      "vibe": "matcha",
+      "viral": false,
+      "instagram_url": "https://www.instagram.com/thehollidaycoffee/",
+      "tiktok_url": "https://www.tiktok.com/@thehollidaycoffee",
+      "website_url": null,
+      "description": "TikTok's obsession right now and for good reason. The best iced matcha on the Gold Coast, served in peachy cups from 5:30am daily. This sunny corner coffee spot has everyone talking.",
+      "mustTry": "Strawberry iced matcha (10/10), matcha float, three-cheese jaffles, honeycomb macadamia butter crumpets, avo croissants",
+      "tags": [
+        "TikTok Famous",
+        "Best Matcha",
+        "Opens 5:30am"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 319,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Bobby Bang's",
       "city": "goldcoast",
       "category": "cafe",
-      "ranking_score": 2.6,
+      "ranking_score": 1.5,
       "location": "The Oxley, Nobby Beach",
       "area": "Central",
       "vibe": "matcha",
@@ -190,90 +215,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 277,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Dayo",
-      "city": "goldcoast",
-      "category": "cafe",
-      "ranking_score": 2.3,
-      "location": "Riverfront (Late 2025 Opening)",
-      "area": "Central",
-      "vibe": "asian",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "The new Filipino fusion cafe that literally blew minds with its Ube latte. Despite just opening, it's already garnered a cult following for unique takes on breakfast classics.",
-      "mustTry": "Viral Ube latte, longganisa breakfast muffins (like a fancy Maccas version), fried chicken & waffles, matcha French toast with strawberry",
-      "tags": [
-        "Filipino Fusion",
-        "Ube Everything",
-        "2025 Opening"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 142,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Refinery Coffee",
-      "city": "goldcoast",
-      "category": "cafe",
-      "ranking_score": 1.9,
-      "location": "Currumbin",
-      "area": "Southern",
-      "vibe": "matcha",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Making waves with their viral iced matcha float that's been all over everyone's feed. A Currumbin favourite that knows how to do specialty drinks right.",
-      "mustTry": "Viral iced matcha float (10/10), specialty coffee, refreshing cold brews",
-      "tags": [
-        "Matcha Float",
-        "Specialty Coffee",
-        "Currumbin Fave"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 280,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Mohr Cafe and Deli",
-      "city": "goldcoast",
-      "category": "deli",
-      "ranking_score": 1.9,
-      "location": "Burleigh Heads, Hibiscus Haven",
-      "area": "Burleigh",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Burleigh's newest crush serving Mohr than you'd expect. This late 2025 opening delivers all-day Mediterranean-inspired plates and a deli stacked with grab-and-go goodness — food worth telling the group chat about.",
-      "mustTry": "Mediterranean lunches, all-day breakfast plates, deli selections, pairs perfectly with Black Hops next door",
-      "tags": [
-        "Mediterranean",
-        "Fresh Opening",
-        "Deli Goodness"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 279,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 123,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Cheek Café",
       "city": "goldcoast",
       "category": "cafe",
-      "ranking_score": 1.5,
+      "ranking_score": 1.4,
       "location": "Southport",
       "area": "Northern",
       "vibe": "aesthetic",
@@ -290,8 +240,58 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 185,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 341,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Refinery Coffee",
+      "city": "goldcoast",
+      "category": "cafe",
+      "ranking_score": 1.2,
+      "location": "Currumbin",
+      "area": "Southern",
+      "vibe": "matcha",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Making waves with their viral iced matcha float that's been all over everyone's feed. A Currumbin favourite that knows how to do specialty drinks right.",
+      "mustTry": "Viral iced matcha float (10/10), specialty coffee, refreshing cold brews",
+      "tags": [
+        "Matcha Float",
+        "Specialty Coffee",
+        "Currumbin Fave"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 126,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Mohr Cafe and Deli",
+      "city": "goldcoast",
+      "category": "deli",
+      "ranking_score": 1.2,
+      "location": "Burleigh Heads, Hibiscus Haven",
+      "area": "Burleigh",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Burleigh's newest crush serving Mohr than you'd expect. This late 2025 opening delivers all-day Mediterranean-inspired plates and a deli stacked with grab-and-go goodness — food worth telling the group chat about.",
+      "mustTry": "Mediterranean lunches, all-day breakfast plates, deli selections, pairs perfectly with Black Hops next door",
+      "tags": [
+        "Mediterranean",
+        "Fresh Opening",
+        "Deli Goodness"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 124,
+        "last_scored": "2026-04-26"
       }
     }
   ]

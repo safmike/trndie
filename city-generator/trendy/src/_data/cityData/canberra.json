@@ -48,7 +48,7 @@
       "name": "Good Neighbour Cafe",
       "city": "canberra",
       "category": "cafe",
-      "ranking_score": 3.7,
+      "ranking_score": 4.4,
       "location": "Kingston, 1/55 Wentworth Ave",
       "area": "Kingston",
       "vibe": "matcha",
@@ -64,16 +64,91 @@
         "Breakfast Goals"
       ],
       "trend_signals": {
-        "google_trends": 50,
-        "tiktok_mentions": 221,
-        "last_scored": "2026-04-19"
+        "google_trends": 77,
+        "tiktok_mentions": 125,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Sunday in Canberra",
+      "city": "canberra",
+      "category": "cafe",
+      "ranking_score": 3.8,
+      "location": "Gungahlin, 54 Ernest Cavanagh St",
+      "area": "Gungahlin",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Instagram's darling with their iconic Rainbow Bagel and French Toast topped with fairy floss. Every dish is photogenic and delicious. Expect loaded options with Biscoff, fresh fruits, and ice cream.",
+      "mustTry": "Rainbow Bagel, French Toast with whipped cream cheese, fresh fruits, Biscoff crumbs, ice cream and fairy floss",
+      "tags": [
+        "Rainbow Bagel",
+        "Fairy Floss",
+        "Instagram Gold"
+      ],
+      "trend_signals": {
+        "google_trends": 66,
+        "tiktok_mentions": 311,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "The Cupping Room",
+      "city": "canberra",
+      "category": "cafe",
+      "ranking_score": 2.8,
+      "location": "City, 1 University Ave (near ANU)",
+      "area": "City",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Canberra's original Instagrammable cafe with signature duck-egg green cups. Fresh renovations in 2024 gave it a community vibe while keeping the aesthetic that made it famous. French toast and avocado are legendary.",
+      "mustTry": "French toast with butterscotch, mandarin, yuzu mascarpone and chocolate almond, Avocado with goats' cheese and pomegranate, ONA coffee",
+      "tags": [
+        "OG Instagrammable",
+        "Duck-Egg Green",
+        "Community Fave"
+      ],
+      "trend_signals": {
+        "google_trends": 33,
+        "tiktok_mentions": 337,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Bite & Savor",
+      "city": "canberra",
+      "category": "bakery",
+      "ranking_score": 2.1,
+      "location": "City, Sydney Building",
+      "area": "City",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Sweet dreams coming true with French egg tarts, fruit danishes and croissants crafted with French Lescure butter. Opening in 2025, baking fresh sourdough and decadent desserts six days a week.",
+      "mustTry": "French egg tarts, Melting Choc Brown Sugar Mochi, Charcoal Pistachio Cream Croissant, buttery croissants, sourdough",
+      "tags": [
+        "French Bakery",
+        "2025 Opening",
+        "Mochi Specials"
+      ],
+      "trend_signals": {
+        "google_trends": 33,
+        "tiktok_mentions": 175,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "On Lonsdale",
       "city": "canberra",
       "category": "cafe",
-      "ranking_score": 2.9,
+      "ranking_score": 1.7,
       "location": "Braddon, 23 Lonsdale St",
       "area": "Braddon",
       "vibe": "asian",
@@ -89,16 +164,16 @@
         "ONA Coffee"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 163,
-        "last_scored": "2026-04-19"
+        "google_trends": 0,
+        "tiktok_mentions": 108,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Brew & Crust",
       "city": "canberra",
       "category": "bakery",
-      "ranking_score": 2.4,
+      "ranking_score": 1.5,
       "location": "Manuka, Shop 33/18 Flinders Way",
       "area": "City",
       "vibe": "matcha",
@@ -115,65 +190,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 268,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Sunday in Canberra",
-      "city": "canberra",
-      "category": "cafe",
-      "ranking_score": 2.4,
-      "location": "Gungahlin, 54 Ernest Cavanagh St",
-      "area": "Gungahlin",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Instagram's darling with their iconic Rainbow Bagel and French Toast topped with fairy floss. Every dish is photogenic and delicious. Expect loaded options with Biscoff, fresh fruits, and ice cream.",
-      "mustTry": "Rainbow Bagel, French Toast with whipped cream cheese, fresh fruits, Biscoff crumbs, ice cream and fairy floss",
-      "tags": [
-        "Rainbow Bagel",
-        "Fairy Floss",
-        "Instagram Gold"
-      ],
-      "trend_signals": {
-        "google_trends": 49,
-        "tiktok_mentions": 116,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "The Cupping Room",
-      "city": "canberra",
-      "category": "cafe",
-      "ranking_score": 2.2,
-      "location": "City, 1 University Ave (near ANU)",
-      "area": "City",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Canberra's original Instagrammable cafe with signature duck-egg green cups. Fresh renovations in 2024 gave it a community vibe while keeping the aesthetic that made it famous. French toast and avocado are legendary.",
-      "mustTry": "French toast with butterscotch, mandarin, yuzu mascarpone and chocolate almond, Avocado with goats' cheese and pomegranate, ONA coffee",
-      "tags": [
-        "OG Instagrammable",
-        "Duck-Egg Green",
-        "Community Fave"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 282,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 173,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Bunny Beans Night Cafe",
       "city": "canberra",
       "category": "cafe",
-      "ranking_score": 1.8,
+      "ranking_score": 1.3,
       "location": "Kippax & Greenway",
       "area": "Gungahlin",
       "vibe": "aesthetic",
@@ -190,40 +215,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 126,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Bite & Savor",
-      "city": "canberra",
-      "category": "bakery",
-      "ranking_score": 1.5,
-      "location": "City, Sydney Building",
-      "area": "City",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Sweet dreams coming true with French egg tarts, fruit danishes and croissants crafted with French Lescure butter. Opening in 2025, baking fresh sourdough and decadent desserts six days a week.",
-      "mustTry": "French egg tarts, Melting Choc Brown Sugar Mochi, Charcoal Pistachio Cream Croissant, buttery croissants, sourdough",
-      "tags": [
-        "French Bakery",
-        "2025 Opening",
-        "Mochi Specials"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 269,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 222,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "BUNA",
       "city": "canberra",
       "category": "cafe",
-      "ranking_score": 1.3,
+      "ranking_score": 1.2,
       "location": "City, Rudd St",
       "area": "City",
       "vibe": "aesthetic",
@@ -240,40 +240,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 203,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Caffè al Lago",
-      "city": "canberra",
-      "category": "deli",
-      "ranking_score": 1.2,
-      "location": "Gungahlin, 60A Phyllis Ashton Circuit",
-      "area": "Gungahlin",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Italian delicatessen with stunning lakeside views at Yerrabi Pond. Everything is made fresh in front of you. Their Pistachio Mortadella schiacciata is a must-try — walk-ins only so be prepared to wait.",
-      "mustTry": "Pistachio Mortadella schiacciata with stracciatella, basil pesto, arugula and pistachios, freshly baked Italian sandwiches",
-      "tags": [
-        "Italian Deli",
-        "Lake Views",
-        "Fresh Daily"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 177,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 258,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Greenhouse Coffee Co",
       "city": "canberra",
       "category": "cafe",
-      "ranking_score": 1,
+      "ranking_score": 1.2,
       "location": "Canberra Centre, Upper Level CF38",
       "area": "City",
       "vibe": "aesthetic",
@@ -290,8 +265,33 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 131,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 325,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Caffè al Lago",
+      "city": "canberra",
+      "category": "deli",
+      "ranking_score": 1.1,
+      "location": "Gungahlin, 60A Phyllis Ashton Circuit",
+      "area": "Gungahlin",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Italian delicatessen with stunning lakeside views at Yerrabi Pond. Everything is made fresh in front of you. Their Pistachio Mortadella schiacciata is a must-try — walk-ins only so be prepared to wait.",
+      "mustTry": "Pistachio Mortadella schiacciata with stracciatella, basil pesto, arugula and pistachios, freshly baked Italian sandwiches",
+      "tags": [
+        "Italian Deli",
+        "Lake Views",
+        "Fresh Daily"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 233,
+        "last_scored": "2026-04-26"
       }
     }
   ]

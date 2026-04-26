@@ -48,7 +48,7 @@
       "name": "Groove",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 8,
+      "ranking_score": 8.7,
       "location": "Abbotsford, 17 Lithgow St",
       "area": "Inner East",
       "vibe": "vietnamese",
@@ -64,34 +64,9 @@
         "FYP Legend"
       ],
       "trend_signals": {
-        "google_trends": 72,
-        "tiktok_mentions": 923,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "The Butter Room",
-      "city": "melbourne",
-      "category": "bakery",
-      "ranking_score": 6.6,
-      "location": "CBD, 16 Katherine Place",
-      "area": "CBD",
-      "vibe": "korean",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Cozy Korean pastry paradise. The moment you step in, you're surrounded by unique pastries and desserts that look like art pieces.",
-      "mustTry": "Injeolmi Pandoro (the icon), tiramisu croissant, tissue bread, Korean dumplings pie",
-      "tags": [
-        "Korean Pastries",
-        "Pandoro Heaven",
-        "8am-6pm"
-      ],
-      "trend_signals": {
-        "google_trends": 20,
-        "tiktok_mentions": 1068,
-        "last_scored": "2026-04-19"
+        "google_trends": 91,
+        "tiktok_mentions": 1292,
+        "last_scored": "2026-04-26"
       }
     },
     {
@@ -114,16 +89,41 @@
         "Coffee Goals"
       ],
       "trend_signals": {
-        "google_trends": 92,
-        "tiktok_mentions": 213,
-        "last_scored": "2026-04-19"
+        "google_trends": 86,
+        "tiktok_mentions": 309,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "The Butter Room",
+      "city": "melbourne",
+      "category": "bakery",
+      "ranking_score": 6.3,
+      "location": "CBD, 16 Katherine Place",
+      "area": "CBD",
+      "vibe": "korean",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Cozy Korean pastry paradise. The moment you step in, you're surrounded by unique pastries and desserts that look like art pieces.",
+      "mustTry": "Injeolmi Pandoro (the icon), tiramisu croissant, tissue bread, Korean dumplings pie",
+      "tags": [
+        "Korean Pastries",
+        "Pandoro Heaven",
+        "8am-6pm"
+      ],
+      "trend_signals": {
+        "google_trends": 88,
+        "tiktok_mentions": 157,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Assembly",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 6.3,
+      "ranking_score": 6.2,
       "location": "North Melbourne",
       "area": "Inner North",
       "vibe": "specialty",
@@ -139,16 +139,16 @@
         "Innovative"
       ],
       "trend_signals": {
-        "google_trends": 97,
-        "tiktok_mentions": 300,
-        "last_scored": "2026-04-19"
+        "google_trends": 86,
+        "tiktok_mentions": 245,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Nimbo",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 5.9,
+      "ranking_score": 6.1,
       "location": "CBD (Hidden Alleyway)",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -164,16 +164,16 @@
         "Dessert Cafe"
       ],
       "trend_signals": {
-        "google_trends": 70,
-        "tiktok_mentions": 169,
-        "last_scored": "2026-04-19"
+        "google_trends": 87,
+        "tiktok_mentions": 265,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "The Glass Den",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 5.7,
+      "ranking_score": 5.6,
       "location": "Coburg",
       "area": "Inner North",
       "vibe": "aesthetic",
@@ -189,41 +189,16 @@
         "Brunch Goals"
       ],
       "trend_signals": {
-        "google_trends": 75,
-        "tiktok_mentions": 136,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Bottari",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 5.4,
-      "location": "CBD, Elizabeth Street",
-      "area": "CBD",
-      "vibe": "korean",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Seoul's TRNDIE cafe culture comes to Melbourne. Famous for viral doughnut drinks that are as chic as they are delicious, crowned with caramel cream \"doughnuts\".",
-      "mustTry": "Doughnut lattes (chai cinnamon, chocolate, matcha), Kkwabaegi (twisted Korean donuts), Jasmine Cloud",
-      "tags": [
-        "Korean Vibes",
-        "Doughnut Drinks",
-        "Instagram Gold"
-      ],
-      "trend_signals": {
-        "google_trends": 76,
-        "tiktok_mentions": 126,
-        "last_scored": "2026-04-19"
+        "google_trends": 71,
+        "tiktok_mentions": 290,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Standing Room",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 5.3,
+      "ranking_score": 5.4,
       "location": "Carlton / Fitzroy North",
       "area": "Inner North",
       "vibe": "specialty",
@@ -239,9 +214,34 @@
         "Cult Following"
       ],
       "trend_signals": {
-        "google_trends": 79,
-        "tiktok_mentions": 225,
-        "last_scored": "2026-04-19"
+        "google_trends": 74,
+        "tiktok_mentions": 280,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Bottari",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 5.2,
+      "location": "CBD, Elizabeth Street",
+      "area": "CBD",
+      "vibe": "korean",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Seoul's TRNDIE cafe culture comes to Melbourne. Famous for viral doughnut drinks that are as chic as they are delicious, crowned with caramel cream \"doughnuts\".",
+      "mustTry": "Doughnut lattes (chai cinnamon, chocolate, matcha), Kkwabaegi (twisted Korean donuts), Jasmine Cloud",
+      "tags": [
+        "Korean Vibes",
+        "Doughnut Drinks",
+        "Instagram Gold"
+      ],
+      "trend_signals": {
+        "google_trends": 68,
+        "tiktok_mentions": 222,
+        "last_scored": "2026-04-26"
       }
     },
     {
@@ -264,16 +264,16 @@
         "Buzzing Vibe"
       ],
       "trend_signals": {
-        "google_trends": 57,
-        "tiktok_mentions": 319,
-        "last_scored": "2026-04-19"
+        "google_trends": 60,
+        "tiktok_mentions": 223,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Trbl",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 2.4,
+      "ranking_score": 2.9,
       "location": "Presgrave Place (Laneway)",
       "area": "CBD",
       "vibe": "korean",
@@ -290,8 +290,8 @@
       ],
       "trend_signals": {
         "google_trends": 33,
-        "tiktok_mentions": 177,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 331,
+        "last_scored": "2026-04-26"
       }
     }
   ]

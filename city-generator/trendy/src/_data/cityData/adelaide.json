@@ -48,7 +48,7 @@
       "name": "Bora",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 4.5,
+      "ranking_score": 5.4,
       "location": "Jetty Street, Grange",
       "area": "Beachside",
       "vibe": "bakery",
@@ -64,16 +64,16 @@
         "Alma Brazil"
       ],
       "trend_signals": {
-        "google_trends": 62,
-        "tiktok_mentions": 145,
-        "last_scored": "2026-04-19"
+        "google_trends": 86,
+        "tiktok_mentions": 301,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Pinco Deli",
       "city": "adelaide",
       "category": "deli",
-      "ranking_score": 4.2,
+      "ranking_score": 4.5,
       "location": "Exchange Place, CBD",
       "area": "CBD",
       "vibe": "italian",
@@ -89,16 +89,16 @@
         "Italian Staples"
       ],
       "trend_signals": {
-        "google_trends": 52,
-        "tiktok_mentions": 342,
-        "last_scored": "2026-04-19"
+        "google_trends": 71,
+        "tiktok_mentions": 147,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Jenny's Bakery",
       "city": "adelaide",
       "category": "bakery",
-      "ranking_score": 3.8,
+      "ranking_score": 4,
       "location": "Keswick",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -114,41 +114,16 @@
         "Cult Following"
       ],
       "trend_signals": {
-        "google_trends": 29,
-        "tiktok_mentions": 259,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Pompom",
-      "city": "adelaide",
-      "category": "cafe",
-      "ranking_score": 3.8,
-      "location": "Forestville",
-      "area": "Inner Suburbs",
-      "vibe": "greek",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "All-day diner from Whistle & Flute crew built on fluffy flatbread fired in a Gozney oven. Riding Forestville's redevelopment wave.",
-      "mustTry": "The Pompom (chicken, roast capsicum, feta, tabouli), Cypriot sausage pita, whipped ricotta with spicy salami",
-      "tags": [
-        "Gozney Oven",
-        "Greek-Italian",
-        "Rising Suburb"
-      ],
-      "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 265,
-        "last_scored": "2026-04-19"
+        "google_trends": 59,
+        "tiktok_mentions": 165,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Meli",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 2.1,
+      "ranking_score": 2.6,
       "location": "Various Locations",
       "area": "Inner Suburbs",
       "vibe": "greek",
@@ -164,66 +139,41 @@
         "Cousins Project"
       ],
       "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 196,
-        "last_scored": "2026-04-19"
+        "google_trends": 33,
+        "tiktok_mentions": 292,
+        "last_scored": "2026-04-26"
       }
     },
     {
-      "name": "Cha-no-wa",
+      "name": "Pompom",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 1.9,
-      "location": "King William Street, CBD",
-      "area": "CBD",
-      "vibe": "matcha",
+      "ranking_score": 2.2,
+      "location": "Forestville",
+      "area": "Inner Suburbs",
+      "vibe": "greek",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "Japanese brand's first Australian outpost. Premium matcha sourced from Kyoto during the global matcha shortage — Adelaide's love affair with matcha reached fever pitch here.",
-      "mustTry": "Kyoto-sourced matcha and hojicha, matcha frappes and sundaes, Japanese cakes and ice-cream",
+      "description": "All-day diner from Whistle & Flute crew built on fluffy flatbread fired in a Gozney oven. Riding Forestville's redevelopment wave.",
+      "mustTry": "The Pompom (chicken, roast capsicum, feta, tabouli), Cypriot sausage pita, whipped ricotta with spicy salami",
       "tags": [
-        "Kyoto Matcha",
-        "Japanese Chain",
-        "Ex-Muni Chef"
+        "Gozney Oven",
+        "Greek-Italian",
+        "Rising Suburb"
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 269,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Homeboy 2.0",
-      "city": "adelaide",
-      "category": "cafe",
-      "ranking_score": 1.9,
-      "location": "North Terrace, CBD",
-      "area": "CBD",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Teen entrepreneur Tom Oswald's viral Hahndorf cafe reborn in the CBD. Mum's famous cinnamon scrolls had a moment in 2025 — and they're topnotch.",
-      "mustTry": "Mum's famous cinnamon scrolls, focaccia toasties, Homeboy coffee blend",
-      "tags": [
-        "Viral Teen",
-        "Scroll Moment",
-        "Renew Adelaide"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 266,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 171,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Yuku dō",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 1.8,
+      "ranking_score": 1.4,
       "location": "CBD",
       "area": "CBD",
       "vibe": "matcha",
@@ -240,15 +190,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 146,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 242,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Gathers & Grounds",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 1.8,
+      "ranking_score": 1.4,
       "location": "Glenelg",
       "area": "Beachside",
       "vibe": "matcha",
@@ -265,15 +215,65 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 326,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 230,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Cha-no-wa",
+      "city": "adelaide",
+      "category": "cafe",
+      "ranking_score": 1.2,
+      "location": "King William Street, CBD",
+      "area": "CBD",
+      "vibe": "matcha",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Japanese brand's first Australian outpost. Premium matcha sourced from Kyoto during the global matcha shortage — Adelaide's love affair with matcha reached fever pitch here.",
+      "mustTry": "Kyoto-sourced matcha and hojicha, matcha frappes and sundaes, Japanese cakes and ice-cream",
+      "tags": [
+        "Kyoto Matcha",
+        "Japanese Chain",
+        "Ex-Muni Chef"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 115,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Homeboy 2.0",
+      "city": "adelaide",
+      "category": "cafe",
+      "ranking_score": 1.2,
+      "location": "North Terrace, CBD",
+      "area": "CBD",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Teen entrepreneur Tom Oswald's viral Hahndorf cafe reborn in the CBD. Mum's famous cinnamon scrolls had a moment in 2025 — and they're topnotch.",
+      "mustTry": "Mum's famous cinnamon scrolls, focaccia toasties, Homeboy coffee blend",
+      "tags": [
+        "Viral Teen",
+        "Scroll Moment",
+        "Renew Adelaide"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 112,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Arlos",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 1.2,
+      "ranking_score": 1.1,
       "location": "King William St & Grenfell St",
       "area": "CBD",
       "vibe": "bakery",
@@ -290,8 +290,8 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 175,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 271,
+        "last_scored": "2026-04-26"
       }
     }
   ]

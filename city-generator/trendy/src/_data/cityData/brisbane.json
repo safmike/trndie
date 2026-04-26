@@ -48,7 +48,7 @@
       "name": "Semi Semi",
       "city": "brisbane",
       "category": "cafe",
-      "ranking_score": 6.6,
+      "ranking_score": 6.5,
       "location": "Newstead",
       "area": "Inner North",
       "vibe": "asian",
@@ -64,16 +64,16 @@
         "Customizable Toppings"
       ],
       "trend_signals": {
-        "google_trends": 94,
-        "tiktok_mentions": 308,
-        "last_scored": "2026-04-19"
+        "google_trends": 95,
+        "tiktok_mentions": 154,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Idle",
       "city": "brisbane",
       "category": "bakery",
-      "ranking_score": 6.2,
+      "ranking_score": 6.4,
       "location": "New Farm",
       "area": "Inner North",
       "vibe": "bakery",
@@ -89,16 +89,16 @@
         "Market Section"
       ],
       "trend_signals": {
-        "google_trends": 92,
-        "tiktok_mentions": 166,
-        "last_scored": "2026-04-19"
+        "google_trends": 93,
+        "tiktok_mentions": 262,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Coffee Anthology",
       "city": "brisbane",
       "category": "cafe",
-      "ranking_score": 5.5,
+      "ranking_score": 5.6,
       "location": "CBD",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -114,41 +114,16 @@
         "Industrial Chic"
       ],
       "trend_signals": {
-        "google_trends": 94,
-        "tiktok_mentions": 333,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Cafe Disco",
-      "city": "brisbane",
-      "category": "cafe",
-      "ranking_score": 4.4,
-      "location": "West End",
-      "area": "Inner West",
-      "vibe": "asian",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Bright yellow facade, impossible to miss. Bangladeshi-Australian fusion that Gerald Ong called his favorite bite of the year.",
-      "mustTry": "Bangladeshi-inspired breakfast dishes, lunch specials blending two cultures, evening cocktails",
-      "tags": [
-        "Cultural Fusion",
-        "All-Day Diner",
-        "Gerald Ong Approved"
-      ],
-      "trend_signals": {
-        "google_trends": 66,
-        "tiktok_mentions": 294,
-        "last_scored": "2026-04-19"
+        "google_trends": 75,
+        "tiktok_mentions": 277,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Speed Dial",
       "city": "brisbane",
       "category": "cafe",
-      "ranking_score": 4.1,
+      "ranking_score": 5.5,
       "location": "Newstead (Bunnings Carpark)",
       "area": "Inner North",
       "vibe": "aesthetic",
@@ -164,16 +139,41 @@
         "Walk-In Only"
       ],
       "trend_signals": {
-        "google_trends": 77,
-        "tiktok_mentions": 112,
-        "last_scored": "2026-04-19"
+        "google_trends": 93,
+        "tiktok_mentions": 306,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Cafe Disco",
+      "city": "brisbane",
+      "category": "cafe",
+      "ranking_score": 4.6,
+      "location": "West End",
+      "area": "Inner West",
+      "vibe": "asian",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Bright yellow facade, impossible to miss. Bangladeshi-Australian fusion that Gerald Ong called his favorite bite of the year.",
+      "mustTry": "Bangladeshi-inspired breakfast dishes, lunch specials blending two cultures, evening cocktails",
+      "tags": [
+        "Cultural Fusion",
+        "All-Day Diner",
+        "Gerald Ong Approved"
+      ],
+      "trend_signals": {
+        "google_trends": 63,
+        "tiktok_mentions": 238,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Landing Bakery",
       "city": "brisbane",
       "category": "bakery",
-      "ranking_score": 3,
+      "ranking_score": 2.9,
       "location": "Scarborough",
       "area": "Bayside",
       "vibe": "bakery",
@@ -189,41 +189,16 @@
         "Moreton Bay"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 178,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Smidge Bakery",
-      "city": "brisbane",
-      "category": "bakery",
-      "ranking_score": 2.9,
-      "location": "Leederville",
-      "area": "Inner North",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Self-proclaimed home of \"Perth's best cinny scrolls\" and they might be right. Selling 20 trays a day in their new bigger space.",
-      "mustTry": "Cinnamon scrolls (the legend), choc caramel brownies, salted Caramilk cookies, sangas",
-      "tags": [
-        "Scroll Mania",
-        "Viral Success",
-        "New Location"
-      ],
-      "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 157,
-        "last_scored": "2026-04-19"
+        "google_trends": 24,
+        "tiktok_mentions": 334,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "So What Stereo",
       "city": "brisbane",
       "category": "cafe",
-      "ranking_score": 2.7,
+      "ranking_score": 2.6,
       "location": "Little Street, Fortitude Valley",
       "area": "CBD",
       "vibe": "thai",
@@ -239,16 +214,41 @@
         "Cult Status"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 110,
-        "last_scored": "2026-04-19"
+        "google_trends": 31,
+        "tiktok_mentions": 166,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Smidge Bakery",
+      "city": "brisbane",
+      "category": "bakery",
+      "ranking_score": 1.7,
+      "location": "Leederville",
+      "area": "Inner North",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Self-proclaimed home of \"Perth's best cinny scrolls\" and they might be right. Selling 20 trays a day in their new bigger space.",
+      "mustTry": "Cinnamon scrolls (the legend), choc caramel brownies, salted Caramilk cookies, sangas",
+      "tags": [
+        "Scroll Mania",
+        "Viral Success",
+        "New Location"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 102,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Alby's",
       "city": "brisbane",
       "category": "cafe",
-      "ranking_score": 2.1,
+      "ranking_score": 1.7,
       "location": "Wavell Heights",
       "area": "Inner North",
       "vibe": "aesthetic",
@@ -265,15 +265,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 210,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 305,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Baking 101",
       "city": "brisbane",
       "category": "bakery",
-      "ranking_score": 2,
+      "ranking_score": 1.3,
       "location": "Stanmore",
       "area": "Inner West",
       "vibe": "bakery",
@@ -290,8 +290,8 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 291,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 137,
+        "last_scored": "2026-04-26"
       }
     }
   ]

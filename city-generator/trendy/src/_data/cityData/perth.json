@@ -64,16 +64,16 @@
         "Eco-Conscious"
       ],
       "trend_signals": {
-        "google_trends": 97,
-        "tiktok_mentions": 261,
-        "last_scored": "2026-04-19"
+        "google_trends": 82,
+        "tiktok_mentions": 316,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "North 54",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 6,
+      "ranking_score": 6.1,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "vietnamese",
@@ -89,16 +89,16 @@
         "Hospo Legend"
       ],
       "trend_signals": {
-        "google_trends": 76,
-        "tiktok_mentions": 336,
-        "last_scored": "2026-04-19"
+        "google_trends": 87,
+        "tiktok_mentions": 240,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Smidge Bakery",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 5.4,
+      "ranking_score": 3.3,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -114,16 +114,16 @@
         "New Digs"
       ],
       "trend_signals": {
-        "google_trends": 85,
-        "tiktok_mentions": 183,
-        "last_scored": "2026-04-19"
+        "google_trends": 0,
+        "tiktok_mentions": 279,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Bert's",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 2.7,
+      "ranking_score": 3.1,
       "location": "City Beach",
       "area": "Coastal",
       "vibe": "organic",
@@ -139,16 +139,16 @@
         "Coastal Vibes"
       ],
       "trend_signals": {
-        "google_trends": 17,
-        "tiktok_mentions": 317,
-        "last_scored": "2026-04-19"
+        "google_trends": 48,
+        "tiktok_mentions": 161,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Side Piece Deli",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 2.4,
+      "ranking_score": 2.7,
       "location": "Swanbourne",
       "area": "Coastal",
       "vibe": "deli",
@@ -164,16 +164,16 @@
         "Pantry Group"
       ],
       "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 183,
-        "last_scored": "2026-04-19"
+        "google_trends": 33,
+        "tiktok_mentions": 279,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "The Cool Room",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 2.2,
+      "ranking_score": 2.4,
       "location": "East Fremantle",
       "area": "Fremantle",
       "vibe": "bakery",
@@ -189,16 +189,16 @@
         "Chef-Driven"
       ],
       "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 333,
-        "last_scored": "2026-04-19"
+        "google_trends": 33,
+        "tiktok_mentions": 179,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Lovers Deli & Canteen",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 2,
+      "ranking_score": 1.4,
       "location": "White Gum Valley",
       "area": "Coastal",
       "vibe": "deli",
@@ -215,15 +215,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 108,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 203,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Angelwood Pies",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 1.9,
+      "ranking_score": 1.2,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -240,40 +240,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 337,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Earl's",
-      "city": "perth",
-      "category": "deli",
-      "ranking_score": 1.3,
-      "location": "Mount Hawthorn",
-      "area": "Inner Suburbs",
-      "vibe": "deli",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Filling Mount Hawthorn's lunchtime gap with serious sangas. Hoagies, French dips, and classic American-style sandwiches done right.",
-      "mustTry": "Hoagies, French dip sandwiches, classic deli fare",
-      "tags": [
-        "Sandwich Joint",
-        "Lunchtime Hero",
-        "American Style"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 215,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 143,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Banh Mi & Chè",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 1,
+      "ranking_score": 1.2,
       "location": "Carlisle",
       "area": "Inner Suburbs",
       "vibe": "vietnamese",
@@ -290,8 +265,33 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 141,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 336,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Earl's",
+      "city": "perth",
+      "category": "deli",
+      "ranking_score": 1,
+      "location": "Mount Hawthorn",
+      "area": "Inner Suburbs",
+      "vibe": "deli",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Filling Mount Hawthorn's lunchtime gap with serious sangas. Hoagies, French dips, and classic American-style sandwiches done right.",
+      "mustTry": "Hoagies, French dip sandwiches, classic deli fare",
+      "tags": [
+        "Sandwich Joint",
+        "Lunchtime Hero",
+        "American Style"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 120,
+        "last_scored": "2026-04-26"
       }
     }
   ]

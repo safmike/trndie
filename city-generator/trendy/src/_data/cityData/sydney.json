@@ -49,35 +49,10 @@
   },
   "venues": [
     {
-      "name": "Up South",
-      "city": "sydney",
-      "category": "cafe",
-      "ranking_score": 8.7,
-      "location": "Bondi Beach",
-      "area": "Bondi",
-      "vibe": "aesthetic",
-      "viral": true,
-      "instagram_url": "https://www.instagram.com/upsouthcafe/",
-      "tiktok_url": "https://www.tiktok.com/@upsouthcafe",
-      "website_url": null,
-      "description": "TikTok's favorite Sydney cafe of 2024! The matcha croissants and pistachio treats here have broken the internet. Lines wrap around the block, but everyone agrees it's worth the wait.",
-      "mustTry": "Iced Strawberry Matcha, Iced Pistachio Matcha, matcha croissant, pistachio croissant (the crookie!)",
-      "tags": [
-        "TikTok Legend",
-        "Matcha Heaven",
-        "Queue-Worthy"
-      ],
-      "trend_signals": {
-        "google_trends": 77,
-        "tiktok_mentions": 1111,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
       "name": "Cafe Margaret",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 8.1,
+      "ranking_score": 8.6,
       "location": "Double Bay",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -93,16 +68,66 @@
         "Double Bay Chic"
       ],
       "trend_signals": {
-        "google_trends": 81,
-        "tiktok_mentions": 984,
-        "last_scored": "2026-04-19"
+        "google_trends": 86,
+        "tiktok_mentions": 1214,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Up South",
+      "city": "sydney",
+      "category": "cafe",
+      "ranking_score": 8.3,
+      "location": "Bondi Beach",
+      "area": "Bondi",
+      "vibe": "aesthetic",
+      "viral": true,
+      "instagram_url": "https://www.instagram.com/upsouthcafe/",
+      "tiktok_url": "https://www.tiktok.com/@upsouthcafe",
+      "website_url": null,
+      "description": "TikTok's favorite Sydney cafe of 2024! The matcha croissants and pistachio treats here have broken the internet. Lines wrap around the block, but everyone agrees it's worth the wait.",
+      "mustTry": "Iced Strawberry Matcha, Iced Pistachio Matcha, matcha croissant, pistachio croissant (the crookie!)",
+      "tags": [
+        "TikTok Legend",
+        "Matcha Heaven",
+        "Queue-Worthy"
+      ],
+      "trend_signals": {
+        "google_trends": 84,
+        "tiktok_mentions": 738,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Happyfield",
+      "city": "sydney",
+      "category": "cafe",
+      "ranking_score": 6.3,
+      "location": "Haberfield",
+      "area": "Inner West",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Bright yellow corner cafe bringing Canadian-style pancakes to Sydney's Italian heartland. From ex-Grounds team, serving proper North American diner vibes.",
+      "mustTry": "Canadian pancake stacks with 100% maple syrup, breakfast platter for two, coddled eggs, soft-serve acai sundae",
+      "tags": [
+        "Canadian Style",
+        "Pancake Stacks",
+        "Diner Vibes"
+      ],
+      "trend_signals": {
+        "google_trends": 93,
+        "tiktok_mentions": 337,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Chubby Cubby",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 6.3,
+      "ranking_score": 5.8,
       "location": "Haymarket, George St",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -118,34 +143,9 @@
         "Viral Videos"
       ],
       "trend_signals": {
-        "google_trends": 78,
-        "tiktok_mentions": 209,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Speedos Cafe",
-      "city": "sydney",
-      "category": "cafe",
-      "ranking_score": 6.1,
-      "location": "North Bondi",
-      "area": "Bondi",
-      "vibe": "waterfront",
-      "viral": false,
-      "instagram_url": "https://www.instagram.com/speedoscafe/",
-      "tiktok_url": null,
-      "website_url": "https://speedoscafe.com.au/",
-      "description": "Sydney's most famous cafe at Bondi Beach. The tiramisu latte is the best in Sydney, and the viral egg sandwich keeps people coming back.",
-      "mustTry": "Tiramisu latte ($12), acai bowl ($21), viral egg sandwich ($20)",
-      "tags": [
-        "Beach Views",
-        "Iconic Location",
-        "Instagram Famous"
-      ],
-      "trend_signals": {
-        "google_trends": 66,
-        "tiktok_mentions": 243,
-        "last_scored": "2026-04-19"
+        "google_trends": 69,
+        "tiktok_mentions": 305,
+        "last_scored": "2026-04-26"
       }
     },
     {
@@ -168,41 +168,16 @@
         "Cult Following"
       ],
       "trend_signals": {
-        "google_trends": 70,
-        "tiktok_mentions": 194,
-        "last_scored": "2026-04-19"
-      }
-    },
-    {
-      "name": "Happyfield",
-      "city": "sydney",
-      "category": "cafe",
-      "ranking_score": 5.6,
-      "location": "Haberfield",
-      "area": "Inner West",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Bright yellow corner cafe bringing Canadian-style pancakes to Sydney's Italian heartland. From ex-Grounds team, serving proper North American diner vibes.",
-      "mustTry": "Canadian pancake stacks with 100% maple syrup, breakfast platter for two, coddled eggs, soft-serve acai sundae",
-      "tags": [
-        "Canadian Style",
-        "Pancake Stacks",
-        "Diner Vibes"
-      ],
-      "trend_signals": {
-        "google_trends": 91,
-        "tiktok_mentions": 241,
-        "last_scored": "2026-04-19"
+        "google_trends": 77,
+        "tiktok_mentions": 290,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Bote",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 5.5,
+      "ranking_score": 5.6,
       "location": "Manly Boatshed",
       "area": "North",
       "vibe": "waterfront",
@@ -218,16 +193,41 @@
         "Northern Beaches"
       ],
       "trend_signals": {
-        "google_trends": 80,
-        "tiktok_mentions": 274,
-        "last_scored": "2026-04-19"
+        "google_trends": 87,
+        "tiktok_mentions": 120,
+        "last_scored": "2026-04-26"
+      }
+    },
+    {
+      "name": "Speedos Cafe",
+      "city": "sydney",
+      "category": "cafe",
+      "ranking_score": 5.4,
+      "location": "North Bondi",
+      "area": "Bondi",
+      "vibe": "waterfront",
+      "viral": false,
+      "instagram_url": "https://www.instagram.com/speedoscafe/",
+      "tiktok_url": null,
+      "website_url": "https://speedoscafe.com.au/",
+      "description": "Sydney's most famous cafe at Bondi Beach. The tiramisu latte is the best in Sydney, and the viral egg sandwich keeps people coming back.",
+      "mustTry": "Tiramisu latte ($12), acai bowl ($21), viral egg sandwich ($20)",
+      "tags": [
+        "Beach Views",
+        "Iconic Location",
+        "Instagram Famous"
+      ],
+      "trend_signals": {
+        "google_trends": 57,
+        "tiktok_mentions": 299,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Baking 101",
       "city": "sydney",
       "category": "bakery",
-      "ranking_score": 4.1,
+      "ranking_score": 3.3,
       "location": "Stanmore",
       "area": "Inner West",
       "vibe": "bakery",
@@ -243,16 +243,16 @@
         "Black Star Pastry Alumni"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 171,
-        "last_scored": "2026-04-19"
+        "google_trends": 26,
+        "tiktok_mentions": 227,
+        "last_scored": "2026-04-26"
       }
     },
     {
       "name": "Manteiga",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 1.7,
+      "ranking_score": 1.3,
       "location": "Darlinghurst",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -269,8 +269,8 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 132,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 226,
+        "last_scored": "2026-04-26"
       }
     },
     {
@@ -294,8 +294,8 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 129,
-        "last_scored": "2026-04-19"
+        "tiktok_mentions": 283,
+        "last_scored": "2026-04-26"
       }
     }
   ]
