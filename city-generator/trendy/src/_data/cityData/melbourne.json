@@ -4,7 +4,7 @@
   "state": "VIC",
   "country": "AU",
   "icon": "🏙️",
-  "updatedAt": "April 2026",
+  "updatedAt": "May 2026",
   "filters": {
     "areas": [
       {
@@ -48,7 +48,7 @@
       "name": "Groove",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 8.7,
+      "ranking_score": 9.1,
       "location": "Abbotsford, 17 Lithgow St",
       "area": "Inner East",
       "vibe": "vietnamese",
@@ -64,16 +64,16 @@
         "FYP Legend"
       ],
       "trend_signals": {
-        "google_trends": 91,
-        "tiktok_mentions": 1292,
-        "last_scored": "2026-04-26"
+        "google_trends": 92,
+        "tiktok_mentions": 1222,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Juniper",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 6.4,
+      "ranking_score": 6.5,
       "location": "South Melbourne, 269 Coventry St",
       "area": "South",
       "vibe": "specialty",
@@ -89,41 +89,16 @@
         "Coffee Goals"
       ],
       "trend_signals": {
-        "google_trends": 86,
-        "tiktok_mentions": 309,
-        "last_scored": "2026-04-26"
-      }
-    },
-    {
-      "name": "The Butter Room",
-      "city": "melbourne",
-      "category": "bakery",
-      "ranking_score": 6.3,
-      "location": "CBD, 16 Katherine Place",
-      "area": "CBD",
-      "vibe": "korean",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Cozy Korean pastry paradise. The moment you step in, you're surrounded by unique pastries and desserts that look like art pieces.",
-      "mustTry": "Injeolmi Pandoro (the icon), tiramisu croissant, tissue bread, Korean dumplings pie",
-      "tags": [
-        "Korean Pastries",
-        "Pandoro Heaven",
-        "8am-6pm"
-      ],
-      "trend_signals": {
-        "google_trends": 88,
-        "tiktok_mentions": 157,
-        "last_scored": "2026-04-26"
+        "google_trends": 92,
+        "tiktok_mentions": 289,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Assembly",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 6.2,
+      "ranking_score": 6.1,
       "location": "North Melbourne",
       "area": "Inner North",
       "vibe": "specialty",
@@ -139,16 +114,16 @@
         "Innovative"
       ],
       "trend_signals": {
-        "google_trends": 86,
-        "tiktok_mentions": 245,
-        "last_scored": "2026-04-26"
+        "google_trends": 88,
+        "tiktok_mentions": 165,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Nimbo",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 6.1,
+      "ranking_score": 5.8,
       "location": "CBD (Hidden Alleyway)",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -164,16 +139,41 @@
         "Dessert Cafe"
       ],
       "trend_signals": {
-        "google_trends": 87,
-        "tiktok_mentions": 265,
-        "last_scored": "2026-04-26"
+        "google_trends": 72,
+        "tiktok_mentions": 294,
+        "last_scored": "2026-05-03"
+      }
+    },
+    {
+      "name": "The Butter Room",
+      "city": "melbourne",
+      "category": "bakery",
+      "ranking_score": 5.4,
+      "location": "CBD, 16 Katherine Place",
+      "area": "CBD",
+      "vibe": "korean",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Cozy Korean pastry paradise. The moment you step in, you're surrounded by unique pastries and desserts that look like art pieces.",
+      "mustTry": "Injeolmi Pandoro (the icon), tiramisu croissant, tissue bread, Korean dumplings pie",
+      "tags": [
+        "Korean Pastries",
+        "Pandoro Heaven",
+        "8am-6pm"
+      ],
+      "trend_signals": {
+        "google_trends": 52,
+        "tiktok_mentions": 339,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "The Glass Den",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 5.6,
+      "ranking_score": 5.4,
       "location": "Coburg",
       "area": "Inner North",
       "vibe": "aesthetic",
@@ -189,34 +189,9 @@
         "Brunch Goals"
       ],
       "trend_signals": {
-        "google_trends": 71,
-        "tiktok_mentions": 290,
-        "last_scored": "2026-04-26"
-      }
-    },
-    {
-      "name": "Standing Room",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 5.4,
-      "location": "Carlton / Fitzroy North",
-      "area": "Inner North",
-      "vibe": "specialty",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Latest creation is making waves: a sweet-tart showstopper using old-school drinking vinegar. Bold, experimental, and uniquely Melbourne.",
-      "mustTry": "Cherry Shrub Spider (fruit vinegar over ice with lemon cream)",
-      "tags": [
-        "Experimental",
-        "Unique Flavors",
-        "Cult Following"
-      ],
-      "trend_signals": {
-        "google_trends": 74,
-        "tiktok_mentions": 280,
-        "last_scored": "2026-04-26"
+        "google_trends": 77,
+        "tiktok_mentions": 129,
+        "last_scored": "2026-05-03"
       }
     },
     {
@@ -239,16 +214,41 @@
         "Instagram Gold"
       ],
       "trend_signals": {
-        "google_trends": 68,
-        "tiktok_mentions": 222,
-        "last_scored": "2026-04-26"
+        "google_trends": 71,
+        "tiktok_mentions": 212,
+        "last_scored": "2026-05-03"
+      }
+    },
+    {
+      "name": "Standing Room",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 4.4,
+      "location": "Carlton / Fitzroy North",
+      "area": "Inner North",
+      "vibe": "specialty",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Latest creation is making waves: a sweet-tart showstopper using old-school drinking vinegar. Bold, experimental, and uniquely Melbourne.",
+      "mustTry": "Cherry Shrub Spider (fruit vinegar over ice with lemon cream)",
+      "tags": [
+        "Experimental",
+        "Unique Flavors",
+        "Cult Following"
+      ],
+      "trend_signals": {
+        "google_trends": 40,
+        "tiktok_mentions": 232,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "In Btwn",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 4.4,
+      "ranking_score": 2.7,
       "location": "CBD (Near Queen Vic Market)",
       "area": "CBD",
       "vibe": "specialty",
@@ -264,16 +264,16 @@
         "Buzzing Vibe"
       ],
       "trend_signals": {
-        "google_trends": 60,
-        "tiktok_mentions": 223,
-        "last_scored": "2026-04-26"
+        "google_trends": 0,
+        "tiktok_mentions": 233,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Trbl",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 2.9,
+      "ranking_score": 2.1,
       "location": "Presgrave Place (Laneway)",
       "area": "CBD",
       "vibe": "korean",
@@ -289,9 +289,9 @@
         "Street Art"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 331,
-        "last_scored": "2026-04-26"
+        "google_trends": 0,
+        "tiktok_mentions": 341,
+        "last_scored": "2026-05-03"
       }
     }
   ]

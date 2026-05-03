@@ -4,7 +4,7 @@
   "state": "WA",
   "country": "AU",
   "icon": "🌴",
-  "updatedAt": "April 2026",
+  "updatedAt": "May 2026",
   "filters": {
     "areas": [
       {
@@ -48,7 +48,7 @@
       "name": "Be Free",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 6.2,
+      "ranking_score": 6,
       "location": "Perth City Farm, East Perth",
       "area": "CBD",
       "vibe": "organic",
@@ -64,16 +64,16 @@
         "Eco-Conscious"
       ],
       "trend_signals": {
-        "google_trends": 82,
-        "tiktok_mentions": 316,
-        "last_scored": "2026-04-26"
+        "google_trends": 84,
+        "tiktok_mentions": 214,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "North 54",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 6.1,
+      "ranking_score": 5.7,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "vietnamese",
@@ -89,9 +89,9 @@
         "Hospo Legend"
       ],
       "trend_signals": {
-        "google_trends": 87,
-        "tiktok_mentions": 240,
-        "last_scored": "2026-04-26"
+        "google_trends": 72,
+        "tiktok_mentions": 221,
+        "last_scored": "2026-05-03"
       }
     },
     {
@@ -114,66 +114,16 @@
         "New Digs"
       ],
       "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 279,
-        "last_scored": "2026-04-26"
-      }
-    },
-    {
-      "name": "Bert's",
-      "city": "perth",
-      "category": "cafe",
-      "ranking_score": 3.1,
-      "location": "City Beach",
-      "area": "Coastal",
-      "vibe": "organic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Day-to-night diner in the old Odyssea space. Laid-back coastal look with contemporary edge, creating the perfect \"local\" vibe for beachgoers.",
-      "mustTry": "Breakfast classics (acai, breakfast burger, pancakes, eggs Benedict), oysters, prawn and lobster plates",
-      "tags": [
-        "Beach Dining",
-        "All-Day",
-        "Coastal Vibes"
-      ],
-      "trend_signals": {
-        "google_trends": 48,
-        "tiktok_mentions": 161,
-        "last_scored": "2026-04-26"
-      }
-    },
-    {
-      "name": "Side Piece Deli",
-      "city": "perth",
-      "category": "deli",
-      "ranking_score": 2.7,
-      "location": "Swanbourne",
-      "area": "Coastal",
-      "vibe": "deli",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "From the Daisies and Other Side legends. Perth's sandwich elite just got a new member with globally-inspired creations that are gagging the city.",
-      "mustTry": "Tomago or fish katsu sando on shokupan, mortadella and labneh focaccia, onion bhaji focaccia, Keralaan fried chicken with kasundi aioli",
-      "tags": [
-        "Sandwich Royalty",
-        "Global Flavours",
-        "Pantry Group"
-      ],
-      "trend_signals": {
         "google_trends": 33,
-        "tiktok_mentions": 279,
-        "last_scored": "2026-04-26"
+        "tiktok_mentions": 308,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "The Cool Room",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 2.4,
+      "ranking_score": 3,
       "location": "East Fremantle",
       "area": "Fremantle",
       "vibe": "bakery",
@@ -189,41 +139,66 @@
         "Chef-Driven"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 179,
-        "last_scored": "2026-04-26"
+        "google_trends": 47,
+        "tiktok_mentions": 208,
+        "last_scored": "2026-05-03"
       }
     },
     {
-      "name": "Lovers Deli & Canteen",
+      "name": "Bert's",
+      "city": "perth",
+      "category": "cafe",
+      "ranking_score": 2.7,
+      "location": "City Beach",
+      "area": "Coastal",
+      "vibe": "organic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Day-to-night diner in the old Odyssea space. Laid-back coastal look with contemporary edge, creating the perfect \"local\" vibe for beachgoers.",
+      "mustTry": "Breakfast classics (acai, breakfast burger, pancakes, eggs Benedict), oysters, prawn and lobster plates",
+      "tags": [
+        "Beach Dining",
+        "All-Day",
+        "Coastal Vibes"
+      ],
+      "trend_signals": {
+        "google_trends": 33,
+        "tiktok_mentions": 103,
+        "last_scored": "2026-05-03"
+      }
+    },
+    {
+      "name": "Side Piece Deli",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 1.4,
-      "location": "White Gum Valley",
+      "ranking_score": 2.5,
+      "location": "Swanbourne",
       "area": "Coastal",
       "vibe": "deli",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "Nostalgia-driven cafe serving a contender for Perth's best chicken schnitty. Old-school charm with timber veneer, chrome counters, and plush banquette seats.",
-      "mustTry": "Chicken schnitzel (brown butter, capers, lemon-herb sauce), \"green eggs and scram\" with parsley sauce, blood pudding egg muffin",
+      "description": "From the Daisies and Other Side legends. Perth's sandwich elite just got a new member with globally-inspired creations that are gagging the city.",
+      "mustTry": "Tomago or fish katsu sando on shokupan, mortadella and labneh focaccia, onion bhaji focaccia, Keralaan fried chicken with kasundi aioli",
       "tags": [
-        "Retro Diner",
-        "Best Schnitty",
-        "Good Things Team"
+        "Sandwich Royalty",
+        "Global Flavours",
+        "Pantry Group"
       ],
       "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 203,
-        "last_scored": "2026-04-26"
+        "google_trends": 23,
+        "tiktok_mentions": 220,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Angelwood Pies",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 1.2,
+      "ranking_score": 2.3,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -239,41 +214,16 @@
         "Grab & Go"
       ],
       "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 143,
-        "last_scored": "2026-04-26"
-      }
-    },
-    {
-      "name": "Banh Mi & Chè",
-      "city": "perth",
-      "category": "cafe",
-      "ranking_score": 1.2,
-      "location": "Carlisle",
-      "area": "Inner Suburbs",
-      "vibe": "vietnamese",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Kelly Vo's dessert store from Nha Trang comes to Perth. Selling basically two things: banh mi and chè (Vietnamese dessert soup) — and doing both perfectly.",
-      "mustTry": "Chè (dessert soup with taro, flan, jelly, coconut milk), xoi man (sticky Vietnamese rice), banh trang tron rice paper salad",
-      "tags": [
-        "Vietnamese Authentic",
-        "Dessert Soup",
-        "Auntie Network"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 336,
-        "last_scored": "2026-04-26"
+        "google_trends": 33,
+        "tiktok_mentions": 345,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Earl's",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 1,
+      "ranking_score": 1.2,
       "location": "Mount Hawthorn",
       "area": "Inner Suburbs",
       "vibe": "deli",
@@ -290,8 +240,58 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 120,
-        "last_scored": "2026-04-26"
+        "tiktok_mentions": 350,
+        "last_scored": "2026-05-03"
+      }
+    },
+    {
+      "name": "Lovers Deli & Canteen",
+      "city": "perth",
+      "category": "deli",
+      "ranking_score": 1,
+      "location": "White Gum Valley",
+      "area": "Coastal",
+      "vibe": "deli",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Nostalgia-driven cafe serving a contender for Perth's best chicken schnitty. Old-school charm with timber veneer, chrome counters, and plush banquette seats.",
+      "mustTry": "Chicken schnitzel (brown butter, capers, lemon-herb sauce), \"green eggs and scram\" with parsley sauce, blood pudding egg muffin",
+      "tags": [
+        "Retro Diner",
+        "Best Schnitty",
+        "Good Things Team"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 145,
+        "last_scored": "2026-05-03"
+      }
+    },
+    {
+      "name": "Banh Mi & Chè",
+      "city": "perth",
+      "category": "cafe",
+      "ranking_score": 1,
+      "location": "Carlisle",
+      "area": "Inner Suburbs",
+      "vibe": "vietnamese",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Kelly Vo's dessert store from Nha Trang comes to Perth. Selling basically two things: banh mi and chè (Vietnamese dessert soup) — and doing both perfectly.",
+      "mustTry": "Chè (dessert soup with taro, flan, jelly, coconut milk), xoi man (sticky Vietnamese rice), banh trang tron rice paper salad",
+      "tags": [
+        "Vietnamese Authentic",
+        "Dessert Soup",
+        "Auntie Network"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 178,
+        "last_scored": "2026-05-03"
       }
     }
   ]

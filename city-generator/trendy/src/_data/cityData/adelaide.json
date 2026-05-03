@@ -4,7 +4,7 @@
   "state": "SA",
   "country": "AU",
   "icon": "🍷",
-  "updatedAt": "April 2026",
+  "updatedAt": "May 2026",
   "filters": {
     "areas": [
       {
@@ -48,7 +48,7 @@
       "name": "Bora",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 5.4,
+      "ranking_score": 5.7,
       "location": "Jetty Street, Grange",
       "area": "Beachside",
       "vibe": "bakery",
@@ -64,41 +64,16 @@
         "Alma Brazil"
       ],
       "trend_signals": {
-        "google_trends": 86,
-        "tiktok_mentions": 301,
-        "last_scored": "2026-04-26"
-      }
-    },
-    {
-      "name": "Pinco Deli",
-      "city": "adelaide",
-      "category": "deli",
-      "ranking_score": 4.5,
-      "location": "Exchange Place, CBD",
-      "area": "CBD",
-      "vibe": "italian",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Third Pinco location proves the sando outlasted the burger trend. Italian staples meet sandwich excellence from Jumbo Smash founders.",
-      "mustTry": "Sando lineup, baked alla vodka pasta with stracciatella, pappardelle with ragu bianco",
-      "tags": [
-        "Sandwich Era",
-        "Third Location",
-        "Italian Staples"
-      ],
-      "trend_signals": {
-        "google_trends": 71,
-        "tiktok_mentions": 147,
-        "last_scored": "2026-04-26"
+        "google_trends": 84,
+        "tiktok_mentions": 221,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Jenny's Bakery",
       "city": "adelaide",
       "category": "bakery",
-      "ranking_score": 4,
+      "ranking_score": 4.2,
       "location": "Keswick",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -114,41 +89,41 @@
         "Cult Following"
       ],
       "trend_signals": {
-        "google_trends": 59,
-        "tiktok_mentions": 165,
-        "last_scored": "2026-04-26"
+        "google_trends": 60,
+        "tiktok_mentions": 223,
+        "last_scored": "2026-05-03"
       }
     },
     {
-      "name": "Meli",
+      "name": "Pinco Deli",
       "city": "adelaide",
-      "category": "cafe",
-      "ranking_score": 2.6,
-      "location": "Various Locations",
-      "area": "Inner Suburbs",
-      "vibe": "greek",
+      "category": "deli",
+      "ranking_score": 3.2,
+      "location": "Exchange Place, CBD",
+      "area": "CBD",
+      "vibe": "italian",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "Greek beach bar energy comes to Adelaide. Golden loukoumades in four flavors, Greek-inspired sandos, and desserts that make your sweet tooth dance.",
-      "mustTry": "Loukoumades (traditional, pistachio, biscoff, Nutella), Melizana, Saganaki Sando, Galaktoboureko Cups, Pistachio Baklava Freddo",
+      "description": "Third Pinco location proves the sando outlasted the burger trend. Italian staples meet sandwich excellence from Jumbo Smash founders.",
+      "mustTry": "Sando lineup, baked alla vodka pasta with stracciatella, pappardelle with ragu bianco",
       "tags": [
-        "Greek Vibes",
-        "Island Energy",
-        "Cousins Project"
+        "Sandwich Era",
+        "Third Location",
+        "Italian Staples"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 292,
-        "last_scored": "2026-04-26"
+        "google_trends": 19,
+        "tiktok_mentions": 168,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Pompom",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 2.2,
+      "ranking_score": 2.4,
       "location": "Forestville",
       "area": "Inner Suburbs",
       "vibe": "greek",
@@ -164,16 +139,41 @@
         "Rising Suburb"
       ],
       "trend_signals": {
+        "google_trends": 33,
+        "tiktok_mentions": 150,
+        "last_scored": "2026-05-03"
+      }
+    },
+    {
+      "name": "Meli",
+      "city": "adelaide",
+      "category": "cafe",
+      "ranking_score": 1.7,
+      "location": "Various Locations",
+      "area": "Inner Suburbs",
+      "vibe": "greek",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Greek beach bar energy comes to Adelaide. Golden loukoumades in four flavors, Greek-inspired sandos, and desserts that make your sweet tooth dance.",
+      "mustTry": "Loukoumades (traditional, pistachio, biscoff, Nutella), Melizana, Saganaki Sando, Galaktoboureko Cups, Pistachio Baklava Freddo",
+      "tags": [
+        "Greek Vibes",
+        "Island Energy",
+        "Cousins Project"
+      ],
+      "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 171,
-        "last_scored": "2026-04-26"
+        "tiktok_mentions": 189,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Yuku dō",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 1.4,
+      "ranking_score": 1.1,
       "location": "CBD",
       "area": "CBD",
       "vibe": "matcha",
@@ -190,15 +190,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 242,
-        "last_scored": "2026-04-26"
+        "tiktok_mentions": 182,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Gathers & Grounds",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 1.4,
+      "ranking_score": 1,
       "location": "Glenelg",
       "area": "Beachside",
       "vibe": "matcha",
@@ -215,15 +215,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 230,
-        "last_scored": "2026-04-26"
+        "tiktok_mentions": 152,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Cha-no-wa",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 1.2,
+      "ranking_score": 1,
       "location": "King William Street, CBD",
       "area": "CBD",
       "vibe": "matcha",
@@ -240,15 +240,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 115,
-        "last_scored": "2026-04-26"
+        "tiktok_mentions": 223,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Homeboy 2.0",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 1.2,
+      "ranking_score": 1,
       "location": "North Terrace, CBD",
       "area": "CBD",
       "vibe": "bakery",
@@ -265,15 +265,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 112,
-        "last_scored": "2026-04-26"
+        "tiktok_mentions": 140,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Arlos",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 1.1,
+      "ranking_score": 1,
       "location": "King William St & Grenfell St",
       "area": "CBD",
       "vibe": "bakery",
@@ -290,8 +290,8 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 271,
-        "last_scored": "2026-04-26"
+        "tiktok_mentions": 222,
+        "last_scored": "2026-05-03"
       }
     }
   ]

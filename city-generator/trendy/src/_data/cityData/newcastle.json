@@ -4,7 +4,7 @@
   "state": "NSW",
   "country": "AU",
   "icon": "⚓",
-  "updatedAt": "April 2026",
+  "updatedAt": "May 2026",
   "filters": {
     "areas": [
       {
@@ -48,7 +48,7 @@
       "name": "CRUMB",
       "city": "newcastle",
       "category": "bakery",
-      "ranking_score": 6.3,
+      "ranking_score": 5.5,
       "location": "Lambton, 113 Elder St",
       "area": "Inner",
       "vibe": "bakery",
@@ -64,41 +64,16 @@
         "Lines Daily"
       ],
       "trend_signals": {
-        "google_trends": 99,
-        "tiktok_mentions": 197,
-        "last_scored": "2026-04-26"
-      }
-    },
-    {
-      "name": "Bootleg Bakery",
-      "city": "newcastle",
-      "category": "bakery",
-      "ranking_score": 2,
-      "location": "Merewether, 10 James St",
-      "area": "Coastal",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "The cult-favourite red food truck that only opens Friday & Saturday from 8am-12pm. The lines speak for themselves — get there early before the Bootstrap bread and ever-changing pastries sell out.",
-      "mustTry": "Iconic Bootstrap savoury bread, focaccia, danishes, tarts, specialty coffee (EFTPOS only, Fri/Sat 8am-12pm)",
-      "tags": [
-        "Cult Favorite",
-        "Weekend Only",
-        "Sells Out Fast"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 260,
-        "last_scored": "2026-04-26"
+        "google_trends": 79,
+        "tiktok_mentions": 0,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "H U N T E Rhunter",
       "city": "newcastle",
       "category": "bakery",
-      "ranking_score": 1.5,
+      "ranking_score": 1.1,
       "location": "",
       "area": "",
       "vibe": "",
@@ -111,33 +86,8 @@
       "tags": [],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 286,
-        "last_scored": "2026-04-26"
-      }
-    },
-    {
-      "name": "Liebe European Pastries",
-      "city": "newcastle",
-      "category": "bakery",
-      "ranking_score": 1.4,
-      "location": "Newcastle West, 11 Union St",
-      "area": "West",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "European-style pastries made fresh daily with a new line-up every week. Started at Newcastle Farmers Market, now has a permanent home and often sells out before closing time.",
-      "mustTry": "Fresh croissants, European pastries, focaccia, weekly specials (Wed-Sun only, sells out early)",
-      "tags": [
-        "European Style",
-        "Farmers Market Grad",
-        "Sells Out Daily"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 145,
-        "last_scored": "2026-04-26"
+        "tiktok_mentions": 150,
+        "last_scored": "2026-05-03"
       }
     }
   ]

@@ -4,7 +4,7 @@
   "state": "QLD",
   "country": "AU",
   "icon": "🌊",
-  "updatedAt": "April 2026",
+  "updatedAt": "May 2026",
   "filters": {
     "areas": [
       {
@@ -48,7 +48,7 @@
       "name": "Paddock Bakery",
       "city": "goldcoast",
       "category": "bakery",
-      "ranking_score": 6.4,
+      "ranking_score": 6,
       "location": "Miami",
       "area": "Southern",
       "vibe": "bakery",
@@ -64,16 +64,16 @@
         "Pastry Heaven"
       ],
       "trend_signals": {
-        "google_trends": 74,
-        "tiktok_mentions": 256,
-        "last_scored": "2026-04-26"
+        "google_trends": 75,
+        "tiktok_mentions": 277,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Bam Bam Bakehouse",
       "city": "goldcoast",
       "category": "bakery",
-      "ranking_score": 5,
+      "ranking_score": 5.5,
       "location": "Mermaid Beach",
       "area": "Central",
       "vibe": "bakery",
@@ -89,16 +89,16 @@
         "Breakfast Goals"
       ],
       "trend_signals": {
-        "google_trends": 82,
-        "tiktok_mentions": 132,
-        "last_scored": "2026-04-26"
+        "google_trends": 92,
+        "tiktok_mentions": 102,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "The Bread Social",
       "city": "goldcoast",
       "category": "bakery",
-      "ranking_score": 3.3,
+      "ranking_score": 2.3,
       "location": "Currumbin & Isle of Capri",
       "area": "Southern",
       "vibe": "bakery",
@@ -114,66 +114,16 @@
         "Baker's Dream"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 165,
-        "last_scored": "2026-04-26"
-      }
-    },
-    {
-      "name": "Piada Co",
-      "city": "goldcoast",
-      "category": "cafe",
-      "ranking_score": 3.2,
-      "location": "Burleigh Heads",
-      "area": "Burleigh",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "TikTok went crazy for their pistachio frappe and it's still the talk of the town. Italian-style piadinas (flatbreads) that hit different, perfect post-beach fuel.",
-      "mustTry": "TikTok-famous pistachio frappe, Italian piadinas with fresh ingredients, iced coffee creations",
-      "tags": [
-        "Italian Vibes",
-        "FYP Legend",
-        "Beach Life"
-      ],
-      "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 201,
-        "last_scored": "2026-04-26"
-      }
-    },
-    {
-      "name": "Dayo",
-      "city": "goldcoast",
-      "category": "cafe",
-      "ranking_score": 2.8,
-      "location": "Riverfront (Late 2025 Opening)",
-      "area": "Central",
-      "vibe": "asian",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "The new Filipino fusion cafe that literally blew minds with its Ube latte. Despite just opening, it's already garnered a cult following for unique takes on breakfast classics.",
-      "mustTry": "Viral Ube latte, longganisa breakfast muffins (like a fancy Maccas version), fried chicken & waffles, matcha French toast with strawberry",
-      "tags": [
-        "Filipino Fusion",
-        "Ube Everything",
-        "2025 Opening"
-      ],
-      "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 337,
-        "last_scored": "2026-04-26"
+        "google_trends": 0,
+        "tiktok_mentions": 311,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "The Holliday Coffee",
       "city": "goldcoast",
       "category": "cafe",
-      "ranking_score": 2.5,
+      "ranking_score": 1.9,
       "location": "Nobby Beach, Wave St",
       "area": "Central",
       "vibe": "matcha",
@@ -190,15 +140,65 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 319,
-        "last_scored": "2026-04-26"
+        "tiktok_mentions": 329,
+        "last_scored": "2026-05-03"
+      }
+    },
+    {
+      "name": "Piada Co",
+      "city": "goldcoast",
+      "category": "cafe",
+      "ranking_score": 1.8,
+      "location": "Burleigh Heads",
+      "area": "Burleigh",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "TikTok went crazy for their pistachio frappe and it's still the talk of the town. Italian-style piadinas (flatbreads) that hit different, perfect post-beach fuel.",
+      "mustTry": "TikTok-famous pistachio frappe, Italian piadinas with fresh ingredients, iced coffee creations",
+      "tags": [
+        "Italian Vibes",
+        "FYP Legend",
+        "Beach Life"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 123,
+        "last_scored": "2026-05-03"
+      }
+    },
+    {
+      "name": "Dayo",
+      "city": "goldcoast",
+      "category": "cafe",
+      "ranking_score": 1.7,
+      "location": "Riverfront (Late 2025 Opening)",
+      "area": "Central",
+      "vibe": "asian",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "The new Filipino fusion cafe that literally blew minds with its Ube latte. Despite just opening, it's already garnered a cult following for unique takes on breakfast classics.",
+      "mustTry": "Viral Ube latte, longganisa breakfast muffins (like a fancy Maccas version), fried chicken & waffles, matcha French toast with strawberry",
+      "tags": [
+        "Filipino Fusion",
+        "Ube Everything",
+        "2025 Opening"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 135,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Bobby Bang's",
       "city": "goldcoast",
       "category": "cafe",
-      "ranking_score": 1.5,
+      "ranking_score": 1.3,
       "location": "The Oxley, Nobby Beach",
       "area": "Central",
       "vibe": "matcha",
@@ -215,33 +215,8 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 123,
-        "last_scored": "2026-04-26"
-      }
-    },
-    {
-      "name": "Cheek Café",
-      "city": "goldcoast",
-      "category": "cafe",
-      "ranking_score": 1.4,
-      "location": "Southport",
-      "area": "Northern",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Arrived in 2025 with big flavours, bold personality and peachy-good vibes. This sunny corner spot blends playful design with seriously good coffee and wholesome ingredients inspired by Greek, Italian and Aussie roots.",
-      "mustTry": "Greek-inspired breakfast dishes, Italian-Australian fusion plates, specialty coffee, wholesome brunch bowls",
-      "tags": [
-        "Peachy Vibes",
-        "2025 Opening",
-        "Mediterranean"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 341,
-        "last_scored": "2026-04-26"
+        "tiktok_mentions": 279,
+        "last_scored": "2026-05-03"
       }
     },
     {
@@ -265,15 +240,40 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 126,
-        "last_scored": "2026-04-26"
+        "tiktok_mentions": 316,
+        "last_scored": "2026-05-03"
+      }
+    },
+    {
+      "name": "Cheek Café",
+      "city": "goldcoast",
+      "category": "cafe",
+      "ranking_score": 1.1,
+      "location": "Southport",
+      "area": "Northern",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Arrived in 2025 with big flavours, bold personality and peachy-good vibes. This sunny corner spot blends playful design with seriously good coffee and wholesome ingredients inspired by Greek, Italian and Aussie roots.",
+      "mustTry": "Greek-inspired breakfast dishes, Italian-Australian fusion plates, specialty coffee, wholesome brunch bowls",
+      "tags": [
+        "Peachy Vibes",
+        "2025 Opening",
+        "Mediterranean"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 193,
+        "last_scored": "2026-05-03"
       }
     },
     {
       "name": "Mohr Cafe and Deli",
       "city": "goldcoast",
       "category": "deli",
-      "ranking_score": 1.2,
+      "ranking_score": 1,
       "location": "Burleigh Heads, Hibiscus Haven",
       "area": "Burleigh",
       "vibe": "aesthetic",
@@ -290,8 +290,8 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 124,
-        "last_scored": "2026-04-26"
+        "tiktok_mentions": 193,
+        "last_scored": "2026-05-03"
       }
     }
   ]
