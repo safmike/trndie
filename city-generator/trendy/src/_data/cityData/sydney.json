@@ -49,35 +49,10 @@
   },
   "venues": [
     {
-      "name": "Cafe Margaret",
-      "city": "sydney",
-      "category": "cafe",
-      "ranking_score": 8.8,
-      "location": "Double Bay",
-      "area": "CBD",
-      "vibe": "aesthetic",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Neil Perry's latest transformation in Double Bay. From 7am daily, serving elevated cafe fare plus the famous burger that ranked in the World's Best list.",
-      "mustTry": "Four-cheese toastie, the famed Next Door burger, bacon and egg roll",
-      "tags": [
-        "Celebrity Chef",
-        "World's Best Burger",
-        "Double Bay Chic"
-      ],
-      "trend_signals": {
-        "google_trends": 83,
-        "tiktok_mentions": 1095,
-        "last_scored": "2026-05-03"
-      }
-    },
-    {
       "name": "Up South",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 8.5,
+      "ranking_score": 8.8,
       "location": "Bondi Beach",
       "area": "Bondi",
       "vibe": "aesthetic",
@@ -93,16 +68,41 @@
         "Queue-Worthy"
       ],
       "trend_signals": {
+        "google_trends": 86,
+        "tiktok_mentions": 1038,
+        "last_scored": "2026-05-10"
+      }
+    },
+    {
+      "name": "Cafe Margaret",
+      "city": "sydney",
+      "category": "cafe",
+      "ranking_score": 8.4,
+      "location": "Double Bay",
+      "area": "CBD",
+      "vibe": "aesthetic",
+      "viral": true,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Neil Perry's latest transformation in Double Bay. From 7am daily, serving elevated cafe fare plus the famous burger that ranked in the World's Best list.",
+      "mustTry": "Four-cheese toastie, the famed Next Door burger, bacon and egg roll",
+      "tags": [
+        "Celebrity Chef",
+        "World's Best Burger",
+        "Double Bay Chic"
+      ],
+      "trend_signals": {
         "google_trends": 85,
-        "tiktok_mentions": 904,
-        "last_scored": "2026-05-03"
+        "tiktok_mentions": 725,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Bote",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 5.5,
+      "ranking_score": 6.4,
       "location": "Manly Boatshed",
       "area": "North",
       "vibe": "waterfront",
@@ -118,16 +118,16 @@
         "Northern Beaches"
       ],
       "trend_signals": {
-        "google_trends": 73,
-        "tiktok_mentions": 237,
-        "last_scored": "2026-05-03"
+        "google_trends": 99,
+        "tiktok_mentions": 333,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Happyfield",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 5.4,
+      "ranking_score": 5.5,
       "location": "Haberfield",
       "area": "Inner West",
       "vibe": "bakery",
@@ -143,16 +143,16 @@
         "Diner Vibes"
       ],
       "trend_signals": {
-        "google_trends": 59,
-        "tiktok_mentions": 239,
-        "last_scored": "2026-05-03"
+        "google_trends": 70,
+        "tiktok_mentions": 335,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Circa Espresso",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 5.1,
+      "ranking_score": 5,
       "location": "Parramatta",
       "area": "West",
       "vibe": "aesthetic",
@@ -169,40 +169,15 @@
       ],
       "trend_signals": {
         "google_trends": 63,
-        "tiktok_mentions": 187,
-        "last_scored": "2026-05-03"
-      }
-    },
-    {
-      "name": "Chubby Cubby",
-      "city": "sydney",
-      "category": "cafe",
-      "ranking_score": 4.3,
-      "location": "Haymarket, George St",
-      "area": "CBD",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "The best matcha in Sydney according to viral TikToks. About to drop a whole new matcha and shokupan menu that's already generating massive hype.",
-      "mustTry": "Signature matcha drinks, Japanese shokupan (milk bread), matcha latte",
-      "tags": [
-        "Matcha King",
-        "Japanese Vibes",
-        "Viral Videos"
-      ],
-      "trend_signals": {
-        "google_trends": 38,
-        "tiktok_mentions": 133,
-        "last_scored": "2026-05-03"
+        "tiktok_mentions": 283,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Speedos Cafe",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 3.8,
+      "ranking_score": 3.6,
       "location": "North Bondi",
       "area": "Bondi",
       "vibe": "waterfront",
@@ -218,16 +193,41 @@
         "Instagram Famous"
       ],
       "trend_signals": {
-        "google_trends": 20,
-        "tiktok_mentions": 251,
-        "last_scored": "2026-05-03"
+        "google_trends": 33,
+        "tiktok_mentions": 345,
+        "last_scored": "2026-05-10"
+      }
+    },
+    {
+      "name": "Chubby Cubby",
+      "city": "sydney",
+      "category": "cafe",
+      "ranking_score": 3.5,
+      "location": "Haymarket, George St",
+      "area": "CBD",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "The best matcha in Sydney according to viral TikToks. About to drop a whole new matcha and shokupan menu that's already generating massive hype.",
+      "mustTry": "Signature matcha drinks, Japanese shokupan (milk bread), matcha latte",
+      "tags": [
+        "Matcha King",
+        "Japanese Vibes",
+        "Viral Videos"
+      ],
+      "trend_signals": {
+        "google_trends": 29,
+        "tiktok_mentions": 229,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Baking 101",
       "city": "sydney",
       "category": "bakery",
-      "ranking_score": 2.3,
+      "ranking_score": 1.5,
       "location": "Stanmore",
       "area": "Inner West",
       "vibe": "bakery",
@@ -244,15 +244,15 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 307,
-        "last_scored": "2026-05-03"
+        "tiktok_mentions": 151,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Cafe Cressida",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 2.1,
+      "ranking_score": 1.4,
       "location": "Queens Court, Paddington",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -268,9 +268,9 @@
         "Chef-Driven"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 264,
-        "last_scored": "2026-05-03"
+        "google_trends": 0,
+        "tiktok_mentions": 168,
+        "last_scored": "2026-05-10"
       }
     },
     {
@@ -294,8 +294,8 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 134,
-        "last_scored": "2026-05-03"
+        "tiktok_mentions": 190,
+        "last_scored": "2026-05-10"
       }
     }
   ]

@@ -48,7 +48,7 @@
       "name": "Groove",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 9.1,
+      "ranking_score": 9.2,
       "location": "Abbotsford, 17 Lithgow St",
       "area": "Inner East",
       "vibe": "vietnamese",
@@ -64,16 +64,16 @@
         "FYP Legend"
       ],
       "trend_signals": {
-        "google_trends": 92,
-        "tiktok_mentions": 1222,
-        "last_scored": "2026-05-03"
+        "google_trends": 89,
+        "tiktok_mentions": 992,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Juniper",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 6.5,
+      "ranking_score": 6.1,
       "location": "South Melbourne, 269 Coventry St",
       "area": "South",
       "vibe": "specialty",
@@ -89,16 +89,16 @@
         "Coffee Goals"
       ],
       "trend_signals": {
-        "google_trends": 92,
-        "tiktok_mentions": 289,
-        "last_scored": "2026-05-03"
+        "google_trends": 86,
+        "tiktok_mentions": 135,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Assembly",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 6.1,
+      "ranking_score": 5.7,
       "location": "North Melbourne",
       "area": "Inner North",
       "vibe": "specialty",
@@ -114,59 +114,34 @@
         "Innovative"
       ],
       "trend_signals": {
-        "google_trends": 88,
-        "tiktok_mentions": 165,
-        "last_scored": "2026-05-03"
+        "google_trends": 67,
+        "tiktok_mentions": 321,
+        "last_scored": "2026-05-10"
       }
     },
     {
-      "name": "Nimbo",
+      "name": "Bottari",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 5.8,
-      "location": "CBD (Hidden Alleyway)",
-      "area": "CBD",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Viral matcha and latte dessert cafe hidden in a Melbourne alleyway. Cozy winter menu with creative flavor combinations that actually work.",
-      "mustTry": "Ube matcha, banana croissant pudding, hojicha hot chocolate, hot Earl Grey matcha",
-      "tags": [
-        "Hidden Gem",
-        "Matcha Magic",
-        "Dessert Cafe"
-      ],
-      "trend_signals": {
-        "google_trends": 72,
-        "tiktok_mentions": 294,
-        "last_scored": "2026-05-03"
-      }
-    },
-    {
-      "name": "The Butter Room",
-      "city": "melbourne",
-      "category": "bakery",
-      "ranking_score": 5.4,
-      "location": "CBD, 16 Katherine Place",
+      "ranking_score": 5.6,
+      "location": "CBD, Elizabeth Street",
       "area": "CBD",
       "vibe": "korean",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "Cozy Korean pastry paradise. The moment you step in, you're surrounded by unique pastries and desserts that look like art pieces.",
-      "mustTry": "Injeolmi Pandoro (the icon), tiramisu croissant, tissue bread, Korean dumplings pie",
+      "description": "Seoul's TRNDIE cafe culture comes to Melbourne. Famous for viral doughnut drinks that are as chic as they are delicious, crowned with caramel cream \"doughnuts\".",
+      "mustTry": "Doughnut lattes (chai cinnamon, chocolate, matcha), Kkwabaegi (twisted Korean donuts), Jasmine Cloud",
       "tags": [
-        "Korean Pastries",
-        "Pandoro Heaven",
-        "8am-6pm"
+        "Korean Vibes",
+        "Doughnut Drinks",
+        "Instagram Gold"
       ],
       "trend_signals": {
-        "google_trends": 52,
-        "tiktok_mentions": 339,
-        "last_scored": "2026-05-03"
+        "google_trends": 79,
+        "tiktok_mentions": 308,
+        "last_scored": "2026-05-10"
       }
     },
     {
@@ -189,41 +164,41 @@
         "Brunch Goals"
       ],
       "trend_signals": {
-        "google_trends": 77,
-        "tiktok_mentions": 129,
-        "last_scored": "2026-05-03"
+        "google_trends": 72,
+        "tiktok_mentions": 283,
+        "last_scored": "2026-05-10"
       }
     },
     {
-      "name": "Bottari",
+      "name": "The Butter Room",
       "city": "melbourne",
-      "category": "cafe",
+      "category": "bakery",
       "ranking_score": 5.2,
-      "location": "CBD, Elizabeth Street",
+      "location": "CBD, 16 Katherine Place",
       "area": "CBD",
       "vibe": "korean",
       "viral": false,
       "instagram_url": null,
       "tiktok_url": null,
       "website_url": null,
-      "description": "Seoul's TRNDIE cafe culture comes to Melbourne. Famous for viral doughnut drinks that are as chic as they are delicious, crowned with caramel cream \"doughnuts\".",
-      "mustTry": "Doughnut lattes (chai cinnamon, chocolate, matcha), Kkwabaegi (twisted Korean donuts), Jasmine Cloud",
+      "description": "Cozy Korean pastry paradise. The moment you step in, you're surrounded by unique pastries and desserts that look like art pieces.",
+      "mustTry": "Injeolmi Pandoro (the icon), tiramisu croissant, tissue bread, Korean dumplings pie",
       "tags": [
-        "Korean Vibes",
-        "Doughnut Drinks",
-        "Instagram Gold"
+        "Korean Pastries",
+        "Pandoro Heaven",
+        "8am-6pm"
       ],
       "trend_signals": {
-        "google_trends": 71,
-        "tiktok_mentions": 212,
-        "last_scored": "2026-05-03"
+        "google_trends": 66,
+        "tiktok_mentions": 243,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Standing Room",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 4.4,
+      "ranking_score": 5.2,
       "location": "Carlton / Fitzroy North",
       "area": "Inner North",
       "vibe": "specialty",
@@ -239,16 +214,16 @@
         "Cult Following"
       ],
       "trend_signals": {
-        "google_trends": 40,
-        "tiktok_mentions": 232,
-        "last_scored": "2026-05-03"
+        "google_trends": 77,
+        "tiktok_mentions": 327,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "In Btwn",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 2.7,
+      "ranking_score": 3.5,
       "location": "CBD (Near Queen Vic Market)",
       "area": "CBD",
       "vibe": "specialty",
@@ -264,16 +239,16 @@
         "Buzzing Vibe"
       ],
       "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 233,
-        "last_scored": "2026-05-03"
+        "google_trends": 63,
+        "tiktok_mentions": 137,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Trbl",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 2.1,
+      "ranking_score": 3.5,
       "location": "Presgrave Place (Laneway)",
       "area": "CBD",
       "vibe": "korean",
@@ -289,9 +264,34 @@
         "Street Art"
       ],
       "trend_signals": {
+        "google_trends": 64,
+        "tiktok_mentions": 245,
+        "last_scored": "2026-05-10"
+      }
+    },
+    {
+      "name": "Nimbo",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 3.2,
+      "location": "CBD (Hidden Alleyway)",
+      "area": "CBD",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Viral matcha and latte dessert cafe hidden in a Melbourne alleyway. Cozy winter menu with creative flavor combinations that actually work.",
+      "mustTry": "Ube matcha, banana croissant pudding, hojicha hot chocolate, hot Earl Grey matcha",
+      "tags": [
+        "Hidden Gem",
+        "Matcha Magic",
+        "Dessert Cafe"
+      ],
+      "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 341,
-        "last_scored": "2026-05-03"
+        "tiktok_mentions": 140,
+        "last_scored": "2026-05-10"
       }
     }
   ]

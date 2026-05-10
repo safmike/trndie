@@ -48,7 +48,7 @@
       "name": "Be Free",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 6,
+      "ranking_score": 5,
       "location": "Perth City Farm, East Perth",
       "area": "CBD",
       "vibe": "organic",
@@ -64,16 +64,16 @@
         "Eco-Conscious"
       ],
       "trend_signals": {
-        "google_trends": 84,
-        "tiktok_mentions": 214,
-        "last_scored": "2026-05-03"
+        "google_trends": 47,
+        "tiktok_mentions": 309,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "North 54",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 5.7,
+      "ranking_score": 3.8,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "vietnamese",
@@ -89,91 +89,16 @@
         "Hospo Legend"
       ],
       "trend_signals": {
-        "google_trends": 72,
-        "tiktok_mentions": 221,
-        "last_scored": "2026-05-03"
-      }
-    },
-    {
-      "name": "Smidge Bakery",
-      "city": "perth",
-      "category": "bakery",
-      "ranking_score": 3.3,
-      "location": "Leederville",
-      "area": "Inner Suburbs",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Self-proclaimed \"Perth's best cinny scrolls\" — and they might be right. Selling an average of 20 trays daily since moving to new Leederville location.",
-      "mustTry": "Cinnamon scrolls (sold 15 trays first week!), choc caramel brownies, salted Caramilk cookies, sangas",
-      "tags": [
-        "Scroll Mania",
-        "Viral Success",
-        "New Digs"
-      ],
-      "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 308,
-        "last_scored": "2026-05-03"
-      }
-    },
-    {
-      "name": "The Cool Room",
-      "city": "perth",
-      "category": "bakery",
-      "ranking_score": 3,
-      "location": "East Fremantle",
-      "area": "Fremantle",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Beloved Freo spot now in the hands of chef Drew Dawson and baker Charlotte Beeton. Short, curated menu that delights without overwhelming.",
-      "mustTry": "Scandi breakfast plates, house-baked treats, chef-driven seasonal menu",
-      "tags": [
-        "Neighbourhood Soul",
-        "Fremantle",
-        "Chef-Driven"
-      ],
-      "trend_signals": {
-        "google_trends": 47,
-        "tiktok_mentions": 208,
-        "last_scored": "2026-05-03"
-      }
-    },
-    {
-      "name": "Bert's",
-      "city": "perth",
-      "category": "cafe",
-      "ranking_score": 2.7,
-      "location": "City Beach",
-      "area": "Coastal",
-      "vibe": "organic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Day-to-night diner in the old Odyssea space. Laid-back coastal look with contemporary edge, creating the perfect \"local\" vibe for beachgoers.",
-      "mustTry": "Breakfast classics (acai, breakfast burger, pancakes, eggs Benedict), oysters, prawn and lobster plates",
-      "tags": [
-        "Beach Dining",
-        "All-Day",
-        "Coastal Vibes"
-      ],
-      "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 103,
-        "last_scored": "2026-05-03"
+        "google_trends": 24,
+        "tiktok_mentions": 125,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Side Piece Deli",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 2.5,
+      "ranking_score": 3.2,
       "location": "Swanbourne",
       "area": "Coastal",
       "vibe": "deli",
@@ -189,16 +114,66 @@
         "Pantry Group"
       ],
       "trend_signals": {
-        "google_trends": 23,
-        "tiktok_mentions": 220,
-        "last_scored": "2026-05-03"
+        "google_trends": 45,
+        "tiktok_mentions": 316,
+        "last_scored": "2026-05-10"
+      }
+    },
+    {
+      "name": "Smidge Bakery",
+      "city": "perth",
+      "category": "bakery",
+      "ranking_score": 2.9,
+      "location": "Leederville",
+      "area": "Inner Suburbs",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Self-proclaimed \"Perth's best cinny scrolls\" — and they might be right. Selling an average of 20 trays daily since moving to new Leederville location.",
+      "mustTry": "Cinnamon scrolls (sold 15 trays first week!), choc caramel brownies, salted Caramilk cookies, sangas",
+      "tags": [
+        "Scroll Mania",
+        "Viral Success",
+        "New Digs"
+      ],
+      "trend_signals": {
+        "google_trends": 30,
+        "tiktok_mentions": 154,
+        "last_scored": "2026-05-10"
+      }
+    },
+    {
+      "name": "Bert's",
+      "city": "perth",
+      "category": "cafe",
+      "ranking_score": 2.6,
+      "location": "City Beach",
+      "area": "Coastal",
+      "vibe": "organic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Day-to-night diner in the old Odyssea space. Laid-back coastal look with contemporary edge, creating the perfect \"local\" vibe for beachgoers.",
+      "mustTry": "Breakfast classics (acai, breakfast burger, pancakes, eggs Benedict), oysters, prawn and lobster plates",
+      "tags": [
+        "Beach Dining",
+        "All-Day",
+        "Coastal Vibes"
+      ],
+      "trend_signals": {
+        "google_trends": 30,
+        "tiktok_mentions": 159,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Angelwood Pies",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 2.3,
+      "ranking_score": 2.5,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -215,15 +190,40 @@
       ],
       "trend_signals": {
         "google_trends": 33,
-        "tiktok_mentions": 345,
-        "last_scored": "2026-05-03"
+        "tiktok_mentions": 189,
+        "last_scored": "2026-05-10"
+      }
+    },
+    {
+      "name": "Banh Mi & Chè",
+      "city": "perth",
+      "category": "cafe",
+      "ranking_score": 2.5,
+      "location": "Carlisle",
+      "area": "Inner Suburbs",
+      "vibe": "vietnamese",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Kelly Vo's dessert store from Nha Trang comes to Perth. Selling basically two things: banh mi and chè (Vietnamese dessert soup) — and doing both perfectly.",
+      "mustTry": "Chè (dessert soup with taro, flan, jelly, coconut milk), xoi man (sticky Vietnamese rice), banh trang tron rice paper salad",
+      "tags": [
+        "Vietnamese Authentic",
+        "Dessert Soup",
+        "Auntie Network"
+      ],
+      "trend_signals": {
+        "google_trends": 46,
+        "tiktok_mentions": 333,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Earl's",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 1.2,
+      "ranking_score": 2.4,
       "location": "Mount Hawthorn",
       "area": "Inner Suburbs",
       "vibe": "deli",
@@ -239,9 +239,34 @@
         "American Style"
       ],
       "trend_signals": {
+        "google_trends": 42,
+        "tiktok_mentions": 294,
+        "last_scored": "2026-05-10"
+      }
+    },
+    {
+      "name": "The Cool Room",
+      "city": "perth",
+      "category": "bakery",
+      "ranking_score": 2.1,
+      "location": "East Fremantle",
+      "area": "Fremantle",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Beloved Freo spot now in the hands of chef Drew Dawson and baker Charlotte Beeton. Short, curated menu that delights without overwhelming.",
+      "mustTry": "Scandi breakfast plates, house-baked treats, chef-driven seasonal menu",
+      "tags": [
+        "Neighbourhood Soul",
+        "Fremantle",
+        "Chef-Driven"
+      ],
+      "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 350,
-        "last_scored": "2026-05-03"
+        "tiktok_mentions": 304,
+        "last_scored": "2026-05-10"
       }
     },
     {
@@ -265,33 +290,8 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 145,
-        "last_scored": "2026-05-03"
-      }
-    },
-    {
-      "name": "Banh Mi & Chè",
-      "city": "perth",
-      "category": "cafe",
-      "ranking_score": 1,
-      "location": "Carlisle",
-      "area": "Inner Suburbs",
-      "vibe": "vietnamese",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Kelly Vo's dessert store from Nha Trang comes to Perth. Selling basically two things: banh mi and chè (Vietnamese dessert soup) — and doing both perfectly.",
-      "mustTry": "Chè (dessert soup with taro, flan, jelly, coconut milk), xoi man (sticky Vietnamese rice), banh trang tron rice paper salad",
-      "tags": [
-        "Vietnamese Authentic",
-        "Dessert Soup",
-        "Auntie Network"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 178,
-        "last_scored": "2026-05-03"
+        "tiktok_mentions": 200,
+        "last_scored": "2026-05-10"
       }
     }
   ]

@@ -48,7 +48,7 @@
       "name": "Idle",
       "city": "brisbane",
       "category": "bakery",
-      "ranking_score": 6.5,
+      "ranking_score": 5,
       "location": "New Farm",
       "area": "Inner North",
       "vibe": "bakery",
@@ -64,16 +64,16 @@
         "Market Section"
       ],
       "trend_signals": {
-        "google_trends": 99,
-        "tiktok_mentions": 173,
-        "last_scored": "2026-05-03"
+        "google_trends": 42,
+        "tiktok_mentions": 269,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Semi Semi",
       "city": "brisbane",
       "category": "cafe",
-      "ranking_score": 6.4,
+      "ranking_score": 4.9,
       "location": "Newstead",
       "area": "Inner North",
       "vibe": "asian",
@@ -89,41 +89,16 @@
         "Customizable Toppings"
       ],
       "trend_signals": {
-        "google_trends": 94,
-        "tiktok_mentions": 144,
-        "last_scored": "2026-05-03"
-      }
-    },
-    {
-      "name": "Speed Dial",
-      "city": "brisbane",
-      "category": "cafe",
-      "ranking_score": 5.7,
-      "location": "Newstead (Bunnings Carpark)",
-      "area": "Inner North",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "One of Brisbane's tiniest and best new cafes, operating from a 30sqm shipping container. Yes, it's in the Bunnings carpark.",
-      "mustTry": "Coffee Supreme's South blend, toasties with marinara dipping sauce, daily batch brew, matcha drinks",
-      "tags": [
-        "Shipping Container",
-        "Tiny But Mighty",
-        "Walk-In Only"
-      ],
-      "trend_signals": {
-        "google_trends": 80,
-        "tiktok_mentions": 286,
-        "last_scored": "2026-05-03"
+        "google_trends": 39,
+        "tiktok_mentions": 240,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Coffee Anthology",
       "city": "brisbane",
       "category": "cafe",
-      "ranking_score": 5.4,
+      "ranking_score": 4.5,
       "location": "CBD",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -139,16 +114,41 @@
         "Industrial Chic"
       ],
       "trend_signals": {
-        "google_trends": 80,
-        "tiktok_mentions": 119,
-        "last_scored": "2026-05-03"
+        "google_trends": 42,
+        "tiktok_mentions": 275,
+        "last_scored": "2026-05-10"
+      }
+    },
+    {
+      "name": "Speed Dial",
+      "city": "brisbane",
+      "category": "cafe",
+      "ranking_score": 4.3,
+      "location": "Newstead (Bunnings Carpark)",
+      "area": "Inner North",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "One of Brisbane's tiniest and best new cafes, operating from a 30sqm shipping container. Yes, it's in the Bunnings carpark.",
+      "mustTry": "Coffee Supreme's South blend, toasties with marinara dipping sauce, daily batch brew, matcha drinks",
+      "tags": [
+        "Shipping Container",
+        "Tiny But Mighty",
+        "Walk-In Only"
+      ],
+      "trend_signals": {
+        "google_trends": 34,
+        "tiktok_mentions": 191,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Cafe Disco",
       "city": "brisbane",
       "category": "cafe",
-      "ranking_score": 3.6,
+      "ranking_score": 3.9,
       "location": "West End",
       "area": "Inner West",
       "vibe": "asian",
@@ -164,9 +164,9 @@
         "Gerald Ong Approved"
       ],
       "trend_signals": {
-        "google_trends": 22,
-        "tiktok_mentions": 296,
-        "last_scored": "2026-05-03"
+        "google_trends": 55,
+        "tiktok_mentions": 202,
+        "last_scored": "2026-05-10"
       }
     },
     {
@@ -189,66 +189,16 @@
         "Moreton Bay"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 264,
-        "last_scored": "2026-05-03"
-      }
-    },
-    {
-      "name": "So What Stereo",
-      "city": "brisbane",
-      "category": "cafe",
-      "ranking_score": 1.5,
-      "location": "Little Street, Fortitude Valley",
-      "area": "CBD",
-      "vibe": "thai",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Brisbane's first Thai vinyl cafe and one of 2025's biggest success stories. Hidden in The Valley, this mid-century gem blends retro whimsy with Thai street food brilliance.",
-      "mustTry": "Khao soi, congee, kao lao sets, kai kon (Thai-style scrambled eggs), Single O coffee",
-      "tags": [
-        "Thai Street Food",
-        "Vinyl Vibes",
-        "Cult Status"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 108,
-        "last_scored": "2026-05-03"
-      }
-    },
-    {
-      "name": "Smidge Bakery",
-      "city": "brisbane",
-      "category": "bakery",
-      "ranking_score": 1.5,
-      "location": "Leederville",
-      "area": "Inner North",
-      "vibe": "bakery",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Self-proclaimed home of \"Perth's best cinny scrolls\" and they might be right. Selling 20 trays a day in their new bigger space.",
-      "mustTry": "Cinnamon scrolls (the legend), choc caramel brownies, salted Caramilk cookies, sangas",
-      "tags": [
-        "Scroll Mania",
-        "Viral Success",
-        "New Location"
-      ],
-      "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 331,
-        "last_scored": "2026-05-03"
+        "google_trends": 36,
+        "tiktok_mentions": 208,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "Alby's",
       "city": "brisbane",
       "category": "cafe",
-      "ranking_score": 1.3,
+      "ranking_score": 2.4,
       "location": "Wavell Heights",
       "area": "Inner North",
       "vibe": "aesthetic",
@@ -264,9 +214,59 @@
         "Suburban Gem"
       ],
       "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 213,
-        "last_scored": "2026-05-03"
+        "google_trends": 42,
+        "tiktok_mentions": 268,
+        "last_scored": "2026-05-10"
+      }
+    },
+    {
+      "name": "Smidge Bakery",
+      "city": "brisbane",
+      "category": "bakery",
+      "ranking_score": 2.3,
+      "location": "Leederville",
+      "area": "Inner North",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Self-proclaimed home of \"Perth's best cinny scrolls\" and they might be right. Selling 20 trays a day in their new bigger space.",
+      "mustTry": "Cinnamon scrolls (the legend), choc caramel brownies, salted Caramilk cookies, sangas",
+      "tags": [
+        "Scroll Mania",
+        "Viral Success",
+        "New Location"
+      ],
+      "trend_signals": {
+        "google_trends": 36,
+        "tiktok_mentions": 237,
+        "last_scored": "2026-05-10"
+      }
+    },
+    {
+      "name": "So What Stereo",
+      "city": "brisbane",
+      "category": "cafe",
+      "ranking_score": 2.2,
+      "location": "Little Street, Fortitude Valley",
+      "area": "CBD",
+      "vibe": "thai",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Brisbane's first Thai vinyl cafe and one of 2025's biggest success stories. Hidden in The Valley, this mid-century gem blends retro whimsy with Thai street food brilliance.",
+      "mustTry": "Khao soi, congee, kao lao sets, kai kon (Thai-style scrambled eggs), Single O coffee",
+      "tags": [
+        "Thai Street Food",
+        "Vinyl Vibes",
+        "Cult Status"
+      ],
+      "trend_signals": {
+        "google_trends": 34,
+        "tiktok_mentions": 202,
+        "last_scored": "2026-05-10"
       }
     },
     {
@@ -290,8 +290,8 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 117,
-        "last_scored": "2026-05-03"
+        "tiktok_mentions": 213,
+        "last_scored": "2026-05-10"
       }
     }
   ]

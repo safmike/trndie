@@ -48,7 +48,7 @@
       "name": "CRUMB",
       "city": "newcastle",
       "category": "bakery",
-      "ranking_score": 5.5,
+      "ranking_score": 4.7,
       "location": "Lambton, 113 Elder St",
       "area": "Inner",
       "vibe": "bakery",
@@ -64,16 +64,16 @@
         "Lines Daily"
       ],
       "trend_signals": {
-        "google_trends": 79,
-        "tiktok_mentions": 0,
-        "last_scored": "2026-05-03"
+        "google_trends": 44,
+        "tiktok_mentions": 311,
+        "last_scored": "2026-05-10"
       }
     },
     {
       "name": "H U N T E Rhunter",
       "city": "newcastle",
       "category": "bakery",
-      "ranking_score": 1.1,
+      "ranking_score": 2.4,
       "location": "",
       "area": "",
       "vibe": "",
@@ -85,9 +85,9 @@
       "mustTry": "",
       "tags": [],
       "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 150,
-        "last_scored": "2026-05-03"
+        "google_trends": 42,
+        "tiktok_mentions": 289,
+        "last_scored": "2026-05-10"
       }
     }
   ]
