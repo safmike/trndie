@@ -4,7 +4,7 @@
   "state": "NSW",
   "country": "AU",
   "icon": "🌊",
-  "updatedAt": "April 2026",
+  "updatedAt": "May 2026",
   "filters": {
     "areas": [
       {
@@ -52,7 +52,7 @@
       "name": "Up South",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 8.8,
+      "ranking_score": 8.9,
       "location": "Bondi Beach",
       "area": "Bondi",
       "vibe": "aesthetic",
@@ -68,41 +68,16 @@
         "Queue-Worthy"
       ],
       "trend_signals": {
-        "google_trends": 79,
-        "tiktok_mentions": 1111,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Speedos Cafe",
-      "city": "sydney",
-      "category": "cafe",
-      "ranking_score": 8.6,
-      "location": "North Bondi",
-      "area": "Bondi",
-      "vibe": "waterfront",
-      "viral": true,
-      "instagram_url": "https://www.instagram.com/speedoscafe/",
-      "tiktok_url": null,
-      "website_url": "https://speedoscafe.com.au/",
-      "description": "Sydney's most famous cafe at Bondi Beach. The tiramisu latte is the best in Sydney, and the viral egg sandwich keeps people coming back.",
-      "mustTry": "Tiramisu latte ($12), acai bowl ($21), viral egg sandwich ($20)",
-      "tags": [
-        "Beach Views",
-        "Iconic Location",
-        "Instagram Famous"
-      ],
-      "trend_signals": {
-        "google_trends": 76,
-        "tiktok_mentions": 1043,
-        "last_scored": "2026-04-16"
+        "google_trends": 83,
+        "tiktok_mentions": 1163,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Cafe Margaret",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 8.4,
+      "ranking_score": 8.5,
       "location": "Double Bay",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -118,91 +93,16 @@
         "Double Bay Chic"
       ],
       "trend_signals": {
-        "google_trends": 74,
-        "tiktok_mentions": 984,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Chubby Cubby",
-      "city": "sydney",
-      "category": "cafe",
-      "ranking_score": 8.1,
-      "location": "Haymarket, George St",
-      "area": "CBD",
-      "vibe": "aesthetic",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "The best matcha in Sydney according to viral TikToks. About to drop a whole new matcha and shokupan menu that's already generating massive hype.",
-      "mustTry": "Signature matcha drinks, Japanese shokupan (milk bread), matcha latte",
-      "tags": [
-        "Matcha King",
-        "Japanese Vibes",
-        "Viral Videos"
-      ],
-      "trend_signals": {
-        "google_trends": 70,
-        "tiktok_mentions": 962,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Circa Espresso",
-      "city": "sydney",
-      "category": "cafe",
-      "ranking_score": 7.8,
-      "location": "Parramatta",
-      "area": "West",
-      "vibe": "aesthetic",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Winner of Time Out's People's Choice Award for Best Cafe 2025. The Ottoman eggs have achieved cult status and put Parramatta on the breakfast map.",
-      "mustTry": "Ottoman eggs (creamy garlic labne, fried eggplant, chilli oil, crisp leeks, poached eggs), in-house roasted coffee",
-      "tags": [
-        "Award Winner",
-        "Middle Eastern",
-        "Cult Following"
-      ],
-      "trend_signals": {
-        "google_trends": 68,
-        "tiktok_mentions": 926,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Baking 101",
-      "city": "sydney",
-      "category": "bakery",
-      "ranking_score": 7.6,
-      "location": "Stanmore",
-      "area": "Inner West",
-      "vibe": "bakery",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Home to 2025's It Baked Good: the cinnamon scroll that sold out in three hours. Classic, unhurried vibes with red curtains, chandeliers, and piano jazz.",
-      "mustTry": "Signature cinnamon scroll with vanilla cream, Scent of Stanmore carrot cake",
-      "tags": [
-        "Cinnamon Scroll Icon",
-        "Old-Timey Vibes",
-        "Black Star Pastry Alumni"
-      ],
-      "trend_signals": {
-        "google_trends": 68,
-        "tiktok_mentions": 871,
-        "last_scored": "2026-04-16"
+        "google_trends": 76,
+        "tiktok_mentions": 1018,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Bote",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 3.8,
+      "ranking_score": 5.2,
       "location": "Manly Boatshed",
       "area": "North",
       "vibe": "waterfront",
@@ -218,16 +118,16 @@
         "Northern Beaches"
       ],
       "trend_signals": {
-        "google_trends": 43,
-        "tiktok_mentions": 274,
-        "last_scored": "2026-04-16"
+        "google_trends": 47,
+        "tiktok_mentions": 314,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Happyfield",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 3.5,
+      "ranking_score": 4.5,
       "location": "Haberfield",
       "area": "Inner West",
       "vibe": "bakery",
@@ -243,16 +143,91 @@
         "Diner Vibes"
       ],
       "trend_signals": {
-        "google_trends": 40,
-        "tiktok_mentions": 241,
-        "last_scored": "2026-04-16"
+        "google_trends": 41,
+        "tiktok_mentions": 256,
+        "last_scored": "2026-05-18"
+      }
+    },
+    {
+      "name": "Circa Espresso",
+      "city": "sydney",
+      "category": "cafe",
+      "ranking_score": 4,
+      "location": "Parramatta",
+      "area": "West",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Winner of Time Out's People's Choice Award for Best Cafe 2025. The Ottoman eggs have achieved cult status and put Parramatta on the breakfast map.",
+      "mustTry": "Ottoman eggs (creamy garlic labne, fried eggplant, chilli oil, crisp leeks, poached eggs), in-house roasted coffee",
+      "tags": [
+        "Award Winner",
+        "Middle Eastern",
+        "Cult Following"
+      ],
+      "trend_signals": {
+        "google_trends": 35,
+        "tiktok_mentions": 234,
+        "last_scored": "2026-05-18"
+      }
+    },
+    {
+      "name": "Speedos Cafe",
+      "city": "sydney",
+      "category": "cafe",
+      "ranking_score": 3.7,
+      "location": "North Bondi",
+      "area": "Bondi",
+      "vibe": "waterfront",
+      "viral": false,
+      "instagram_url": "https://www.instagram.com/speedoscafe/",
+      "tiktok_url": null,
+      "website_url": "https://speedoscafe.com.au/",
+      "description": "Sydney's most famous cafe at Bondi Beach. The tiramisu latte is the best in Sydney, and the viral egg sandwich keeps people coming back.",
+      "mustTry": "Tiramisu latte ($12), acai bowl ($21), viral egg sandwich ($20)",
+      "tags": [
+        "Beach Views",
+        "Iconic Location",
+        "Instagram Famous"
+      ],
+      "trend_signals": {
+        "google_trends": 44,
+        "tiktok_mentions": 279,
+        "last_scored": "2026-05-18"
+      }
+    },
+    {
+      "name": "Chubby Cubby",
+      "city": "sydney",
+      "category": "cafe",
+      "ranking_score": 2.9,
+      "location": "Haymarket, George St",
+      "area": "CBD",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "The best matcha in Sydney according to viral TikToks. About to drop a whole new matcha and shokupan menu that's already generating massive hype.",
+      "mustTry": "Signature matcha drinks, Japanese shokupan (milk bread), matcha latte",
+      "tags": [
+        "Matcha King",
+        "Japanese Vibes",
+        "Viral Videos"
+      ],
+      "trend_signals": {
+        "google_trends": 28,
+        "tiktok_mentions": 171,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Cafe Cressida",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 2.4,
+      "ranking_score": 2.3,
       "location": "Queens Court, Paddington",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -268,16 +243,16 @@
         "Chef-Driven"
       ],
       "trend_signals": {
-        "google_trends": 27,
-        "tiktok_mentions": 129,
-        "last_scored": "2026-04-16"
+        "google_trends": 37,
+        "tiktok_mentions": 224,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Manteiga",
       "city": "sydney",
       "category": "cafe",
-      "ranking_score": 2.3,
+      "ranking_score": 2.1,
       "location": "Darlinghurst",
       "area": "CBD",
       "vibe": "aesthetic",
@@ -293,9 +268,34 @@
         "Michelin Pedigree"
       ],
       "trend_signals": {
-        "google_trends": 26,
-        "tiktok_mentions": 132,
-        "last_scored": "2026-04-16"
+        "google_trends": 38,
+        "tiktok_mentions": 232,
+        "last_scored": "2026-05-18"
+      }
+    },
+    {
+      "name": "Baking 101",
+      "city": "sydney",
+      "category": "bakery",
+      "ranking_score": 2,
+      "location": "Stanmore",
+      "area": "Inner West",
+      "vibe": "bakery",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Home to 2025's It Baked Good: the cinnamon scroll that sold out in three hours. Classic, unhurried vibes with red curtains, chandeliers, and piano jazz.",
+      "mustTry": "Signature cinnamon scroll with vanilla cream, Scent of Stanmore carrot cake",
+      "tags": [
+        "Cinnamon Scroll Icon",
+        "Old-Timey Vibes",
+        "Black Star Pastry Alumni"
+      ],
+      "trend_signals": {
+        "google_trends": 30,
+        "tiktok_mentions": 161,
+        "last_scored": "2026-05-18"
       }
     }
   ]

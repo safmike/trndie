@@ -4,7 +4,7 @@
   "state": "VIC",
   "country": "AU",
   "icon": "🏙️",
-  "updatedAt": "April 2026",
+  "updatedAt": "May 2026",
   "filters": {
     "areas": [
       {
@@ -45,35 +45,10 @@
   },
   "venues": [
     {
-      "name": "The Butter Room",
-      "city": "melbourne",
-      "category": "bakery",
-      "ranking_score": 8.7,
-      "location": "CBD, 16 Katherine Place",
-      "area": "CBD",
-      "vibe": "korean",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Cozy Korean pastry paradise. The moment you step in, you're surrounded by unique pastries and desserts that look like art pieces.",
-      "mustTry": "Injeolmi Pandoro (the icon), tiramisu croissant, tissue bread, Korean dumplings pie",
-      "tags": [
-        "Korean Pastries",
-        "Pandoro Heaven",
-        "8am-6pm"
-      ],
-      "trend_signals": {
-        "google_trends": 78,
-        "tiktok_mentions": 1068,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
       "name": "Groove",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 8,
+      "ranking_score": 9,
       "location": "Abbotsford, 17 Lithgow St",
       "area": "Inner East",
       "vibe": "vietnamese",
@@ -89,91 +64,16 @@
         "FYP Legend"
       ],
       "trend_signals": {
-        "google_trends": 71,
-        "tiktok_mentions": 923,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Nimbo",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 7.6,
-      "location": "CBD (Hidden Alleyway)",
-      "area": "CBD",
-      "vibe": "aesthetic",
-      "viral": true,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Viral matcha and latte dessert cafe hidden in a Melbourne alleyway. Cozy winter menu with creative flavor combinations that actually work.",
-      "mustTry": "Ube matcha, banana croissant pudding, hojicha hot chocolate, hot Earl Grey matcha",
-      "tags": [
-        "Hidden Gem",
-        "Matcha Magic",
-        "Dessert Cafe"
-      ],
-      "trend_signals": {
-        "google_trends": 68,
-        "tiktok_mentions": 866,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "In Btwn",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 4.8,
-      "location": "CBD (Near Queen Vic Market)",
-      "area": "CBD",
-      "vibe": "specialty",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Somewhere between a cafe and a bar, this TRNDIE spot serves creative drinks with unique twists. Warm orange lighting draws you in from the laneway.",
-      "mustTry": "In Btwn Dirty ($6.50) with orange zest, Einspanner ($9.50), Matcha Einspanner",
-      "tags": [
-        "Cafe-Bar Hybrid",
-        "Creative Drinks",
-        "Buzzing Vibe"
-      ],
-      "trend_signals": {
-        "google_trends": 47,
-        "tiktok_mentions": 319,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Assembly",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 3.9,
-      "location": "North Melbourne",
-      "area": "Inner North",
-      "vibe": "specialty",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Behind a warehouse roller door, this second location also functions as a cellar door for non-alc label Tina. Signature drinks that push boundaries.",
-      "mustTry": "Dunkaccino (half filter coffee, half hot chocolate), shan cha (mountain tea from Taiwan), Tina non-alc drinks",
-      "tags": [
-        "Warehouse Vibes",
-        "Non-Alc Drinks",
-        "Innovative"
-      ],
-      "trend_signals": {
-        "google_trends": 43,
-        "tiktok_mentions": 300,
-        "last_scored": "2026-04-16"
+        "google_trends": 88,
+        "tiktok_mentions": 867,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Juniper",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 3.8,
+      "ranking_score": 6.5,
       "location": "South Melbourne, 269 Coventry St",
       "area": "South",
       "vibe": "specialty",
@@ -189,66 +89,16 @@
         "Coffee Goals"
       ],
       "trend_signals": {
-        "google_trends": 34,
-        "tiktok_mentions": 213,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "The Glass Den",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 3.3,
-      "location": "Coburg",
-      "area": "Inner North",
-      "vibe": "aesthetic",
-      "viral": false,
-      "instagram_url": "https://www.instagram.com/theglassden_/",
-      "tiktok_url": "https://www.tiktok.com/@theglassden_",
-      "website_url": null,
-      "description": "The most aesthetic cafe in Melbourne right now. Their brunch dishes are as beautiful as they are delicious, and the space is absolutely Instagram-worthy.",
-      "mustTry": "Viral Italian hot chocolate, new brunch dishes, strawberry matcha latte",
-      "tags": [
-        "TikTok Famous",
-        "Aesthetic AF",
-        "Brunch Goals"
-      ],
-      "trend_signals": {
-        "google_trends": 24,
-        "tiktok_mentions": 136,
-        "last_scored": "2026-04-16"
-      }
-    },
-    {
-      "name": "Bottari",
-      "city": "melbourne",
-      "category": "cafe",
-      "ranking_score": 3.3,
-      "location": "CBD, Elizabeth Street",
-      "area": "CBD",
-      "vibe": "korean",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Seoul's TRNDIE cafe culture comes to Melbourne. Famous for viral doughnut drinks that are as chic as they are delicious, crowned with caramel cream \"doughnuts\".",
-      "mustTry": "Doughnut lattes (chai cinnamon, chocolate, matcha), Kkwabaegi (twisted Korean donuts), Jasmine Cloud",
-      "tags": [
-        "Korean Vibes",
-        "Doughnut Drinks",
-        "Instagram Gold"
-      ],
-      "trend_signals": {
-        "google_trends": 24,
-        "tiktok_mentions": 126,
-        "last_scored": "2026-04-16"
+        "google_trends": 96,
+        "tiktok_mentions": 306,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Standing Room",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 3.1,
+      "ranking_score": 5.9,
       "location": "Carlton / Fitzroy North",
       "area": "Inner North",
       "vibe": "specialty",
@@ -264,16 +114,166 @@
         "Cult Following"
       ],
       "trend_signals": {
-        "google_trends": 34,
-        "tiktok_mentions": 225,
-        "last_scored": "2026-04-16"
+        "google_trends": 92,
+        "tiktok_mentions": 260,
+        "last_scored": "2026-05-18"
+      }
+    },
+    {
+      "name": "Assembly",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 5.7,
+      "location": "North Melbourne",
+      "area": "Inner North",
+      "vibe": "specialty",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Behind a warehouse roller door, this second location also functions as a cellar door for non-alc label Tina. Signature drinks that push boundaries.",
+      "mustTry": "Dunkaccino (half filter coffee, half hot chocolate), shan cha (mountain tea from Taiwan), Tina non-alc drinks",
+      "tags": [
+        "Warehouse Vibes",
+        "Non-Alc Drinks",
+        "Innovative"
+      ],
+      "trend_signals": {
+        "google_trends": 88,
+        "tiktok_mentions": 129,
+        "last_scored": "2026-05-18"
+      }
+    },
+    {
+      "name": "The Glass Den",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 5.3,
+      "location": "Coburg",
+      "area": "Inner North",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": "https://www.instagram.com/theglassden_/",
+      "tiktok_url": "https://www.tiktok.com/@theglassden_",
+      "website_url": null,
+      "description": "The most aesthetic cafe in Melbourne right now. Their brunch dishes are as beautiful as they are delicious, and the space is absolutely Instagram-worthy.",
+      "mustTry": "Viral Italian hot chocolate, new brunch dishes, strawberry matcha latte",
+      "tags": [
+        "TikTok Famous",
+        "Aesthetic AF",
+        "Brunch Goals"
+      ],
+      "trend_signals": {
+        "google_trends": 65,
+        "tiktok_mentions": 304,
+        "last_scored": "2026-05-18"
+      }
+    },
+    {
+      "name": "Bottari",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 4.9,
+      "location": "CBD, Elizabeth Street",
+      "area": "CBD",
+      "vibe": "korean",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Seoul's TRNDIE cafe culture comes to Melbourne. Famous for viral doughnut drinks that are as chic as they are delicious, crowned with caramel cream \"doughnuts\".",
+      "mustTry": "Doughnut lattes (chai cinnamon, chocolate, matcha), Kkwabaegi (twisted Korean donuts), Jasmine Cloud",
+      "tags": [
+        "Korean Vibes",
+        "Doughnut Drinks",
+        "Instagram Gold"
+      ],
+      "trend_signals": {
+        "google_trends": 54,
+        "tiktok_mentions": 219,
+        "last_scored": "2026-05-18"
+      }
+    },
+    {
+      "name": "Nimbo",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 4.1,
+      "location": "CBD (Hidden Alleyway)",
+      "area": "CBD",
+      "vibe": "aesthetic",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Viral matcha and latte dessert cafe hidden in a Melbourne alleyway. Cozy winter menu with creative flavor combinations that actually work.",
+      "mustTry": "Ube matcha, banana croissant pudding, hojicha hot chocolate, hot Earl Grey matcha",
+      "tags": [
+        "Hidden Gem",
+        "Matcha Magic",
+        "Dessert Cafe"
+      ],
+      "trend_signals": {
+        "google_trends": 65,
+        "tiktok_mentions": 262,
+        "last_scored": "2026-05-18"
+      }
+    },
+    {
+      "name": "In Btwn",
+      "city": "melbourne",
+      "category": "cafe",
+      "ranking_score": 3.1,
+      "location": "CBD (Near Queen Vic Market)",
+      "area": "CBD",
+      "vibe": "specialty",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Somewhere between a cafe and a bar, this TRNDIE spot serves creative drinks with unique twists. Warm orange lighting draws you in from the laneway.",
+      "mustTry": "In Btwn Dirty ($6.50) with orange zest, Einspanner ($9.50), Matcha Einspanner",
+      "tags": [
+        "Cafe-Bar Hybrid",
+        "Creative Drinks",
+        "Buzzing Vibe"
+      ],
+      "trend_signals": {
+        "google_trends": 33,
+        "tiktok_mentions": 158,
+        "last_scored": "2026-05-18"
+      }
+    },
+    {
+      "name": "The Butter Room",
+      "city": "melbourne",
+      "category": "bakery",
+      "ranking_score": 3,
+      "location": "CBD, 16 Katherine Place",
+      "area": "CBD",
+      "vibe": "korean",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Cozy Korean pastry paradise. The moment you step in, you're surrounded by unique pastries and desserts that look like art pieces.",
+      "mustTry": "Injeolmi Pandoro (the icon), tiramisu croissant, tissue bread, Korean dumplings pie",
+      "tags": [
+        "Korean Pastries",
+        "Pandoro Heaven",
+        "8am-6pm"
+      ],
+      "trend_signals": {
+        "google_trends": 0,
+        "tiktok_mentions": 223,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Trbl",
       "city": "melbourne",
       "category": "cafe",
-      "ranking_score": 2.8,
+      "ranking_score": 3,
       "location": "Presgrave Place (Laneway)",
       "area": "CBD",
       "vibe": "korean",
@@ -289,9 +289,9 @@
         "Street Art"
       ],
       "trend_signals": {
-        "google_trends": 32,
-        "tiktok_mentions": 177,
-        "last_scored": "2026-04-16"
+        "google_trends": 24,
+        "tiktok_mentions": 266,
+        "last_scored": "2026-05-18"
       }
     }
   ]
