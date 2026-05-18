@@ -48,7 +48,7 @@
       "name": "Be Free",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 5,
+      "ranking_score": 5.7,
       "location": "Perth City Farm, East Perth",
       "area": "CBD",
       "vibe": "organic",
@@ -64,16 +64,16 @@
         "Eco-Conscious"
       ],
       "trend_signals": {
-        "google_trends": 47,
-        "tiktok_mentions": 309,
-        "last_scored": "2026-05-10"
+        "google_trends": 84,
+        "tiktok_mentions": 328,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "North 54",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 3.8,
+      "ranking_score": 3.1,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "vietnamese",
@@ -89,16 +89,16 @@
         "Hospo Legend"
       ],
       "trend_signals": {
-        "google_trends": 24,
-        "tiktok_mentions": 125,
-        "last_scored": "2026-05-10"
+        "google_trends": 29,
+        "tiktok_mentions": 181,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Side Piece Deli",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 3.2,
+      "ranking_score": 3,
       "location": "Swanbourne",
       "area": "Coastal",
       "vibe": "deli",
@@ -114,16 +114,16 @@
         "Pantry Group"
       ],
       "trend_signals": {
-        "google_trends": 45,
-        "tiktok_mentions": 316,
-        "last_scored": "2026-05-10"
+        "google_trends": 32,
+        "tiktok_mentions": 198,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Smidge Bakery",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 2.9,
+      "ranking_score": 2.6,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -139,16 +139,16 @@
         "New Digs"
       ],
       "trend_signals": {
-        "google_trends": 30,
-        "tiktok_mentions": 154,
-        "last_scored": "2026-05-10"
+        "google_trends": 28,
+        "tiktok_mentions": 145,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Bert's",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 2.6,
+      "ranking_score": 2.5,
       "location": "City Beach",
       "area": "Coastal",
       "vibe": "organic",
@@ -164,16 +164,16 @@
         "Coastal Vibes"
       ],
       "trend_signals": {
-        "google_trends": 30,
-        "tiktok_mentions": 159,
-        "last_scored": "2026-05-10"
+        "google_trends": 29,
+        "tiktok_mentions": 148,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Angelwood Pies",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 2.5,
+      "ranking_score": 2.3,
       "location": "Leederville",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -189,16 +189,16 @@
         "Grab & Go"
       ],
       "trend_signals": {
-        "google_trends": 33,
-        "tiktok_mentions": 189,
-        "last_scored": "2026-05-10"
+        "google_trends": 26,
+        "tiktok_mentions": 123,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Banh Mi & Chè",
       "city": "perth",
       "category": "cafe",
-      "ranking_score": 2.5,
+      "ranking_score": 2.3,
       "location": "Carlisle",
       "area": "Inner Suburbs",
       "vibe": "vietnamese",
@@ -214,41 +214,16 @@
         "Auntie Network"
       ],
       "trend_signals": {
-        "google_trends": 46,
-        "tiktok_mentions": 333,
-        "last_scored": "2026-05-10"
-      }
-    },
-    {
-      "name": "Earl's",
-      "city": "perth",
-      "category": "deli",
-      "ranking_score": 2.4,
-      "location": "Mount Hawthorn",
-      "area": "Inner Suburbs",
-      "vibe": "deli",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Filling Mount Hawthorn's lunchtime gap with serious sangas. Hoagies, French dips, and classic American-style sandwiches done right.",
-      "mustTry": "Hoagies, French dip sandwiches, classic deli fare",
-      "tags": [
-        "Sandwich Joint",
-        "Lunchtime Hero",
-        "American Style"
-      ],
-      "trend_signals": {
-        "google_trends": 42,
-        "tiktok_mentions": 294,
-        "last_scored": "2026-05-10"
+        "google_trends": 25,
+        "tiktok_mentions": 141,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "The Cool Room",
       "city": "perth",
       "category": "bakery",
-      "ranking_score": 2.1,
+      "ranking_score": 2.3,
       "location": "East Fremantle",
       "area": "Fremantle",
       "vibe": "bakery",
@@ -264,16 +239,16 @@
         "Chef-Driven"
       ],
       "trend_signals": {
-        "google_trends": 0,
-        "tiktok_mentions": 304,
-        "last_scored": "2026-05-10"
+        "google_trends": 30,
+        "tiktok_mentions": 176,
+        "last_scored": "2026-05-18"
       }
     },
     {
       "name": "Lovers Deli & Canteen",
       "city": "perth",
       "category": "deli",
-      "ranking_score": 1,
+      "ranking_score": 1.8,
       "location": "White Gum Valley",
       "area": "Coastal",
       "vibe": "deli",
@@ -289,9 +264,34 @@
         "Good Things Team"
       ],
       "trend_signals": {
+        "google_trends": 31,
+        "tiktok_mentions": 189,
+        "last_scored": "2026-05-18"
+      }
+    },
+    {
+      "name": "Earl's",
+      "city": "perth",
+      "category": "deli",
+      "ranking_score": 1.4,
+      "location": "Mount Hawthorn",
+      "area": "Inner Suburbs",
+      "vibe": "deli",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Filling Mount Hawthorn's lunchtime gap with serious sangas. Hoagies, French dips, and classic American-style sandwiches done right.",
+      "mustTry": "Hoagies, French dip sandwiches, classic deli fare",
+      "tags": [
+        "Sandwich Joint",
+        "Lunchtime Hero",
+        "American Style"
+      ],
+      "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 200,
-        "last_scored": "2026-05-10"
+        "tiktok_mentions": 123,
+        "last_scored": "2026-05-18"
       }
     }
   ]

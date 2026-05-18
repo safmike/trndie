@@ -64,16 +64,16 @@
         "Cousins Project"
       ],
       "trend_signals": {
-        "google_trends": 91,
-        "tiktok_mentions": 285,
-        "last_scored": "2026-05-10"
+        "google_trends": 49,
+        "tiktok_mentions": 331,
+        "last_scored": "2026-05-17"
       }
     },
     {
       "name": "Bora",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 4,
+      "ranking_score": 4.1,
       "location": "Jetty Street, Grange",
       "area": "Beachside",
       "vibe": "bakery",
@@ -89,16 +89,16 @@
         "Alma Brazil"
       ],
       "trend_signals": {
-        "google_trends": 28,
-        "tiktok_mentions": 166,
-        "last_scored": "2026-05-10"
+        "google_trends": 48,
+        "tiktok_mentions": 339,
+        "last_scored": "2026-05-17"
       }
     },
     {
       "name": "Jenny's Bakery",
       "city": "adelaide",
       "category": "bakery",
-      "ranking_score": 3.4,
+      "ranking_score": 3.6,
       "location": "Keswick",
       "area": "Inner Suburbs",
       "vibe": "bakery",
@@ -114,16 +114,16 @@
         "Cult Following"
       ],
       "trend_signals": {
-        "google_trends": 31,
-        "tiktok_mentions": 167,
-        "last_scored": "2026-05-10"
+        "google_trends": 53,
+        "tiktok_mentions": 150,
+        "last_scored": "2026-05-17"
       }
     },
     {
       "name": "Pinco Deli",
       "city": "adelaide",
       "category": "deli",
-      "ranking_score": 2.9,
+      "ranking_score": 3.4,
       "location": "Exchange Place, CBD",
       "area": "CBD",
       "vibe": "italian",
@@ -139,16 +139,16 @@
         "Italian Staples"
       ],
       "trend_signals": {
-        "google_trends": 27,
-        "tiktok_mentions": 262,
-        "last_scored": "2026-05-10"
+        "google_trends": 44,
+        "tiktok_mentions": 302,
+        "last_scored": "2026-05-17"
       }
     },
     {
       "name": "Pompom",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 2.6,
+      "ranking_score": 3.4,
       "location": "Forestville",
       "area": "Inner Suburbs",
       "vibe": "greek",
@@ -164,16 +164,16 @@
         "Rising Suburb"
       ],
       "trend_signals": {
-        "google_trends": 23,
-        "tiktok_mentions": 345,
-        "last_scored": "2026-05-10"
+        "google_trends": 49,
+        "tiktok_mentions": 328,
+        "last_scored": "2026-05-17"
       }
     },
     {
       "name": "Arlos",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 2.6,
+      "ranking_score": 3.2,
       "location": "King William St & Grenfell St",
       "area": "CBD",
       "vibe": "bakery",
@@ -189,41 +189,16 @@
         "Scroll Varieties"
       ],
       "trend_signals": {
-        "google_trends": 48,
-        "tiktok_mentions": 318,
-        "last_scored": "2026-05-10"
-      }
-    },
-    {
-      "name": "Cha-no-wa",
-      "city": "adelaide",
-      "category": "cafe",
-      "ranking_score": 2.5,
-      "location": "King William Street, CBD",
-      "area": "CBD",
-      "vibe": "matcha",
-      "viral": false,
-      "instagram_url": null,
-      "tiktok_url": null,
-      "website_url": null,
-      "description": "Japanese brand's first Australian outpost. Premium matcha sourced from Kyoto during the global matcha shortage — Adelaide's love affair with matcha reached fever pitch here.",
-      "mustTry": "Kyoto-sourced matcha and hojicha, matcha frappes and sundaes, Japanese cakes and ice-cream",
-      "tags": [
-        "Kyoto Matcha",
-        "Japanese Chain",
-        "Ex-Muni Chef"
-      ],
-      "trend_signals": {
-        "google_trends": 46,
-        "tiktok_mentions": 319,
-        "last_scored": "2026-05-10"
+        "google_trends": 44,
+        "tiktok_mentions": 284,
+        "last_scored": "2026-05-17"
       }
     },
     {
       "name": "Homeboy 2.0",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 2.1,
+      "ranking_score": 2.4,
       "location": "North Terrace, CBD",
       "area": "CBD",
       "vibe": "bakery",
@@ -239,16 +214,16 @@
         "Renew Adelaide"
       ],
       "trend_signals": {
-        "google_trends": 36,
-        "tiktok_mentions": 236,
-        "last_scored": "2026-05-10"
+        "google_trends": 32,
+        "tiktok_mentions": 203,
+        "last_scored": "2026-05-17"
       }
     },
     {
       "name": "Yuku dō",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 1.1,
+      "ranking_score": 2.2,
       "location": "CBD",
       "area": "CBD",
       "vibe": "matcha",
@@ -264,16 +239,41 @@
         "Fusion Done Right"
       ],
       "trend_signals": {
+        "google_trends": 38,
+        "tiktok_mentions": 255,
+        "last_scored": "2026-05-17"
+      }
+    },
+    {
+      "name": "Cha-no-wa",
+      "city": "adelaide",
+      "category": "cafe",
+      "ranking_score": 1.5,
+      "location": "King William Street, CBD",
+      "area": "CBD",
+      "vibe": "matcha",
+      "viral": false,
+      "instagram_url": null,
+      "tiktok_url": null,
+      "website_url": null,
+      "description": "Japanese brand's first Australian outpost. Premium matcha sourced from Kyoto during the global matcha shortage — Adelaide's love affair with matcha reached fever pitch here.",
+      "mustTry": "Kyoto-sourced matcha and hojicha, matcha frappes and sundaes, Japanese cakes and ice-cream",
+      "tags": [
+        "Kyoto Matcha",
+        "Japanese Chain",
+        "Ex-Muni Chef"
+      ],
+      "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 278,
-        "last_scored": "2026-05-10"
+        "tiktok_mentions": 115,
+        "last_scored": "2026-05-17"
       }
     },
     {
       "name": "Gathers & Grounds",
       "city": "adelaide",
       "category": "cafe",
-      "ranking_score": 1.1,
+      "ranking_score": 1,
       "location": "Glenelg",
       "area": "Beachside",
       "vibe": "matcha",
@@ -290,8 +290,8 @@
       ],
       "trend_signals": {
         "google_trends": 0,
-        "tiktok_mentions": 306,
-        "last_scored": "2026-05-10"
+        "tiktok_mentions": 202,
+        "last_scored": "2026-05-17"
       }
     }
   ]
