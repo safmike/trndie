@@ -9,6 +9,7 @@ const VIBE_TAGS_FILE = path.join(REPO_ROOT, "config", "vibe_tags.json");
 // Add an entry each time a city migrates to the v2.1 schema.
 const TAGLINES = {
   melbourne: "Melbourne's best week, refreshed every Thursday.",
+  sydney: "Sydney's best week, refreshed every Thursday.",
 };
 
 const MONTHS = [
