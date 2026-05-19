@@ -21,6 +21,8 @@
     { "value": "japanese-coded", "label": "Japanese-Coded" },
     { "value": "brazilian-coded", "label": "Brazilian-Coded" },
     { "value": "toastie-heaven", "label": "Toastie Heaven" },
-    { "value": "after-dark", "label": "After-Dark" }
+    { "value": "after-dark", "label": "After-Dark" },
+    { "value": "produce-pilled", "label": "Produce-Pilled" },
+    { "value": "sando-coded", "label": "Sando-Coded" }
   ]
 }
