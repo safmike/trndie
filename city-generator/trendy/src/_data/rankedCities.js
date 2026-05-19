@@ -11,6 +11,8 @@ const TAGLINES = {
   melbourne: "Melbourne's best week, refreshed every Thursday.",
   sydney: "Sydney's best week, refreshed every Thursday.",
   brisbane: "Brisbane's best week, refreshed every Thursday.",
+  adelaide: "Adelaide's best week, refreshed every Thursday.",
+  "gold coast": "Gold Coast's best week, refreshed every Thursday.",
   perth: "Perth's best week, refreshed every Thursday.",
 };
 

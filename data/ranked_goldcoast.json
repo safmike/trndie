@@ -1,0 +1,47 @@
+{
+  "city": "Gold Coast",
+  "tier": 2,
+  "last_updated": "2026-05-19T06:00:00+10:00",
+  "next_update": "2026-05-21T06:00:00+10:00",
+  "methodology_version": "2.1",
+  "venues": [
+    {
+      "rank": 1,
+      "venue_name": "Paddock Bakery",
+      "suburb": "Miami",
+      "canonical_address": "Miami, Gold Coast QLD",
+      "lat": null,
+      "lng": null,
+      "rating": null,
+      "composite_score": 0.50,
+      "first_discovered": "2026-03-18",
+      "newness_boost_applied": false,
+      "trends_unavailable": false,
+      "cover_photo_url": null,
+      "trending_copy": "Paddock Bakery runs out of a restored weatherboard cottage in Miami, and the picket-fence courtyard is doing as much work as the pastry counter. Get a croissant out the back before 9am; the courtyard tables go well before the morning does.",
+      "vibe_tags": ["Pastry Pit", "Camera-Bait", "FYP Legend"],
+      "must_try": "Croissants, rustic sourdough, seasonal pastries, specialty coffee in the courtyard",
+      "google_place_id": null,
+      "source_urls": []
+    },
+    {
+      "rank": 2,
+      "venue_name": "Bam Bam Bakehouse",
+      "suburb": "Mermaid Beach",
+      "canonical_address": "Mermaid Beach, Gold Coast QLD",
+      "lat": null,
+      "lng": null,
+      "rating": null,
+      "composite_score": 0.44,
+      "first_discovered": "2026-03-18",
+      "newness_boost_applied": false,
+      "trends_unavailable": false,
+      "cover_photo_url": null,
+      "trending_copy": "Bam Bam's Nutella choux bombs are the reason Mermaid Beach forms a queue, and the regulars will tell you they're non-negotiable. The nasi goreng breakfast is the sleeper order — proof the kitchen isn't only here for the pastry counter.",
+      "vibe_tags": ["Pastry Pit", "Camera-Bait", "Experimental"],
+      "must_try": "Jalapeño & queso fresco sweetcorn fritters, nasi goreng breakfast, Nutella choux bombs (non-negotiable), pastries & dessert pots",
+      "google_place_id": null,
+      "source_urls": []
+    }
+  ]
+}
