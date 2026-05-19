@@ -5,6 +5,6 @@ module.exports = function () {
   const dir = path.join(__dirname, "cityData");
   return fs
     .readdirSync(dir)
-    .filter((f) => f.endsWith(".json") && f !== "melbourne.json" && f !== "sydney.json")
+    .filter((f) => f.endsWith(".json") && f !== "melbourne.json" && f !== "sydney.json" && f !== "brisbane.json")
     .map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), "utf-8")));
 };
