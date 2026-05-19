@@ -16,6 +16,8 @@
     { "value": "beach-coded", "label": "Beach-Coded" },
     { "value": "chef-coded", "label": "Chef-Coded" },
     { "value": "thai-coded", "label": "Thai-Coded" },
-    { "value": "toastie-heaven", "label": "Toastie Heaven" }
+    { "value": "toastie-heaven", "label": "Toastie Heaven" },
+    { "value": "produce-pilled", "label": "Produce-Pilled" },
+    { "value": "sando-coded", "label": "Sando-Coded" }
   ]
 }
