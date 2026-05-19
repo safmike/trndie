@@ -12,6 +12,8 @@
     { "value": "cafe-bar-hybrid", "label": "Cafe-Bar Hybrid" },
     { "value": "experimental", "label": "Experimental" },
     { "value": "warehouse-vibes", "label": "Warehouse Vibes" },
-    { "value": "fyp-legend", "label": "FYP Legend" }
+    { "value": "fyp-legend", "label": "FYP Legend" },
+    { "value": "beach-coded", "label": "Beach-Coded" },
+    { "value": "chef-coded", "label": "Chef-Coded" }
   ]
 }
