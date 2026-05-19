@@ -20,6 +20,14 @@ title: "TRNDIE | Discover What's Trending in Your City"
           </div>
         </a>
         {%- endfor %}
+        {%- for city in rankedCities %}
+        <a href="/{{ city.slug }}/" class="city-link">
+          <div class="city-card">
+            <div class="city-name">{{ city.name }}</div>
+            <div class="city-category">Cafes &amp; Venues</div>
+          </div>
+        </a>
+        {%- endfor %}
       </div>
     </div>
 
