@@ -14,6 +14,8 @@
     { "value": "warehouse-vibes", "label": "Warehouse Vibes" },
     { "value": "fyp-legend", "label": "FYP Legend" },
     { "value": "beach-coded", "label": "Beach-Coded" },
-    { "value": "chef-coded", "label": "Chef-Coded" }
+    { "value": "chef-coded", "label": "Chef-Coded" },
+    { "value": "thai-coded", "label": "Thai-Coded" },
+    { "value": "toastie-heaven", "label": "Toastie Heaven" }
   ]
 }
