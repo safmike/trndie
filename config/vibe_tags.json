@@ -20,6 +20,7 @@
     { "value": "italian-coded", "label": "Italian-Coded" },
     { "value": "japanese-coded", "label": "Japanese-Coded" },
     { "value": "brazilian-coded", "label": "Brazilian-Coded" },
-    { "value": "toastie-heaven", "label": "Toastie Heaven" }
+    { "value": "toastie-heaven", "label": "Toastie Heaven" },
+    { "value": "after-dark", "label": "After-Dark" }
   ]
 }
