@@ -1,0 +1,17 @@
+{
+  "tags": [
+    { "value": "matcha-pilled", "label": "Matcha-Pilled" },
+    { "value": "korean-coded", "label": "Korean-Coded" },
+    { "value": "vietnamese-coded", "label": "Vietnamese-Coded" },
+    { "value": "pastry-pit", "label": "Pastry Pit" },
+    { "value": "doughnut-drinks", "label": "Doughnut Drinks" },
+    { "value": "camera-bait", "label": "Camera-Bait" },
+    { "value": "hidden-gem", "label": "Hidden Gem" },
+    { "value": "laneway-find", "label": "Laneway Find" },
+    { "value": "coffee-forward", "label": "Coffee-Forward" },
+    { "value": "cafe-bar-hybrid", "label": "Cafe-Bar Hybrid" },
+    { "value": "experimental", "label": "Experimental" },
+    { "value": "warehouse-vibes", "label": "Warehouse Vibes" },
+    { "value": "fyp-legend", "label": "FYP Legend" }
+  ]
+}
