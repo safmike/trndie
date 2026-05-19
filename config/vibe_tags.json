@@ -16,6 +16,10 @@
     { "value": "beach-coded", "label": "Beach-Coded" },
     { "value": "chef-coded", "label": "Chef-Coded" },
     { "value": "thai-coded", "label": "Thai-Coded" },
+    { "value": "greek-coded", "label": "Greek-Coded" },
+    { "value": "italian-coded", "label": "Italian-Coded" },
+    { "value": "japanese-coded", "label": "Japanese-Coded" },
+    { "value": "brazilian-coded", "label": "Brazilian-Coded" },
     { "value": "toastie-heaven", "label": "Toastie Heaven" }
   ]
 }
