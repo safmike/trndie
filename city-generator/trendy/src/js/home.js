@@ -8,10 +8,12 @@
   // ── Rotating sub-tagline ──────────────────────────────────────────────────
 
   var SUB_LINES = [
-    "Updated weekly with real social signals.",
-    "Ranked by TikTok buzz and Google Trends data.",
-    "7 cities \u00b7 70 venues \u00b7 all trending right now.",
-    "What\u2019s going viral before the crowds show up.",
+    'Where the line forms <span class="slogan-keyword">next</span>.',
+    'A cafe guide with <span class="slogan-keyword">taste</span>.',
+    'Built for the <span class="slogan-keyword">curious</span> local.',
+    '<span class="slogan-keyword">Tomorrow\u2019s</span> favourites, today.',
+    'From your FYP to your <span class="slogan-keyword">weekend</span>.',
+    'Cafes with queues, <span class="slogan-keyword">decoded</span>.',
   ];
 
   function initSubLine() {
@@ -25,11 +27,29 @@
       idx = (idx + 1) % SUB_LINES.length;
       el.style.opacity = "0";
       setTimeout(function () {
-        el.textContent  = SUB_LINES[idx];
+        el.innerHTML    = SUB_LINES[idx];
         el.style.opacity = "0.7";
       }, FADE_MS);
     }, SUB_INTERVAL);
   }
+
+  // \u2500\u2500 Logo shimmer (bfcache replay) \u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500
+  // CSS animation plays once on initial load. When the page is restored from
+  // bfcache (back/forward), pageshow fires with persisted=true and the CSS
+  // animation does NOT restart on its own \u2014 reset it here so the shimmer
+  // greets the user again on every arrival.
+
+  function replayLogoShimmer() {
+    var logo = document.querySelector(".logo");
+    if (!logo) return;
+    logo.style.animation = "none";
+    void logo.offsetWidth; // force reflow so the next assignment restarts the animation
+    logo.style.animation = "";
+  }
+
+  window.addEventListener("pageshow", function (e) {
+    if (e.persisted) replayLogoShimmer();
+  });
 
   // ── Trending sidebar ──────────────────────────────────────────────────────
 
