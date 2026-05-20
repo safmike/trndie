@@ -44,8 +44,10 @@ module.exports = function () {
     .readdirSync(DATA_DIR)
     .filter(function (f) { return /^ranked_.+\.json$/.test(f); })
     .map(function (f) {
-      const city = JSON.parse(fs.readFileSync(path.join(DATA_DIR, f), "utf-8"));
-
+      return JSON.parse(fs.readFileSync(path.join(DATA_DIR, f), "utf-8"));
+    })
+    .filter(function (city) { return city.published !== false; })
+    .map(function (city) {
       // Fields consumed by base.njk and city-v2.njk
       city.name     = city.city;
       city.slug     = city.city.toLowerCase();
