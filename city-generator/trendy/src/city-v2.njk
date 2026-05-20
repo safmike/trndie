@@ -44,16 +44,13 @@ pageStylesheet: /css/city-v2.css
             {%- if venue.cover_photo_url %}
             <img class="vcard-photo" src="{{ venue.cover_photo_url }}"
                  alt="{{ venue.venue_name }}, {{ venue.suburb }}" loading="lazy">
-            <span class="vcard-rank-chip" aria-label="Rank {{ venue.rank }}">{{ venue.rank }}</span>
             {%- else %}
             <div class="vcard-typo" aria-hidden="true">
-              <span class="vcard-ghost">{{ venue.rank }}</span>
               <span class="vcard-typo-name">{{ venue.venue_name }}</span>
               <span class="vcard-typo-vibes">
                 {%- for t in venue.vibe_tag_objs %}{{ t.label }}{% if not loop.last %} · {% endif %}{% endfor %}
               </span>
             </div>
-            <span class="vcard-rank-chip" aria-label="Rank {{ venue.rank }}">{{ venue.rank }}</span>
             {%- endif %}
 
             <button type="button" class="vcard-save"
