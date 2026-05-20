@@ -1,7 +1,7 @@
 {
   "city": "Brisbane",
   "tier": 2,
-  "last_updated": "2026-05-19T06:00:00+10:00",
+  "last_updated": "2026-05-20T06:00:00+10:00",
   "next_update": "2026-05-22T06:00:00+10:00",
   "methodology_version": "2.1",
   "venues": [
@@ -121,25 +121,6 @@
     },
     {
       "rank": 7,
-      "venue_name": "Smidge Bakery",
-      "suburb": "Leederville",
-      "canonical_address": "Leederville, Brisbane QLD",
-      "lat": null,
-      "lng": null,
-      "rating": null,
-      "composite_score": 0.17,
-      "first_discovered": "2026-03-18",
-      "newness_boost_applied": false,
-      "trends_unavailable": false,
-      "cover_photo_url": null,
-      "trending_copy": "The cinnamon scroll here has been moving twenty trays a day since the bigger space opened, and the new square footage hasn't slowed the demand. Salted Caramilk cookies and the sangas hold the order together when the scrolls are gone.",
-      "vibe_tags": ["Pastry Pit", "FYP Legend"],
-      "must_try": "Cinnamon scrolls (the legend), choc caramel brownies, salted Caramilk cookies, sangas",
-      "google_place_id": null,
-      "source_urls": []
-    },
-    {
-      "rank": 8,
       "venue_name": "So What Stereo",
       "suburb": "Fortitude Valley",
       "canonical_address": "Fortitude Valley, Brisbane QLD",
@@ -158,7 +139,7 @@
       "source_urls": []
     },
     {
-      "rank": 9,
+      "rank": 8,
       "venue_name": "Alby's",
       "suburb": "Wavell Heights",
       "canonical_address": "Wavell Heights, Brisbane QLD",
@@ -173,25 +154,6 @@
       "trending_copy": "The beef rendang toastie is the order at Alby's, and Wavell Heights has been pulling regulars to Daniel Bowles's suburban room specifically for it. The iced tiramisu drink with cold vanilla foam is the chaser nobody comes for and everyone orders.",
       "vibe_tags": ["Coffee-Forward", "Toastie Heaven"],
       "must_try": "Beef rendang toastie (the icon), iced tiramisu drink with cold vanilla foam",
-      "google_place_id": null,
-      "source_urls": []
-    },
-    {
-      "rank": 10,
-      "venue_name": "Baking 101",
-      "suburb": "Stanmore",
-      "canonical_address": "Stanmore, Brisbane QLD",
-      "lat": null,
-      "lng": null,
-      "rating": null,
-      "composite_score": 0.10,
-      "first_discovered": "2026-03-18",
-      "newness_boost_applied": false,
-      "trends_unavailable": false,
-      "cover_photo_url": null,
-      "trending_copy": "The signature cinnamon scroll sold out in three hours the day it was named 2025's baked good of the year, and the Stanmore room — red curtains, chandeliers, piano jazz — has treated that as a standing appointment since. Scent of Stanmore carrot cake is the follow-up that earns it.",
-      "vibe_tags": ["Pastry Pit", "Camera-Bait"],
-      "must_try": "Signature cinnamon scroll with vanilla cream (THE ONE), Scent of Stanmore carrot cake",
       "google_place_id": null,
       "source_urls": []
     }
