@@ -2,7 +2,7 @@
 layout: base.njk
 title: "TRNDIE | Discover What's Trending in Your City"
 ---
-<script>window.TRNDIE_TRENDING = {{ cities | trendingData | safe }};</script>
+<script>window.TRNDIE_TRENDING = {{ rankedCities | trendingData | safe }};</script>
 
 <div class="home-wrapper">
   <div class="logo">trndie ✦</div>
@@ -12,14 +12,6 @@ title: "TRNDIE | Discover What's Trending in Your City"
   <div class="home-layout">
     <div class="home-main">
       <div class="city-grid">
-        {%- for city in cities %}
-        <a href="/{{ city.slug }}/" class="city-link">
-          <div class="city-card">
-            <div class="city-name">{{ city.name }}</div>
-            <div class="city-category">Cafes &amp; Venues</div>
-          </div>
-        </a>
-        {%- endfor %}
         {%- for city in rankedCities %}
         <a href="/{{ city.slug }}/" class="city-link">
           <div class="city-card">
@@ -37,7 +29,7 @@ title: "TRNDIE | Discover What's Trending in Your City"
         <div class="trending-city"></div>
         <div class="trending-venues"></div>
         <div class="trending-dots">
-          {%- for city in cities %}
+          {%- for city in rankedCities %}
           <span class="trending-dot"></span>
           {%- endfor %}
         </div>

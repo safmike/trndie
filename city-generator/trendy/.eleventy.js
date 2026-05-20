@@ -2,8 +2,8 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/css");
   eleventyConfig.addPassthroughCopy("src/js");
 
-  // Serialises minimal trending data for the home page sidebar JS.
-  // Returns a JSON string: [{name, slug, venues:[{name,location,score,viral,tiktok}]}]
+  // Serialises minimal trending data for the home page sidebar JS,
+  // sourced from the v2.1 rankedCities bridge.
   eleventyConfig.addFilter("trendingData", function (cities) {
     return JSON.stringify(
       (cities || []).map(function (c) {
@@ -12,16 +12,33 @@ module.exports = function (eleventyConfig) {
           slug:   c.slug,
           venues: (c.venues || []).slice(0, 3).map(function (v) {
             return {
-              name:     v.name,
-              location: v.location,
-              score:    v.ranking_score,
-              viral:    v.viral || false,
-              tiktok:   (v.trend_signals && v.trend_signals.tiktok_mentions) || 0,
+              name:     v.venue_name,
+              location: v.suburb,
+              vibe:     (v.vibe_tags && v.vibe_tags[0]) || "",
             };
           }),
         };
       })
     );
+  });
+
+  // Flattens rankedCities into a single venue array, sorted by
+  // composite_score desc. Annotates each venue with cityName/citySlug
+  // so the All Venues template can render city context per card.
+  eleventyConfig.addFilter("allVenuesFlat", function (cities) {
+    var all = [];
+    (cities || []).forEach(function (c) {
+      (c.venues || []).forEach(function (v) {
+        all.push(Object.assign({}, v, {
+          cityName: c.name,
+          citySlug: c.slug,
+        }));
+      });
+    });
+    all.sort(function (a, b) {
+      return (b.composite_score || 0) - (a.composite_score || 0);
+    });
+    return all;
   });
 
   // Returns a de-duplicated array of the values of `key` across an array of objects.

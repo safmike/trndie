@@ -1,79 +1,129 @@
 ---
 layout: base.njk
-title: "All Venues | TRNDIE"
-bodyClass: page-city
+title: "Every cafe we track | TRNDIE"
+bodyClass: page-venues-all
+pageStylesheet: /css/city-v2.css
 ---
-{%- from "venue-links.njk" import venueLinks %}
-<div class="hero">
-  <a href="/" class="back-link">← TRNDIE</a>
-  <h1>🔥 All Trending Venues</h1>
-  <p>Every trending spot across Australia. Filter by city or category — results update instantly.</p>
-  {%- set totalVenues = 0 %}
-  {%- for city in cities %}
-    {%- set totalVenues = totalVenues + city.venues | length %}
-  {%- endfor %}
-  <div class="badge">☕ {{ cities | length }} cities · {{ totalVenues }} venues</div>
-</div>
+{%- set allVenues = rankedCities | allVenuesFlat %}
+{%- set vibeTags = rankedCities[0].vibeTags if rankedCities | length else [] %}
+<div class="all-venues">
 
-<div class="container">
-  <div class="filter-bar">
-    <label for="cityFilter">City:</label>
-    <select id="cityFilter" class="filter-select">
-      <option value="all">All Cities</option>
-      {%- for city in cities %}
-      <option value="{{ city.slug }}">{{ city.icon }} {{ city.name }}</option>
-      {%- endfor %}
-    </select>
-
-    <label for="categoryFilter">Category:</label>
-    <select id="categoryFilter" class="filter-select">
-      <option value="all">All Categories</option>
-      {%- for cat in cities | flatVenues | uniqueBy("category") %}
-      <option value="{{ cat }}">{{ cat | capitalize }}</option>
-      {%- endfor %}
-    </select>
-
-    <span class="filter-count" id="venueCount"></span>
-  </div>
-
-  <div id="noResults" class="no-results" style="display:none">No venues match your filters.</div>
-
-  <div class="venue-grid" id="venueGrid">
-    {%- for city in cities %}
-    {%- for venue in city.venues | sort(true, false, "ranking_score") %}
-    <div class="venue-card" data-city="{{ venue.city }}" data-area="{{ venue.area }}" data-vibe="{{ venue.vibe }}" data-category="{{ venue.category }}">
-      <div class="venue-header">
-        {%- if venue.viral %}
-        <div class="viral-badge">🔥 VIRAL</div>
-        {%- endif %}
-        <h2>{{ venue.name }}</h2>
-        <div class="venue-location">📍 {{ venue.location }}, {{ city.name }}</div>
-        <div class="venue-meta">
-          <span class="venue-category">{{ venue.category }}</span>
-          <span class="venue-score">⭐ {{ venue.ranking_score }}</span>
-        </div>
-      </div>
-      <div class="venue-body">
-        <p class="venue-description">{{ venue.description }}</p>
-        <div class="highlight">
-          <strong>Must-Try:</strong> {{ venue.mustTry }}
-        </div>
-        <div class="tags">
-          {%- for tag in venue.tags %}
-          <span class="tag">{{ tag }}</span>
-          {%- endfor %}
-        </div>
-        {{ venueLinks(venue) }}
+  <header class="all-venues-head">
+    <div class="all-venues-head-inner">
+      <a href="/" class="all-venues-back">← trndie</a>
+      <h1 class="all-venues-title">Every cafe we track.</h1>
+      <p class="all-venues-tagline">Across {{ rankedCities | length }} Australian cities. Filter by vibe, by city, or scroll until something stops you.</p>
+      <div class="all-venues-meta">
+        <span class="all-venues-stamp">{{ allVenues | length }} venues · {{ rankedCities | length }} cities</span>
       </div>
     </div>
-    {%- endfor %}
-    {%- endfor %}
-  </div>
+  </header>
+
+  <section class="all-venues-filters" aria-label="Filters">
+    <div class="all-venues-filters-inner">
+
+      <div class="filter-row">
+        <span class="filter-row-label">Vibe</span>
+        <div class="filter-row-controls">
+          {%- for tag in vibeTags %}
+          <button type="button" class="vibe-pill" data-vibe="{{ tag.value }}" aria-pressed="false">{{ tag.label }}</button>
+          {%- endfor %}
+        </div>
+      </div>
+
+      <div class="filter-row">
+        <span class="filter-row-label">City</span>
+        <div class="filter-row-controls">
+          {%- for city in rankedCities %}
+          <button type="button" class="city-chip" data-city="{{ city.slug }}" aria-pressed="false">{{ city.name }}</button>
+          {%- endfor %}
+        </div>
+      </div>
+
+      <div class="filter-meta">
+        <span class="filter-active" hidden></span>
+        <button type="button" class="filter-clear" hidden>Clear filters</button>
+      </div>
+
+    </div>
+  </section>
+
+  <main class="all-venues-main">
+    <div class="all-venues-main-inner">
+
+      <p class="all-venues-empty" hidden>No venues match this combination. Try fewer filters.</p>
+
+      <div class="venue-grid-v2">
+        {%- for venue in allVenues %}
+        <article class="vcard{% if not venue.cover_photo_url %} vcard--typo{% endif %}"
+                 data-venue="{{ venue.venue_name }}"
+                 data-city="{{ venue.citySlug }}"
+                 data-vibes="{% for t in venue.vibe_tag_objs %}{{ t.value }}{% if not loop.last %} {% endif %}{% endfor %}">
+
+          <div class="vcard-cover">
+            {%- if venue.cover_photo_url %}
+            <img class="vcard-photo" src="{{ venue.cover_photo_url }}"
+                 alt="{{ venue.venue_name }}, {{ venue.suburb }}" loading="lazy">
+            {%- else %}
+            <div class="vcard-typo" aria-hidden="true">
+              <span class="vcard-typo-name">{{ venue.venue_name }}</span>
+              <span class="vcard-typo-vibes">
+                {%- for t in venue.vibe_tag_objs %}{{ t.label }}{% if not loop.last %} · {% endif %}{% endfor %}
+              </span>
+            </div>
+            {%- endif %}
+
+            <button type="button" class="vcard-save"
+                    aria-pressed="false"
+                    aria-label="Save {{ venue.venue_name }}">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+            </button>
+          </div>
+
+          <div class="vcard-body">
+            <div class="vcard-headrow">
+              <h2 class="vcard-name">
+                <a href="/{{ venue.citySlug }}/" class="vcard-name-link">{{ venue.venue_name }}</a>
+              </h2>
+              <span class="vcard-suburb">{{ venue.suburb }}</span>
+            </div>
+
+            <p class="vcard-city-line"><a href="/{{ venue.citySlug }}/">{{ venue.cityName }}</a></p>
+
+            <p class="vcard-copy">{{ venue.trending_copy }}</p>
+
+            {%- if venue.must_try %}
+            <p class="vcard-musttry">
+              <span class="vcard-musttry-label">Order</span> {{ venue.must_try }}
+            </p>
+            {%- endif %}
+
+            <div class="vcard-vibes">
+              {%- for t in venue.vibe_tag_objs %}
+              <button type="button" class="vcard-vibe" data-vibe="{{ t.value }}">{{ t.label }}</button>
+              {%- endfor %}
+            </div>
+
+            {%- if venue.source_urls and venue.source_urls.length %}
+            <p class="vcard-sources">
+              <span class="vcard-sources-label">Spotted in</span>
+              {%- for s in venue.source_urls %}<a href="{{ s.url }}" target="_blank" rel="noopener noreferrer">{{ s.source }}</a>{% if not loop.last %}, {% endif %}{%- endfor %}
+            </p>
+            {%- endif %}
+          </div>
+
+        </article>
+        {%- endfor %}
+      </div>
+    </div>
+  </main>
+
+  <footer class="cityv2-foot">
+    <a href="/" class="cityv2-foot-link">trndie</a>
+    <span>{{ rankedCities | length }} cities, refreshed twice a week.</span>
+  </footer>
+
 </div>
-
-<footer>
-  <p>&copy; 2026 TRNDIE | Curated weekly with love ☕</p>
-  <p><a href="{{ site.instagram }}">Instagram</a> | <a href="{{ site.tiktok }}">TikTok</a></p>
-</footer>
-
-<script src="/js/filter.js"></script>
+<script src="/js/venues.js"></script>
