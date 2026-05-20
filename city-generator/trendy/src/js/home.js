@@ -10,7 +10,7 @@
   var SUB_LINES = [
     "Updated weekly with real social signals.",
     "Ranked by TikTok buzz and Google Trends data.",
-    "8 cities \u00b7 80 venues \u00b7 all trending right now.",
+    "7 cities \u00b7 70 venues \u00b7 all trending right now.",
     "What\u2019s going viral before the crowds show up.",
   ];
 
@@ -41,23 +41,17 @@
       .replace(/"/g, "&quot;");
   }
 
-  function formatSignal(v) {
-    if (v.viral) return { text: "Viral", cls: "is-viral" };
-    var t = v.tiktok;
-    if (t >= 1000) return { text: (t / 1000).toFixed(1) + "k TikTok", cls: "is-score" };
-    if (t > 0)     return { text: t + " TikTok", cls: "is-score" };
-    return           { text: v.score + " score",  cls: "is-score" };
-  }
-
   function venueHtml(v, i) {
-    var sig = formatSignal(v);
+    var signal = v.vibe
+      ? '<div class="trending-venue-signal is-score">' + escHtml(v.vibe) + "</div>"
+      : "";
     return (
       '<div class="trending-venue">' +
         '<span class="trending-rank">' + (i + 1) + "</span>" +
         '<div class="trending-venue-info">' +
           '<div class="trending-venue-name">'     + escHtml(v.name)     + "</div>" +
           '<div class="trending-venue-location">' + escHtml(v.location) + "</div>" +
-          '<div class="trending-venue-signal '    + sig.cls + '">'      + escHtml(sig.text) + "</div>" +
+          signal +
         "</div>" +
       "</div>"
     );
