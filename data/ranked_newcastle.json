@@ -1,0 +1,47 @@
+{
+  "city": "Newcastle",
+  "tier": 3,
+  "last_updated": "2026-05-20T06:00:00+10:00",
+  "next_update": "2026-05-21T06:00:00+10:00",
+  "methodology_version": "2.1",
+  "venues": [
+    {
+      "rank": 1,
+      "venue_name": "CRUMB",
+      "suburb": "Lambton",
+      "canonical_address": "113 Elder St, Lambton, Newcastle NSW",
+      "lat": null,
+      "lng": null,
+      "rating": null,
+      "composite_score": 0.44,
+      "first_discovered": "2026-03-21",
+      "newness_boost_applied": false,
+      "trends_unavailable": false,
+      "cover_photo_url": null,
+      "trending_copy": "Lambton's Elder St line forms before CRUMB's doors open most mornings, mostly for whichever croissant variant has landed on the counter that day. Get there before the cookies sell through — they hold up better than the timing suggests.",
+      "vibe_tags": ["Pastry Pit", "FYP Legend", "Matcha-Pilled"],
+      "must_try": "Creative croissants, gooey cookies, hot or iced matcha, freshly baked pastries (arrive early!)",
+      "google_place_id": null,
+      "source_urls": []
+    },
+    {
+      "rank": 2,
+      "venue_name": "Hunter",
+      "suburb": "CBD",
+      "canonical_address": "Newcastle NSW",
+      "lat": null,
+      "lng": null,
+      "rating": null,
+      "composite_score": 0.31,
+      "first_discovered": "2026-03-21",
+      "newness_boost_applied": false,
+      "trends_unavailable": false,
+      "cover_photo_url": null,
+      "trending_copy": "Hunter is the Newcastle bakery name TikTok keeps surfacing this fortnight, ahead of any writeups. Worth a walk past on a weekday morning before the rest of the FYP cycle catches on.",
+      "vibe_tags": ["Pastry Pit", "Hidden Gem"],
+      "must_try": "",
+      "google_place_id": null,
+      "source_urls": []
+    }
+  ]
+}
