@@ -1,10 +1,10 @@
 # TRNDIE — UX Principles & Design Brief
 
-**Version:** 1.0
+**Version:** 1.1
 **Project:** TRNDIE (trendy-vivid.vercel.app)
 **Repo:** github.com/safmike/trendy
 **Companion document:** TRENDING_METHODOLOGY.md
-**Last updated:** 2026-05-18
+**Last updated:** 2026-05-20
 
 ---
 
@@ -146,11 +146,12 @@ Every cafe card across every city, every surface, must contain:
 - "From here, try also" rail (cross-city)
 - Map pin link
 - Source attribution (small, footer of card)
-- Rating (only if it adds — usually doesn't)
 
 **Forbidden on cards**
+- Rank number (no "#1", "#2", ghost numerals, or any positional badge) — card position in the grid already encodes ranking
+- Composite score, ranking score, or any numeric quality readout (stays in JSON; never reaches the view)
+- Star ratings or "Top X%" percentage indicators
 - Price ranges in dollar-sign notation ($$, $$$)
-- Star ratings displayed prominently (we're not Yelp)
 - "Sponsored" or any commercial markers
 - Generic categorical descriptors ("Cafe," "Restaurant," "Coffee Shop")
 
@@ -183,6 +184,7 @@ What's deliberately absent:
 - **Don't reuse cover photos across cards.** Every card gets its own image.
 - **Don't allow generic vibe tags.** A vibe tag that could apply to half the database is not a vibe tag.
 - **Don't surface scoring internals to the user.** Composite scores, weight breakdowns, "trends_unavailable" — all backend, never visible.
+- **Don't display numeric scores or rank chips on cards.** Card position already encodes ranking implicitly. Numeric scores invite hover-comparison ("is 8.4 better than 8.7?") that undermines the curation thesis. composite_score stays in the JSON as a backend ordering signal — it never reaches the user's view.
 
 ---
 
@@ -234,6 +236,12 @@ When UX principles evolve:
 
 ---
 
+## Changelog — v1.1
+
+- Stripped all visible scoring from cafe cards. Rank chips, ghost rank numerals, and any numeric quality readouts removed from `city-v2.njk`. Card position now carries ranking on its own; trending copy carries the "why this is hot."
+- Cafe card anatomy: "Rank number" and "Composite score" explicitly marked FORBIDDEN. Removed the "Rating (only if it adds)" optional line — ratings are out.
+- Anti-patterns: added an explicit don't-display-numeric-scores-or-rank-chips rule. composite_score remains in JSON as a backend ordering signal only.
+
 ## Changelog — v1.0
 
 - Initial design brief. Six pillars established. Voice spec, vibe taxonomy, card anatomy, page anatomy, anti-patterns codified. Melbourne nominated as unicorn city for refinement.
@@ -251,4 +259,4 @@ When UX principles evolve:
 
 ---
 
-*v1.0 — May 2026*
+*v1.1 — May 2026*

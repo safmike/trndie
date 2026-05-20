@@ -258,20 +258,6 @@ body.page-city-v2 {
     var(--city-ink);
 }
 
-/* Ghost rank numeral — large, nearly invisible, adds typographic texture */
-.vcard-ghost {
-  position: absolute;
-  top: -0.18em;
-  right: 0.05em;
-  font-family: var(--font-display);
-  font-size: 9rem;
-  font-weight: 700;
-  line-height: 1;
-  color: rgba(255, 255, 255, 0.065);
-  pointer-events: none;
-  user-select: none;
-}
-
 /* Venue name on typography cover */
 .vcard-typo-name {
   position: relative;
@@ -300,28 +286,6 @@ body.page-city-v2 {
   letter-spacing: 0.09em;
   text-transform: uppercase;
   color: rgba(245, 242, 236, 0.55);
-}
-
-/* Small rank chip — top-left corner of every cover */
-.vcard-rank-chip {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 2;
-  min-width: 22px;
-  height: 22px;
-  padding: 0 6px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-family: var(--font-display);
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: #fff;
-  background: rgba(17, 17, 17, 0.55);
-  border-radius: 6px;
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
 }
 
 /* Heart / save button — top-right corner */
