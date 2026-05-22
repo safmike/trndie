@@ -7,7 +7,7 @@
     "serve": "eleventy --serve --watch",
     "update-trends": "node scripts/update-trends.js",
     "update-trends:city": "node scripts/update-trends.js --city",
-    "update-trends:live": "TRENDS_MOCK=false node scripts/update-trends.js"
+    "update-trends:dry": "node scripts/update-trends.js --dry-run"
   },
   "dependencies": {
     "apify-client": "^2.9.4",
