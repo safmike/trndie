@@ -1,9 +1,13 @@
 name: Weekly Trend Update
 
 on:
-  # Every Monday at 9am AEST (11pm Sunday UTC)
-  schedule:
-    - cron: "0 23 * * 0"
+  # PHASE 1 (the bridge): the Monday schedule is PAUSED. An unattended
+  # scheduled run against the half-built pipeline is a risk until proper
+  # orchestration lands in Phase 5 (which rebuilds this workflow to write
+  # v2.1 data/ranked_*.json on the twice-weekly cadence). Manual runs via
+  # workflow_dispatch remain available for testing.
+  # schedule:
+  #   - cron: "0 23 * * 0"   # Every Monday at 9am AEST (11pm Sunday UTC)
 
   # Allow manual runs from the Actions tab
   workflow_dispatch:

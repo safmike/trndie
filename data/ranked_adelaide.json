@@ -184,7 +184,7 @@
       "lat": null,
       "lng": null,
       "rating": null,
-      "composite_score": 0.10,
+      "composite_score": 0.1,
       "first_discovered": "2026-03-18",
       "newness_boost_applied": false,
       "trends_unavailable": false,
