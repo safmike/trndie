@@ -1,8 +1,8 @@
 # TRNDIE — Data Pipeline & Scoring Methodology
 
 **Version:** 2.1
-**Project:** TRNDIE (trendy-vivid.vercel.app)
-**Repo:** github.com/safmike/trendy
+**Project:** TRNDIE (trndie.co)
+**Repo:** github.com/safmike/trndie
 **Stack:** Static HTML/CSS/JS (frontend) + Python pipeline (backend data generation)
 **Last updated:** 2026-05-18
 

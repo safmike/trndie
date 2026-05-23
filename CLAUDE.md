@@ -1,138 +1,249 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Operating guide for Claude Code (claude.ai/code) and any agent working in
+this repo. **Read this first every session.** It is the day-to-day "how";
+the companion docs below own the deeper detail.
+
+> **Source-of-truth map** — which doc is authoritative for what:
+> - **CLAUDE.md** *(this file)* — operating guide: commands, conventions, do/don't, gotchas
+> - **PROJECT_CONTEXT.md** — the *why* + current state + known issues / tech debt
+> - **ARCHITECTURE.md** — the *technical shape*: structure, data flow, build/deploy
+> - **TRENDING_METHODOLOGY.md** — the *data spec*: sourcing, scoring, the v2.1 JSON schema (authoritative for the schema)
+> - **UX_PRINCIPLES.md** — *design*: voice, vibe taxonomy, card/page anatomy
+> - **PIPELINE_BUILD.md** — the *pipeline plan*: salvage-and-evolve phases
+> - **COLLABORATION_NOTES.md** — how to work with Mike
+>
+> At the start of any **city/data or pipeline** task, also read
+> TRENDING_METHODOLOGY.md. For any **visual/voice/component** task, also read
+> UX_PRINCIPLES.md.
+
+---
+
+## The one-minute orientation
+
+- **One live site.** An Eleventy (11ty) static site in
+  `city-generator/trendy/`, built by **Vercel**, served at **trndie.co**.
+- **The data is JSON.** Repo-root `data/ranked_<slug>.json` (v2.1 schema) is
+  what the site renders. No backend, no database.
+- **The renderer is `city-v2.njk`.** It paginates the `rankedCities` global
+  (loaded from `data/` by `src/_data/rankedCities.js`) into `/{slug}/` pages.
+- **Deploy = push to `main`.** Vercel auto-builds from `vercel.json`. There
+  is no active GitHub Pages deploy.
+- A previous root-`src/` second site (GitHub Pages) has been
+  **decommissioned** — it no longer exists. Older docs that mention "two
+  synced sites" are stale (see PROJECT_CONTEXT "Known issues").
+
+For the full map, data flow, and deploy chain, read **ARCHITECTURE.md**.
+
+---
 
 ## Commands
 
-### Root site (src/)
-```bash
-npm run build        # builds to _site/
-npm run serve        # builds + live-reload dev server
-```
+All build/serve/pipeline commands run from **`city-generator/trendy/`**
+(that's where `package.json` lives). There is no root-level npm project.
 
-### Trend updater (city-generator/trendy/)
 ```bash
 cd city-generator/trendy
-npm run update-trends                        # mock mode (no API calls)
-npm run update-trends -- --city sydney       # single city, mock mode
-TRENDS_MOCK=false npm run update-trends      # live mode (requires APIFY_TOKEN)
-npm run build                                # rebuild site after trend update
+npm install                              # first time / fresh container
+
+npm run build                            # Eleventy build → _site/  (verifies full render path)
+npm run serve                            # local dev server + live reload
+
+# Pipeline (Phase 1 "bridge" — deterministic, NO external network calls):
+npm run update-trends                    # all cities: read → score (inertia-only) → write data/ranked_*.json
+npm run update-trends -- --city sydney   # single city
+npm run update-trends -- --dry-run       # report changes, write nothing  (alias: npm run update-trends:dry)
 ```
-Trending methodology: All cafe sourcing, scoring, and ranking logic is defined in TRENDING_METHODOLOGY.md. Read that file at the start of any city-generation or pipeline task.
 
-UX & design brief: All visual and editorial decisions follow UX_PRINCIPLES.md. Read at the start of any city-generation, refinement, or component task.
+Verified working on Node 20+ (container has v22). The build emits one page
+per **published** city (Newcastle is hidden) plus `/` and `/venues/`.
 
-## Architecture
+**No mock mode / no API keys needed today.** Phase 1 carries
+`composite_score` forward unchanged and makes no external calls. The TikTok
+(Apify) and Google Trends fetchers (`scripts/lib/fetchers.js`,
+`extractor.js`) are intentionally **not imported** by the current pipeline.
+External sources arrive in Pipeline Phases 2–5 (see PIPELINE_BUILD.md).
 
-### Dual-site layout
+---
 
-There are **two Eleventy sites** in this repo:
+## Directory map (essentials)
 
-| Directory | Used by | Purpose |
-|---|---|---|
-| `src/` | GitHub Actions deploy.yml → GitHub Pages | Canonical source |
-| `city-generator/trendy/src/` | Vercel (`vercel.json`) | Production deployment |
+```
+data/ranked_*.json                     LIVE DATA (v2.1). Edit here to change the site.
+config/vibe_tags.json                  canonical vibe-tag vocabulary (single source of truth)
+vercel.json                            Vercel build config (builds the trendy site)
+.github/workflows/update-trends.yml    weekly pipeline runner (cron PAUSED; manual only; see gotcha below)
+.claude/commands/migrate-city.md       /migrate-city — VESTIGIAL (all cities migrated)
 
-**Vercel is the live site.** `city-generator/trendy/` is the authoritative site for production. The root `src/` is a mirror — changes to templates and city JSON must be kept in sync. The city JSON files in `city-generator/trendy/src/_data/cityData/` are the ones the weekly trend updater writes to.
+city-generator/trendy/
+  .eleventy.js                         Eleventy config: filters, passthrough, dirs
+  package.json                         build + pipeline scripts
+  scripts/update-trends.js             pipeline orchestrator (Phase 1 bridge)
+  scripts/lib/cityData.js              I/O → repo-root data/ranked_*.json
+  scripts/lib/scorer.js                Phase 1 inertia-only scoring
+  scripts/lib/{fetchers,extractor}.js  TikTok/Trends — SET ASIDE (not imported)
+  src/_data/rankedCities.js            loads data/ → `rankedCities` global  (LIVE)
+  src/_data/site.json                  GA id, email, newsletter url
+  src/index.njk / city-v2.njk / venues.njk   the three live templates
+  src/_includes/base.njk               master layout
+  src/css/  src/js/                    static assets (passthrough)
+```
 
-### Site structure (city-generator/trendy/src/)
+DEAD/ORPHANED (present, unused — documented in PROJECT_CONTEXT, do not rely
+on them): `src/city.njk`, `src/_data/cities.js`, `src/_data/cityData/*.json`,
+`src/_includes/venue-links.njk`, `src/js/filter.js`,
+`city-generator/trendy/.github/workflows/deploy.yml`,
+`city-generator/template.html`.
 
-- `_data/cityData/*.json` — one JSON file per city; the trend updater reads/writes these
-- `_data/cities.js` — auto-loads all city JSONs into the `cities` collection
-- `_data/site.json` — global config (GA ID, email, newsletter URL)
-- `_includes/base.njk` — master layout (GA, fonts, CSS)
-- `index.njk` — home page, city grid
-- `city.njk` — paginated city detail pages (one page per city slug)
-- `css/style.css`, `js/filter.js` — static assets (passed through by Eleventy)
+---
 
-### City JSON schema
+## v2.1 data schema (the only schema)
 
-```json
+`TRENDING_METHODOLOGY.md` Stage 7 is authoritative. In brief:
+
+```jsonc
 {
-  "name": "Sydney",
-  "slug": "sydney",
-  "state": "NSW",
-  "country": "AU",
-  "icon": "🌊",
-  "updatedAt": "January 2026",
-  "filters": {
-    "areas": [{ "value": "CBD", "label": "CBD & Surry Hills" }],
-    "vibes": [{ "value": "aesthetic", "label": "Aesthetic" }]
-  },
-  "venues": [{
-    "name": "Up South",
-    "location": "Bondi Beach",
-    "area": "Bondi",
-    "vibe": "aesthetic",
-    "viral": true,
-    "description": "...",
-    "mustTry": "...",
-    "tags": ["TikTok Legend"],
-    "ranking_score": 8.2,
-    "trend_signals": { ... }
-  }]
+  "city": "Melbourne",
+  "tier": 1,
+  "last_updated": "2026-05-18T06:00:00+10:00",
+  "next_update":  "2026-05-21T06:00:00+10:00",
+  "methodology_version": "2.1",
+  "published": false,              // OMIT to publish; "published": false hides the city
+  "venues": [
+    {
+      "rank": 1,
+      "venue_name": "Groove",
+      "suburb": "Abbotsford",
+      "canonical_address": "17 Lithgow St, Abbotsford VIC 3067",
+      "lat": null, "lng": null, "rating": null,
+      "composite_score": 0.9,      // 0–1, backend ordering ONLY — never rendered
+      "first_discovered": "2026-03-19",
+      "newness_boost_applied": false,
+      "trends_unavailable": false,
+      "cover_photo_url": null,
+      "trending_copy": "Two sentences, in voice.",
+      "vibe_tags": ["Vietnamese-Coded", "Matcha-Pilled"],   // labels from config/vibe_tags.json
+      "must_try": "Salted cream coffee, ...",                // NO prices / $ symbols
+      "google_place_id": null,
+      "source_urls": []            // attribution: [{ "source": "...", "tier": 1, "url": "..." }]
+    }
+  ]
 }
 ```
 
-`area` and `vibe` must match a `value` in the city's `filters` object for the client-side filter (`js/filter.js`) to work. `viral: true` renders a red badge.
+> Note: this is **not** the old v2.0 `cityData` shape (`name`/`slug`/`vibe`/
+> `ranking_score` 0–10/`viral`). That schema and its files are orphaned.
 
-### Trend update engine (city-generator/trendy/scripts/)
+---
 
-**MOCK MODE** (default, `TRENDS_MOCK` unset or `true`): re-scores existing venues with seeded-random signals. No external calls. Safe for local dev and CI.
+## Conventions & rules
 
-**LIVE MODE** (`TRENDS_MOCK=false`, requires `APIFY_TOKEN` secret): full discovery pipeline — TikTok via Apify → extract candidate venue names → validate with Google Trends → merge with retained existing venues → score → keep top 10.
+**Do**
+- Treat `data/ranked_*.json` as the live database. Edit a city there (or run
+  the pipeline), then `npm run build` to verify.
+- Add any new vibe tag to `config/vibe_tags.json` **before** using its label
+  in a venue's `vibe_tags`. Unknown labels get a slugified fallback value.
+- Keep `composite_score` in JSON only; it orders cards, it is never shown.
+- Write `trending_copy` in TRNDIE voice: exactly 2 sentences, wry, lightly
+  Australian, particulars over adjectives. Honour the banned-phrase list in
+  UX_PRINCIPLES.md / `.claude/commands/migrate-city.md`.
+- Strip all prices from `must_try` (no `$`).
+- Match the existing JSON house style (2-space indent; primitive arrays kept
+  inline) — the pipeline writer (`lib/cityData.js`) already does this, so
+  no-op runs stay byte-clean.
+- For pipeline (backend) changes: human review every time — never auto-merge.
 
-Retention policy constants in `update-trends.js`:
-- `RETENTION_MIN_SCORE = 4.0` — venues below this are dropped even if not rediscovered
-- `MAX_RETAINED = 5` — at most 5 carry-forward venues; ensures ≥5 spots come from live discovery
+**Don't**
+- Don't render scores, rank numbers, or star ratings on cards (UX_PRINCIPLES
+  "Forbidden on cards").
+- Don't write to `city-generator/trendy/src/_data/cityData/` — it's the dead
+  v2.0 store. The pipeline targets repo-root `data/`.
+- Don't re-populate the `cities` collection (`cities.js`) — that would wake
+  the dead `city.njk`, which fights `city-v2.njk` for the `/{slug}/` URL.
+- Don't add a city by editing templates — add a `data/ranked_<slug>.json`
+  and a tagline entry in `rankedCities.js` `TAGLINES`.
+- Don't introduce TikTok/IG as a core dependency (accessibility + ToS — see
+  PIPELINE_BUILD.md). Editorial-first.
 
-New venues discovered by the engine get empty `description`, `mustTry`, and `tags` — these must be hand-curated once a venue proves persistent across multiple weekly runs.
+---
 
-### Automation
+## Common mistakes specific to this repo
 
-Weekly GitHub Actions workflow (`.github/workflows/update-trends.yml`) runs every Monday 9am AEST. It runs the trend updater, commits changed city JSONs with `[skip ci]` in the message, and pushes. Can be triggered manually with optional `--city` and `--category` filters.
+- **Wrong working dir.** npm commands fail from repo root — there's no root
+  `package.json`. `cd city-generator/trendy` first.
+- **Expecting a root `src/`.** It was decommissioned. The site lives under
+  `city-generator/trendy/src/`.
+- **Trusting the weekly workflow to publish.** `.github/workflows/update-trends.yml`
+  still stages the **old** `city-generator/trendy/src/_data/cityData/` path,
+  not `data/`. A manual `workflow_dispatch` run writes the new files but
+  commits nothing. Its cron is paused. Don't rely on it until Phase 5
+  rewires it. (PROJECT_CONTEXT "Known issues.")
+- **Assuming a city is published.** `rankedCities.js` drops any city with
+  `"published": false`. Newcastle is currently hidden.
+- **Editing the wrong renderer.** `city-v2.njk` is live; `city.njk` is dead.
 
-Deployment workflow (`.github/workflows/deploy.yml`) builds from root `src/` to GitHub Pages on every push to `main`.
+---
 
-## Workflow & Conventions
+## Environment / setup
 
-### Deploy flow
+- **Node 20+** (CI uses 20; container has 22). `npm install` in
+  `city-generator/trendy`.
+- **No secrets required** for build or the Phase 1 pipeline. Future phases
+  will need `MAPBOX_TOKEN`, `TOMTOM_KEY`, `GOOGLE_PLACES_API_KEY`,
+  `ANTHROPIC_API_KEY`, optionally `APIFY_TOKEN` (TRENDING_METHODOLOGY.md
+  "Environment Variables").
+- **Global config** lives in `src/_data/site.json` (GA id, contact email,
+  newsletter URL).
 
-1. Edit files locally
-2. `git add` **both** the new/changed page file **and** `index.html` (or whichever index links to it)
-3. Commit and push — Vercel auto-deploys from `city-generator/trendy/`
+---
 
-**Critical:** omitting `index.html` from the commit makes a new page unreachable at deploy time even though the page file itself deployed correctly. Always stage both together.
+## Deploy flow
 
-### Cafe / venue selection criteria
+1. Edit `data/ranked_*.json` and/or templates under `city-generator/trendy/src/`.
+2. `npm run build` locally to confirm it renders.
+3. Commit and push to `main`. **Vercel auto-deploys** from `vercel.json`
+   (`cd city-generator/trendy && npm install && npm run build`, output
+   `city-generator/trendy/_site`).
 
-- TikTok or Instagram-verifiable virality (tagged posts, reels, hauls)
-- Recent buzz — not just historically popular
-- Notable follower counts or engagement on venue-specific content
+No manual index-page wiring is needed — `index.njk` and `venues.njk`
+enumerate cities/venues from `rankedCities` automatically. Adding a
+`data/ranked_<slug>.json` (published) makes the city appear on the home grid,
+the All Venues page, and its own `/{slug}/` page on the next build.
 
-### Vibe filters
+---
 
-Filters are city-specific but draw from a recurring tag vocabulary:
+## Cafe / venue selection criteria
 
-`Matcha Lovers` · `Asian Fusion` · `Bakery` · `Instagram-Worthy` · `Toastie Heaven` · `Aesthetic` · `Korean` · `Waterfront` · `Brunch` · `Late Night`
+Per the editorial-first methodology (TRENDING_METHODOLOGY.md):
+- Editorial coverage is the primary, fraud-resistant signal (Broadsheet,
+  Timeout, Good Food, etc.).
+- Google Trends + Places (rating/reviews/geo) are supporting signals.
+- Recent buzz over historical popularity.
+- Attribution is first-class — capture who surfaced a venue into `source_urls`.
 
-Add new vibe values to a city's `filters.vibes` array before assigning them to venues.
+(TikTok/IG virality is **optional-future** enrichment, not a core source.)
 
-### Cities
+---
 
-| # | City | Status |
+## Cities
+
+8 cities live on v2.1 (7 published; Newcastle hidden until it has more venues).
+
+| City | Tier | Status |
 |---|---|---|
-| 1 | Sydney | Done |
-| 2 | Melbourne | Done |
-| 3 | Brisbane | Done |
-| 4 | Perth | Done |
-| 5 | Adelaide | Done |
-| 6 | Gold Coast | Done |
-| 7 | Canberra | Done |
-| 8 | Newcastle | Done |
-| 9 | Wollongong | Next |
+| Sydney | 1 | Live |
+| Melbourne | 1 | Live |
+| Brisbane | 2 | Live |
+| Perth | 2 | Live |
+| Adelaide | 2 | Live |
+| Gold Coast | 2 | Live (thin — 2 venues; see PROJECT_CONTEXT) |
+| Canberra | 3 | Live |
+| Newcastle | 3 | Hidden (`published:false`, 2 venues) |
+| Wollongong | 3 | Next (not yet created) |
 
-### References
+---
 
-- Live site: `trendy-vivid.vercel.app`
+## References
+
+- Live site: **trndie.co** (Vercel; DNS via Squarespace)
 - Repo: `github.com/safmike/trndie`

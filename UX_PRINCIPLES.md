@@ -1,8 +1,8 @@
 # TRNDIE — UX Principles & Design Brief
 
 **Version:** 1.1
-**Project:** TRNDIE (trendy-vivid.vercel.app)
-**Repo:** github.com/safmike/trendy
+**Project:** TRNDIE (trndie.co)
+**Repo:** github.com/safmike/trndie
 **Companion document:** TRENDING_METHODOLOGY.md
 **Last updated:** 2026-05-20
 

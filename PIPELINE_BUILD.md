@@ -1,7 +1,7 @@
 # TRNDIE — Pipeline Build Plan
 
 **Version:** 2.0
-**Project:** TRNDIE (trendy-vivid.vercel.app)
+**Project:** TRNDIE (trndie.co)
 **Repo:** github.com/safmike/trndie
 **Companion documents:** TRENDING_METHODOLOGY.md (the spec),
 UX_PRINCIPLES.md, CLAUDE.md
