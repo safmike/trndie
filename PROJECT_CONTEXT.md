@@ -83,9 +83,10 @@ Newcastle hidden (2 venues, published:false); city-v2.njk renderer with
 vibe filter, save/heart (localStorage), per-city palette; homepage
 Trending Now + All Venues working; cycling slogans with keyword emphasis;
 logo shimmer; scores removed from cards; Brisbane geocoding corrected;
-legacy GitHub Pages site decommissioned.
-In progress: Pipeline Phase 1 (the Bridge) — repointing the salvaged
-pipeline to read/write data/ranked_*.json, inertia-only, no external deps.
+legacy GitHub Pages site decommissioned; Pipeline Phase 1 (the Bridge)
+merged (PR #20) — the salvaged pipeline now reads/writes data/ranked_*.json,
+inertia-only, with no external dependencies.
+Nothing else is actively in progress.
 Not started: Pipeline Phases 2–5 (editorial → trends+places+geo →
 synthesis → orchestration).
 
@@ -167,10 +168,9 @@ file paths.*
   `rankedCities.js` maps each venue's `vibe_tags` label → `{value,label}`
   via this file; an unknown label falls back to a slugified value. Add new
   tags here before assigning them in `data/ranked_*.json`.
-- **Email domain mismatch — NEEDS CONFIRMATION.** `site.json` uses
-  `hello@trndie.com` while the canonical domain is `trndie.co` (and
-  `city-generator/template.html` uses `hello@trndie.co`). Confirm the
-  correct address with Mike (not changed here — out of scope).
+- **Email domain — FIXED in this PR.** `site.json` previously used
+  `hello@trndie.com`; corrected to `hello@trndie.co` to match the canonical
+  domain (and `city-generator/template.html`, which was already correct).
 - **Vestigial standalone template.** `city-generator/template.html` is a
   pre-Eleventy standalone HTML mock; neither build uses it. Harmless legacy
   artifact.
@@ -180,16 +180,15 @@ file paths.*
   fallback). Not active today (Phase 1 makes no external calls).
 
 ## Near-term roadmap
-1. Finish Pipeline Phase 1 (bridge)
-2. Pipeline Phases 2–5
-3. TRENDING_METHODOLOGY v2.2 — geo-validation/suburb whitelist + the
+1. Pipeline Phases 2–5
+2. TRENDING_METHODOLOGY v2.2 — geo-validation/suburb whitelist + the
    reconciled scoring STRUCTURE (editorial-first + inertia). Precise
    weights remain tunable as data sources stabilise (see Open questions).
-4. Legacy cleanup (orphaned cityData, within-trendy legacy renderer,
+3. Legacy cleanup (orphaned cityData, within-trendy legacy renderer,
    vestigial /migrate-city)
-5. Deferred features once the pipeline is solid: cover photos, "from here,
+4. Deferred features once the pipeline is solid: cover photos, "from here,
    try also" cross-city rail, "what's new this week" diff surface
-6. Future: more cities; eventually international (Australia is the proving
+5. Future: more cities; eventually international (Australia is the proving
    ground)
 
 ## Open questions (deliberately unresolved — not gaps to fill)
