@@ -1,6 +1,24 @@
 (function () {
   "use strict";
 
+  /* ── Shimmer arrival replay (bfcache) ───────────────────────
+     Mirror of the logo shimmer replay in home.js. The one-time CSS
+     animation plays on initial load but does NOT restart when the
+     page is restored from bfcache (back/forward), so reset it on
+     pageshow(persisted) to greet the user on every arrival. */
+
+  function replayShimmer() {
+    var title = document.querySelector(".cityv2-title");
+    if (!title) return;
+    title.style.animation = "none";
+    void title.offsetWidth; // force reflow so the next assignment restarts the animation
+    title.style.animation = "";
+  }
+
+  window.addEventListener("pageshow", function (e) {
+    if (e.persisted) replayShimmer();
+  });
+
   var grid = document.querySelector(".venue-grid-v2");
   if (!grid) return;
 

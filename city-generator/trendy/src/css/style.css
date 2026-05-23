@@ -89,7 +89,17 @@ body.page-home {
   font-weight: 700;
   letter-spacing: -3px;
   line-height: 1;
-  width: fit-content;            /* shrink-wrap to the wordmark so the sweep tracks the text, not the container */
+  margin-bottom: 20px;
+}
+
+/* ── Shimmer arrival accent ───────────────────────────────────
+   One-time silver sweep that greets the user on arrival. The brand
+   "arrival accent", reused — the homepage wordmark (.logo) and each
+   city page heading (.cityv2-title) wear it. Keep it a signature:
+   one-time only, never looping. The pageshow(persisted) replay that
+   re-greets on bfcache restore lives in the per-page JS. */
+.shimmer-arrival {
+  width: fit-content;            /* shrink-wrap to the text so the sweep tracks the glyphs, not the container */
   max-width: 100%;
   color: var(--cream);           /* fallback for browsers without background-clip: text */
   background-image: linear-gradient(
@@ -110,7 +120,6 @@ body.page-home {
   -webkit-text-fill-color: transparent;
   will-change: background-position;
   animation: logo-shimmer 1.8s ease-out 1 forwards;
-  margin-bottom: 20px;
 }
 
 @keyframes logo-shimmer {
