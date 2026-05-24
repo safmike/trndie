@@ -1,8 +1,8 @@
 {
   "city": "Gold Coast",
   "tier": 2,
-  "last_updated": "2026-05-19T06:00:00+10:00",
-  "next_update": "2026-05-21T06:00:00+10:00",
+  "last_updated": "2026-05-24T06:00:00+10:00",
+  "next_update": "2026-05-28T06:00:00+10:00",
   "methodology_version": "2.1",
   "venues": [
     {
@@ -42,6 +42,155 @@
       "must_try": "Jalapeño & queso fresco sweetcorn fritters, nasi goreng breakfast, Nutella choux bombs (non-negotiable), pastries & dessert pots",
       "google_place_id": null,
       "source_urls": []
+    },
+    {
+      "rank": 3,
+      "venue_name": "Tarte Bakery & Cafe",
+      "suburb": "Burleigh Heads",
+      "canonical_address": "Burleigh Heads, Gold Coast QLD",
+      "lat": null,
+      "lng": null,
+      "rating": null,
+      "composite_score": 0.42,
+      "first_discovered": "2026-05-24",
+      "newness_boost_applied": false,
+      "trends_unavailable": false,
+      "cover_photo_url": null,
+      "trending_copy": "Tarte turned a pared-back white room and an exclusive Parallel Roasters blend into the Burleigh template everyone else now borrows. Come for the house coffee, stay for whatever's just landed in the pastry cabinet.",
+      "vibe_tags": ["Pastry Pit", "Camera-Bait"],
+      "must_try": "Parallel Roasters house blend, breakfast burrito, nourish bowl, fresh-baked pastries",
+      "google_place_id": null,
+      "source_urls": [
+        {"source": "inside_gold_coast", "tier": 2, "url": "https://www.insidegoldcoast.com.au/best-coffee-burleigh"},
+        {"source": "urban_list", "tier": 2, "url": "https://www.theurbanlist.com/goldcoast/a-list/burleigh-heads-cafes"}
+      ]
+    },
+    {
+      "rank": 4,
+      "venue_name": "Palm Springs",
+      "suburb": "Burleigh Heads",
+      "canonical_address": "Burleigh Heads, Gold Coast QLD",
+      "lat": null,
+      "lng": null,
+      "rating": null,
+      "composite_score": 0.4,
+      "first_discovered": "2026-05-24",
+      "newness_boost_applied": false,
+      "trends_unavailable": false,
+      "cover_photo_url": null,
+      "trending_copy": "Palm Springs leans all the way into its name — pastel walls, desert-oasis styling, the kind of corner that fills a camera roll before the coffee lands. The look does the heavy lifting, but the brunch holds its own once you've got the photo.",
+      "vibe_tags": ["Camera-Bait", "FYP Legend"],
+      "must_try": "Specialty coffee, brunch plates, the pastel courtyard for a slow morning",
+      "google_place_id": null,
+      "source_urls": [
+        {"source": "inside_gold_coast", "tier": 2, "url": "https://www.insidegoldcoast.com.au/best-coffee-burleigh"},
+        {"source": "urban_list", "tier": 2, "url": "https://www.theurbanlist.com/goldcoast/a-list/burleigh-heads-cafes"}
+      ]
+    },
+    {
+      "rank": 5,
+      "venue_name": "Paradox Coffee Roasters",
+      "suburb": "Broadbeach",
+      "canonical_address": "Broadbeach, Gold Coast QLD",
+      "lat": null,
+      "lng": null,
+      "rating": null,
+      "composite_score": 0.38,
+      "first_discovered": "2026-05-24",
+      "newness_boost_applied": false,
+      "trends_unavailable": false,
+      "cover_photo_url": null,
+      "trending_copy": "Paradox built its new Broadbeach flagship around an oval coffee bar and a batch-brew tap, then started pouring lattes that taste like dessert — lychee pavlova, strawberry brownie. Order something off the creative list; the daily flat white is good, but it's not why people are here.",
+      "vibe_tags": ["Coffee-Forward", "Experimental"],
+      "must_try": "Lychee pavlova latte, strawberry brownie latte, batch-brew off the tap, frozen V60",
+      "google_place_id": null,
+      "source_urls": [
+        {"source": "inside_gold_coast", "tier": 2, "url": "https://www.insidegoldcoast.com.au/2026-cafe-round-up"}
+      ]
+    },
+    {
+      "rank": 6,
+      "venue_name": "Sun Devil",
+      "suburb": "Coolangatta",
+      "canonical_address": "Coolangatta, Gold Coast QLD",
+      "lat": null,
+      "lng": null,
+      "rating": null,
+      "composite_score": 0.35,
+      "first_discovered": "2026-05-24",
+      "newness_boost_applied": false,
+      "trends_unavailable": false,
+      "cover_photo_url": null,
+      "trending_copy": "Sun Devil hides inside Strange Days, a Coolangatta vintage store, and commits fully to the Americana fever-dream — chrome, neon, coffee poured among the racks. You come for the novelty and end up staying because the coffee's genuinely sharp.",
+      "vibe_tags": ["Camera-Bait", "Experimental"],
+      "must_try": "Espresso among the vinyl, filter coffee, and the browse-while-you-wait vintage racks",
+      "google_place_id": null,
+      "source_urls": [
+        {"source": "urban_list", "tier": 2, "url": "https://www.theurbanlist.com/goldcoast/food-and-drink/cafes"}
+      ]
+    },
+    {
+      "rank": 7,
+      "venue_name": "LOAF",
+      "suburb": "Palm Beach",
+      "canonical_address": "Palm Beach, Gold Coast QLD",
+      "lat": null,
+      "lng": null,
+      "rating": null,
+      "composite_score": 0.33,
+      "first_discovered": "2026-05-24",
+      "newness_boost_applied": false,
+      "trends_unavailable": false,
+      "cover_photo_url": null,
+      "trending_copy": "LOAF took over the old Mylk Well site at Palm Beach and kept it simple — acai, avo, a grab-and-go window, and sand within a few steps. The move is the weekend-only tiramisu iced latte; locals time their Saturdays around it.",
+      "vibe_tags": ["Camera-Bait", "Experimental"],
+      "must_try": "Weekend tiramisu iced latte, acai bowls, avo toast, grab-and-go for the beach",
+      "google_place_id": null,
+      "source_urls": [
+        {"source": "inside_gold_coast", "tier": 2, "url": "https://www.insidegoldcoast.com.au/2026-cafe-round-up"}
+      ]
+    },
+    {
+      "rank": 8,
+      "venue_name": "Hazel Espresso",
+      "suburb": "Southport",
+      "canonical_address": "Southport, Gold Coast QLD",
+      "lat": null,
+      "lng": null,
+      "rating": null,
+      "composite_score": 0.31,
+      "first_discovered": "2026-05-24",
+      "newness_boost_applied": false,
+      "trends_unavailable": false,
+      "cover_photo_url": null,
+      "trending_copy": "Hazel runs an Australia-meets-Southeast-Asia menu out of Southport, which is a long way of saying the Vietnamese coffee is the order. Get the sea-salt cream version; it's the one regulars come back across town for.",
+      "vibe_tags": ["Coffee-Forward", "Vietnamese-Coded"],
+      "must_try": "Sea-salt cream Vietnamese coffee, Australia-meets-Southeast-Asia brunch plates",
+      "google_place_id": null,
+      "source_urls": [
+        {"source": "trip", "tier": 3, "url": "https://ph.trip.com/moments/poi-john-laws-park-58349846"}
+      ]
+    },
+    {
+      "rank": 9,
+      "venue_name": "Bear Boy Espresso",
+      "suburb": "Helensvale",
+      "canonical_address": "Helensvale, Gold Coast QLD",
+      "lat": null,
+      "lng": null,
+      "rating": null,
+      "composite_score": 0.29,
+      "first_discovered": "2026-05-24",
+      "newness_boost_applied": false,
+      "trends_unavailable": false,
+      "cover_photo_url": null,
+      "trending_copy": "Bear Boy is the reason northern-end locals stopped driving south for a decent coffee — terracotta everywhere, Single O in the cup, and a menu that puns on bears harder than it strictly needs to. The Big Bear Benny on a hash waffle is the one to beat.",
+      "vibe_tags": ["Camera-Bait", "Coffee-Forward"],
+      "must_try": "Big Bear Benny on a hash waffle, Single O coffee, blueberry white-chocolate pancakes",
+      "google_place_id": null,
+      "source_urls": [
+        {"source": "urban_list", "tier": 2, "url": "https://www.theurbanlist.com/goldcoast/a-list/best-breakfasts-on-the-gold-coast"}
+      ]
     }
   ]
 }
