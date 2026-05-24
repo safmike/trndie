@@ -56,9 +56,6 @@ trndie/
 ├── .github/workflows/
 │   └── update-trends.yml              # weekly pipeline runner (cron PAUSED; manual only)
 │
-├── .claude/commands/
-│   └── migrate-city.md                # /migrate-city slash command (VESTIGIAL — all cities migrated)
-│
 ├── vercel.json                        # Vercel build config → builds the trendy site
 │
 ├── city-generator/
@@ -78,18 +75,15 @@ trndie/
 │       └── src/                       # ← ELEVENTY INPUT
 │           ├── _data/
 │           │   ├── rankedCities.js    #   LOADS data/ranked_*.json → `rankedCities` global  (LIVE)
-│           │   ├── cities.js          #   legacy loader for cityData/ — excludes all 8 (returns []) (DEAD)
-│           │   ├── cityData/*.json    #   v2.0 store — ORPHANED (nothing reads it)
 │           │   └── site.json          #   global config (GA id, email, newsletter url)
 │           ├── _includes/
 │           │   ├── base.njk           #   master layout (GA, fonts, stylesheet hooks)
-│           │   └── venue-links.njk    #   legacy partial (used only by city.njk) (DEAD)
+│           │   └── venue-links.njk    #   legacy partial — now fully orphaned (city.njk retired) (DEAD)
 │           ├── index.njk              #   home page (city grid + Trending Now)        (LIVE)
 │           ├── city-v2.njk            #   city detail renderer → /{slug}/             (LIVE)
 │           ├── venues.njk             #   "All venues" page → /venues/                (LIVE)
-│           ├── city.njk               #   legacy city renderer (emits 0 pages)        (DEAD)
 │           ├── css/   (style.css, city-v2.css)
-│           └── js/    (home.js, venues.js, city-v2.js, filter.js[legacy])
+│           └── js/    (home.js, venues.js, city-v2.js, filter.js[legacy, orphaned])
 │
 ├── CLAUDE.md  PROJECT_CONTEXT.md  ARCHITECTURE.md
 ├── TRENDING_METHODOLOGY.md  UX_PRINCIPLES.md  PIPELINE_BUILD.md  COLLABORATION_NOTES.md
@@ -137,7 +131,8 @@ src/_data/rankedCities.js  (Eleventy global data file)
 Key Eleventy filters (defined in `.eleventy.js`):
 - `trendingData` — serialises the top-3 venues per city to JSON for the homepage "Trending Now" rotator.
 - `allVenuesFlat` — flattens all cities' venues into one array annotated with `cityName`/`citySlug`, sorted by `composite_score` desc.
-- `flatVenues`, `uniqueBy` — helpers (the latter used by the legacy `city.njk` only).
+- `flatVenues`, `uniqueBy` — helpers. `uniqueBy` was used only by the now-retired
+  `city.njk`, so it is defined-but-unused today (left in `.eleventy.js`; a minor follow-up could drop it).
 
 **Important contract:** templates read v2.1 field names (`venue_name`,
 `suburb`, `composite_score`, `trending_copy`, `vibe_tags`, `must_try`,
@@ -215,10 +210,12 @@ listCities() ─► for each city:  readCity() ─► scoreVenue()/rankVenues() 
   PIPELINE_BUILD.md for the sequence and the target `lib/sources/` layout.
 
 > **Pipeline caveat (verified):** the weekly workflow
-> `.github/workflows/update-trends.yml` still commits the **old**
-> `city-generator/trendy/src/_data/cityData/` path, not `data/`. So a manual
-> run writes the new files but commits nothing useful. Treat the workflow as
-> not-yet-wired for publishing until Phase 5. (PROJECT_CONTEXT "Known issues.")
+> `.github/workflows/update-trends.yml` still stages the **old**
+> `git add city-generator/trendy/src/_data/cityData/` path, not `data/` —
+> and that path no longer exists (the cityData store was deleted in the
+> legacy cleanup), so a manual run now errors at `git add`. The workflow was
+> deliberately left untouched (its rewire is Phase 5). Treat it as
+> not-yet-wired for publishing until then. (PROJECT_CONTEXT "Known issues.")
 
 ---
 
@@ -229,29 +226,36 @@ listCities() ─► for each city:  readCity() ─► scoreVenue()/rankVenues() 
 - `eleventyConfig.addPassthroughCopy("src/css")` and `"src/js"` copy static
   assets verbatim.
 - Global data files in `src/_data/` are auto-exposed by filename:
-  `rankedCities.js` → `rankedCities`, `site.json` → `site`, `cities.js` →
-  `cities` (empty, legacy).
-- `city-v2.njk` and the dead `city.njk` both declare
-  `permalink: "/{{ city.slug }}/"`. There is no collision **only because**
-  `cities.js` returns an empty array, so `city.njk` paginates over nothing.
-  If you ever re-populate `cities`, the two will fight for the same URLs.
+  `rankedCities.js` → `rankedCities`, `site.json` → `site`. (The legacy
+  `cities.js` → `cities` global has been retired.)
+- `city-v2.njk` is now the sole renderer of `/{{ city.slug }}/`. The legacy
+  `city.njk` (which paginated the empty `cities` collection and declared the
+  same permalink) has been retired, so there is no longer any latent
+  permalink-collision risk.
 
 ---
 
-## Legacy / orphaned layer (documented, not removed here)
+## Legacy / orphaned layer
 
-Retained but off the live path — full detail in PROJECT_CONTEXT.md "Known
-issues / tech debt":
+Full detail in PROJECT_CONTEXT.md "Known issues / tech debt".
 
-| Artifact | Why it's dead | Disposition |
+**Retired** (deleted in the legacy-cleanup pass):
+
+| Artifact | Why it was dead |
+|---|---|
+| `src/_data/cityData/*.json` | v2.0 store; `cities.js` excluded all 8 → fed nothing |
+| `src/_data/cities.js` | excluded every city → empty `cities` collection |
+| `src/city.njk` | paginated empty `cities` → 0 pages |
+| `.claude/commands/migrate-city.md` | all cities migrated; read deleted cityData, edited retired `cities.js` |
+
+**Still present, off the live path** (not removed — out of scope of that pass):
+
+| Artifact | Status | Disposition |
 |---|---|---|
-| `src/_data/cityData/*.json` | v2.0 store; `cities.js` excludes all 8 | delete (separate task) |
-| `src/_data/cities.js` | excludes every city → empty collection | retire with city.njk |
-| `src/city.njk` | paginates empty `cities` → 0 pages | retire |
-| `src/_includes/venue-links.njk`, `src/js/filter.js` | only used by `city.njk` | retire with city.njk |
-| `.claude/commands/migrate-city.md` | all cities migrated; edits frozen routing | repurpose/remove |
-| `city-generator/trendy/.github/workflows/deploy.yml` | nested → never runs; Pages decommissioned | delete |
-| `city-generator/template.html` | pre-Eleventy mock; unused | delete |
+| `src/_includes/venue-links.njk`, `src/js/filter.js` | now fully orphaned (only `city.njk` used them) | minor follow-up |
+| `uniqueBy` filter in `.eleventy.js` | defined-but-unused (only `city.njk` called it) | minor follow-up |
+| `city-generator/trendy/.github/workflows/deploy.yml` | nested → never runs; Pages decommissioned | delete (follow-up) |
+| `city-generator/template.html` | pre-Eleventy mock; unused | delete (follow-up) |
 
 ---
 

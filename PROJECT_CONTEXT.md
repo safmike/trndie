@@ -96,25 +96,26 @@ merged, PR #20). Each item below is confirmed against actual files unless
 flagged otherwise. ARCHITECTURE.md "Tech debt map" mirrors this list with
 file paths.*
 
-- **Orphaned v2.0 data store — CONFIRMED, live now (not "once Phase 1
-  lands").** Phase 1 has merged. `city-generator/trendy/src/_data/cityData/*.json`
-  (8 files) are already orphaned: the only loader that reads them,
-  `cities.js`, explicitly excludes all 8 by filename, so they feed nothing.
-  The bridge writes the live data to repo-root `data/ranked_*.json`. Safe to
-  delete the cityData directory (separate cleanup task — out of scope here).
-- **Legacy renderer not retired — CONFIRMED.** `city-generator/trendy/src/city.njk`
-  (paginates the `cities` collection) and its loader `cities.js` still exist.
-  Because `cities.js` excludes every city, the `cities` collection is empty,
-  so `city.njk` currently emits **zero** pages (verified via build output) —
-  no permalink collision with `city-v2.njk`. It is dead weight, safe to
-  retire. Also vestigial in the same file set: `_includes/venue-links.njk`,
-  `js/filter.js`, `css/style.css`'s legacy-card rules, and `index.njk`'s
-  reliance on `style.css` (kept — index/base still use it).
-- **/migrate-city is vestigial — CONFIRMED.** `.claude/commands/migrate-city.md`
-  migrates a city from v2.0 cityData → v2.1. All 8 cities are migrated and
-  its Step 4 edits the now-frozen `cities.js`/`rankedCities.js` routing.
-  Repurpose (e.g. an "add new city" command writing `data/ranked_*.json`
-  directly) or remove.
+- **Orphaned v2.0 data store — RETIRED.**
+  `city-generator/trendy/src/_data/cityData/*.json` (8 files) have been
+  deleted. They were read only by `cities.js` (also retired), which excluded
+  all 8 by filename, so they fed nothing. The live data is repo-root
+  `data/ranked_*.json`, written by the bridge.
+- **Legacy renderer — RETIRED.** `city-generator/trendy/src/city.njk` and its
+  loader `src/_data/cities.js` have been deleted. `city.njk` paginated the
+  `cities` collection, which was always empty (cities.js excluded every
+  city), so it emitted zero pages — its removal leaves the build output
+  byte-for-byte identical. Now fully orphaned by that deletion but left in
+  place (minor follow-up, not done here): `_includes/venue-links.njk` and
+  `js/filter.js` (were used only by `city.njk`), plus the `uniqueBy` filter
+  in `.eleventy.js` (defined but no longer referenced). `css/style.css` is
+  kept — index/base still use it.
+- **/migrate-city — RETIRED.** `.claude/commands/migrate-city.md` has been
+  deleted (its directory `.claude/commands/` is now empty/gone). It migrated
+  a city from v2.0 cityData → v2.1; all 8 cities are migrated, it read the
+  now-deleted cityData store, and its Step 4 edited the retired `cities.js`.
+  If an "add new city" command is wanted later, write a fresh one targeting
+  `data/ranked_*.json` directly.
 - **Methodology ≠ code on scoring — CONFIRMED, with nuance.**
   TRENDING_METHODOLOGY v2.1 Stage 5 specifies editorial 45 / trends 30 /
   rating 15 / reviews 10 (no inertia). `scripts/lib/scorer.js` is Phase-1
@@ -129,15 +130,17 @@ file paths.*
   `scripts/lib/fetchers.js`). Both are unofficial, equally fragile. The
   fetcher is currently **set aside** — not imported by the Phase 1
   `update-trends.js`, so no external Trends call happens today.
-- **Weekly workflow commits the wrong path — CONFIRMED, real bug.**
-  `.github/workflows/update-trends.yml` runs the bridge (which now writes
-  `data/ranked_*.json`) but its commit step still stages the **old**
-  `git add city-generator/trendy/src/_data/cityData/`. A manual
-  `workflow_dispatch` run today would write the new files yet commit
-  nothing. Its `TRENDS_MOCK`/`APIFY_TOKEN` env is also stale (Phase 1 makes
-  no external calls). The cron schedule is intentionally commented out
-  (paused). Phase 5 rebuilds this workflow — until then, do **not** rely on
-  it to publish ranking changes.
+- **Weekly workflow commits the wrong path — CONFIRMED, real bug (now
+  worse).** `.github/workflows/update-trends.yml` runs the bridge (which
+  writes `data/ranked_*.json`) but its commit step still stages
+  `git add city-generator/trendy/src/_data/cityData/` — a path that no
+  longer exists (the cityData store was deleted in the legacy cleanup). A
+  manual `workflow_dispatch` run would now **error** at that `git add`
+  instead of silently committing nothing useful. Its `TRENDS_MOCK`/
+  `APIFY_TOKEN` env is also stale (Phase 1 makes no external calls). The cron
+  schedule is intentionally commented out (paused). Left untouched by the
+  cleanup (the workflow rewire is Phase 5, out of scope) — do **not** rely on
+  it to publish ranking changes until then.
 - **Dead nested deploy workflow — CONFIRMED.**
   `city-generator/trendy/.github/workflows/deploy.yml` is a GitHub Pages
   build. GitHub Actions only runs workflows under the **repo-root**
@@ -184,8 +187,10 @@ file paths.*
 2. TRENDING_METHODOLOGY v2.2 — geo-validation/suburb whitelist + the
    reconciled scoring STRUCTURE (editorial-first + inertia). Precise
    weights remain tunable as data sources stabilise (see Open questions).
-3. Legacy cleanup (orphaned cityData, within-trendy legacy renderer,
-   vestigial /migrate-city)
+3. ~~Legacy cleanup (orphaned cityData, within-trendy legacy renderer,
+   vestigial /migrate-city)~~ — **DONE.** Remaining minor orphans
+   (`_includes/venue-links.njk`, `js/filter.js`, the `uniqueBy` filter,
+   `deploy.yml`, `template.html`) can go in a follow-up.
 4. Deferred features once the pipeline is solid: cover photos, "from here,
    try also" cross-city rail, "what's new this week" diff surface
 5. Future: more cities; eventually international (Australia is the proving
