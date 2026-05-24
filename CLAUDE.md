@@ -73,7 +73,6 @@ data/ranked_*.json                     LIVE DATA (v2.1). Edit here to change the
 config/vibe_tags.json                  canonical vibe-tag vocabulary (single source of truth)
 vercel.json                            Vercel build config (builds the trendy site)
 .github/workflows/update-trends.yml    weekly pipeline runner (cron PAUSED; manual only; see gotcha below)
-.claude/commands/migrate-city.md       /migrate-city — VESTIGIAL (all cities migrated)
 
 city-generator/trendy/
   .eleventy.js                         Eleventy config: filters, passthrough, dirs
@@ -89,10 +88,14 @@ city-generator/trendy/
   src/css/  src/js/                    static assets (passthrough)
 ```
 
+RETIRED (deleted in the legacy-cleanup pass): `src/city.njk`,
+`src/_data/cities.js`, `src/_data/cityData/*.json`,
+`.claude/commands/migrate-city.md`.
+
 DEAD/ORPHANED (present, unused — documented in PROJECT_CONTEXT, do not rely
-on them): `src/city.njk`, `src/_data/cities.js`, `src/_data/cityData/*.json`,
-`src/_includes/venue-links.njk`, `src/js/filter.js`,
-`city-generator/trendy/.github/workflows/deploy.yml`,
+on them): `src/_includes/venue-links.njk`, `src/js/filter.js` (now fully
+orphaned — only `city.njk` used them), the `uniqueBy` filter in `.eleventy.js`
+(now unused), `city-generator/trendy/.github/workflows/deploy.yml`,
 `city-generator/template.html`.
 
 ---
@@ -132,7 +135,8 @@ on them): `src/city.njk`, `src/_data/cities.js`, `src/_data/cityData/*.json`,
 ```
 
 > Note: this is **not** the old v2.0 `cityData` shape (`name`/`slug`/`vibe`/
-> `ranking_score` 0–10/`viral`). That schema and its files are orphaned.
+> `ranking_score` 0–10/`viral`). That schema's store
+> (`src/_data/cityData/*.json`) has been deleted in the legacy cleanup.
 
 ---
 
@@ -146,7 +150,7 @@ on them): `src/city.njk`, `src/_data/cities.js`, `src/_data/cityData/*.json`,
 - Keep `composite_score` in JSON only; it orders cards, it is never shown.
 - Write `trending_copy` in TRNDIE voice: exactly 2 sentences, wry, lightly
   Australian, particulars over adjectives. Honour the banned-phrase list in
-  UX_PRINCIPLES.md / `.claude/commands/migrate-city.md`.
+  UX_PRINCIPLES.md.
 - Strip all prices from `must_try` (no `$`).
 - Match the existing JSON house style (2-space indent; primitive arrays kept
   inline) — the pipeline writer (`lib/cityData.js`) already does this, so
@@ -156,10 +160,6 @@ on them): `src/city.njk`, `src/_data/cities.js`, `src/_data/cityData/*.json`,
 **Don't**
 - Don't render scores, rank numbers, or star ratings on cards (UX_PRINCIPLES
   "Forbidden on cards").
-- Don't write to `city-generator/trendy/src/_data/cityData/` — it's the dead
-  v2.0 store. The pipeline targets repo-root `data/`.
-- Don't re-populate the `cities` collection (`cities.js`) — that would wake
-  the dead `city.njk`, which fights `city-v2.njk` for the `/{slug}/` URL.
 - Don't add a city by editing templates — add a `data/ranked_<slug>.json`
   and a tagline entry in `rankedCities.js` `TAGLINES`.
 - Don't introduce TikTok/IG as a core dependency (accessibility + ToS — see
@@ -175,12 +175,14 @@ on them): `src/city.njk`, `src/_data/cities.js`, `src/_data/cityData/*.json`,
   `city-generator/trendy/src/`.
 - **Trusting the weekly workflow to publish.** `.github/workflows/update-trends.yml`
   still stages the **old** `city-generator/trendy/src/_data/cityData/` path,
-  not `data/`. A manual `workflow_dispatch` run writes the new files but
-  commits nothing. Its cron is paused. Don't rely on it until Phase 5
-  rewires it. (PROJECT_CONTEXT "Known issues.")
+  not `data/` — and that path no longer exists (deleted in the legacy
+  cleanup), so a manual `workflow_dispatch` run now errors at `git add`. Its
+  cron is paused. Don't rely on it until Phase 5 rewires it. (PROJECT_CONTEXT
+  "Known issues.")
 - **Assuming a city is published.** `rankedCities.js` drops any city with
   `"published": false`. Newcastle is currently hidden.
-- **Editing the wrong renderer.** `city-v2.njk` is live; `city.njk` is dead.
+- **`city-v2.njk` is the renderer.** It is the sole `/{slug}/` renderer; the
+  legacy `city.njk` has been retired.
 
 ---
 
