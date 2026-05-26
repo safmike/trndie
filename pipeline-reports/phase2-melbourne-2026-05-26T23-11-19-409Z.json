@@ -1,0 +1,891 @@
+{
+  "generated_at": "2026-05-26T23:11:19.409Z",
+  "city": "melbourne",
+  "mode": "fixtures",
+  "extractor": "fixture",
+  "methodology_phase": "2 (observe-only, editorial signal MVP)",
+  "weights": {
+    "RECENCY_WINDOW_DAYS": 14,
+    "INDEPENDENCE_LADDER": [
+      1,
+      0.7,
+      0.5,
+      0.3,
+      0.2
+    ],
+    "SOURCE_WEIGHT": {
+      "broadsheet": 1.2,
+      "concrete_playground": 1,
+      "time_out": 1
+    },
+    "DEFAULT_SOURCE_WEIGHT": 1,
+    "LOCK_IN_DISTINCT_SOURCES": 2
+  },
+  "sources_count": 3,
+  "sources_summary": [
+    {
+      "source": "broadsheet",
+      "ok": true,
+      "items_fetched": 2,
+      "items_extracted": 2,
+      "items_failed": 0,
+      "mentions": 5
+    },
+    {
+      "source": "concrete_playground",
+      "ok": true,
+      "items_fetched": 1,
+      "items_extracted": 1,
+      "items_failed": 0,
+      "mentions": 3
+    },
+    {
+      "source": "time_out",
+      "ok": true,
+      "items_fetched": 1,
+      "items_extracted": 1,
+      "items_failed": 0,
+      "mentions": 3
+    }
+  ],
+  "per_source": [
+    {
+      "source": "broadsheet",
+      "feed_url": "https://www.broadsheet.com.au/melbourne/food-and-drink/feed",
+      "feed_source": "/home/user/trndie/city-generator/trendy/fixtures/editorial/melbourne/broadsheet/feed.xml",
+      "ok": true,
+      "items_fetched": 2,
+      "items_extracted": 2,
+      "items_failed": 0,
+      "mentions": [
+        {
+          "source": "broadsheet",
+          "source_tier": 1,
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-restaurants-may-2026",
+          "title": "11 New Melbourne Bars, Bakeries and Restaurants Including a Seafood Pop-up in Fitzroy and a Matcha Haven in Collingwood",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "venue_name": "Marrowbone",
+          "suburb": "Fitzroy",
+          "why": "Six-week seafood residency on Smith Street from the Etta team; daily-changing menu and a salted miso soft serve dessert."
+        },
+        {
+          "source": "broadsheet",
+          "source_tier": 1,
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-restaurants-may-2026",
+          "title": "11 New Melbourne Bars, Bakeries and Restaurants Including a Seafood Pop-up in Fitzroy and a Matcha Haven in Collingwood",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "venue_name": "Cibi Coffee Workshop",
+          "suburb": "Collingwood",
+          "why": "Matcha-focused cafe from the Cibi design studio on Wellington Street; single-origin matcha bar and a hojicha onigiri."
+        },
+        {
+          "source": "broadsheet",
+          "source_tier": 1,
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-restaurants-may-2026",
+          "title": "11 New Melbourne Bars, Bakeries and Restaurants Including a Seafood Pop-up in Fitzroy and a Matcha Haven in Collingwood",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "venue_name": "Mörk Chocolate Brew House",
+          "suburb": "North Melbourne",
+          "why": "Reopened in a larger North Melbourne site; signature single-origin hot chocolates plus a chocolate-and-savoury dessert program."
+        },
+        {
+          "source": "broadsheet",
+          "source_tier": 1,
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-soft-serve-2026",
+          "title": "Where to Find Soft Serve in Melbourne, May 2026",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "venue_name": "Marrowbone",
+          "suburb": "Fitzroy",
+          "why": "Smith Street seafood pop-up; soft serve dessert rotates weekly, current is salted miso with brown butter crumb."
+        },
+        {
+          "source": "broadsheet",
+          "source_tier": 1,
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-soft-serve-2026",
+          "title": "Where to Find Soft Serve in Melbourne, May 2026",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "venue_name": "Auntie's Diner",
+          "suburb": "Brunswick",
+          "why": "Sydney Road diner; pandan-coconut soft serve twist with a weekly black sesame run on Fridays."
+        }
+      ],
+      "articles": [
+        {
+          "title": "11 New Melbourne Bars, Bakeries and Restaurants Including a Seafood Pop-up in Fitzroy and a Matcha Haven in Collingwood",
+          "link": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-restaurants-may-2026",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "ok": true,
+          "mentions_count": 3
+        },
+        {
+          "title": "Where to Find Soft Serve in Melbourne, May 2026",
+          "link": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-soft-serve-2026",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "ok": true,
+          "mentions_count": 2
+        }
+      ]
+    },
+    {
+      "source": "concrete_playground",
+      "feed_url": "https://concreteplayground.com/melbourne/feed",
+      "feed_source": "/home/user/trndie/city-generator/trendy/fixtures/editorial/melbourne/concrete-playground/feed.xml",
+      "ok": true,
+      "items_fetched": 1,
+      "items_extracted": 1,
+      "items_failed": 0,
+      "mentions": [
+        {
+          "source": "concrete_playground",
+          "source_tier": 1,
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026",
+          "title": "The New Melbourne Bakeries and Cafes Worth Lining Up for This Autumn",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "venue_name": "Marrowbone",
+          "suburb": "Fitzroy",
+          "why": "Seafood residency in Fitzroy; menu rewards trusting the floor team's recommendation."
+        },
+        {
+          "source": "concrete_playground",
+          "source_tier": 1,
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026",
+          "title": "The New Melbourne Bakeries and Cafes Worth Lining Up for This Autumn",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "venue_name": "Cibi Coffee Workshop",
+          "suburb": "Collingwood",
+          "why": "Wellington Street cafe with a single-origin matcha lineup and a koji-cured salmon bagel."
+        },
+        {
+          "source": "concrete_playground",
+          "source_tier": 1,
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026",
+          "title": "The New Melbourne Bakeries and Cafes Worth Lining Up for This Autumn",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "venue_name": "Groove",
+          "suburb": "Abbotsford",
+          "why": "Still pulling queues six months in for the salted cream coffee and new matcha basque cheesecake."
+        }
+      ],
+      "articles": [
+        {
+          "title": "The New Melbourne Bakeries and Cafes Worth Lining Up for This Autumn",
+          "link": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "ok": true,
+          "mentions_count": 3
+        }
+      ]
+    },
+    {
+      "source": "time_out",
+      "feed_url": "https://www.timeout.com/melbourne/restaurants/rss",
+      "feed_source": "/home/user/trndie/city-generator/trendy/fixtures/editorial/melbourne/time-out/feed.xml",
+      "ok": true,
+      "items_fetched": 1,
+      "items_extracted": 1,
+      "items_failed": 0,
+      "mentions": [
+        {
+          "source": "time_out",
+          "source_tier": 1,
+          "url": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026",
+          "title": "Melbourne's Best New Cafes to Try in May 2026",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "venue_name": "Marrowbone",
+          "suburb": "Fitzroy",
+          "why": "Etta team's six-week seafood residency on Smith Street; daily-changing menu, walk-in bar."
+        },
+        {
+          "source": "time_out",
+          "source_tier": 1,
+          "url": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026",
+          "title": "Melbourne's Best New Cafes to Try in May 2026",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "venue_name": "Kuro",
+          "suburb": "Fitzroy North",
+          "why": "St Georges Road natural wine bar from the Sydney Kuro Bar team; smoked eel toast is the bar snack standout."
+        },
+        {
+          "source": "time_out",
+          "source_tier": 1,
+          "url": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026",
+          "title": "Melbourne's Best New Cafes to Try in May 2026",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "venue_name": "Assembly",
+          "suburb": "North Melbourne",
+          "why": "Five months in and settled; Dunkaccino has become a calling card and a new Tina non-alc wine flight is launching."
+        }
+      ],
+      "articles": [
+        {
+          "title": "Melbourne's Best New Cafes to Try in May 2026",
+          "link": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "ok": true,
+          "mentions_count": 3
+        }
+      ]
+    }
+  ],
+  "aggregated": [
+    {
+      "venue_name": "Marrowbone",
+      "suburb": "Fitzroy",
+      "venue_key": "marrowbone",
+      "distinct_sources": [
+        "broadsheet",
+        "time_out",
+        "concrete_playground"
+      ],
+      "distinct_source_count": 3,
+      "lock_in": true,
+      "editorial_signal": 1,
+      "editorial_signal_uncapped": 1.421,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-soft-serve-2026",
+          "title": "Where to Find Soft Serve in Melbourne, May 2026",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "why": "Smith Street seafood pop-up; soft serve dessert rotates weekly, current is salted miso with brown butter crumb.",
+          "age_days": 5,
+          "recency_weight": 0.643,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.771
+        },
+        {
+          "source": "time_out",
+          "url": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026",
+          "title": "Melbourne's Best New Cafes to Try in May 2026",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "Etta team's six-week seafood residency on Smith Street; daily-changing menu, walk-in bar.",
+          "age_days": 6,
+          "recency_weight": 0.571,
+          "source_weight": 1,
+          "independence_factor": 0.7,
+          "contribution": 0.4
+        },
+        {
+          "source": "concrete_playground",
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026",
+          "title": "The New Melbourne Bakeries and Cafes Worth Lining Up for This Autumn",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Seafood residency in Fitzroy; menu rewards trusting the floor team's recommendation.",
+          "age_days": 7,
+          "recency_weight": 0.5,
+          "source_weight": 1,
+          "independence_factor": 0.5,
+          "contribution": 0.25
+        }
+      ],
+      "all_mentions_count": 4
+    },
+    {
+      "venue_name": "Cibi Coffee Workshop",
+      "suburb": "Collingwood",
+      "venue_key": "cibi coffee workshop",
+      "distinct_sources": [
+        "concrete_playground",
+        "broadsheet"
+      ],
+      "distinct_source_count": 2,
+      "lock_in": true,
+      "editorial_signal": 0.8,
+      "editorial_signal_uncapped": 0.8,
+      "surviving_mentions": [
+        {
+          "source": "concrete_playground",
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026",
+          "title": "The New Melbourne Bakeries and Cafes Worth Lining Up for This Autumn",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Wellington Street cafe with a single-origin matcha lineup and a koji-cured salmon bagel.",
+          "age_days": 7,
+          "recency_weight": 0.5,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.5
+        },
+        {
+          "source": "broadsheet",
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-restaurants-may-2026",
+          "title": "11 New Melbourne Bars, Bakeries and Restaurants Including a Seafood Pop-up in Fitzroy and a Matcha Haven in Collingwood",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "why": "Matcha-focused cafe from the Cibi design studio on Wellington Street; single-origin matcha bar and a hojicha onigiri.",
+          "age_days": 9,
+          "recency_weight": 0.357,
+          "source_weight": 1.2,
+          "independence_factor": 0.7,
+          "contribution": 0.3
+        }
+      ],
+      "all_mentions_count": 2
+    },
+    {
+      "venue_name": "Auntie's Diner",
+      "suburb": "Brunswick",
+      "venue_key": "aunties diner",
+      "distinct_sources": [
+        "broadsheet"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.771,
+      "editorial_signal_uncapped": 0.771,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-soft-serve-2026",
+          "title": "Where to Find Soft Serve in Melbourne, May 2026",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "why": "Sydney Road diner; pandan-coconut soft serve twist with a weekly black sesame run on Fridays.",
+          "age_days": 5,
+          "recency_weight": 0.643,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.771
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Kuro",
+      "suburb": "Fitzroy North",
+      "venue_key": "kuro",
+      "distinct_sources": [
+        "time_out"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.571,
+      "editorial_signal_uncapped": 0.571,
+      "surviving_mentions": [
+        {
+          "source": "time_out",
+          "url": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026",
+          "title": "Melbourne's Best New Cafes to Try in May 2026",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "St Georges Road natural wine bar from the Sydney Kuro Bar team; smoked eel toast is the bar snack standout.",
+          "age_days": 6,
+          "recency_weight": 0.571,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.571
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Assembly",
+      "suburb": "North Melbourne",
+      "venue_key": "assembly",
+      "distinct_sources": [
+        "time_out"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.571,
+      "editorial_signal_uncapped": 0.571,
+      "surviving_mentions": [
+        {
+          "source": "time_out",
+          "url": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026",
+          "title": "Melbourne's Best New Cafes to Try in May 2026",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "Five months in and settled; Dunkaccino has become a calling card and a new Tina non-alc wine flight is launching.",
+          "age_days": 6,
+          "recency_weight": 0.571,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.571
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Groove",
+      "suburb": "Abbotsford",
+      "venue_key": "groove",
+      "distinct_sources": [
+        "concrete_playground"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.5,
+      "editorial_signal_uncapped": 0.5,
+      "surviving_mentions": [
+        {
+          "source": "concrete_playground",
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026",
+          "title": "The New Melbourne Bakeries and Cafes Worth Lining Up for This Autumn",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Still pulling queues six months in for the salted cream coffee and new matcha basque cheesecake.",
+          "age_days": 7,
+          "recency_weight": 0.5,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.5
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Mörk Chocolate Brew House",
+      "suburb": "North Melbourne",
+      "venue_key": "m rk chocolate brew house",
+      "distinct_sources": [
+        "broadsheet"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.429,
+      "editorial_signal_uncapped": 0.429,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-restaurants-may-2026",
+          "title": "11 New Melbourne Bars, Bakeries and Restaurants Including a Seafood Pop-up in Fitzroy and a Matcha Haven in Collingwood",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "why": "Reopened in a larger North Melbourne site; signature single-origin hot chocolates plus a chocolate-and-savoury dessert program.",
+          "age_days": 9,
+          "recency_weight": 0.357,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.429
+        }
+      ],
+      "all_mentions_count": 1
+    }
+  ],
+  "lock_ins": [
+    {
+      "venue_name": "Marrowbone",
+      "suburb": "Fitzroy",
+      "venue_key": "marrowbone",
+      "distinct_sources": [
+        "broadsheet",
+        "time_out",
+        "concrete_playground"
+      ],
+      "distinct_source_count": 3,
+      "lock_in": true,
+      "editorial_signal": 1,
+      "editorial_signal_uncapped": 1.421,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-soft-serve-2026",
+          "title": "Where to Find Soft Serve in Melbourne, May 2026",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "why": "Smith Street seafood pop-up; soft serve dessert rotates weekly, current is salted miso with brown butter crumb.",
+          "age_days": 5,
+          "recency_weight": 0.643,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.771
+        },
+        {
+          "source": "time_out",
+          "url": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026",
+          "title": "Melbourne's Best New Cafes to Try in May 2026",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "Etta team's six-week seafood residency on Smith Street; daily-changing menu, walk-in bar.",
+          "age_days": 6,
+          "recency_weight": 0.571,
+          "source_weight": 1,
+          "independence_factor": 0.7,
+          "contribution": 0.4
+        },
+        {
+          "source": "concrete_playground",
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026",
+          "title": "The New Melbourne Bakeries and Cafes Worth Lining Up for This Autumn",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Seafood residency in Fitzroy; menu rewards trusting the floor team's recommendation.",
+          "age_days": 7,
+          "recency_weight": 0.5,
+          "source_weight": 1,
+          "independence_factor": 0.5,
+          "contribution": 0.25
+        }
+      ],
+      "all_mentions_count": 4
+    },
+    {
+      "venue_name": "Cibi Coffee Workshop",
+      "suburb": "Collingwood",
+      "venue_key": "cibi coffee workshop",
+      "distinct_sources": [
+        "concrete_playground",
+        "broadsheet"
+      ],
+      "distinct_source_count": 2,
+      "lock_in": true,
+      "editorial_signal": 0.8,
+      "editorial_signal_uncapped": 0.8,
+      "surviving_mentions": [
+        {
+          "source": "concrete_playground",
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026",
+          "title": "The New Melbourne Bakeries and Cafes Worth Lining Up for This Autumn",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Wellington Street cafe with a single-origin matcha lineup and a koji-cured salmon bagel.",
+          "age_days": 7,
+          "recency_weight": 0.5,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.5
+        },
+        {
+          "source": "broadsheet",
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-restaurants-may-2026",
+          "title": "11 New Melbourne Bars, Bakeries and Restaurants Including a Seafood Pop-up in Fitzroy and a Matcha Haven in Collingwood",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "why": "Matcha-focused cafe from the Cibi design studio on Wellington Street; single-origin matcha bar and a hojicha onigiri.",
+          "age_days": 9,
+          "recency_weight": 0.357,
+          "source_weight": 1.2,
+          "independence_factor": 0.7,
+          "contribution": 0.3
+        }
+      ],
+      "all_mentions_count": 2
+    }
+  ],
+  "new_candidates": [
+    {
+      "venue_name": "Marrowbone",
+      "suburb": "Fitzroy",
+      "venue_key": "marrowbone",
+      "distinct_sources": [
+        "broadsheet",
+        "time_out",
+        "concrete_playground"
+      ],
+      "distinct_source_count": 3,
+      "lock_in": true,
+      "editorial_signal": 1,
+      "editorial_signal_uncapped": 1.421,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-soft-serve-2026",
+          "title": "Where to Find Soft Serve in Melbourne, May 2026",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "why": "Smith Street seafood pop-up; soft serve dessert rotates weekly, current is salted miso with brown butter crumb.",
+          "age_days": 5,
+          "recency_weight": 0.643,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.771
+        },
+        {
+          "source": "time_out",
+          "url": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026",
+          "title": "Melbourne's Best New Cafes to Try in May 2026",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "Etta team's six-week seafood residency on Smith Street; daily-changing menu, walk-in bar.",
+          "age_days": 6,
+          "recency_weight": 0.571,
+          "source_weight": 1,
+          "independence_factor": 0.7,
+          "contribution": 0.4
+        },
+        {
+          "source": "concrete_playground",
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026",
+          "title": "The New Melbourne Bakeries and Cafes Worth Lining Up for This Autumn",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Seafood residency in Fitzroy; menu rewards trusting the floor team's recommendation.",
+          "age_days": 7,
+          "recency_weight": 0.5,
+          "source_weight": 1,
+          "independence_factor": 0.5,
+          "contribution": 0.25
+        }
+      ],
+      "all_mentions_count": 4
+    },
+    {
+      "venue_name": "Cibi Coffee Workshop",
+      "suburb": "Collingwood",
+      "venue_key": "cibi coffee workshop",
+      "distinct_sources": [
+        "concrete_playground",
+        "broadsheet"
+      ],
+      "distinct_source_count": 2,
+      "lock_in": true,
+      "editorial_signal": 0.8,
+      "editorial_signal_uncapped": 0.8,
+      "surviving_mentions": [
+        {
+          "source": "concrete_playground",
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026",
+          "title": "The New Melbourne Bakeries and Cafes Worth Lining Up for This Autumn",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Wellington Street cafe with a single-origin matcha lineup and a koji-cured salmon bagel.",
+          "age_days": 7,
+          "recency_weight": 0.5,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.5
+        },
+        {
+          "source": "broadsheet",
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-restaurants-may-2026",
+          "title": "11 New Melbourne Bars, Bakeries and Restaurants Including a Seafood Pop-up in Fitzroy and a Matcha Haven in Collingwood",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "why": "Matcha-focused cafe from the Cibi design studio on Wellington Street; single-origin matcha bar and a hojicha onigiri.",
+          "age_days": 9,
+          "recency_weight": 0.357,
+          "source_weight": 1.2,
+          "independence_factor": 0.7,
+          "contribution": 0.3
+        }
+      ],
+      "all_mentions_count": 2
+    },
+    {
+      "venue_name": "Auntie's Diner",
+      "suburb": "Brunswick",
+      "venue_key": "aunties diner",
+      "distinct_sources": [
+        "broadsheet"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.771,
+      "editorial_signal_uncapped": 0.771,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-soft-serve-2026",
+          "title": "Where to Find Soft Serve in Melbourne, May 2026",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "why": "Sydney Road diner; pandan-coconut soft serve twist with a weekly black sesame run on Fridays.",
+          "age_days": 5,
+          "recency_weight": 0.643,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.771
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Kuro",
+      "suburb": "Fitzroy North",
+      "venue_key": "kuro",
+      "distinct_sources": [
+        "time_out"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.571,
+      "editorial_signal_uncapped": 0.571,
+      "surviving_mentions": [
+        {
+          "source": "time_out",
+          "url": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026",
+          "title": "Melbourne's Best New Cafes to Try in May 2026",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "St Georges Road natural wine bar from the Sydney Kuro Bar team; smoked eel toast is the bar snack standout.",
+          "age_days": 6,
+          "recency_weight": 0.571,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.571
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Mörk Chocolate Brew House",
+      "suburb": "North Melbourne",
+      "venue_key": "m rk chocolate brew house",
+      "distinct_sources": [
+        "broadsheet"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.429,
+      "editorial_signal_uncapped": 0.429,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-restaurants-may-2026",
+          "title": "11 New Melbourne Bars, Bakeries and Restaurants Including a Seafood Pop-up in Fitzroy and a Matcha Haven in Collingwood",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "why": "Reopened in a larger North Melbourne site; signature single-origin hot chocolates plus a chocolate-and-savoury dessert program.",
+          "age_days": 9,
+          "recency_weight": 0.357,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.429
+        }
+      ],
+      "all_mentions_count": 1
+    }
+  ],
+  "reinforced_existing": [
+    {
+      "venue_name": "Assembly",
+      "suburb": "North Melbourne",
+      "venue_key": "assembly",
+      "distinct_sources": [
+        "time_out"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.571,
+      "editorial_signal_uncapped": 0.571,
+      "surviving_mentions": [
+        {
+          "source": "time_out",
+          "url": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026",
+          "title": "Melbourne's Best New Cafes to Try in May 2026",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "Five months in and settled; Dunkaccino has become a calling card and a new Tina non-alc wine flight is launching.",
+          "age_days": 6,
+          "recency_weight": 0.571,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.571
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Groove",
+      "suburb": "Abbotsford",
+      "venue_key": "groove",
+      "distinct_sources": [
+        "concrete_playground"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.5,
+      "editorial_signal_uncapped": 0.5,
+      "surviving_mentions": [
+        {
+          "source": "concrete_playground",
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026",
+          "title": "The New Melbourne Bakeries and Cafes Worth Lining Up for This Autumn",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Still pulling queues six months in for the salted cream coffee and new matcha basque cheesecake.",
+          "age_days": 7,
+          "recency_weight": 0.5,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.5
+        }
+      ],
+      "all_mentions_count": 1
+    }
+  ],
+  "attribution_preview": [
+    {
+      "venue_name": "Marrowbone",
+      "suburb": "Fitzroy",
+      "proposed_source_urls": [
+        {
+          "source": "broadsheet",
+          "tier": 1,
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-soft-serve-2026"
+        },
+        {
+          "source": "time_out",
+          "tier": 1,
+          "url": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026"
+        },
+        {
+          "source": "concrete_playground",
+          "tier": 1,
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026"
+        }
+      ]
+    },
+    {
+      "venue_name": "Cibi Coffee Workshop",
+      "suburb": "Collingwood",
+      "proposed_source_urls": [
+        {
+          "source": "concrete_playground",
+          "tier": 1,
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026"
+        },
+        {
+          "source": "broadsheet",
+          "tier": 1,
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-restaurants-may-2026"
+        }
+      ]
+    },
+    {
+      "venue_name": "Auntie's Diner",
+      "suburb": "Brunswick",
+      "proposed_source_urls": [
+        {
+          "source": "broadsheet",
+          "tier": 1,
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-soft-serve-2026"
+        }
+      ]
+    },
+    {
+      "venue_name": "Kuro",
+      "suburb": "Fitzroy North",
+      "proposed_source_urls": [
+        {
+          "source": "time_out",
+          "tier": 1,
+          "url": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026"
+        }
+      ]
+    },
+    {
+      "venue_name": "Assembly",
+      "suburb": "North Melbourne",
+      "proposed_source_urls": [
+        {
+          "source": "time_out",
+          "tier": 1,
+          "url": "https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026"
+        }
+      ]
+    },
+    {
+      "venue_name": "Groove",
+      "suburb": "Abbotsford",
+      "proposed_source_urls": [
+        {
+          "source": "concrete_playground",
+          "tier": 1,
+          "url": "https://concreteplayground.com/melbourne/eat-drink/new-bakeries-cafes-autumn-2026"
+        }
+      ]
+    },
+    {
+      "venue_name": "Mörk Chocolate Brew House",
+      "suburb": "North Melbourne",
+      "proposed_source_urls": [
+        {
+          "source": "broadsheet",
+          "tier": 1,
+          "url": "https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-restaurants-may-2026"
+        }
+      ]
+    }
+  ],
+  "existing_ranked_city": {
+    "city": "Melbourne",
+    "venues_in_ranked": 10
+  },
+  "notes": [
+    "OBSERVE-ONLY: no ranked_*.json was modified.",
+    "Weights in `weights` are WIP — Phase 2 explores signal quality; the final composite blend lands in Phase 3+.",
+    "attribution_preview entries match v2.1 schema exactly: {source, tier, url}. mention_date is captured upstream for recency scoring but is intentionally NOT injected into source_urls — schema extension belongs to v2.2.",
+    "In fixture mode, the extractor reads sidecar `<article>.mentions.json` files. Real (non-fixture) runs use Claude. Fixture sidecars are the EXPECTED extraction for the fixture article and serve as a regression check on the aggregator/attribution code."
+  ]
+}

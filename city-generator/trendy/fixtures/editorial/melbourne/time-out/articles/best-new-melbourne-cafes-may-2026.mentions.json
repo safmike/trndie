@@ -1,0 +1,20 @@
+{
+  "_doc": "Expected Claude extraction. Assembly overlap with ranked_melbourne.json is intentional — exercises the 'reinforced_existing' path. Marrowbone here gives it 3-source lock-in (Broadsheet + Concrete Playground + Time Out).",
+  "mentions": [
+    {
+      "venue_name": "Marrowbone",
+      "suburb": "Fitzroy",
+      "why": "Etta team's six-week seafood residency on Smith Street; daily-changing menu, walk-in bar."
+    },
+    {
+      "venue_name": "Kuro",
+      "suburb": "Fitzroy North",
+      "why": "St Georges Road natural wine bar from the Sydney Kuro Bar team; smoked eel toast is the bar snack standout."
+    },
+    {
+      "venue_name": "Assembly",
+      "suburb": "North Melbourne",
+      "why": "Five months in and settled; Dunkaccino has become a calling card and a new Tina non-alc wine flight is launching."
+    }
+  ]
+}
