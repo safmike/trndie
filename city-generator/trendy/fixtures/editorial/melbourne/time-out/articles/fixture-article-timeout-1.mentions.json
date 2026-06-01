@@ -1,0 +1,20 @@
+{
+  "_doc": "SYNTHETIC TEST DATA. Fixture Cafe Alpha and Fixture Cafe Epsilon are synthetic markers. 'Assembly' is a real venue already present in data/ranked_melbourne.json — kept verbatim only to exercise the 'reinforced_existing' detection path. With Fixture Cafe Alpha now appearing in all three sources, this article also drives the 3-source lock-in test.",
+  "mentions": [
+    {
+      "venue_name": "Fixture Cafe Alpha",
+      "suburb": "Fitzroy",
+      "why": "Six-week seafood residency on Smith Street; daily-changing menu, walk-in bar."
+    },
+    {
+      "venue_name": "Fixture Cafe Epsilon",
+      "suburb": "Fitzroy North",
+      "why": "St Georges Road natural-wine bar; smoked-eel toast with horseradish is the bar-snack standout."
+    },
+    {
+      "venue_name": "Assembly",
+      "suburb": "North Melbourne",
+      "why": "Five months in; Dunkaccino is the calling card and a new non-alc wine flight just launched."
+    }
+  ]
+}

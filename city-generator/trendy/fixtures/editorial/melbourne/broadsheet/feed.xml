@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Broadsheet Melbourne · Food and Drink</title>
-    <link>https://www.broadsheet.com.au/melbourne/food-and-drink</link>
-    <description>New restaurants, bars and cafes in Melbourne.</description>
+    <title>Broadsheet Melbourne · Food and Drink (FIXTURE)</title>
+    <link>https://fixtures.example.test/broadsheet/melbourne/food-and-drink</link>
+    <description>SYNTHETIC TEST FEED for the Phase 2 editorial pipeline. URLs use the RFC 6761 reserved .test TLD; venue names are obviously synthetic. Not real editorial content.</description>
     <language>en-au</language>
     <item>
-      <title><![CDATA[11 New Melbourne Bars, Bakeries and Restaurants Including a Seafood Pop-up in Fitzroy and a Matcha Haven in Collingwood]]></title>
-      <link>https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-restaurants-may-2026</link>
+      <title><![CDATA[Fixture Article: Multi-Opening Roundup (Broadsheet Melbourne)]]></title>
+      <link>https://fixtures.example.test/broadsheet/fixture-article-broadsheet-1</link>
       <pubDate>Mon, 18 May 2026 03:00:00 +1000</pubDate>
-      <description><![CDATA[The May 2026 round-up — what to queue for and what to book.]]></description>
+      <description><![CDATA[Synthetic test article. Surfaces three fixture cafes.]]></description>
     </item>
     <item>
-      <title><![CDATA[Where to Find Soft Serve in Melbourne, May 2026]]></title>
-      <link>https://www.broadsheet.com.au/melbourne/food-and-drink/article/new-soft-serve-2026</link>
+      <title><![CDATA[Fixture Article: Soft-Serve Roundup (Broadsheet Melbourne)]]></title>
+      <link>https://fixtures.example.test/broadsheet/fixture-article-broadsheet-2</link>
       <pubDate>Thu, 22 May 2026 04:00:00 +1000</pubDate>
-      <description><![CDATA[A roving cone-and-spoon dispatch.]]></description>
+      <description><![CDATA[Synthetic test article. Surfaces two fixture cafes; one reused from article 1 to exercise the same-source 14-day dedupe.]]></description>
     </item>
   </channel>
 </rss>

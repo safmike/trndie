@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>Time Out Melbourne · Restaurants &amp; Cafes</title>
-    <link>https://www.timeout.com/melbourne/restaurants</link>
-    <description>Where Time Out is queueing this month in Melbourne.</description>
+    <title>Time Out Melbourne · Restaurants &amp; Cafes (FIXTURE)</title>
+    <link>https://fixtures.example.test/timeout/melbourne/restaurants</link>
+    <description>SYNTHETIC TEST FEED for the Phase 2 editorial pipeline. Not real editorial content.</description>
     <language>en-au</language>
     <item>
-      <title><![CDATA[Melbourne's Best New Cafes to Try in May 2026]]></title>
-      <link>https://www.timeout.com/melbourne/restaurants/best-new-melbourne-cafes-may-2026</link>
+      <title><![CDATA[Fixture Article: New Cafe Picks (Time Out Melbourne)]]></title>
+      <link>https://fixtures.example.test/timeout/fixture-article-timeout-1</link>
       <pubDate>Wed, 21 May 2026 06:30:00 +1000</pubDate>
-      <description><![CDATA[May has brought a heavier-than-usual class of openings, plus one second-act return from North Melbourne.]]></description>
+      <description><![CDATA[Synthetic test article. Surfaces two fixture cafes plus one intentional overlap with ranked_melbourne.json (Assembly) to exercise the reinforced-existing detection path.]]></description>
     </item>
   </channel>
 </rss>

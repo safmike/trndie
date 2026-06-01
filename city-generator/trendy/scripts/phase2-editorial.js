@@ -35,6 +35,9 @@
  *   --live              fetch real feeds and call Claude
  *   --extractor claude|fixture
  *                       extractor mode; defaults to "fixture" with --fixtures, "claude" otherwise
+ *   --as-of <ISO>       reference date for recency math (default: wall-clock now in live mode,
+ *                       derived from the latest fixture mention_date in fixtures mode — so
+ *                       fixture runs are reproducible regardless of when they're invoked)
  *   --out <path>        override report path
  *   --no-write          print only; persist nothing
  *   --verify-feeds      HEAD/GET each feed URL and report status; skip extraction
@@ -73,6 +76,7 @@ function parseArgs() {
     city:        "melbourne",
     mode:        null, // "live" | "fixtures"
     extractor:   null, // "claude" | "fixture"
+    asOf:        null, // ISO string or null
     out:         null,
     write:       true,
     verifyFeeds: false,
@@ -83,6 +87,7 @@ function parseArgs() {
     else if (a === "--fixtures") opts.mode = "fixtures";
     else if (a === "--live") opts.mode = "live";
     else if (a === "--extractor" && args[i + 1]) opts.extractor = args[++i];
+    else if (a === "--as-of" && args[i + 1]) opts.asOf = args[++i];
     else if (a === "--out" && args[i + 1]) opts.out = args[++i];
     else if (a === "--no-write" || a === "--noWrite") opts.write = false;
     else if (a === "--verify-feeds") opts.verifyFeeds = true;
@@ -93,6 +98,24 @@ function parseArgs() {
 }
 
 // ── Helpers ───────────────────────────────────────────────────────────────────
+
+function resolveAsOf(opts, mentionStream) {
+  if (opts.asOf) {
+    const d = new Date(opts.asOf);
+    if (isNaN(d.getTime())) throw new Error(`--as-of: invalid date ${opts.asOf}`);
+    return d;
+  }
+  if (opts.mode === "fixtures") {
+    const dates = mentionStream
+      .map((m) => (m.mention_date ? new Date(m.mention_date) : null))
+      .filter((d) => d && !isNaN(d.getTime()));
+    if (dates.length > 0) {
+      const maxMs = Math.max(...dates.map((d) => d.getTime()));
+      return new Date(maxMs + 4 * 86400000); // latest mention + 4 days
+    }
+  }
+  return new Date();
+}
 
 function readRankedCity(city) {
   const file = path.join(DATA_DIR, `ranked_${city}.json`);
@@ -283,7 +306,11 @@ async function main() {
   }
 
   // ── Stage 5: aggregation + signal ───────────────────────────────────────────
-  const aggregated = aggregate(mentionStream, new Date());
+  // Pick the reference "now" for recency math. Live mode defaults to wall-clock.
+  // Fixture mode defaults to (latest mention_date + 4 days) so the findings
+  // report is reproducible regardless of when the fixtures are run.
+  const asOf = resolveAsOf(opts, mentionStream);
+  const aggregated = aggregate(mentionStream, asOf);
 
   // ── Stage 6: attribution preview (v2.1 source_urls shape) ──────────────────
   const attributionPreview = aggregated.slice(0, 8).map((v) => ({
@@ -305,6 +332,7 @@ async function main() {
   // ── Stage 8: write findings report ──────────────────────────────────────────
   const report = {
     generated_at:        new Date().toISOString(),
+    as_of:               asOf.toISOString(),
     city:                opts.city,
     mode:                opts.mode,
     extractor:           opts.extractor,
