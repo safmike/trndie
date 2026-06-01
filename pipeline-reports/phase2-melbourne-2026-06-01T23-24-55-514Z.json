@@ -1,0 +1,892 @@
+{
+  "generated_at": "2026-06-01T23:24:55.514Z",
+  "as_of": "2026-05-25T18:00:00.000Z",
+  "city": "melbourne",
+  "mode": "fixtures",
+  "extractor": "fixture",
+  "methodology_phase": "2 (observe-only, editorial signal MVP)",
+  "weights": {
+    "RECENCY_WINDOW_DAYS": 14,
+    "INDEPENDENCE_LADDER": [
+      1,
+      0.7,
+      0.5,
+      0.3,
+      0.2
+    ],
+    "SOURCE_WEIGHT": {
+      "broadsheet": 1.2,
+      "concrete_playground": 1,
+      "time_out": 1
+    },
+    "DEFAULT_SOURCE_WEIGHT": 1,
+    "LOCK_IN_DISTINCT_SOURCES": 2
+  },
+  "sources_count": 3,
+  "sources_summary": [
+    {
+      "source": "broadsheet",
+      "ok": true,
+      "items_fetched": 2,
+      "items_extracted": 2,
+      "items_failed": 0,
+      "mentions": 5
+    },
+    {
+      "source": "concrete_playground",
+      "ok": true,
+      "items_fetched": 1,
+      "items_extracted": 1,
+      "items_failed": 0,
+      "mentions": 3
+    },
+    {
+      "source": "time_out",
+      "ok": true,
+      "items_fetched": 1,
+      "items_extracted": 1,
+      "items_failed": 0,
+      "mentions": 3
+    }
+  ],
+  "per_source": [
+    {
+      "source": "broadsheet",
+      "feed_url": "https://www.broadsheet.com.au/melbourne/food-and-drink/feed",
+      "feed_source": "/home/user/trndie/city-generator/trendy/fixtures/editorial/melbourne/broadsheet/feed.xml",
+      "ok": true,
+      "items_fetched": 2,
+      "items_extracted": 2,
+      "items_failed": 0,
+      "mentions": [
+        {
+          "source": "broadsheet",
+          "source_tier": 1,
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-1",
+          "title": "Fixture Article: Multi-Opening Roundup (Broadsheet Melbourne)",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "venue_name": "Fixture Cafe Alpha",
+          "suburb": "Fitzroy",
+          "why": "Six-week seafood residency on Smith Street; daily-changing menu, walk-in bar, salted-miso soft-serve dessert."
+        },
+        {
+          "source": "broadsheet",
+          "source_tier": 1,
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-1",
+          "title": "Fixture Article: Multi-Opening Roundup (Broadsheet Melbourne)",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "venue_name": "Fixture Cafe Beta",
+          "suburb": "Collingwood",
+          "why": "Matcha-focused cafe on Wellington Street; single-origin matcha bar plus a brunch menu with matcha tiramisu and hojicha onigiri."
+        },
+        {
+          "source": "broadsheet",
+          "source_tier": 1,
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-1",
+          "title": "Fixture Article: Multi-Opening Roundup (Broadsheet Melbourne)",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "venue_name": "Fixture Cafe Gamma",
+          "suburb": "North Melbourne",
+          "why": "Drinking-chocolate specialist returning in a larger North Melbourne space; dense single-origin hot chocolates plus chocolate-and-savoury desserts."
+        },
+        {
+          "source": "broadsheet",
+          "source_tier": 1,
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-2",
+          "title": "Fixture Article: Soft-Serve Roundup (Broadsheet Melbourne)",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "venue_name": "Fixture Cafe Alpha",
+          "suburb": "Fitzroy",
+          "why": "Seafood residency on Smith Street; soft-serve dessert rotates weekly, current rotation is salted miso with brown-butter crumb."
+        },
+        {
+          "source": "broadsheet",
+          "source_tier": 1,
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-2",
+          "title": "Fixture Article: Soft-Serve Roundup (Broadsheet Melbourne)",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "venue_name": "Fixture Cafe Delta",
+          "suburb": "Brunswick",
+          "why": "Sydney Road diner; pandan-coconut soft-serve twist with a weekly black-sesame run on Fridays."
+        }
+      ],
+      "articles": [
+        {
+          "title": "Fixture Article: Multi-Opening Roundup (Broadsheet Melbourne)",
+          "link": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-1",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "ok": true,
+          "mentions_count": 3
+        },
+        {
+          "title": "Fixture Article: Soft-Serve Roundup (Broadsheet Melbourne)",
+          "link": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-2",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "ok": true,
+          "mentions_count": 2
+        }
+      ]
+    },
+    {
+      "source": "concrete_playground",
+      "feed_url": "https://concreteplayground.com/melbourne/feed",
+      "feed_source": "/home/user/trndie/city-generator/trendy/fixtures/editorial/melbourne/concrete-playground/feed.xml",
+      "ok": true,
+      "items_fetched": 1,
+      "items_extracted": 1,
+      "items_failed": 0,
+      "mentions": [
+        {
+          "source": "concrete_playground",
+          "source_tier": 1,
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1",
+          "title": "Fixture Article: Autumn Openings (Concrete Playground Melbourne)",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "venue_name": "Fixture Cafe Alpha",
+          "suburb": "Fitzroy",
+          "why": "Daily-changing seafood menu; walk-in bar is the move if you didn't book."
+        },
+        {
+          "source": "concrete_playground",
+          "source_tier": 1,
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1",
+          "title": "Fixture Article: Autumn Openings (Concrete Playground Melbourne)",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "venue_name": "Fixture Cafe Beta",
+          "suburb": "Collingwood",
+          "why": "Wellington Street cafe with single-origin matcha lineup and a koji-cured salmon bagel."
+        },
+        {
+          "source": "concrete_playground",
+          "source_tier": 1,
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1",
+          "title": "Fixture Article: Autumn Openings (Concrete Playground Melbourne)",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "venue_name": "Groove",
+          "suburb": "Abbotsford",
+          "why": "Still pulling queues six months in; salted cream coffee plus a new matcha basque cheesecake."
+        }
+      ],
+      "articles": [
+        {
+          "title": "Fixture Article: Autumn Openings (Concrete Playground Melbourne)",
+          "link": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "ok": true,
+          "mentions_count": 3
+        }
+      ]
+    },
+    {
+      "source": "time_out",
+      "feed_url": "https://www.timeout.com/melbourne/restaurants/rss",
+      "feed_source": "/home/user/trndie/city-generator/trendy/fixtures/editorial/melbourne/time-out/feed.xml",
+      "ok": true,
+      "items_fetched": 1,
+      "items_extracted": 1,
+      "items_failed": 0,
+      "mentions": [
+        {
+          "source": "time_out",
+          "source_tier": 1,
+          "url": "https://fixtures.example.test/timeout/fixture-article-timeout-1",
+          "title": "Fixture Article: New Cafe Picks (Time Out Melbourne)",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "venue_name": "Fixture Cafe Alpha",
+          "suburb": "Fitzroy",
+          "why": "Six-week seafood residency on Smith Street; daily-changing menu, walk-in bar."
+        },
+        {
+          "source": "time_out",
+          "source_tier": 1,
+          "url": "https://fixtures.example.test/timeout/fixture-article-timeout-1",
+          "title": "Fixture Article: New Cafe Picks (Time Out Melbourne)",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "venue_name": "Fixture Cafe Epsilon",
+          "suburb": "Fitzroy North",
+          "why": "St Georges Road natural-wine bar; smoked-eel toast with horseradish is the bar-snack standout."
+        },
+        {
+          "source": "time_out",
+          "source_tier": 1,
+          "url": "https://fixtures.example.test/timeout/fixture-article-timeout-1",
+          "title": "Fixture Article: New Cafe Picks (Time Out Melbourne)",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "venue_name": "Assembly",
+          "suburb": "North Melbourne",
+          "why": "Five months in; Dunkaccino is the calling card and a new non-alc wine flight just launched."
+        }
+      ],
+      "articles": [
+        {
+          "title": "Fixture Article: New Cafe Picks (Time Out Melbourne)",
+          "link": "https://fixtures.example.test/timeout/fixture-article-timeout-1",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "ok": true,
+          "mentions_count": 3
+        }
+      ]
+    }
+  ],
+  "aggregated": [
+    {
+      "venue_name": "Fixture Cafe Alpha",
+      "suburb": "Fitzroy",
+      "venue_key": "fixture cafe alpha",
+      "distinct_sources": [
+        "broadsheet",
+        "time_out",
+        "concrete_playground"
+      ],
+      "distinct_source_count": 3,
+      "lock_in": true,
+      "editorial_signal": 1,
+      "editorial_signal_uncapped": 1.679,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-2",
+          "title": "Fixture Article: Soft-Serve Roundup (Broadsheet Melbourne)",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "why": "Seafood residency on Smith Street; soft-serve dessert rotates weekly, current rotation is salted miso with brown-butter crumb.",
+          "age_days": 4,
+          "recency_weight": 0.714,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.857
+        },
+        {
+          "source": "time_out",
+          "url": "https://fixtures.example.test/timeout/fixture-article-timeout-1",
+          "title": "Fixture Article: New Cafe Picks (Time Out Melbourne)",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "Six-week seafood residency on Smith Street; daily-changing menu, walk-in bar.",
+          "age_days": 4,
+          "recency_weight": 0.714,
+          "source_weight": 1,
+          "independence_factor": 0.7,
+          "contribution": 0.5
+        },
+        {
+          "source": "concrete_playground",
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1",
+          "title": "Fixture Article: Autumn Openings (Concrete Playground Melbourne)",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Daily-changing seafood menu; walk-in bar is the move if you didn't book.",
+          "age_days": 5,
+          "recency_weight": 0.643,
+          "source_weight": 1,
+          "independence_factor": 0.5,
+          "contribution": 0.321
+        }
+      ],
+      "all_mentions_count": 4
+    },
+    {
+      "venue_name": "Fixture Cafe Beta",
+      "suburb": "Collingwood",
+      "venue_key": "fixture cafe beta",
+      "distinct_sources": [
+        "concrete_playground",
+        "broadsheet"
+      ],
+      "distinct_source_count": 2,
+      "lock_in": true,
+      "editorial_signal": 1,
+      "editorial_signal_uncapped": 1.003,
+      "surviving_mentions": [
+        {
+          "source": "concrete_playground",
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1",
+          "title": "Fixture Article: Autumn Openings (Concrete Playground Melbourne)",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Wellington Street cafe with single-origin matcha lineup and a koji-cured salmon bagel.",
+          "age_days": 5,
+          "recency_weight": 0.643,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.643
+        },
+        {
+          "source": "broadsheet",
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-1",
+          "title": "Fixture Article: Multi-Opening Roundup (Broadsheet Melbourne)",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "why": "Matcha-focused cafe on Wellington Street; single-origin matcha bar plus a brunch menu with matcha tiramisu and hojicha onigiri.",
+          "age_days": 8,
+          "recency_weight": 0.429,
+          "source_weight": 1.2,
+          "independence_factor": 0.7,
+          "contribution": 0.36
+        }
+      ],
+      "all_mentions_count": 2
+    },
+    {
+      "venue_name": "Fixture Cafe Delta",
+      "suburb": "Brunswick",
+      "venue_key": "fixture cafe delta",
+      "distinct_sources": [
+        "broadsheet"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.857,
+      "editorial_signal_uncapped": 0.857,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-2",
+          "title": "Fixture Article: Soft-Serve Roundup (Broadsheet Melbourne)",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "why": "Sydney Road diner; pandan-coconut soft-serve twist with a weekly black-sesame run on Fridays.",
+          "age_days": 4,
+          "recency_weight": 0.714,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.857
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Fixture Cafe Epsilon",
+      "suburb": "Fitzroy North",
+      "venue_key": "fixture cafe epsilon",
+      "distinct_sources": [
+        "time_out"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.714,
+      "editorial_signal_uncapped": 0.714,
+      "surviving_mentions": [
+        {
+          "source": "time_out",
+          "url": "https://fixtures.example.test/timeout/fixture-article-timeout-1",
+          "title": "Fixture Article: New Cafe Picks (Time Out Melbourne)",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "St Georges Road natural-wine bar; smoked-eel toast with horseradish is the bar-snack standout.",
+          "age_days": 4,
+          "recency_weight": 0.714,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.714
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Assembly",
+      "suburb": "North Melbourne",
+      "venue_key": "assembly",
+      "distinct_sources": [
+        "time_out"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.714,
+      "editorial_signal_uncapped": 0.714,
+      "surviving_mentions": [
+        {
+          "source": "time_out",
+          "url": "https://fixtures.example.test/timeout/fixture-article-timeout-1",
+          "title": "Fixture Article: New Cafe Picks (Time Out Melbourne)",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "Five months in; Dunkaccino is the calling card and a new non-alc wine flight just launched.",
+          "age_days": 4,
+          "recency_weight": 0.714,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.714
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Groove",
+      "suburb": "Abbotsford",
+      "venue_key": "groove",
+      "distinct_sources": [
+        "concrete_playground"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.643,
+      "editorial_signal_uncapped": 0.643,
+      "surviving_mentions": [
+        {
+          "source": "concrete_playground",
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1",
+          "title": "Fixture Article: Autumn Openings (Concrete Playground Melbourne)",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Still pulling queues six months in; salted cream coffee plus a new matcha basque cheesecake.",
+          "age_days": 5,
+          "recency_weight": 0.643,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.643
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Fixture Cafe Gamma",
+      "suburb": "North Melbourne",
+      "venue_key": "fixture cafe gamma",
+      "distinct_sources": [
+        "broadsheet"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.514,
+      "editorial_signal_uncapped": 0.514,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-1",
+          "title": "Fixture Article: Multi-Opening Roundup (Broadsheet Melbourne)",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "why": "Drinking-chocolate specialist returning in a larger North Melbourne space; dense single-origin hot chocolates plus chocolate-and-savoury desserts.",
+          "age_days": 8,
+          "recency_weight": 0.429,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.514
+        }
+      ],
+      "all_mentions_count": 1
+    }
+  ],
+  "lock_ins": [
+    {
+      "venue_name": "Fixture Cafe Alpha",
+      "suburb": "Fitzroy",
+      "venue_key": "fixture cafe alpha",
+      "distinct_sources": [
+        "broadsheet",
+        "time_out",
+        "concrete_playground"
+      ],
+      "distinct_source_count": 3,
+      "lock_in": true,
+      "editorial_signal": 1,
+      "editorial_signal_uncapped": 1.679,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-2",
+          "title": "Fixture Article: Soft-Serve Roundup (Broadsheet Melbourne)",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "why": "Seafood residency on Smith Street; soft-serve dessert rotates weekly, current rotation is salted miso with brown-butter crumb.",
+          "age_days": 4,
+          "recency_weight": 0.714,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.857
+        },
+        {
+          "source": "time_out",
+          "url": "https://fixtures.example.test/timeout/fixture-article-timeout-1",
+          "title": "Fixture Article: New Cafe Picks (Time Out Melbourne)",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "Six-week seafood residency on Smith Street; daily-changing menu, walk-in bar.",
+          "age_days": 4,
+          "recency_weight": 0.714,
+          "source_weight": 1,
+          "independence_factor": 0.7,
+          "contribution": 0.5
+        },
+        {
+          "source": "concrete_playground",
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1",
+          "title": "Fixture Article: Autumn Openings (Concrete Playground Melbourne)",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Daily-changing seafood menu; walk-in bar is the move if you didn't book.",
+          "age_days": 5,
+          "recency_weight": 0.643,
+          "source_weight": 1,
+          "independence_factor": 0.5,
+          "contribution": 0.321
+        }
+      ],
+      "all_mentions_count": 4
+    },
+    {
+      "venue_name": "Fixture Cafe Beta",
+      "suburb": "Collingwood",
+      "venue_key": "fixture cafe beta",
+      "distinct_sources": [
+        "concrete_playground",
+        "broadsheet"
+      ],
+      "distinct_source_count": 2,
+      "lock_in": true,
+      "editorial_signal": 1,
+      "editorial_signal_uncapped": 1.003,
+      "surviving_mentions": [
+        {
+          "source": "concrete_playground",
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1",
+          "title": "Fixture Article: Autumn Openings (Concrete Playground Melbourne)",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Wellington Street cafe with single-origin matcha lineup and a koji-cured salmon bagel.",
+          "age_days": 5,
+          "recency_weight": 0.643,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.643
+        },
+        {
+          "source": "broadsheet",
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-1",
+          "title": "Fixture Article: Multi-Opening Roundup (Broadsheet Melbourne)",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "why": "Matcha-focused cafe on Wellington Street; single-origin matcha bar plus a brunch menu with matcha tiramisu and hojicha onigiri.",
+          "age_days": 8,
+          "recency_weight": 0.429,
+          "source_weight": 1.2,
+          "independence_factor": 0.7,
+          "contribution": 0.36
+        }
+      ],
+      "all_mentions_count": 2
+    }
+  ],
+  "new_candidates": [
+    {
+      "venue_name": "Fixture Cafe Alpha",
+      "suburb": "Fitzroy",
+      "venue_key": "fixture cafe alpha",
+      "distinct_sources": [
+        "broadsheet",
+        "time_out",
+        "concrete_playground"
+      ],
+      "distinct_source_count": 3,
+      "lock_in": true,
+      "editorial_signal": 1,
+      "editorial_signal_uncapped": 1.679,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-2",
+          "title": "Fixture Article: Soft-Serve Roundup (Broadsheet Melbourne)",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "why": "Seafood residency on Smith Street; soft-serve dessert rotates weekly, current rotation is salted miso with brown-butter crumb.",
+          "age_days": 4,
+          "recency_weight": 0.714,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.857
+        },
+        {
+          "source": "time_out",
+          "url": "https://fixtures.example.test/timeout/fixture-article-timeout-1",
+          "title": "Fixture Article: New Cafe Picks (Time Out Melbourne)",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "Six-week seafood residency on Smith Street; daily-changing menu, walk-in bar.",
+          "age_days": 4,
+          "recency_weight": 0.714,
+          "source_weight": 1,
+          "independence_factor": 0.7,
+          "contribution": 0.5
+        },
+        {
+          "source": "concrete_playground",
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1",
+          "title": "Fixture Article: Autumn Openings (Concrete Playground Melbourne)",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Daily-changing seafood menu; walk-in bar is the move if you didn't book.",
+          "age_days": 5,
+          "recency_weight": 0.643,
+          "source_weight": 1,
+          "independence_factor": 0.5,
+          "contribution": 0.321
+        }
+      ],
+      "all_mentions_count": 4
+    },
+    {
+      "venue_name": "Fixture Cafe Beta",
+      "suburb": "Collingwood",
+      "venue_key": "fixture cafe beta",
+      "distinct_sources": [
+        "concrete_playground",
+        "broadsheet"
+      ],
+      "distinct_source_count": 2,
+      "lock_in": true,
+      "editorial_signal": 1,
+      "editorial_signal_uncapped": 1.003,
+      "surviving_mentions": [
+        {
+          "source": "concrete_playground",
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1",
+          "title": "Fixture Article: Autumn Openings (Concrete Playground Melbourne)",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Wellington Street cafe with single-origin matcha lineup and a koji-cured salmon bagel.",
+          "age_days": 5,
+          "recency_weight": 0.643,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.643
+        },
+        {
+          "source": "broadsheet",
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-1",
+          "title": "Fixture Article: Multi-Opening Roundup (Broadsheet Melbourne)",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "why": "Matcha-focused cafe on Wellington Street; single-origin matcha bar plus a brunch menu with matcha tiramisu and hojicha onigiri.",
+          "age_days": 8,
+          "recency_weight": 0.429,
+          "source_weight": 1.2,
+          "independence_factor": 0.7,
+          "contribution": 0.36
+        }
+      ],
+      "all_mentions_count": 2
+    },
+    {
+      "venue_name": "Fixture Cafe Delta",
+      "suburb": "Brunswick",
+      "venue_key": "fixture cafe delta",
+      "distinct_sources": [
+        "broadsheet"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.857,
+      "editorial_signal_uncapped": 0.857,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-2",
+          "title": "Fixture Article: Soft-Serve Roundup (Broadsheet Melbourne)",
+          "mention_date": "Thu, 22 May 2026 04:00:00 +1000",
+          "why": "Sydney Road diner; pandan-coconut soft-serve twist with a weekly black-sesame run on Fridays.",
+          "age_days": 4,
+          "recency_weight": 0.714,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.857
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Fixture Cafe Epsilon",
+      "suburb": "Fitzroy North",
+      "venue_key": "fixture cafe epsilon",
+      "distinct_sources": [
+        "time_out"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.714,
+      "editorial_signal_uncapped": 0.714,
+      "surviving_mentions": [
+        {
+          "source": "time_out",
+          "url": "https://fixtures.example.test/timeout/fixture-article-timeout-1",
+          "title": "Fixture Article: New Cafe Picks (Time Out Melbourne)",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "St Georges Road natural-wine bar; smoked-eel toast with horseradish is the bar-snack standout.",
+          "age_days": 4,
+          "recency_weight": 0.714,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.714
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Fixture Cafe Gamma",
+      "suburb": "North Melbourne",
+      "venue_key": "fixture cafe gamma",
+      "distinct_sources": [
+        "broadsheet"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.514,
+      "editorial_signal_uncapped": 0.514,
+      "surviving_mentions": [
+        {
+          "source": "broadsheet",
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-1",
+          "title": "Fixture Article: Multi-Opening Roundup (Broadsheet Melbourne)",
+          "mention_date": "Mon, 18 May 2026 03:00:00 +1000",
+          "why": "Drinking-chocolate specialist returning in a larger North Melbourne space; dense single-origin hot chocolates plus chocolate-and-savoury desserts.",
+          "age_days": 8,
+          "recency_weight": 0.429,
+          "source_weight": 1.2,
+          "independence_factor": 1,
+          "contribution": 0.514
+        }
+      ],
+      "all_mentions_count": 1
+    }
+  ],
+  "reinforced_existing": [
+    {
+      "venue_name": "Assembly",
+      "suburb": "North Melbourne",
+      "venue_key": "assembly",
+      "distinct_sources": [
+        "time_out"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.714,
+      "editorial_signal_uncapped": 0.714,
+      "surviving_mentions": [
+        {
+          "source": "time_out",
+          "url": "https://fixtures.example.test/timeout/fixture-article-timeout-1",
+          "title": "Fixture Article: New Cafe Picks (Time Out Melbourne)",
+          "mention_date": "Wed, 21 May 2026 06:30:00 +1000",
+          "why": "Five months in; Dunkaccino is the calling card and a new non-alc wine flight just launched.",
+          "age_days": 4,
+          "recency_weight": 0.714,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.714
+        }
+      ],
+      "all_mentions_count": 1
+    },
+    {
+      "venue_name": "Groove",
+      "suburb": "Abbotsford",
+      "venue_key": "groove",
+      "distinct_sources": [
+        "concrete_playground"
+      ],
+      "distinct_source_count": 1,
+      "lock_in": false,
+      "editorial_signal": 0.643,
+      "editorial_signal_uncapped": 0.643,
+      "surviving_mentions": [
+        {
+          "source": "concrete_playground",
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1",
+          "title": "Fixture Article: Autumn Openings (Concrete Playground Melbourne)",
+          "mention_date": "Tue, 20 May 2026 05:00:00 +1000",
+          "why": "Still pulling queues six months in; salted cream coffee plus a new matcha basque cheesecake.",
+          "age_days": 5,
+          "recency_weight": 0.643,
+          "source_weight": 1,
+          "independence_factor": 1,
+          "contribution": 0.643
+        }
+      ],
+      "all_mentions_count": 1
+    }
+  ],
+  "attribution_preview": [
+    {
+      "venue_name": "Fixture Cafe Alpha",
+      "suburb": "Fitzroy",
+      "proposed_source_urls": [
+        {
+          "source": "broadsheet",
+          "tier": 1,
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-2"
+        },
+        {
+          "source": "time_out",
+          "tier": 1,
+          "url": "https://fixtures.example.test/timeout/fixture-article-timeout-1"
+        },
+        {
+          "source": "concrete_playground",
+          "tier": 1,
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1"
+        }
+      ]
+    },
+    {
+      "venue_name": "Fixture Cafe Beta",
+      "suburb": "Collingwood",
+      "proposed_source_urls": [
+        {
+          "source": "concrete_playground",
+          "tier": 1,
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1"
+        },
+        {
+          "source": "broadsheet",
+          "tier": 1,
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-1"
+        }
+      ]
+    },
+    {
+      "venue_name": "Fixture Cafe Delta",
+      "suburb": "Brunswick",
+      "proposed_source_urls": [
+        {
+          "source": "broadsheet",
+          "tier": 1,
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-2"
+        }
+      ]
+    },
+    {
+      "venue_name": "Fixture Cafe Epsilon",
+      "suburb": "Fitzroy North",
+      "proposed_source_urls": [
+        {
+          "source": "time_out",
+          "tier": 1,
+          "url": "https://fixtures.example.test/timeout/fixture-article-timeout-1"
+        }
+      ]
+    },
+    {
+      "venue_name": "Assembly",
+      "suburb": "North Melbourne",
+      "proposed_source_urls": [
+        {
+          "source": "time_out",
+          "tier": 1,
+          "url": "https://fixtures.example.test/timeout/fixture-article-timeout-1"
+        }
+      ]
+    },
+    {
+      "venue_name": "Groove",
+      "suburb": "Abbotsford",
+      "proposed_source_urls": [
+        {
+          "source": "concrete_playground",
+          "tier": 1,
+          "url": "https://fixtures.example.test/concrete-playground/fixture-article-cp-1"
+        }
+      ]
+    },
+    {
+      "venue_name": "Fixture Cafe Gamma",
+      "suburb": "North Melbourne",
+      "proposed_source_urls": [
+        {
+          "source": "broadsheet",
+          "tier": 1,
+          "url": "https://fixtures.example.test/broadsheet/fixture-article-broadsheet-1"
+        }
+      ]
+    }
+  ],
+  "existing_ranked_city": {
+    "city": "Melbourne",
+    "venues_in_ranked": 10
+  },
+  "notes": [
+    "OBSERVE-ONLY: no ranked_*.json was modified.",
+    "Weights in `weights` are WIP — Phase 2 explores signal quality; the final composite blend lands in Phase 3+.",
+    "attribution_preview entries match v2.1 schema exactly: {source, tier, url}. mention_date is captured upstream for recency scoring but is intentionally NOT injected into source_urls — schema extension belongs to v2.2.",
+    "In fixture mode, the extractor reads sidecar `<article>.mentions.json` files. Real (non-fixture) runs use Claude. Fixture sidecars are the EXPECTED extraction for the fixture article and serve as a regression check on the aggregator/attribution code."
+  ]
+}

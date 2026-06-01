@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Broadsheet Melbourne · Food and Drink (FIXTURE)</title>
+    <link>https://fixtures.example.test/broadsheet/melbourne/food-and-drink</link>
+    <description>SYNTHETIC TEST FEED for the Phase 2 editorial pipeline. URLs use the RFC 6761 reserved .test TLD; venue names are obviously synthetic. Not real editorial content.</description>
+    <language>en-au</language>
+    <item>
+      <title><![CDATA[Fixture Article: Multi-Opening Roundup (Broadsheet Melbourne)]]></title>
+      <link>https://fixtures.example.test/broadsheet/fixture-article-broadsheet-1</link>
+      <pubDate>Mon, 18 May 2026 03:00:00 +1000</pubDate>
+      <description><![CDATA[Synthetic test article. Surfaces three fixture cafes.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Fixture Article: Soft-Serve Roundup (Broadsheet Melbourne)]]></title>
+      <link>https://fixtures.example.test/broadsheet/fixture-article-broadsheet-2</link>
+      <pubDate>Thu, 22 May 2026 04:00:00 +1000</pubDate>
+      <description><![CDATA[Synthetic test article. Surfaces two fixture cafes; one reused from article 1 to exercise the same-source 14-day dedupe.]]></description>
+    </item>
+  </channel>
+</rss>

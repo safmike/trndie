@@ -1,0 +1,15 @@
+{
+  "_doc": "SYNTHETIC TEST DATA. Fixture Cafe Alpha appears in this article AND in the prior Broadsheet fixture article — the aggregator should collapse the same-source duplicate within the 14-day window and keep the most recent (this one).",
+  "mentions": [
+    {
+      "venue_name": "Fixture Cafe Alpha",
+      "suburb": "Fitzroy",
+      "why": "Seafood residency on Smith Street; soft-serve dessert rotates weekly, current rotation is salted miso with brown-butter crumb."
+    },
+    {
+      "venue_name": "Fixture Cafe Delta",
+      "suburb": "Brunswick",
+      "why": "Sydney Road diner; pandan-coconut soft-serve twist with a weekly black-sesame run on Fridays."
+    }
+  ]
+}
