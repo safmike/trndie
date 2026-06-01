@@ -77,6 +77,23 @@ spotted by" credit + a path to each cafe).
    stable run-to-run so the list doesn't thrash. A good idea the original
    methodology lacked; being folded into the reconciled model.
 
+## Sourcing evolution — the staircase
+Editorial-first via RSS is the foundation, not the destination. Sourcing
+climbs a staircase, each step built on the one below:
+1. Now — accessible editorial (RSS + manual). Tier-1 publications via RSS,
+   manual curation as fallback. Reliable, legitimate, automatable today.
+2. Next — editorial partnerships. Formal relationships with the publications
+   we already credit, deepening access and trust.
+3. Then — influencer / local trend-spotters. Partnerships with the people
+   best placed to spot a venue before it breaks — the most valuable signal,
+   but only accessible once there's an audience/brand to offer them.
+4. Eventually — legitimate social/TikTok signal. Direct API access (via the
+   platforms or partnership) if/when it becomes legitimately available — the
+   original aspiration, deferred until access exists.
+Today's RSS approach is deliberately not the forever solution; it's step one.
+This is also why scoring weights stay WIP (see Open questions): the model
+firms up as we climb the staircase and sourcing stabilises.
+
 ## Current state
 Working / live (Vercel, trndie.co): 8 cities on v2.1, 7 published,
 Newcastle hidden (2 venues, published:false); city-v2.njk renderer with
