@@ -68,6 +68,13 @@ const FIXTURES_BASE = path.join(__dirname, "..", "fixtures", "editorial");
 const DATA_DIR      = path.join(REPO_ROOT, "data");
 const REPORTS_DIR   = path.join(REPO_ROOT, "pipeline-reports");
 
+// Cost guardrail. The runner processes at most this many articles per feed
+// per run — each article is one Claude call in live mode. At 20 articles ×
+// 3 sources × ~2k input / ~1k output tokens per call against Haiku 4.5 this
+// is well under a dollar per run; raise the cap if real Melbourne feeds are
+// shown to publish more than ~20 fresh items per cycle.
+const MAX_ARTICLES_PER_FEED = 20;
+
 // ── CLI args ──────────────────────────────────────────────────────────────────
 
 function parseArgs() {
@@ -145,8 +152,9 @@ function printConsoleSummary(report) {
   console.log(`Sources processed:  ${report.sources_count}`);
   for (const s of report.sources_summary) {
     const tag = s.ok ? "ok " : "FAIL";
+    const cap = s.items_capped ? ` (capped from ${s.items_in_feed})` : "";
     console.log(
-      `  ${tag}  ${s.source.padEnd(20)} items=${s.items_fetched} extracted=${s.items_extracted} mentions=${s.mentions}${
+      `  ${tag}  ${s.source.padEnd(20)} items=${s.items_fetched}${cap} extracted=${s.items_extracted} mentions=${s.mentions}${
         s.error ? "  · " + s.error : ""
       }`,
     );
@@ -175,6 +183,166 @@ function printConsoleSummary(report) {
   console.log("──────────────────────────────────────────────────────────────");
 }
 
+// ── Markdown report ───────────────────────────────────────────────────────────
+
+function md(s) {
+  // Escape pipe / backtick characters for table-safe rendering.
+  return String(s == null ? "" : s).replace(/\|/g, "\\|").replace(/`/g, "ʼ");
+}
+
+function toMarkdown(report) {
+  const w = report.weights || {};
+  const lockInThreshold = w.LOCK_IN_DISTINCT_SOURCES ?? 2;
+  const lines = [];
+
+  lines.push(`# Editorial pipeline run — ${report.city}`);
+  lines.push("");
+  lines.push(`- **Mode:** \`${report.mode}\`  (extractor: \`${report.extractor}\`${report.extraction_model ? `, model: \`${report.extraction_model}\`` : ""})`);
+  lines.push(`- **Generated at:** \`${report.generated_at}\``);
+  lines.push(`- **As-of (recency reference):** \`${report.as_of}\``);
+  lines.push(`- **Phase:** ${report.methodology_phase}`);
+  lines.push(`- **Per-feed article cap:** ${report.max_articles_per_feed}`);
+  lines.push(`- **Existing ranked venues in \`ranked_${report.city}.json\`:** ${report.existing_ranked_city?.venues_in_ranked ?? 0}`);
+  lines.push("");
+
+  if (report.mode === "live") {
+    lines.push("> **OBSERVE-ONLY.** No `ranked_*.json` was modified by this run. The aggregated venues, candidates, and reinforcements below are observations only — they are listed, not injected into live data.");
+  } else {
+    lines.push("> **SYNTHETIC TEST DATA.** This is a fixture self-test, not a live editorial run. Venue names prefixed `Fixture Cafe …` are synthetic markers. Real signal requires a live run.");
+  }
+  lines.push("");
+
+  // Per-source summary
+  lines.push("## Per source");
+  lines.push("");
+  lines.push("| Source | Feed | In feed | Processed | Capped | Extracted | Failed | Mentions | Status |");
+  lines.push("|---|---|---:|---:|:---:|---:|---:|---:|---|");
+  for (const s of report.sources_summary) {
+    const feed = (report.per_source.find((p) => p.source === s.source) || {}).feed_url || "";
+    const status = s.ok ? "ok" : `**FAIL**: ${md(s.error || "unknown")}`;
+    lines.push(
+      `| ${md(s.source)} | \`${md(feed)}\` | ${s.items_in_feed ?? 0} | ${s.items_processed ?? 0} | ${s.items_capped ? "✂︎" : "–"} | ${s.items_extracted ?? 0} | ${s.items_failed ?? 0} | ${s.mentions ?? 0} | ${status} |`,
+    );
+  }
+  lines.push("");
+
+  // Extracted mentions per source, per article
+  lines.push("## Extracted venue mentions");
+  lines.push("");
+  for (const s of report.per_source) {
+    lines.push(`### ${s.source}`);
+    lines.push("");
+    if (!s.ok) {
+      lines.push(`> Feed failed: ${s.error}`);
+      lines.push("");
+      continue;
+    }
+    if (!s.articles || s.articles.length === 0) {
+      lines.push("_no articles processed_");
+      lines.push("");
+      continue;
+    }
+    for (const a of s.articles) {
+      if (!a.ok) {
+        lines.push(`- ❌ **${a.title || "(untitled)"}** — ${a.error}`);
+        continue;
+      }
+      lines.push(`- **${a.title || "(untitled)"}**`);
+      lines.push(`  - Date: \`${a.mention_date || "(unknown)"}\``);
+      if (a.link) lines.push(`  - URL: <${a.link}>`);
+      lines.push(`  - Mentions extracted: ${a.mentions_count}`);
+      const articleMentions = (s.mentions || []).filter((m) => m.url === a.link);
+      for (const m of articleMentions) {
+        lines.push(`    - **${m.venue_name}** (${m.suburb || "?"}) — ${m.why || "_(no why)_"}`);
+      }
+    }
+    lines.push("");
+  }
+
+  // Aggregated table
+  lines.push("## Aggregated signal");
+  lines.push("");
+  lines.push("| Venue | Suburb | Distinct sources | Signal | Lock-in? | Classification |");
+  lines.push("|---|---|---|---:|:---:|---|");
+  const reinforcedKeys = new Set((report.reinforced_existing || []).map((v) => v.venue_key));
+  for (const v of report.aggregated) {
+    const classification = reinforcedKeys.has(v.venue_key)
+      ? "Reinforces existing"
+      : "NEW candidate";
+    lines.push(
+      `| ${md(v.venue_name)} | ${md(v.suburb || "?")} | ${md(v.distinct_sources.join(", ") || "(none in window)")} | ${v.editorial_signal} | ${v.lock_in ? "✅" : "–"} | ${classification} |`,
+    );
+  }
+  lines.push("");
+
+  // Lock-ins
+  lines.push(`## Multi-source lock-ins (≥${lockInThreshold} distinct tier-1 sources)`);
+  lines.push("");
+  if (!report.lock_ins || report.lock_ins.length === 0) {
+    lines.push("_none in this run_");
+  } else {
+    for (const v of report.lock_ins) {
+      lines.push(
+        `- **${v.venue_name}** (${v.suburb || "?"}) — ${v.distinct_source_count} sources: ${v.distinct_sources.join(", ")} · signal ${v.editorial_signal}`,
+      );
+    }
+  }
+  lines.push("");
+
+  // NEW candidates
+  lines.push(`## NEW candidates (not in \`ranked_${report.city}.json\`) — listed, NOT injected`);
+  lines.push("");
+  if (!report.new_candidates || report.new_candidates.length === 0) {
+    lines.push("_none in this run_");
+  } else {
+    for (const v of report.new_candidates) {
+      const lock = v.lock_in ? "  **[LOCK-IN]**" : "";
+      lines.push(
+        `- **${v.venue_name}** (${v.suburb || "?"}) — sources: ${v.distinct_sources.join(", ") || "(none in window)"} · signal ${v.editorial_signal}${lock}`,
+      );
+    }
+  }
+  lines.push("");
+
+  // Reinforced existing
+  lines.push("## Reinforces existing ranked venues");
+  lines.push("");
+  if (!report.reinforced_existing || report.reinforced_existing.length === 0) {
+    lines.push("_none in this run_");
+  } else {
+    for (const v of report.reinforced_existing) {
+      lines.push(
+        `- **${v.venue_name}** — sources: ${v.distinct_sources.join(", ") || "(none in window)"} · signal ${v.editorial_signal}`,
+      );
+    }
+  }
+  lines.push("");
+
+  // Attribution preview
+  lines.push("## Sample `source_urls` attribution preview (v2.1 schema)");
+  lines.push("");
+  lines.push("```json");
+  lines.push(JSON.stringify((report.attribution_preview || []).slice(0, 5), null, 2));
+  lines.push("```");
+  lines.push("");
+
+  // Weights
+  lines.push("## Weights (WIP, tunable on `PHASE2_WEIGHTS`)");
+  lines.push("");
+  lines.push("```json");
+  lines.push(JSON.stringify(w, null, 2));
+  lines.push("```");
+  lines.push("");
+
+  // Notes
+  lines.push("## Notes");
+  lines.push("");
+  for (const n of (report.notes || [])) lines.push(`- ${n}`);
+  lines.push("");
+
+  return lines.join("\n");
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 
 async function main() {
@@ -190,6 +358,13 @@ async function main() {
   }
   const fixturesDir = path.join(FIXTURES_BASE, opts.city);
   const sourceTiers = Object.fromEntries(sources.map((s) => [s.source, s.tier ?? 1]));
+
+  // Resolve the extraction model once so it gets recorded on the report.
+  // Fixture mode does not call Claude.
+  const extractionModel =
+    opts.extractor === "fixture"
+      ? null
+      : process.env.PHASE2_EXTRACTION_MODEL || DEFAULT_MODEL;
 
   if (opts.verifyFeeds) {
     await verifyFeedsOnly(sources);
@@ -227,14 +402,26 @@ async function main() {
       feed_url:        source.feed_url,
       feed_source:     feed.source,
       ok:              true,
-      items_fetched:   feed.items.length,
+      items_in_feed:   feed.items.length,
+      items_processed: 0,
+      items_capped:    feed.items.length > MAX_ARTICLES_PER_FEED,
+      items_fetched:   0,
       items_extracted: 0,
       items_failed:    0,
       mentions:        [],
       articles:        [],
     };
 
-    for (const item of feed.items) {
+    const processedItems = feed.items.slice(0, MAX_ARTICLES_PER_FEED);
+    sourceReport.items_processed = processedItems.length;
+    if (sourceReport.items_capped) {
+      console.log(
+        `     ! capped at ${MAX_ARTICLES_PER_FEED} of ${feed.items.length} items (MAX_ARTICLES_PER_FEED guardrail)`,
+      );
+    }
+    sourceReport.items_fetched = processedItems.length;
+
+    for (const item of processedItems) {
       const articleMeta = {
         publication: source.source,
         title:       item.title,
@@ -260,7 +447,7 @@ async function main() {
       } else {
         ext = await extractWithClaude({
           apiKey:     process.env.ANTHROPIC_API_KEY,
-          model:      process.env.PHASE2_EXTRACTION_MODEL || DEFAULT_MODEL,
+          model:      extractionModel,
           articleText: loaded.text,
           articleMeta,
         });
@@ -336,12 +523,17 @@ async function main() {
     city:                opts.city,
     mode:                opts.mode,
     extractor:           opts.extractor,
+    extraction_model:    extractionModel,
+    max_articles_per_feed: MAX_ARTICLES_PER_FEED,
     methodology_phase:   "2 (observe-only, editorial signal MVP)",
     weights:             PHASE2_WEIGHTS,
     sources_count:       sources.length,
     sources_summary: perSource.map((s) => ({
       source:          s.source,
       ok:              s.ok,
+      items_in_feed:   s.items_in_feed,
+      items_processed: s.items_processed,
+      items_capped:    s.items_capped,
       items_fetched:   s.items_fetched,
       items_extracted: s.items_extracted,
       items_failed:    s.items_failed,
@@ -372,11 +564,13 @@ async function main() {
     return;
   }
 
-  fs.mkdirSync(REPORTS_DIR, { recursive: true });
   const stamp   = report.generated_at.replace(/[:.]/g, "-");
   const outPath = opts.out || path.join(REPORTS_DIR, `phase2-${opts.city}-${stamp}.json`);
-  fs.writeFileSync(outPath, JSON.stringify(report, null, 2) + "\n", "utf-8");
-  console.log(`\n📝  Report written: ${path.relative(REPO_ROOT, outPath)}\n`);
+  fs.mkdirSync(path.dirname(outPath), { recursive: true });
+  const isMarkdown = /\.md$/i.test(outPath);
+  const body = isMarkdown ? toMarkdown(report) : JSON.stringify(report, null, 2) + "\n";
+  fs.writeFileSync(outPath, body, "utf-8");
+  console.log(`\n📝  Report written: ${path.relative(REPO_ROOT, outPath)}  [${isMarkdown ? "markdown" : "json"}]\n`);
 }
 
 main().catch((err) => {

@@ -10,6 +10,7 @@
     "update-trends:dry": "node scripts/update-trends.js --dry-run",
     "phase2:editorial": "node scripts/phase2-editorial.js",
     "phase2:editorial:fixtures": "node scripts/phase2-editorial.js --fixtures",
+    "phase2:editorial:live": "node scripts/phase2-editorial.js --live",
     "phase2:editorial:verify": "node scripts/phase2-editorial.js --verify-feeds --live"
   },
   "dependencies": {

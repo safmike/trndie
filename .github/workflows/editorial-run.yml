@@ -1,0 +1,142 @@
+name: Phase 2 — Editorial pipeline (live, observe-only)
+
+# ─────────────────────────────────────────────────────────────────────
+# Runs the Phase 2 editorial pipeline against live tier-1 RSS feeds and
+# extracts venue mentions via Claude. The result is a markdown findings
+# report committed on a fresh branch and surfaced as a draft PR for
+# human review. This workflow does NOT modify ranked_*.json — a
+# post-run hash check enforces that.
+#
+# To trigger: Actions → "Phase 2 — Editorial pipeline (live, observe-only)"
+# → Run workflow → (optionally override the city slug; default melbourne).
+#
+# Requires:
+#   - Repository secret  ANTHROPIC_API_KEY  (Claude Messages API).
+#   - permissions: contents:write + pull-requests:write (set below).
+# ─────────────────────────────────────────────────────────────────────
+
+on:
+  workflow_dispatch:
+    inputs:
+      city:
+        description: "City slug (default: melbourne — the Phase 2 pilot scope)"
+        required: false
+        default: "melbourne"
+
+permissions:
+  contents: write          # push the report branch
+  pull-requests: write     # open the review PR
+
+concurrency:
+  group: phase2-editorial-${{ github.event.inputs.city || 'melbourne' }}
+  cancel-in-progress: false
+
+jobs:
+  editorial-run:
+    name: Live editorial run (observe-only)
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Need a real history so we can branch off main and push.
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+          cache-dependency-path: city-generator/trendy/package-lock.json
+
+      - name: Install dependencies
+        working-directory: city-generator/trendy
+        run: npm ci
+
+      - name: Resolve run paths
+        id: paths
+        run: |
+          CITY="${{ github.event.inputs.city || 'melbourne' }}"
+          STAMP=$(date -u +'%Y-%m-%dT%H-%M-%SZ')
+          REPORT="pipeline-runs/editorial-${CITY}-${STAMP}.md"
+          BRANCH="phase2/editorial-run-${CITY}-${STAMP}"
+          PR_TITLE="Editorial run (observe-only): ${CITY} ${STAMP}"
+          echo "city=$CITY"           >> "$GITHUB_OUTPUT"
+          echo "stamp=$STAMP"         >> "$GITHUB_OUTPUT"
+          echo "report=$REPORT"       >> "$GITHUB_OUTPUT"
+          echo "branch=$BRANCH"       >> "$GITHUB_OUTPUT"
+          echo "pr_title=$PR_TITLE"   >> "$GITHUB_OUTPUT"
+
+      - name: Snapshot ranked_*.json (observe-only guard, before)
+        run: |
+          mkdir -p .editorial-run-state
+          sha256sum data/ranked_*.json | sort > .editorial-run-state/before.sha
+          echo "ranked_*.json hashes captured."
+
+      - name: Run editorial pipeline — LIVE mode
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        working-directory: city-generator/trendy
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::ANTHROPIC_API_KEY secret is not set. Add it under repo Settings → Secrets and variables → Actions."
+            exit 1
+          fi
+          mkdir -p "$GITHUB_WORKSPACE/pipeline-runs"
+          node scripts/phase2-editorial.js \
+            --live \
+            --city  "${{ steps.paths.outputs.city }}" \
+            --out   "$GITHUB_WORKSPACE/${{ steps.paths.outputs.report }}"
+
+      - name: Verify observe-only (no ranked_*.json changed)
+        run: |
+          sha256sum data/ranked_*.json | sort > .editorial-run-state/after.sha
+          if ! diff -q .editorial-run-state/before.sha .editorial-run-state/after.sha > /dev/null; then
+            echo "::error::ranked_*.json was modified by the editorial run; observe-only contract broken."
+            diff .editorial-run-state/before.sha .editorial-run-state/after.sha || true
+            exit 1
+          fi
+          echo "OK: ranked_*.json untouched."
+
+      - name: Surface report to Actions step summary
+        run: |
+          {
+            echo "## Editorial pipeline run — ${{ steps.paths.outputs.city }}"
+            echo
+            echo "_Report:_ \`${{ steps.paths.outputs.report }}\`"
+            echo
+            cat "${{ steps.paths.outputs.report }}"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Create report branch + commit
+        id: commit
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b "${{ steps.paths.outputs.branch }}"
+          rm -rf .editorial-run-state
+          git add "${{ steps.paths.outputs.report }}"
+
+          # Hard guard: nothing under data/ may be staged.
+          if git diff --cached --name-only | grep -q '^data/'; then
+            echo "::error::Refusing to commit: files under data/ are staged. observe-only contract broken."
+            git diff --cached --name-only
+            exit 1
+          fi
+
+          git commit -m "Editorial run (${{ steps.paths.outputs.city }}, ${{ steps.paths.outputs.stamp }}) — observe-only"
+          git push origin "${{ steps.paths.outputs.branch }}"
+
+      - name: Open draft PR
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr create \
+            --draft \
+            --base main \
+            --head "${{ steps.paths.outputs.branch }}" \
+            --title "${{ steps.paths.outputs.pr_title }}" \
+            --body-file "${{ steps.paths.outputs.report }}"
