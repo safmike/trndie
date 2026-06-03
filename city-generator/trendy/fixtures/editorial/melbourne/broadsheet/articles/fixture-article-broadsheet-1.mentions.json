@@ -1,19 +1,22 @@
 {
-  "_doc": "SYNTHETIC TEST DATA — expected Claude extraction for the synthetic test article. Real (non-fixture) runs use Claude against real editorial feeds. Venue names are obviously synthetic markers; they do not refer to real venues.",
+  "_doc": "SYNTHETIC TEST DATA — expected Claude extraction for the synthetic test article. Venue names are obviously synthetic markers; they do not refer to real venues. Each mention carries a venue_type required by the Phase-2 cafe filter (filters.js).",
   "mentions": [
     {
       "venue_name": "Fixture Cafe Alpha",
       "suburb": "Fitzroy",
+      "venue_type": "cafe",
       "why": "Six-week seafood residency on Smith Street; daily-changing menu, walk-in bar, salted-miso soft-serve dessert."
     },
     {
       "venue_name": "Fixture Cafe Beta",
       "suburb": "Collingwood",
+      "venue_type": "cafe",
       "why": "Matcha-focused cafe on Wellington Street; single-origin matcha bar plus a brunch menu with matcha tiramisu and hojicha onigiri."
     },
     {
       "venue_name": "Fixture Cafe Gamma",
       "suburb": "North Melbourne",
+      "venue_type": "cafe_bakery",
       "why": "Drinking-chocolate specialist returning in a larger North Melbourne space; dense single-origin hot chocolates plus chocolate-and-savoury desserts."
     }
   ]

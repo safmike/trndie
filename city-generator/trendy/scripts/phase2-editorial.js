@@ -61,9 +61,15 @@ const {
 } = require("./lib/extraction");
 const { aggregate, venueKey, PHASE2_WEIGHTS } = require("./lib/aggregation");
 const { toSourceUrls } = require("./lib/attribution");
+const {
+  loadCitySuburbs,
+  applyScopeFilters,
+  CAFE_IN_SCOPE,
+} = require("./lib/filters");
 
 const REPO_ROOT     = path.resolve(__dirname, "../../..");
 const CONFIG_PATH   = path.join(REPO_ROOT, "config/editorial_sources.json");
+const SUBURBS_PATH  = path.join(REPO_ROOT, "config/city_suburbs.json");
 const FIXTURES_BASE = path.join(__dirname, "..", "fixtures", "editorial");
 const DATA_DIR      = path.join(REPO_ROOT, "data");
 const REPORTS_DIR   = path.join(REPO_ROOT, "pipeline-reports");
@@ -131,17 +137,25 @@ function readRankedCity(city) {
 }
 
 async function verifyFeedsOnly(sources) {
-  console.log("\n🔎  feed verification (live HTTP GET):\n");
+  const { USER_AGENT } = require("./lib/sources/editorial");
+  console.log("\n🔎  feed verification (live HTTP GET against every candidate URL):\n");
   for (const s of sources) {
-    process.stdout.write(`   ${s.source.padEnd(20)} ${s.feed_url} … `);
-    try {
-      const res = await fetch(s.feed_url, {
-        method:  "GET",
-        headers: { "User-Agent": "TRNDIE-Pipeline/0.2" },
-      });
-      console.log(`${res.status} ${res.statusText}`);
-    } catch (err) {
-      console.log(`error: ${err.message}`);
+    const urls = s.feed_urls || (s.feed_url ? [s.feed_url] : []);
+    console.log(`  ${s.source}  (${urls.length} candidate URL${urls.length === 1 ? "" : "s"})`);
+    for (const url of urls) {
+      process.stdout.write(`     ${url} … `);
+      try {
+        const res = await fetch(url, {
+          method:  "GET",
+          headers: {
+            "User-Agent": USER_AGENT,
+            "Accept":     "application/rss+xml, application/atom+xml, application/xml;q=0.9, */*;q=0.5",
+          },
+        });
+        console.log(`${res.status} ${res.statusText}`);
+      } catch (err) {
+        console.log(`error: ${err.message}`);
+      }
     }
   }
   console.log("");
@@ -153,10 +167,9 @@ function printConsoleSummary(report) {
   for (const s of report.sources_summary) {
     const tag = s.ok ? "ok " : "FAIL";
     const cap = s.items_capped ? ` (capped from ${s.items_in_feed})` : "";
+    const why = s.ok ? "" : `  · ${s.error_class || "unknown"}: ${s.error}`;
     console.log(
-      `  ${tag}  ${s.source.padEnd(20)} items=${s.items_fetched}${cap} extracted=${s.items_extracted} mentions=${s.mentions}${
-        s.error ? "  · " + s.error : ""
-      }`,
+      `  ${tag}  ${s.source.padEnd(20)} attempts=${s.attempts} items=${s.items_fetched}${cap} extracted=${s.items_extracted} kept=${s.mentions_kept} rejected=${s.mentions_rejected} held=${s.mentions_held}${why}`,
     );
   }
   console.log(`Aggregated venues:  ${report.aggregated.length}`);
@@ -202,6 +215,8 @@ function toMarkdown(report) {
   lines.push(`- **As-of (recency reference):** \`${report.as_of}\``);
   lines.push(`- **Phase:** ${report.methodology_phase}`);
   lines.push(`- **Per-feed article cap:** ${report.max_articles_per_feed}`);
+  lines.push(`- **Cafe scope (IN):** \`${(report.cafe_in_scope || []).join("` `")}\``);
+  lines.push(`- **City suburb whitelist:** \`config/city_suburbs.json\` · ${report.city_suburbs?.whitelist_size ?? 0} suburbs for \`${report.city_suburbs?.city || report.city}\``);
   lines.push(`- **Existing ranked venues in \`ranked_${report.city}.json\`:** ${report.existing_ranked_city?.venues_in_ranked ?? 0}`);
   lines.push("");
 
@@ -215,25 +230,51 @@ function toMarkdown(report) {
   // Per-source summary
   lines.push("## Per source");
   lines.push("");
-  lines.push("| Source | Feed | In feed | Processed | Capped | Extracted | Failed | Mentions | Status |");
-  lines.push("|---|---|---:|---:|:---:|---:|---:|---:|---|");
+  lines.push("| Source | Feed used | Attempts | In feed | Processed | Capped | Extracted | Kept | Rejected | Held | Status |");
+  lines.push("|---|---|---:|---:|---:|:---:|---:|---:|---:|---:|---|");
   for (const s of report.sources_summary) {
-    const feed = (report.per_source.find((p) => p.source === s.source) || {}).feed_url || "";
-    const status = s.ok ? "ok" : `**FAIL**: ${md(s.error || "unknown")}`;
+    const status = s.ok
+      ? "ok"
+      : `**FAIL**: \`${md(s.error_class || "unknown")}\` — ${md(s.error || "")}`;
+    const feedUsed = s.feed_url_used ? `\`${md(s.feed_url_used)}\`` : "_(none worked)_";
     lines.push(
-      `| ${md(s.source)} | \`${md(feed)}\` | ${s.items_in_feed ?? 0} | ${s.items_processed ?? 0} | ${s.items_capped ? "✂︎" : "–"} | ${s.items_extracted ?? 0} | ${s.items_failed ?? 0} | ${s.mentions ?? 0} | ${status} |`,
+      `| ${md(s.source)} | ${feedUsed} | ${s.attempts ?? 0} | ${s.items_in_feed ?? 0} | ${s.items_processed ?? 0} | ${s.items_capped ? "✂︎" : "–"} | ${s.items_extracted ?? 0} | ${s.mentions_kept ?? 0} | ${s.mentions_rejected ?? 0} | ${s.mentions_held ?? 0} | ${status} |`,
     );
   }
   lines.push("");
 
-  // Extracted mentions per source, per article
-  lines.push("## Extracted venue mentions");
+  // Feed URL attempt detail (the "why" of any feed failure)
+  lines.push("### Feed URL attempts (per source)");
+  lines.push("");
+  for (const s of report.per_source) {
+    lines.push(`#### ${s.source}`);
+    lines.push("");
+    if (!s.tried_feed_urls || s.tried_feed_urls.length === 0) {
+      lines.push("_no attempts recorded_");
+      lines.push("");
+      continue;
+    }
+    lines.push("| # | URL | Status | OK? | Error |");
+    lines.push("|---:|---|---|:---:|---|");
+    s.tried_feed_urls.forEach((t, i) => {
+      const stat = t.status
+        ? `${t.status} ${t.status_text || ""}`.trim()
+        : (t.error_class || "—");
+      lines.push(
+        `| ${i + 1} | \`${md(t.url)}\` | ${md(stat)} | ${t.ok ? "✅" : "❌"} | ${md(t.error || "")} |`,
+      );
+    });
+    lines.push("");
+  }
+
+  // Extracted mentions per source, per article (KEPT only — the in-scope set)
+  lines.push("## Extracted, kept venue mentions");
   lines.push("");
   for (const s of report.per_source) {
     lines.push(`### ${s.source}`);
     lines.push("");
     if (!s.ok) {
-      lines.push(`> Feed failed: ${s.error}`);
+      lines.push(`> Feed failed: \`${s.error_class || "unknown"}\` — ${s.error}`);
       lines.push("");
       continue;
     }
@@ -250,11 +291,49 @@ function toMarkdown(report) {
       lines.push(`- **${a.title || "(untitled)"}**`);
       lines.push(`  - Date: \`${a.mention_date || "(unknown)"}\``);
       if (a.link) lines.push(`  - URL: <${a.link}>`);
-      lines.push(`  - Mentions extracted: ${a.mentions_count}`);
+      lines.push(
+        `  - Mentions: raw=${a.mentions_count_raw ?? 0}, kept=${a.mentions_count_kept ?? 0}, rejected=${a.mentions_count_rejected ?? 0}, held=${a.mentions_count_held ?? 0}`,
+      );
       const articleMentions = (s.mentions || []).filter((m) => m.url === a.link);
       for (const m of articleMentions) {
-        lines.push(`    - **${m.venue_name}** (${m.suburb || "?"}) — ${m.why || "_(no why)_"}`);
+        lines.push(`    - **${m.venue_name}** (${m.suburb || "?"}, \`${m.venue_type || "?"}\`) — ${m.why || "_(no why)_"}`);
       }
+    }
+    lines.push("");
+  }
+
+  // Rejected mentions (out of scope) — visible so we can audit the filter
+  const totalRejected = (report.per_source || []).reduce(
+    (acc, s) => acc + ((s.mentions_rejected || []).length), 0,
+  );
+  if (totalRejected > 0) {
+    lines.push("## Rejected mentions (filtered out of scope)");
+    lines.push("");
+    lines.push("| Source | Venue | Suburb | venue_type | Reason | Article |");
+    lines.push("|---|---|---|---|---|---|");
+    for (const s of report.per_source) {
+      for (const m of (s.mentions_rejected || [])) {
+        const article = m.title ? `[${md(m.title)}](${m.url})` : (m.url || "");
+        lines.push(
+          `| ${md(s.source)} | ${md(m.venue_name)} | ${md(m.suburb || "?")} | \`${md(m.venue_type || "?")}\` | \`${md(m.reject_reason)}\` | ${article} |`,
+        );
+      }
+    }
+    lines.push("");
+  }
+
+  // Held-for-review mentions (missing info — not auto-included)
+  const heldAll = report.held_for_review || [];
+  if (heldAll.length > 0) {
+    lines.push("## Held for human review (needs location/type check)");
+    lines.push("");
+    lines.push("| Source | Venue | Suburb | venue_type | Hold reason | Article |");
+    lines.push("|---|---|---|---|---|---|");
+    for (const m of heldAll) {
+      const article = m.title ? `[${md(m.title)}](${m.url})` : (m.url || "");
+      lines.push(
+        `| ${md(m.source)} | ${md(m.venue_name)} | ${md(m.suburb || "—")} | \`${md(m.venue_type || "—")}\` | \`${md(m.hold_reason)}\` | ${article} |`,
+      );
     }
     lines.push("");
   }
@@ -359,6 +438,9 @@ async function main() {
   const fixturesDir = path.join(FIXTURES_BASE, opts.city);
   const sourceTiers = Object.fromEntries(sources.map((s) => [s.source, s.tier ?? 1]));
 
+  // Load the Greater-Metro suburb whitelist for the geo filter.
+  const citySuburbs = loadCitySuburbs(SUBURBS_PATH, opts.city);
+
   // Resolve the extraction model once so it gets recorded on the report.
   // Fixture mode does not call Claude.
   const extractionModel =
@@ -376,40 +458,60 @@ async function main() {
   const mentionStream = [];
 
   for (const source of sources) {
-    process.stdout.write(`\n📰  ${source.source} <${source.feed_url}>\n`);
+    const candidateUrls = source.feed_urls || (source.feed_url ? [source.feed_url] : []);
+    process.stdout.write(
+      `\n📰  ${source.source} <${candidateUrls.length} candidate URL${candidateUrls.length === 1 ? "" : "s"}>\n`,
+    );
 
     const feed = await loadFeed(source, { mode: opts.mode, fixturesDir });
     if (!feed.ok) {
-      console.log(`     ✗ feed failed: ${feed.error}`);
+      console.log(`     ✗ feed failed: ${feed.error} (${feed.error_class || "unknown"})`);
+      for (const t of (feed.tried || [])) {
+        console.log(
+          `       ↳ ${t.url} · ${t.status ?? "—"} ${t.status_text ?? ""}${t.error ? "  · " + t.error : ""}`,
+        );
+      }
       perSource.push({
         source:          source.source,
-        feed_url:        source.feed_url,
+        feed_urls:       candidateUrls,
+        feed_url_used:   null,
         feed_source:     feed.source,
+        tried_feed_urls: feed.tried || [],
         ok:              false,
         error:           feed.error,
+        error_class:     feed.error_class,
+        items_in_feed:   0,
+        items_processed: 0,
+        items_capped:    false,
         items_fetched:   0,
         items_extracted: 0,
         items_failed:    0,
         mentions:        [],
+        mentions_rejected: [],
+        mentions_held:     [],
         articles:        [],
       });
       continue;
     }
-    console.log(`     ↳ feed ok · ${feed.items.length} item(s)`);
+    console.log(`     ↳ feed ok via ${feed.feed_url_used} · ${feed.items.length} item(s)`);
 
     const sourceReport = {
-      source:          source.source,
-      feed_url:        source.feed_url,
-      feed_source:     feed.source,
-      ok:              true,
-      items_in_feed:   feed.items.length,
-      items_processed: 0,
-      items_capped:    feed.items.length > MAX_ARTICLES_PER_FEED,
-      items_fetched:   0,
-      items_extracted: 0,
-      items_failed:    0,
-      mentions:        [],
-      articles:        [],
+      source:            source.source,
+      feed_urls:         candidateUrls,
+      feed_url_used:     feed.feed_url_used,
+      feed_source:       feed.source,
+      tried_feed_urls:   feed.tried || [],
+      ok:                true,
+      items_in_feed:     feed.items.length,
+      items_processed:   0,
+      items_capped:      feed.items.length > MAX_ARTICLES_PER_FEED,
+      items_fetched:     0,
+      items_extracted:   0,
+      items_failed:      0,
+      mentions:          [],
+      mentions_rejected: [],
+      mentions_held:     [],
+      articles:          [],
     };
 
     const processedItems = feed.items.slice(0, MAX_ARTICLES_PER_FEED);
@@ -449,7 +551,7 @@ async function main() {
           apiKey:     process.env.ANTHROPIC_API_KEY,
           model:      extractionModel,
           articleText: loaded.text,
-          articleMeta,
+          articleMeta: { ...articleMeta, city: opts.city },
         });
       }
       if (!ext.ok) {
@@ -461,33 +563,59 @@ async function main() {
         continue;
       }
 
+      // Apply scope filters: cafe-type + Melbourne geo. Held mentions are
+      // surfaced separately and never reach aggregation.
+      const filtered = applyScopeFilters(ext.mentions, { citySuburbs });
+
       sourceReport.items_extracted++;
       sourceReport.articles.push({
-        title:          item.title,
-        link:           item.link,
-        mention_date:   item.pub_date,
-        ok:             true,
-        mentions_count: ext.mentions.length,
+        title:           item.title,
+        link:            item.link,
+        mention_date:    item.pub_date,
+        ok:              true,
+        mentions_count_raw:      ext.mentions.length,
+        mentions_count_kept:     filtered.kept.length,
+        mentions_count_rejected: filtered.rejected.length,
+        mentions_count_held:     filtered.held.length,
       });
 
-      for (const m of ext.mentions) {
-        const row = {
-          source:       source.source,
-          source_tier:  source.tier ?? 1,
-          url:          item.link,
-          title:        item.title,
-          mention_date: item.pub_date,
-          venue_name:   m.venue_name,
-          suburb:       m.suburb || null,
-          why:          m.why || null,
-        };
+      const rowBase = {
+        source:       source.source,
+        source_tier:  source.tier ?? 1,
+        url:          item.link,
+        title:        item.title,
+        mention_date: item.pub_date,
+      };
+      for (const m of filtered.kept) {
+        const row = { ...rowBase, venue_name: m.venue_name, suburb: m.suburb, venue_type: m.venue_type, why: m.why || null };
         sourceReport.mentions.push(row);
         mentionStream.push(row);
+      }
+      for (const m of filtered.rejected) {
+        sourceReport.mentions_rejected.push({
+          ...rowBase,
+          venue_name:    m.venue_name,
+          suburb:        m.suburb || null,
+          venue_type:    m.venue_type || null,
+          reject_reason: m.reject_reason,
+          suburb_normalised: m.suburb_normalised,
+          why:           m.why || null,
+        });
+      }
+      for (const m of filtered.held) {
+        sourceReport.mentions_held.push({
+          ...rowBase,
+          venue_name:  m.venue_name,
+          suburb:      m.suburb || null,
+          venue_type:  m.venue_type || null,
+          hold_reason: m.hold_reason,
+          why:         m.why || null,
+        });
       }
     }
 
     console.log(
-      `     ↳ extracted ${sourceReport.items_extracted}/${sourceReport.items_fetched} · ${sourceReport.mentions.length} mention(s)`,
+      `     ↳ extracted ${sourceReport.items_extracted}/${sourceReport.items_fetched} · kept ${sourceReport.mentions.length} · rejected ${sourceReport.mentions_rejected.length} · held ${sourceReport.mentions_held.length}`,
     );
     perSource.push(sourceReport);
   }
@@ -528,17 +656,27 @@ async function main() {
     methodology_phase:   "2 (observe-only, editorial signal MVP)",
     weights:             PHASE2_WEIGHTS,
     sources_count:       sources.length,
+    cafe_in_scope:       [...CAFE_IN_SCOPE],
+    city_suburbs: {
+      city:      citySuburbs.city,
+      whitelist_size: citySuburbs.raw_count,
+    },
     sources_summary: perSource.map((s) => ({
-      source:          s.source,
-      ok:              s.ok,
-      items_in_feed:   s.items_in_feed,
-      items_processed: s.items_processed,
-      items_capped:    s.items_capped,
-      items_fetched:   s.items_fetched,
-      items_extracted: s.items_extracted,
-      items_failed:    s.items_failed,
-      mentions:        s.mentions.length,
-      error:           s.error,
+      source:            s.source,
+      ok:                s.ok,
+      error:             s.error,
+      error_class:       s.error_class,
+      feed_url_used:     s.feed_url_used,
+      attempts:          (s.tried_feed_urls || []).length,
+      items_in_feed:     s.items_in_feed,
+      items_processed:   s.items_processed,
+      items_capped:      s.items_capped,
+      items_fetched:     s.items_fetched,
+      items_extracted:   s.items_extracted,
+      items_failed:      s.items_failed,
+      mentions_kept:     s.mentions.length,
+      mentions_rejected: (s.mentions_rejected || []).length,
+      mentions_held:     (s.mentions_held || []).length,
     })),
     per_source:          perSource,
     aggregated,
@@ -549,11 +687,20 @@ async function main() {
     existing_ranked_city: ranked
       ? { city: ranked.city, venues_in_ranked: ranked.venues?.length ?? 0 }
       : { city: opts.city, venues_in_ranked: 0, note: "no ranked_*.json on disk" },
+    held_for_review: perSource.flatMap((s) =>
+      (s.mentions_held || []).map((m) => ({
+        ...m,
+        source: s.source,
+      })),
+    ),
     notes: [
       "OBSERVE-ONLY: no ranked_*.json was modified.",
+      "Cafe-only scope is enforced at extraction (prompt) AND post-extraction (filters.js). Held mentions need a location check; rejected mentions are out of scope.",
+      "Geo filter checks the suburb against config/city_suburbs.json. Missing or unknown suburbs are HELD, not auto-included.",
+      "Each source's `tried_feed_urls` shows the exact HTTP status of every feed URL attempt — so a blanked source is no longer a black box.",
       "Weights in `weights` are WIP — Phase 2 explores signal quality; the final composite blend lands in Phase 3+.",
       "attribution_preview entries match v2.1 schema exactly: {source, tier, url}. mention_date is captured upstream for recency scoring but is intentionally NOT injected into source_urls — schema extension belongs to v2.2.",
-      "In fixture mode, the extractor reads sidecar `<article>.mentions.json` files. Real (non-fixture) runs use Claude. Fixture sidecars are the EXPECTED extraction for the fixture article and serve as a regression check on the aggregator/attribution code.",
+      "In fixture mode, the extractor reads sidecar `<article>.mentions.json` files. Real (non-fixture) runs use Claude.",
     ],
   };
 

@@ -1,20 +1,29 @@
 {
-  "_doc": "SYNTHETIC TEST DATA. Fixture Cafe Alpha and Fixture Cafe Epsilon are synthetic markers. 'Assembly' is a real venue already present in data/ranked_melbourne.json — kept verbatim only to exercise the 'reinforced_existing' detection path. With Fixture Cafe Alpha now appearing in all three sources, this article also drives the 3-source lock-in test.",
+  "_doc": "SYNTHETIC TEST DATA. Fixture Cafe Alpha + Fixture Cafe Epsilon are synthetic markers; 'Assembly' is a real venue already present in data/ranked_melbourne.json (reinforced-existing path). Fixture Cafe Epsilon is tagged venue_type=wine_bar deliberately — the article prose describes it as a wine bar, so the cafe filter should REJECT it (out_of_scope_type). Fixture Cafe Eta has no suburb — exercises the geo HOLD path (missing_suburb).",
   "mentions": [
     {
       "venue_name": "Fixture Cafe Alpha",
       "suburb": "Fitzroy",
+      "venue_type": "cafe",
       "why": "Six-week seafood residency on Smith Street; daily-changing menu, walk-in bar."
     },
     {
       "venue_name": "Fixture Cafe Epsilon",
       "suburb": "Fitzroy North",
+      "venue_type": "wine_bar",
       "why": "St Georges Road natural-wine bar; smoked-eel toast with horseradish is the bar-snack standout."
     },
     {
       "venue_name": "Assembly",
       "suburb": "North Melbourne",
+      "venue_type": "cafe",
       "why": "Five months in; Dunkaccino is the calling card and a new non-alc wine flight just launched."
+    },
+    {
+      "venue_name": "Fixture Cafe Eta",
+      "suburb": null,
+      "venue_type": "cafe",
+      "why": "Deliberate fixture mention with no suburb — exercises the geo HOLD path; expected to be held with reason missing_suburb."
     }
   ]
 }
