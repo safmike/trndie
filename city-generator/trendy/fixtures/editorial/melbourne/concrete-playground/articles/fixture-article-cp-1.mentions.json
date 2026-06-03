@@ -1,20 +1,29 @@
 {
-  "_doc": "SYNTHETIC TEST DATA. Fixture Cafe Alpha and Fixture Cafe Beta are synthetic markers. 'Groove' is a real venue already present in data/ranked_melbourne.json — kept verbatim only to exercise the 'reinforced_existing' detection path. The surrounding article prose is still fabricated; use of the real name here is for cross-reference testing, not an editorial claim.",
+  "_doc": "SYNTHETIC TEST DATA. Fixture Cafe Alpha + Fixture Cafe Beta are synthetic markers. 'Groove' is a real venue already present in data/ranked_melbourne.json — kept verbatim only to exercise the reinforced-existing detection path. Fixture Cafe Zeta in 'Surry Hills' is a deliberate non-Melbourne mention that exercises the geo filter (should be REJECTED with reason suburb_not_in_whitelist).",
   "mentions": [
     {
       "venue_name": "Fixture Cafe Alpha",
       "suburb": "Fitzroy",
+      "venue_type": "cafe",
       "why": "Daily-changing seafood menu; walk-in bar is the move if you didn't book."
     },
     {
       "venue_name": "Fixture Cafe Beta",
       "suburb": "Collingwood",
+      "venue_type": "cafe",
       "why": "Wellington Street cafe with single-origin matcha lineup and a koji-cured salmon bagel."
     },
     {
       "venue_name": "Groove",
       "suburb": "Abbotsford",
+      "venue_type": "cafe",
       "why": "Still pulling queues six months in; salted cream coffee plus a new matcha basque cheesecake."
+    },
+    {
+      "venue_name": "Fixture Cafe Zeta",
+      "suburb": "Surry Hills",
+      "venue_type": "cafe",
+      "why": "Deliberate non-Melbourne mention (Sydney suburb) — exercises the geo filter; expected to be rejected with reason suburb_not_in_whitelist."
     }
   ]
 }

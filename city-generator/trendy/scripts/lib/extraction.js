@@ -31,30 +31,54 @@ const path = require("path");
 const DEFAULT_MODEL = "claude-haiku-4-5-20251001";
 
 const EXTRACTION_SYSTEM_PROMPT = `
-You are extracting cafe / restaurant venue mentions from a single Australian
-editorial article (e.g. Broadsheet, Concrete Playground, Time Out). Return
-strict JSON only — no prose, no markdown fence — matching this schema:
+You are extracting cafe-style venue mentions from a single Australian
+editorial article (e.g. Broadsheet, Concrete Playground, Time Out).
+Return strict JSON only — no prose, no markdown fence — matching this schema:
 
 {
   "mentions": [
     {
       "venue_name": "the venue's name as written in the article",
-      "suburb": "Melbourne suburb / inner-city area, or null if unclear",
-      "why": "one short neutral sentence summarising why the article surfaces this venue"
+      "suburb":     "Melbourne suburb / inner-city area, or null if unclear",
+      "venue_type": "one of: cafe | espresso_bar | coffee_roaster | brunch_spot | cafe_bakery",
+      "why":        "one short neutral sentence summarising why the article surfaces this venue"
     }
   ]
 }
 
-Rules:
-- Only include venues the article actively surfaces, profiles or recommends.
-  Skip passing references, the author's previous work, generic chains, and
-  honourable-mention asides without dedicated coverage.
-- One entry per distinct venue. Collapse repeated mentions of the same venue.
-- Keep "why" to one sentence, plain neutral tone. Editorial voice happens
-  in a later synthesis step, not here.
-- If the article qualifies zero venues, return {"mentions": []}.
-- Do not invent venues. If unsure about the venue name or suburb, leave that
-  field as null rather than guessing.
+SCOPE — what TRNDIE covers (return only these):
+  - cafe              — daytime venue centred on coffee + food
+  - espresso_bar      — coffee-forward, often standing-room
+  - coffee_roaster    — roastery with a public-facing coffee bar
+  - brunch_spot       — daytime menu venue centred on brunch
+  - cafe_bakery       — bakery that ALSO serves coffee + daytime food
+                        (e.g. Paddock Bakery, Bam Bam Bakehouse).
+                        A pure pastry counter without coffee/food is NOT in scope.
+
+OUT OF SCOPE — do NOT return these as mentions (skip them):
+  - pubs, bars, wine bars, cocktail bars
+  - dinner-only restaurants, fine dining
+  - nightclubs / late-night-only venues
+  - pure dessert / gelato / ice-cream shops without a cafe daytime offer
+
+CITY DISCIPLINE:
+  - This run targets a single Australian city (the surrounding article context
+    will make that obvious — e.g. "Melbourne" in headers, suburbs, etc.).
+    Only return venues you are confident are in that city.
+  - If an article is a national or multi-city listicle, return ONLY the
+    venues whose suburb / address clearly belongs to the target city.
+  - When unsure of city or suburb, set suburb=null and the post-filter will
+    hold the mention for human review.
+
+OTHER RULES:
+  - Only include venues the article actively profiles or recommends. Skip
+    passing references, the author's previous work, and honourable-mention
+    asides without dedicated coverage.
+  - One entry per distinct venue. Collapse repeated mentions.
+  - Keep "why" to one sentence, plain neutral tone. Editorial voice happens
+    in a later synthesis step, not here.
+  - If the article qualifies zero venues, return {"mentions": []}.
+  - Do not invent venues. Leave fields null rather than guessing.
 `.trim();
 
 // ── Claude messages API ───────────────────────────────────────────────────────
@@ -99,13 +123,14 @@ function parseExtractionJson(text) {
 
 async function extractWithClaude({ apiKey, model, articleText, articleMeta }) {
   const user = [
+    `Target city for this run: ${articleMeta.city || "(not specified — use article context)"}`,
     `Publication: ${articleMeta.publication}`,
     `Article title: ${articleMeta.title}`,
     `Article date:  ${articleMeta.date || "(unknown)"}`,
     "",
     "Article body:",
     "",
-    String(articleText || "").slice(0, 12000), // safety cap; articles rarely need more
+    String(articleText || "").slice(0, 12000),
   ].join("\n");
 
   let raw;

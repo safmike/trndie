@@ -1,40 +1,55 @@
 {
-  "notes": "Editorial sources per city for the Phase 2 pipeline (editorial signal MVP, observe-only). Pilot scope: Melbourne, tier-1 only. The `verification` block records whether the feed_url was confirmed against a live HTTP response — Phase 2 was authored in a sandboxed environment with outbound network blocked (host_not_allowed), so all three feed URLs are seeded as the conventional WordPress/CMS endpoints and flagged `unverified_pending_live_run`. Run `node scripts/phase2-editorial.js --verify-feeds` in an environment with outbound network to update.",
+  "_doc": "Editorial sources per city for the Phase 2 pipeline. Pilot scope: Melbourne, tier-1 only. Each source carries a `feed_urls` ARRAY — the runner tries each URL in order and uses the first that returns a valid feed. This handles publishers' habit of moving/renaming RSS endpoints without warning, and surfaces the exact HTTP status of every attempt in the run report so we know which endpoint won. The first live Melbourne run on PR #27 saw Broadsheet + Time Out both fail at the single candidate URL; this config widens the search and lets the runner tell us WHY each candidate failed.",
   "sources": [
     {
       "source": "broadsheet",
       "city": "melbourne",
       "tier": 1,
-      "feed_url": "https://www.broadsheet.com.au/melbourne/food-and-drink/feed",
       "type": "rss",
+      "feed_urls": [
+        "https://www.broadsheet.com.au/melbourne/food-and-drink/feed",
+        "https://www.broadsheet.com.au/melbourne/food-and-drink/feed/",
+        "https://www.broadsheet.com.au/melbourne/feed",
+        "https://www.broadsheet.com.au/feed"
+      ],
       "verification": {
         "status": "unverified_pending_live_run",
         "verified_at": null,
-        "notes": "Conventional WordPress feed endpoint appended to the Melbourne food-and-drink category. If this 404s in live verification, candidates to try next: /melbourne/feed?cat=food-and-drink, /melbourne/food-and-drink/feed/, or the platform-wide /feed filtered by category."
+        "notes": "First candidate is the conventional WordPress feed endpoint for the Melbourne food-and-drink category. Subsequent entries fall back to the city-level feed and the platform-wide feed (filterable downstream by article URL pattern). If all four 4xx in CI, the next step is publisher partnership or newsletter parsing — see PIPELINE_BUILD.md Layer 3."
       }
     },
     {
       "source": "concrete_playground",
       "city": "melbourne",
       "tier": 1,
-      "feed_url": "https://concreteplayground.com/melbourne/feed",
       "type": "rss",
+      "feed_urls": [
+        "https://concreteplayground.com/melbourne/eat-drink/feed",
+        "https://concreteplayground.com/melbourne/feed",
+        "https://concreteplayground.com/feed"
+      ],
       "verification": {
         "status": "unverified_pending_live_run",
         "verified_at": null,
-        "notes": "City-level feed (confirmed via web search to exist historically — Concrete Playground's RSS posts ~4x/day). A narrower /melbourne/eat-drink/feed may exist; if so, prefer it. Phase 2 filters by category downstream regardless."
+        "notes": "City-level feed has been reported as serving ~4 posts/day. /eat-drink/feed is the preferred narrower endpoint (if it exists); city-level is the documented fallback."
       }
     },
     {
       "source": "time_out",
       "city": "melbourne",
       "tier": 1,
-      "feed_url": "https://www.timeout.com/melbourne/restaurants/rss",
       "type": "rss",
+      "feed_urls": [
+        "https://www.timeout.com/melbourne/restaurants/rss",
+        "https://www.timeout.com/melbourne/restaurants/feed",
+        "https://www.timeout.com/melbourne/news/rss.xml",
+        "https://www.timeout.com/melbourne/feed",
+        "https://au.timeout.com/melbourne/xmlapi/public"
+      ],
       "verification": {
         "status": "unverified_pending_live_run",
         "verified_at": null,
-        "notes": "Conventional Time Out RSS endpoint for the Melbourne restaurants section. Time Out's RSS coverage is patchy across markets. Live-verification fallbacks to try: /melbourne/news/rss.xml, /melbourne/feed, au.timeout.com/melbourne/xmlapi/public."
+        "notes": "Time Out's RSS coverage is the patchiest of the three — they've been retiring feeds in some markets. If all five candidates 4xx in CI, the report will say so explicitly and the resilience plan (newsletter parsing per Layer 3 of PIPELINE_BUILD.md) becomes the next move."
       }
     }
   ]

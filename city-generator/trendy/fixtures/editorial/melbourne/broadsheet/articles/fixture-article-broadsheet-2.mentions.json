@@ -4,11 +4,13 @@
     {
       "venue_name": "Fixture Cafe Alpha",
       "suburb": "Fitzroy",
+      "venue_type": "cafe",
       "why": "Seafood residency on Smith Street; soft-serve dessert rotates weekly, current rotation is salted miso with brown-butter crumb."
     },
     {
       "venue_name": "Fixture Cafe Delta",
       "suburb": "Brunswick",
+      "venue_type": "cafe",
       "why": "Sydney Road diner; pandan-coconut soft-serve twist with a weekly black-sesame run on Fridays."
     }
   ]
